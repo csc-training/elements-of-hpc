@@ -1,2 +1,5 @@
-# elements-of-hpc
-Elements of high-performance computing online course
+# Elements of high-performance computing
+
+General level introduction to high-performance computing
+
+Work in progress
