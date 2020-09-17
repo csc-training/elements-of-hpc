@@ -7,11 +7,13 @@
 
 * When a computer can execute 1 billion FLOPs, then we can say it is 1 GigaFlops (GFLOPs). Similarly, we call 1 TeraFlops (TFlops) for one trillion (10^12) FLOPs, and 1 PetaFlops (PFLOPs) when a supercomputer can execute 1 quadrillion or 10^15 FLOPs.
 
-### High Performance Linpack (HPL)
+### TOP500
 
-* The Linpack benchmark measures a system's floating point computing power. It measures how fast a computer does matrix operations to solve an equation. Supercomputers have a theoretical peak performance with regards to their hardware, but HPL calculated the perfromance which is lower than the peak, as the theoretical one is based on a perfect application and system.
+* What is a benchmark: An application that its sole purpose to measure a functionality of the supercomputer how well it performs. 
 
-* TOP500: Is the official list where each organization that owns a supercomputer can execute the HPL and submit their results. This list is released twice every year and it recognizes which Supercomputers are the most powerful and it includes the 500 most powerfule Supercomputers.
+* The Linpack benchmark measures a system's floating point computing power. It measures how fast a computer does matrix operations to solve an equation. Supercomputers have a theoretical peak performance with regards to their hardware, but HPL calculates the performance that is lower than the peak, as the theoretical one is based on a perfect benchmark and system.
+
+* TOP500: Is the official list where each organization that owns a supercomputer can execute the HPL and submit their results. This list is released twice every year and it recognizes which Supercomputers are the most powerful and it includes the 500 most powerful supercomputers.
 
 * In the first TOP500 list, June 1993, the first Supercomputer achieved 59.7 GFlops and it was from USA. Nowadays, during the list of June 2020, the first Supercomputer achieved 415530000.0 GFlops and it is located in Japan, which means that in 27 years, the power of the number one supercomputer was increased 6960301 times. Regarding the last systems of the list, on June 1993 it had a power of 0.4 GFlops while on June 2020 is 1228000 GFlops.We can observe the significant increase of the Spercomputer power all these years.
 
