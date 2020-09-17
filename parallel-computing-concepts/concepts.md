@@ -11,12 +11,12 @@ programming.
 ## Types of parallel problems
 
 Parallel programs can be divided in two limiting classes: tightly coupled and
-embarrassingly parallel. In tightly coupled problems there is lots of
+trivially parallel. In tightly coupled problems there is lots of
 interaction between subtasks, and low latency high speed interconnect
 between the CPUs is essential for good performance. Weather simulation
 is a typical example of tightly coupled problem.
 
-In embarrassingly parallel cases there is very little (or no)
+In trivially parallel cases there is very little (or no)
 interaction between subtasks. Programming these types of problems is
 typically easier, and there are no high demands for the connection
 between CPUs. In best cases computers all over internet can be used
