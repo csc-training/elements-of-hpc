@@ -1,19 +1,14 @@
 # Cloud computing vs. "traditional" HPC
 
-High performance computing (HPC), also known as supercomputing, involves thousands of processors working in parallel to analyse billions of pieces of data in real time, performing calculations thousands of times faster than a normal computer. In the digital era, it is at the core of major advances and innovation and a strategic resource for Europe's future.
+High performance computing (HPC) or  supercomputing, most generally refers to the practice of aggregating computing power in a way that delivers much higher performance than one could get out of a typical desktop computer or workstation in order to solve large problems in science, engineering or bussiness.
+Nowdays it can involve thousands or more processors working in parallel to analyse billions of pieces of data in real time, performing calculations thousands of times faster than a normal computer. Traditionally the resources for HPC comprised of bare-metal supercomputers and clusters which  were specifically designed to support HPC applications developed to solve the specific problems. All applications and libraries need to be compiled for the operating system that is installed on the machine. The computational work (jobs) was  queued and executed when there were sufficient resources on the machine. This approach is prefered for massive parallel processing which usally requires also a very good interconnection between the processors and a very fast disk system for data input and output operations. Supercomputers are designed to get the most of the computing resources for intrensive problems, however it lacks some flexibility. 
 
-High Performance Computing most generally refers to the practice of aggregating computing power in a way that delivers much higher performance than one could get out of a typical desktop computer or workstation in order to solve large problems in science, engineering, or business.
-
-High-performance computing (HPC) is the use of distributed computing facilities for solving problems that need large computing power. Historically, supercomputers and clusters are specifically designed to support HPC applications that are developed to solve “Grand Challenge” problems in science and engineering
-
-Traditionally high-performance computing (HPC) resources comprise bare-metal
-supercomputers, and clusters, where computational work (jobs) are queued and executed when
-there are sufficient resources on the machine. All applications and libraries need to be compiled
-for the operating system that is installed on the machine
 
 
 Cloud Computing is a buzzword referring to offer on-demand access to a pool of
-configurable computing resources. 
+configurable computing resources.  In the clouds the computing capacity  is offered using virtualization technology. On each node a hypervisor runs
+multiple virtual machines (VMs, or "instances") on virtual operating platforms. On these VMs one
+can install Linux or Windows, and a complete custom stack of software.
 
 There are five essential characteristics that shape Cloud Computing:
 1. On-demand self-service: Services of the cloud are ready for the user whenever the user
