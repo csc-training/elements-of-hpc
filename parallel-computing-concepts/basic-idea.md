@@ -18,9 +18,8 @@ execution unit is typically a CPU core.
 
 How a problem is split into smaller subtasks depends fully on the problem.
 There exists various paradigms and programming approaches on how to do this
-and in the next step we will discuss some of them in more detail.
-
-FIXME: link to the next step (above)
+and in the [next step](concepts.md) we will discuss some of them in more
+detail.
 
 
 # Example: How to compute a sum in parallel?
