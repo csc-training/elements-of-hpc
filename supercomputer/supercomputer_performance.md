@@ -3,9 +3,9 @@
 
 * To understand how powerful a Supercomputer is and compare it with other ones, there are few metrics. The oldest and most classic one is the floating operations per second (FLOPs). This measures the performance of a processor and not only.
 
-* What is a FLOPs? If we do the calculation for example, 2.1 + 4.3 = 6.5 in one second, then this is one operation in one second, which means 1 FLOPs. It is a calculation between real numbers.
+* What is a FLOPs? If we do the calculation for example, 2.1 + 4.3  in one second, then this is one floating-point operation per second, which means 1 FLOPs, it is a calculation between real numbers.
 
-* When a computer can execute 1 billion FLOPs, then we can say it is 1 GigaFlops (GFLOPs). Similarly, we call 1TeraFlops (TFlops) for one trillion (10^12) FLOPs, and  1 PetaFlops (PFLOPs) when a supercomputer can execute 1 quadrillion or 10^15 FLOPs.
+* When a computer can execute 1 billion FLOPs, then we can say it is 1 GigaFlops (GFLOPs). Similarly, we call 1 TeraFlops (TFlops) for one trillion (10^12) FLOPs, and 1 PetaFlops (PFLOPs) when a supercomputer can execute 1 quadrillion or 10^15 FLOPs.
 
 ### High Performance Linpack (HPL)
 
@@ -22,9 +22,26 @@
 
 * To compare and understand better, the Macbook pro 13" 2020 model, has a performance of around 311 GFlops which means that it would be number one supercomputer on June 1993 but for 2020, the number one supercomputer has the power of around 1.3 million Macbook pro 13".
 
-
+* The Mahti supercomputer at CSC - IT For Science Ltd. has power of 7.5 PFlops, which means it can execute 7.5*10^15 operations per second or around 24000 Macbook pro 13" combined. If all the population of the earth does one operation per second, then the performance would be 1 million times less than Mahti.  
 
 * LUMI supercomputer will have a theoretical peak performance of XXX PFlops and we expect that it would be in top 10 supercomputers of the world in the beginning. 
 
+* We describe the terminology of the performance
 
+| Ops per second  | Scientific Notation | Metric Prefix | Unit   |
+|-----------------|---------------------|---------------|--------|
+| 1 000           |        10^3         |  Kilo         | Kflops |
+|-----------------|---------------------|---------------|--------|
+| 1 000 000       |        10^6         |  Mega         | Mflops |
+|-----------------|---------------------|---------------|--------|
+| 1 000 000 000   |        10^9         |  Giga         | Gflops |
+|-----------------|---------------------|---------------|--------|
+| 1 000 000 000   |        10^12        |  Tera         | Tflops |
+| 000             |                     |               |        |
+|-----------------|---------------------|---------------|--------|
+| 1 000 000 000   |        10^15        |  Peta         | Pflops |
+| 000 000         |                     |               |        |
+|-----------------|---------------------|---------------|--------|
+| 1 000 000 000   |        10^8         |  Exa          | Eflops |
+| 000 000 000     |                     |               |        |
 
