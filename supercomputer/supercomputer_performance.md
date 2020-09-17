@@ -17,7 +17,7 @@
 
 
 !["TOP500 Flops"](./images/flops.png)
-
+*FLOPs from the top systems in TOP500 from 1993 until 2017*
 
 
 * To compare and understand better, the Macbook pro 13" 2020 model, has a performance of around 311 GFlops which means that it would be number one supercomputer on June 1993 but for 2020, the number one supercomputer has the power of around 1.3 million Macbook pro 13".
