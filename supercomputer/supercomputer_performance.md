@@ -19,10 +19,10 @@
 
 
 !["TOP500 Flops"](./images/flops.png)
-*FLOPs from the top systems in TOP500 from 1993 until 2017*
+*FLOPs from the top systems in TOP500 list from 1993 until 2017*
 
 
-* To compare and understand better, the Macbook pro 13" 2020 model, has a performance of around 311 GFlops which means that it would be number one supercomputer on June 1993 but for 2020, the number one supercomputer has the power of around 1.3 million Macbook pro 13".
+* To compare and understand better, the Macbook pro 13" 2020 model, has a performance of around 311 GFlops which means that it would be number one supercomputer on June 1993 but for 2020, the number one supercomputer has the power of around 1.3 millions Macbook pro 13".
 
 * The Mahti supercomputer at CSC - IT For Science Ltd. has power of 7.5 PFlops, which means it can execute 7.5*10^15 operations per second or around 24000 Macbook pro 13" combined. If all the population of the earth does one operation per second, then the performance would be 1 million times less than Mahti.  
 
