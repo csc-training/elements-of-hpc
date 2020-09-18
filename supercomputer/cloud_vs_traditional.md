@@ -2,7 +2,9 @@ High performance computing (HPC) most generally refers to the use of parallel pr
 
 Cloud Computing is usually referring to access to a pool of configurable on-demand availability of computer system resources. The computing services are using advance automation, without direct active management by the user using virtualization technology. On each node a hypervisor runs multiple virtual machines (VMs, or "instances") on virtual operating platforms. On these VMs one can install Linux or Windows, and a complete custom stack of software. The main advantage of using cloud computing are:
 
-on demand self-service (automation, everything provider by the service provider)
-resilience and elasticity (no data loss or downtimes in case of hardware failures)
-flexibility and scalability (for the user the resources appear to be unlimited) Overall cloud computing reduces the complexity for the user, saves money for small businesses (no startup costs) and it still delivers good performance.
+* on demand self-service (automation, everything provider by the service provider)
+* resilience and elasticity (no data loss or downtimes in case of hardware failures)
+* flexibility and scalability (for the user the resources appear to be unlimited) 
+
+Overall cloud computing reduces the complexity for the user, saves money for small businesses (no startup costs) and it still delivers good performance.
 However there are also drawbacks to cloud computing. The Cloud Computing platforms are unable to execute massively parallel jobs with tens of thousands of cores. A large part of scientific applications have tightly couple communications. While there are no start-up costs and the services are available immediately when requested, the prices of the computing time can vary depending on the load. Finally, there are also concerns about privacy and confidentiality, some work involves non-disclosure agreements and the cloud infrastructure is certified.
