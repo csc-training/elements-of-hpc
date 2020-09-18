@@ -9,8 +9,6 @@
 - on demand self-service (automation, everything provider by the service provider)
 - resilience and elasticity (no data loss or downtimes in case of hardware failures)
 - flexibility and scalability (for the user the resources appear to be unlimited)
-Overall cloud computing reduces the complexity for the user, saves money for small bussinesses (no start up costs) and it still delivers good performance.
- One limitation is that it offers  limited customization options. There are also concerns about privacy and confidentiality, some work involves NDA. While the computing can be very cheap, other fees might be leverage on data storage and manipulation.
+Overall cloud computing reduces the complexity for the user, saves money for small bussinesses (no start up costs) and it still delivers good performance. 
 
-
-[![Traditional HPC vs cloud computing](https://ars.els-cdn.com/content/image/3-s2.0-B9780128038994000067-f06-01-9780128038994.jpg?_)](https://ars.els-cdn.com/content/image/3-s2.0-B9780128038994000067-f06-01-9780128038994.jpg?_)
+However there are also drawbacks to cloud computing. The Cloud COmputing latforms are unable to execute maasively parrallel jobs with tens of thousands of cores. A large part of scientific applications have tifghtly couple communications. While there are no start-up costs  and the services are available imedialty when requested, the prices of the computing time can vary deodning on the load. Finally, there are also concerns about privacy and confidentiality, some work involves non-disclosure agreements and the cloud infrastructure is certified. 
