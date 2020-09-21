@@ -5,7 +5,7 @@
 
 * What is a FLOPs? If we do the calculation for example, 2.1 + 4.3  in one second, then this is one floating-point operation per second, which means 1 FLOPs, it is a calculation between real numbers.
 
-* When a computer can execute 1 billion FLOPs, then we can say it is 1 GigaFlops (GFLOPs). Similarly, we call 1 TeraFlops (TFlops) for one trillion (10^12) FLOPs, and 1 PetaFlops (PFLOPs) when a supercomputer can execute 1 quadrillion or 10^15 FLOPs.
+* When a computer can execute 1 billion FLOPs, then we can say it is 1 GigaFlops (GFLOPs). Similarly, we call 1 TeraFlops (TFlops) for one trillion (10<sup>12</sup>) FLOPs, and 1 PetaFlops (PFLOPs) when a supercomputer can execute 1 quadrillion or 10<sup>15</sup> FLOPs.
 
 ### TOP500
 
@@ -30,12 +30,12 @@
 
 * We describe the terminology of the performance
 
-| Ops per second              | Scientific Notation | Metric Prefix | Unit   |
-|-----------------------------|---------------------|---------------|--------|
-| 1 000                       |        10^3         |  Kilo         | Kflops |
-| 1 000 000                   |        10^6         |  Mega         | Mflops |
-| 1 000 000 000               |        10^9         |  Giga         | Gflops |
-| 1 000 000 000 000           |        10^12        |  Tera         | Tflops |
-| 1 000 000 000 000 000       |        10^15        |  Peta         | Pflops |
-| 1 000 000 000 000 000 000   |        10^18        |  Exa          | Eflops |
+| Ops per second              | Scientific Notation    | Metric Prefix | Unit   |
+|-----------------------------|------------------------|---------------|--------|
+| 1 000                       |        10<sup>3</sup>  |  Kilo         | Kflops |
+| 1 000 000                   |        10<sup>6</sup>  |  Mega         | Mflops |
+| 1 000 000 000               |        10<sup>9</sup>  |  Giga         | Gflops |
+| 1 000 000 000 000           |        10<sup>12</sup> |  Tera         | Tflops |
+| 1 000 000 000 000 000       |        10<sup>15</sup> |  Peta         | Pflops |
+| 1 000 000 000 000 000 000   |        10<sup>18</sup> |  Exa          | Eflops |
 
