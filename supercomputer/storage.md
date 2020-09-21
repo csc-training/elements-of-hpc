@@ -27,4 +27,4 @@
 | 1 000 000 000 000 000       |   1000^5  | Petabyte  |  
 | 1 000 000 000 000 000 000   |   1000^6  | Exabyte   |  
 
-* Under other standards, 1024 bytes constitute one kibibyte, so you can see different values, depending which metric you use.
+* Under other standards, 1024 bytes constitute one kibibyte, so you can see different values, depending which metric you use. 10<sup>6</sup>
