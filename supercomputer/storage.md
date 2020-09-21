@@ -17,4 +17,14 @@
 
 * Finally, some supercomputers have archiving storage constituted by magnetic tapes for storage where we can save data for long term and recover the data with slower performance than the other mentioned technologies. These tapes cost significantly cheaper than the hard disks, they have been around since 1950s. The technology is similar to older well-known VHS video tapes.
 
+|Size in Bytes                |  Value    |   Metric  | 
+|-----------------------------|-----------|-----------|
+! 1                           |   1       | Byte      |
+| 1 000                       |   1000    | Kilobyte  |  
+| 1 000 000                   |   1000^2  | Megabyte  |  
+| 1 000 000 000               |   1000^3  | Gigabyte  |  
+| 1 000 000 000 000           |   1000^4  | Terabyte  |  
+| 1 000 000 000 000 000       |   1000^5  | Petabyte  |  
+| 1 000 000 000 000 000 000   |   1000^6  | Exabyte   |  
 
+* Under other standards, 1024 bytes constitute one kibibyte, so you can see different values, depending which metric you use.
