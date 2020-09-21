@@ -21,10 +21,10 @@
 |-----------------------------|---------------------|-----------|
 ! 1                           |   1                 | Byte      |
 | 1 000                       |   1000              | Kilobyte  |  
-| 1 000 000                   |   1000<sup>6</sup>  | Megabyte  |  
-| 1 000 000 000               |   1000<sup>6</sup>  | Gigabyte  |  
-| 1 000 000 000 000           |   1000<sup>6</sup>  | Terabyte  |  
-| 1 000 000 000 000 000       |   1000<sup>6</sup>  | Petabyte  |  
+| 1 000 000                   |   1000<sup>2</sup>  | Megabyte  |  
+| 1 000 000 000               |   1000<sup>3</sup>  | Gigabyte  |  
+| 1 000 000 000 000           |   1000<sup>4</sup>  | Terabyte  |  
+| 1 000 000 000 000 000       |   1000<sup>5</sup>  | Petabyte  |  
 | 1 000 000 000 000 000 000   |   1000<sup>6</sup>  | Exabyte   |  
 
 * Under other standards, 1024 bytes constitute one kibibyte, so you can see different values, depending which metric you use. 
