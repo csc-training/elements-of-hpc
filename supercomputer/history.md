@@ -1,4 +1,4 @@
-##Brief history of supercomputing
+## Brief history of supercomputing
 
 The history of machine computing started with mechanical computers which used gears, levers, curved plates etc. to perform calculations. The mechanical computers were typically single purpose machines and could not be programmed in the modern sense. In addition to the standard desk calculators typical examples were the devices used in aiming bombs, guns and torpedoes during WW2. However, programmable motor-driven mechanical machines like Z1 were also developed.
 
@@ -12,7 +12,7 @@ The term supercomputing was first used in 1964 when Control Data Corporation int
 
 More stuff here ...
 
-##Supercomputing in Finland and at CSC
+## Supercomputing in Finland and at CSC
 
     Univac 1108-II 1971-1982
     Cray XMP 1989
