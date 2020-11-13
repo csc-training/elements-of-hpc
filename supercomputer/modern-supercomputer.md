@@ -12,7 +12,7 @@ A modern domestic device (e.g. a laptop, mobile phone or tablet) has a single CP
 
 Supercomputers are build up of nodes, where a single node contains few multicore CPUs and possibly GPUs, as well as memory. The amount of memory per node varies typically from a hundred gigabyte to few thousand gigabytes (a high-end laptop might have 32 gigabytes of memory); in total there can be millions of gigabytes of memory in a supercomputer. To use all of these CPU-cores and GPUs together means they must be able to _talk_ to each other. In a supercomputer, the nodes are connected together with a communications network, which is called the _**interconnect**_ in the jargon of the field. Interconnect is the crucial component which gives supercomputer its power, and we discuss interconnects in a more detail later on. Even though nodes can have local disks, there is normally also a separate disk storage system, which we also discuss more later on.
 
-TODO: images of node and a collection of nodes
+TODO: images of node and a collection of nodes, different interconnect topologies?
 
 Supercomputers are distinguished from consumer devices also by the much more dense packing. Physically supercomputer consists of several cabinets (about a size of a phone booth), where each cabinet contains multiple rack blades, and each rack blade can contain multiple nodes. If the computing power of LUMI would be devised from Macbook Pros, the pile of laptops would reach Mt Everest, whereas LUMI fits into around XX cabinets in the size of NN court.
 
