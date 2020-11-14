@@ -100,3 +100,6 @@ same time, and one speaks about *weak parallel scaling*. In ideal weak scaling
 case the execution time remains constant when the amount of data and
 the number of processing units are increased in same proportion. Good
 weak scaling is easier to achieve than good strong scaling.
+
+## Performance considerations?
+Load balance, overhead?
