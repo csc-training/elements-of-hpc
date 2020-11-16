@@ -13,7 +13,7 @@
 * The design of a storage can be a complicated procedure and it is out of the scope of this course. With simple words a parallel file system is designed in order to be able to support large parallel operations that read and write a file among also many users utilizing the filesystem in the same time. A parallel file system is a software designed to store data across multiple networked servers to accomodate high-performance access. There are many different parallel file systems where we just mention few of them and their links if you would like to read, such as [Lustre](https://en.wikipedia.org/wiki/Lustre_(file_system)), [GPFS](https://en.wikipedia.org/wiki/GPFS), [BeeGFS](https://en.wikipedia.org/wiki/BeeGFS), [Ceph](https://en.wikipedia.org/wiki/Ceph_(software))
 
 
-* LUMI will provide storage for both cases of large available storage space with spinning disks and faster accelerated storage with faster technology. 
+* LUMI will provide storage for both cases of large available storage space with spinning disks and faster accelerated storage with faster technology. The first case will be constituted by 80 petabyte (PB) capacity while the fast storage will be 7 PB of flash storage. There will be also a data management service of 30 PB.
 
 * Finally, some supercomputers have archiving storage constituted by magnetic tapes for storage where we can save data for long term and recover the data with slower performance than the other mentioned technologies. These tapes cost significantly cheaper than the hard disks, they have been around since 1950s. The technology is similar to older well-known VHS video tapes.
 

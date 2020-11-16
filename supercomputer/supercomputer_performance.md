@@ -26,7 +26,7 @@
 
 * The Mahti supercomputer at CSC - IT For Science Ltd. has power of 7.5 PFlops, which means it can execute 7.5*10^15 operations per second or around 24000 Macbook pro 13" combined. If all the population of the earth does one operation per second, then the performance would be 1 million times less than Mahti.  
 
-* LUMI supercomputer will have a theoretical peak performance of XXX PFlops and we expect that it would be in top 10 supercomputers of the world in the beginning. 
+* LUMI supercomputer will have a theoretical peak performance of 552 PFlops and we expect that it would be in top 10 supercomputers of the world in the beginning. 
 
 * We describe the terminology of the performance
 
