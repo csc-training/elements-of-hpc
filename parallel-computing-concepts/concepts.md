@@ -161,6 +161,11 @@ $$
 
 which is would be considered a very good parallel speedup.
 
+Also, if consider weak scaling case where problem size is increased to
+160 numbers and we have eight workers, the time needed would be
+$$20 + 7 \cdot 0.1 + 7 \cdot 1 = 27.7 s$$. 
+
+
 As most real-world problems are much more complex than the one Alice
 and friends are solving, it should not be difficult to figure that
 minimization parallel overheads, maximizing ratio of computing to
