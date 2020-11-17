@@ -22,7 +22,7 @@ HPC has been a critical part of academic research and innovation for a long time
 * genomics, bioinformatics: analysing drug interactionssequencing DNA, predicting protein folding
 * healthcare: medical imaging and diagnozing, researching drugs and vaccines, living heart project, cancer treatment
 
-![ ](Images/bioinformatics.png)
+![ ](Images/bioinformatics.jpg)
 
 ### Earth Sciences 
 * long term climate modeling
