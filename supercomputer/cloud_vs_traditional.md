@@ -43,7 +43,7 @@ software. The main advantage of using cloud computing are:
 At the same time, setting up virtual machines requires some knowledge of
 installing and maintaining operating systems and software.
 
-Flavors of cloud: SaaS, PaaS, IaaS, Saas. Desciptions and examples here.
+TODO: Flavors of cloud: SaaS, PaaS, IaaS, Saas. Desciptions and examples here.
 
 Overall cloud computing reduces the complexity for the user, saves money for
 small businesses (no startup costs) and it still delivers good performance.
