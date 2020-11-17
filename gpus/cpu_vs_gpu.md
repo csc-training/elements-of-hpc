@@ -17,7 +17,7 @@ However, this hierarchical design has a drawback: moving data between the CPU an
 
 The relative simplicity of GPUs comes with a cost: the programming is more involving and extracting good performance can sometimes be difficult and depends on the nature of the problem (how?).
 
-GPU programming models: CUDA, Hip etc.
+TODO: GPU programming models: CUDA, Hip etc.
 
 GPUs are especially efficient in machine learning applications, more precisely in training neural networks.
 
