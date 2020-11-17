@@ -172,18 +172,18 @@ challenging with many parallel workers.
 One common way to expose parallelism is by distributing the data, for example
 an array, to individual processing units.
 
-![Data parallelism](../../img/data-parallel.png)
+![Data parallelism](images/data-parallel.svg)
 
 Each processing unit (e.g. CPU core) holds part of the data, and performs
 typically identical or at least very similar operations on the data. Processing
 units may need to interact with each other, for example exchange information
 about the data on the domain boundaries.
 
-Other common parallelization model is the task farm (or master / worker)
-approach, where a master sends tasks to workers and receives then results
-from them.
+Other common parallelization model is the task farm (or main / worker)
+approach, where one processing unit sends tasks to workers and
+receives then results from them.
 
-![Task farm](../../img/task-farm.png)
+![Task farm](images/task-farm.svg)
 
 The tasks can be computationally similar, but in some cases they can be also
 completely different. There are often more tasks than workers, and tasks are
