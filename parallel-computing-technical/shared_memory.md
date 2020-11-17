@@ -8,7 +8,7 @@ The shared memory refers to physical memory device which can be access by more t
 
 ![Memory structure of Modern computer](images/shared-memory-architecture.png)
 
-Examples of shared memory are the CPU cache which is shared by all cores in the same CPU and computer main memory which is shared my all the cores on the same motherboard. (In the case of GPU shared memory is used to refer to the local memory available on each SM, the threads in a block can access and shared data with each other via the mentioned.)
+Examples of shared memory are the CPU cache which is shared by all cores in the same CPU and computer main memory which is shared my all the cores on the same motherboard. (In the case of GPU the shared memory term is used to refer to the local memory available on each SM, the threads in a block can access and shared data with each other via the mentioned.) Personal computers and mobile phones are all based on shared memory architectures. The connection between the various cores and memory is done via a **memory** *bus* that takes all the requests from each core and fetches or writes the data to the memory. 
 
 Programmatically the shared memory is seen as a space in the memory allocated to a program which can be access by a group of threads working together, without additional communication. All threads in a group can write and read from a given location in memory. 
 
