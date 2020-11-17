@@ -1,5 +1,5 @@
 # What are supercomputers used for ?
-HPC has been a critical part of academic research and innovation for a long time. "In-silica" experiments can reduce and in some cases  eliminate the need for physical tests. In the same time results are obtained much faster.  This reduces costs and drives innovation. Below are some examples in which HPC plays an important role.
+HPC has been the foundation for cademic research, innovation, and societal advancements for a long time. The main benfits of HPC: reduce physical testing, faster results, reduced costs, innovation. Below are some examples in which HPC is critical.
 
 
 ### Materials Science
