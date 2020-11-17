@@ -26,3 +26,5 @@ CSC and its predecessors have operated the following major systems in Finland:
     Cray XT4/XT5 2007-2012
     Cray XC40 2012-2019
     Bull XH2000 2020 2020-
+    
+ Additionally there have been a number of supporting systems.
