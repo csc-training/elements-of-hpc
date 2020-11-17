@@ -20,7 +20,7 @@ HPC has been the foundation for cademic research, innovation, and societal advan
 
 ### Life Sciences
 * genomics, bioinformatics: analysing drug interactionssequencing DNA, predicting protein folding
-* healthcare: medical imaging and diagnozing, researching drugs and vaccines, living heart project, cancer treatment
+* healthcare: medical imaging and diagnozing, researching drugs and vaccines, living heart project, cancer treatment, brain
 
 ![ ](Images/bioinformatics.jpg)
 
