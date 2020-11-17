@@ -1,16 +1,16 @@
 # What are supercomputers used for ?
- HPC has been a critical part of academic research and innovation for a long time. 
+HPC has been a critical part of academic research and innovation for a long time. "In-silica" experiments can reduce in some cases t eliminate the need for physical tests. 
 ## Materials Science
 * new materials
-* design of met-materials
+* design of meta-materials
 * industrial processes
-aerospace 
 
 ## Industry
 * oil and gas: finding new reservoirs, fluid flow and seismic processing
 * aerospace: flow of air over the wings
 * financial technology: risk analysises, high-frquency trading, financial modeling, fraud detection
 * cybersecurity
+[![Airplane take off using ANSYS Fluent software](https://www.ansys.com/-/media/ansys/corporate/blog/aerospace-defense-blogs/hpc-simulate-airplane-takeoff-aerodynamics/hpc-simulate-airplane-takeoff-aerodynamics-ansys-fluent.png?h=563&w=1000&la=en&hash=85B5F39D6F026040E60B20241934269090915765)](https://www.ansys.com/-/media/ansys/corporate/blog/aerospace-defense-blogs/hpc-simulate-airplane-takeoff-aerodynamics/hpc-simulate-airplane-takeoff-aerodynamics-ansys-fluent.png?h=563&w=1000&la=en&hash=85B5F39D6F026040E60B20241934269090915765)
 
 ## Life Sciences
 * genomics: analysing drug interactionssequencing DNA, predicting protein folding
@@ -18,7 +18,7 @@ aerospace
 
 ## Earth Sciences 
 * long term climate modeling
-* weather predicition
+* weather prediction
 
 ## Machine learning
 * deep learning
