@@ -5,7 +5,7 @@ GPU stands for Graphics Processing Unit. Originally they were designed and used 
 When comparing the CPU to GPU one word can describe the differences, **complexity**. Below is shown a schematic representation CPU and GPU side by side.  
 [![CPU vs. GPU](https://docs.nvidia.com/cuda/cuda-c-programming-guide/graphics/gpu-devotes-more-transistors-to-data-processing.png)](https://docs.nvidia.com/cuda/cuda-c-programming-guide/graphics/gpu-devotes-more-transistors-to-data-processing.png)
 
-CPU is in general more complex, "smarter" devices oriented toward general purpose usage. It has a large part of the transitors dedicated to branch prediction and control,  and another large part to cache for prefetching data from the memory. Compared to CPUs, in  the GPUs the fraction of transitors dedicated to the mathematical operations is high. The GPU has a very small amount of transistors dedicated to control and caching.  On a GPU thousands of small threads can be created, each one performing very few, but identical mathematical operations. This is called SIMD or Single Instruction Multiple Data computing.
+CPU is in general more complex, "smarter" devices oriented toward general purpose usage. It has a large part of the transitors dedicated to branch prediction and control,  and another large part to cache for prefetching data from the memory. Compared to CPUs, in  the GPUs the fraction of transitors dedicated to the mathematical operations is much higher. The GPU has a very small amount of transistors dedicated to control and caching.  On a GPU thousands of small threads can be created, each one performing very few, but identical mathematical operations. This is called SIMD or Single Instruction Multiple Data computing.
 
 The CPUs are fast and versatile. They were developed to run operating systems and various very different applications requiring interactivity, all in a  in a serial way.  GPUs were strictly  designed to create images for computer graphics and video game consoles, and they are better are at performing repetitive and highly parallel computing. 
 
@@ -17,7 +17,7 @@ However, this hierarchical design has a drawback: moving data between the CPU an
 
 The relative simplicity of GPUs comes with a cost: the programming is more involving and extracting good performance can sometimes be difficult and depends on the nature of the problem (how?).
 
-GPU programming models: CUDA etc.
+GPU programming models: CUDA, Hip etc.
 
 GPUs are especially efficient in machine learning applications, more precisely in training neural networks.
 
