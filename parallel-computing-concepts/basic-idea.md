@@ -29,10 +29,19 @@ the prices of their grocery shopping). Either Alice or Bob could do it alone,
 just like a single CPU core could compute it *in serial*. But how could they
 do it *in parallel*?
 
-In order to compute the sum in parallel (and hopefully faster!), Alice and Bob
+In order to compute the sum in parallel, Alice and Bob
 could divide the numbers in two and then each compute the sum of their own
 half. After Alice and Bob have computed these partial sums, all they need
-to do is to add them up to have the total sum of all the numbers.
+to do is to add them up to have the total sum of all the numbers. If
+the calculation by Alice alone would take 20 seconds, in an ideal case
+Alice and Bob together could solve the problem together in only 10
+s. Also, if the maximum amount of numbers Alice can compute alone is
+20 (in computer the limitation could come from the amount of memory
+available for the processing unit), together Alice and Bob could
+compute 40 numbers.
+
+The problem of Alice and Bob illustrates the two benefits of parallel
+computing: making computations faster and enabling larger computations.
 
 ![Alice and Bob calculate a sum in parallel](images/alice-bob-sum.png)
 
