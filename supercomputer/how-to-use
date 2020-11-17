@@ -5,3 +5,4 @@ In contrast to the familiar situation where a user runs e.g. Word on his or her 
 More precisely, the user describes in a special file (often called a *batch script*) what executable is to be run, how many nodes, cores and possibly GPUs and how much memory is to be used and finally how much time is to be reserved for the job. The batch script is submitted to the batch queueing system, which uses a complicated algorithm to decide when and in what subset of the nodes the job will be run.
 
 Typically, the more nodes and other resources and/or time a job requires, the longer it must spend time in the queue to wait for its turn to be executed.
+
