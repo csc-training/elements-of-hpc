@@ -35,4 +35,4 @@ HPC has been a critical part of academic research and innovation for a long time
 
 ## Media and etertainment
 * creating animations, sepcial effects for movies, transcoding media files
-![ ](Images/boiboi.png)
+![ ](Images/boiboi.jpg)
