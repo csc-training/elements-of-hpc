@@ -15,10 +15,20 @@ However, this hierarchical design has a drawback: moving data between the CPU an
 
 As seen in the figures 1 and 3, the GPU devices are comprised from several units called symmetric multiprocessor (SM), the GPU main RAM memory, and a thread scheduler. Each SM is comprised of several light computing cores, each one capable of running onely 1 light thread. 
 
-When a task is scheduled to be executed on GPU it is divided in many small parts, each one very small, ech part executed by one thread. For example rendering an imageon the screen would create createa for each frame 1 thread which would compute the 4 values needed for a pixel (RGB and the intensity). The threads much lighter than CPU threads and there is very little cost associated with their creation.  For each the threads are grouped in blocks which are each assigned to an SM. One SM can have more than a block running at a time, but a block can not be splitting between various SM.
+When a task is scheduled to be executed on GPU it is divided in many parts, each one very small executed in one thread. For example rendering an image on the screen would create create for each frame 1 thread which would compute the 4 values needed for a pixel (RGB and the intensity). These threads are much lighter than CPU threads and there is very little cost associated with their creation.  For each task  the threads are grouped in blocks which are each assigned to an SM. One SM can have more than one block running at a time, but a block can not be splitting between various SM.
 
-![CUDA Enabled Node](Images/prog_model.jpg)
+![Programming Mode for GPU](Images/prog_model.jpg)
 
+As mentioned before the high performance of the GPUs comes from parallelism and simplicity of the  cores. The control part is much smaller, not so versatile as the control in the CPUs.  As a result threads are executed in groups of 32 called warps, each thread in the warp executing the same instruction. This execution mode is called SIMT, single instruction multiple threads. We note that SIMT  also implies SIMD, becuase each instruction will be executed in by separate threads on separate parts of the data. 
+While the many computing cores in the GPUs can perform lots of calculationsin parallel, the programmer also has to make sure that the access to memory is efficient. GPUs provide very large bandwidth to access data in the GPU memory, however the read/write accessing must be done in a specific way to achieve good performance. Two "adjacent" threads should allways access adjacent memory locations, i.e. **coalesced** access. 
+
+![Warps](Images/loom.jpg)
+
+In addition to the main memory which is accessible by all threads workin in a task, the GPUs other types of memory which can be use to further accelerate the application: 
+
+![CUDA Memory Model](Images/mem_model_cuda)
+
+Each SM contains *shared memory* which can be access by threads in a specfic block. It is very fast and it can. be used as a proigrammable cache to reduce the repeated accesses to the same data. For example in the case of long range molecular dynamics, each thread in a block would load some data into the *shared memory*, and the other threads would  be able to access this data and reuse it to compute more interactions. In this particular case without the shared memory we would have to read from the main GPU memory a number of times equal to the number of threads in the block. In addition to the shared memory we have registers which contain variables local to each thread. The registers are very fast to access, but the amount available per individual thread is limited. The programmer does not have access direct to registers, but it can optimize the code to reduce the number when it is needed. Other types of memory are available in th GPUs with special access patterns such as contant memory, which is never changed from the device or th texture memory. The texture memory resides in the main memory, hwoever it has a special accessing patter and it is chached on the SM in a manner which reflects the locality of the data. 
 TODO: GPU programming models: CUDA, Hip etc.
 
 GPUs are especially efficient in machine learning applications, more precisely in training neural networks.
