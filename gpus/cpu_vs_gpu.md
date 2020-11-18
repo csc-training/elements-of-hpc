@@ -24,7 +24,7 @@ While the many computing cores in the GPUs can perform lots of calculationsin pa
 
 ![Warps](Images/loom.jpg)
 
-In addition to the main memory which is accessible by all threads workin in a task, the GPUs other types of memory which can be use to further accelerate the application: 
+In addition to the main memory which is accessible by all threads workin in a task, the GPUs have other types of memory which can be use to further accelerate the application: 
 
 ![CUDA Memory Model](Images/mem_model_cuda.png)
 
