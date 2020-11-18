@@ -11,9 +11,13 @@ Due to their specialized nature GPUs need CPUs on their side in the supercompute
 
 ![CUDA Enabled Node](Images/cuda_hrdw.jpeg)
 
-However, this hierarchical design has a drawback: moving data between the CPU and GPU in a node is relatively slow and is a typical performance bottleneck. The programmer must pay careful attention to minimizing data transfers between the host and device.
+However, this hierarchical design has a drawback: moving data between the CPU and GPU in a node is relatively slow and is a typical performance bottleneck. The programmer must pay careful attention to minimizing data transfers between the host and device. In addition to this, the relative simplicity of GPUs comes with a cost: the programming is more involving and extracting good performance can sometimes be difficult and depends on the nature of the problem. When writing a CUDA program the programmer has to take into account the particular hardware structure of the GPUs. 
 
-The relative simplicity of GPUs comes with a cost: the programming is more involving and extracting good performance can sometimes be difficult and depends on the nature of the problem (how?).
+As seen in the figures 1 and 3, the GPU devices are comprised from several units called symmetric multiprocessor (SM), the GPU main RAM memory, and a thread scheduler. Each SM is comprised of several light computing cores, each one capable of running onely 1 light thread. 
+
+When a task is scheduled to be executed on GPU it is divided in many small parts, each one very small, ech part executed by one thread. For example rendering an imageon the screen would create createa for each frame 1 thread which would compute the 4 values needed for a pixel (RGB and the intensity). The threads much lighter than CPU threads and there is very little cost associated with their creation.  For each the threads are grouped in blocks which are each assigned to an SM. One SM can have more than a block running at a time, but a block can not be splitting between various SM.
+
+![CUDA Enabled Node](Images/prog_model.jpg)
 
 TODO: GPU programming models: CUDA, Hip etc.
 
