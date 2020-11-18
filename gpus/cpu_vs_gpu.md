@@ -9,7 +9,7 @@ The CPU is a more complex, "smarter" device oriented toward general purpose usag
 ![CPU vs. GPU. Performance](Images/flops-per-cycle-dp.png)
 Due to their specialized nature GPUs need CPUs on their side in the supercomputer nodes. CPUs are often called *hosts* and GPUs *devices*. A node may consist of two CPUs and four GPUs with fast interconnect in between. The top-level program execution takes place in CPUs and computing intensive parts (often called *kernels*) are *off-loaded* to GPUs. Accordingly, GPUs are often referred to as accelerators.
 
-
+![CUDA Enabled Node](Images/cuda_hrdw.jpeg)
 
 However, this hierarchical design has a drawback: moving data between the CPU and GPU in a node is relatively slow and is a typical performance bottleneck. The programmer must pay careful attention to minimizing data transfers between the host and device.
 
