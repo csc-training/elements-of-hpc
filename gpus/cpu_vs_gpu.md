@@ -26,7 +26,7 @@ While the many computing cores in the GPUs can perform lots of calculationsin pa
 
 In addition to the main memory which is accessible by all threads workin in a task, the GPUs other types of memory which can be use to further accelerate the application: 
 
-![CUDA Memory Model](Images/mem_model_cuda)
+![CUDA Memory Model](Images/mem_model_cuda.png)
 
 Each SM contains *shared memory* which can be access by threads in a specfic block. It is very fast and it can. be used as a proigrammable cache to reduce the repeated accesses to the same data. For example in the case of long range molecular dynamics, each thread in a block would load some data into the *shared memory*, and the other threads would  be able to access this data and reuse it to compute more interactions. In this particular case without the shared memory we would have to read from the main GPU memory a number of times equal to the number of threads in the block. In addition to the shared memory we have registers which contain variables local to each thread. The registers are very fast to access, but the amount available per individual thread is limited. The programmer does not have access direct to registers, but it can optimize the code to reduce the number when it is needed. Other types of memory are available in th GPUs with special access patterns such as contant memory, which is never changed from the device or th texture memory. The texture memory resides in the main memory, hwoever it has a special accessing patter and it is chached on the SM in a manner which reflects the locality of the data. 
 TODO: GPU programming models: CUDA, Hip etc.
