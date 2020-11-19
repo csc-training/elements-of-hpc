@@ -28,3 +28,5 @@ CSC and its predecessors have operated the following major systems in Finland:
     Bull XH2000 2020 2020-
     
  Additionally there have been a number of supporting systems.
+ 
+ ! [] (images/CSC_Capacity_21b.jpg)
