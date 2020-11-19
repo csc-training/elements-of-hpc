@@ -30,3 +30,5 @@ CSC and its predecessors have operated the following major systems in Finland:
  Additionally there have been a number of supporting systems.
  
  ![](images/CSC_Capacity_21b.jpg)
+ 
+CSC's computing capacity and Top500 list rankings of selected systems in 1993-2020. The performance is normalized and presented on logarithmic scale. Hence the growth is exponential rather than linear.
