@@ -29,4 +29,4 @@ CSC and its predecessors have operated the following major systems in Finland:
     
  Additionally there have been a number of supporting systems.
  
- ! [] (images/CSC_Capacity_21b.jpg)
+ ![] (images/CSC_Capacity_21b.jpg)
