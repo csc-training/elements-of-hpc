@@ -3,7 +3,7 @@
 High performance computing (HPC) most generally refers to the use of parallel
 processing for running advanced application programs efficiently, reliably and
 quickly, in a way that delivers much higher performance than one could get out
-of a typical personal computer. Nowadays HPC can involve thousands or more
+of a typical personal computer. Nowadays an HPC system can utiiize thousands or more
 processors working in parallel to analyse billions of pieces of data in real
 time, performing calculations thousands of times faster than a normal
 computer.
@@ -26,7 +26,7 @@ users are limited to the available software stack and have to wait for the
 specific resources to be freed. Also they a fixed available storage capacity.
 
 Cloud Computing is usually referring to access to a pool of configurable
-on-demand availability of computer system resources. The computing services
+computer resources that are available on demand. The computing services
 are using advance automation, without direct active management by the user
 using virtualization technology. On each node a hypervisor runs multiple
 virtual machines (VMs, or "instances") on virtual operating platforms. On
@@ -40,18 +40,26 @@ software. The main advantage of using cloud computing are:
 * flexibility and scalability (for the user the resources appear to be
   unlimited)
 
-At the same time, setting up virtual machines requires some knowledge of
-installing and maintaining operating systems and software.
+The flavors of cloud resources can be categorized as follows
+* Infrastructure as a Service (IaaS): The user is responsible for setting up the operating system
+and everything above it (middleware, runtime, data and applications). This is the basic and most 
+flexible cloud service and in addition to CSC there a number commercial providers for this kind
+of resources.
+* Platform as a Service (PaaS): Here the provider sets up the operating system, middleware and the runtime
+and the user brings in applications and data. This is conceptually quite close to computing environments
+CSC and other computing centers provide.
+* Software as a Service (SaaS): Here the provider is responsible of everything including the software.
+This is the kind of cloud most people use daily: email, various document storing and sharing services, office applications etc.
 
-TODO: Flavors of cloud: SaaS, PaaS, IaaS, Saas. Desciptions and examples here.
-
-Overall cloud computing reduces the complexity for the user, saves money for
+Overall cloud computing in some cases reduces complexity for the user, saves money for
 small businesses (no startup costs) and it still delivers good performance.
+At the same time, setting up virtual machines etc. requires knowledge of
+installing and maintaining operating systems and software.
 
 However there are also drawbacks to cloud computing. The Cloud Computing
 platforms are unable to execute massively parallel jobs with tens of thousands
-of cores. A large part of scientific applications have tightly coupled
-communications. While there are no start-up costs and the services are
+of cores. A large part of scientific applications require fast
+communication. While there are no start-up costs and the services are
 available immediately when requested, the prices of the computing time can
 vary depending on the load. Finally, there are also concerns about privacy and
 confidentiality, some work involves non-disclosure agreements and the cloud
