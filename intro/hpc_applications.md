@@ -38,7 +38,7 @@ HPC has been the foundation for cademic research, innovation, and societal advan
 
 ![ ](Images/ai.png)
 
-## Media and etertainment
+## Media and entertainment
 * creating animations, sepcial effects for movies, transcoding media files
 
 ![ ](Images/boiboi.jpg)
