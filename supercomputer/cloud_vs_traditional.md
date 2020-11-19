@@ -40,7 +40,7 @@ software. The main advantage of using cloud computing are:
 * flexibility and scalability (for the user the resources appear to be
   unlimited)
 
-The flavors of cloud resources can be categorized as follows
+The flavors of cloud resources can be categorized as follows:
 * Infrastructure as a Service (IaaS): The user is responsible for setting up the operating system
 and everything above it (middleware, runtime, data and applications). This is the basic and most 
 flexible cloud service and in addition to CSC there a number commercial providers for this kind
