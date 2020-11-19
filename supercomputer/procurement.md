@@ -1,4 +1,4 @@
-# Acquisition of a Supercomputer
+# Buying a Supercomputer
 
 Supercomputers are very complex assemblies of various hardware and software components. One doesn't just buy a specific number of cabinets from the preferred vendor and be done with a supercomputer procurement. All the systems are tailored to the specific requirements and are thus unique.
 
