@@ -15,14 +15,14 @@ which are making it to Top 500 use Linux.  Linux OS has many advatages over
 Windows. Unlike Windows and macOS, Linux is modular and build around a kernel
 which contains the basic system and drivers. The users now can add to the
 kernel various modules to serve purpose of the device (focused on user
-interface or server management). It is generic in the sense that the the
-kernel, is written in a such a way it can run on may device, from hand-held
+interface or server management). It is generic in the sense that the
+kernel is written in a such a way it can run on any device, from hand-held
 gadgets to large supercomputers. It has very good scalability, Linux can
 handle efficiently small and large loads. In the case of supercomputer we
 expect the system to handle hundreds or thousands of users conencted in the
 same time. It is free and open source. All the undelying code is known and
 users can modify and improve it. There is a large community which is dedicated
 to Linux. When problems arise they are very fast handled. Finally, the cost is
-big factor. A supercomputer is a collection of computing nodes lnked togheter
+big factor. A supercomputer is a collection of computing nodes linked togheter
 and using a proprietary OS would mean a licences fee paid for each indvidual
 node.
