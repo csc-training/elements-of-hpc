@@ -11,7 +11,7 @@ version of Linux or Unix.
 
 **Supercomputers** are focused on performing intensive number crunching,
 mainly for scientific purpose.  For  couples of years  all supercomputers
-which are making it to Top 500 use Linux.  Linux OS has many advatages over
+which are making it to Top 500 use Linux.  Linux OS has many advantages over
 Windows. Unlike Windows and macOS, Linux is modular and build around a kernel
 which contains the basic system and drivers. The users now can add to the
 kernel various modules to serve purpose of the device (focused on user
