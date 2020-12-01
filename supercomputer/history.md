@@ -26,7 +26,7 @@ The last vector processor machine.
 - **Cray T3E 1996-2002**
 The first MPP (massively parallel processor) system in Finland. 540 375 MHz DEC Alpha EV56 processors, 128 MB memory per node. 3D torus interconnect. Liquid cooled. Theoretical peak performance 405 Gflop/s.
 - **IBM p690 2002-2005**
-16 loosely connected islands with 32 1.1 GHz Power4 processors, 512 processors in total 32-64 GB memory per processor. Theoretical peak performance 2253 Gflop/s.
+16 loosely connected islands with 32 1.1 GHz Power4 processors. 512 processors in total, 32-64 GB memory per processor. Theoretical peak performance 2253 Gflop/s.
 - **Cray XT4/XT5 2007-2012**
 MPP system with dual 2.3 GHz AMD Opteron quad core processors & 8 GB memory per node. 10864 cores in total. 3D torus interconnect. Air cooled. Theoretical peak performance 102 Tflop/s. Power 520 kW.
 - **Cray XC40 2012-2019**
