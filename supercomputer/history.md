@@ -2,7 +2,7 @@
 
 The history of machine computing started with mechanical computers which used gears, levers, curved plates etc. to perform calculations. The mechanical computers were typically single purpose machines and could not be programmed in the modern sense. In addition to the standard desk calculators typical examples were the devices used in aiming bombs, guns and torpedoes during WW2. However, programmable motor-driven mechanical machines like Z1 were also developed.
 
-The mechanical computers were succeeded by electro-mechanical machines which used switches and relays to implemnt logic.
+The mechanical computers were succeeded by electro-mechanical machines which used switches and relays to implement logic.
 
 ENIAC, which became operational in 1945, was the first electronic programmable general purpose computer. Originally located at the University of Pennsylvania it contributed to the US World War II effort. ENIAC relied on vacuum tubes and its performance was on the order of one thousand times greater than the preceding electro-mechanical computers.
 
