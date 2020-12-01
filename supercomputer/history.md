@@ -22,7 +22,7 @@ CSC and its predecessors have operated the following major systems in Finland:
 - **Cray X-MP 1989**
 The 'purple top-hat'. Vector processor.
 - **Cray C94 1995**
-The last vector processor machine.
+The last vector processor machine at CSC.
 - **Cray T3E 1996-2002**
 The first MPP (massively parallel processor) system in Finland. 540 375 MHz DEC Alpha EV56 processors, 128 MB memory per node. 3D torus interconnect. Liquid cooled. Theoretical peak performance 405 Gflop/s.
 - **IBM p690 2002-2005**
