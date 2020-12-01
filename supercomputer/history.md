@@ -16,16 +16,23 @@ CSC's history can be traced back to 1971 when a special office was founded to op
 
 CSC and its predecessors have operated the following major systems in Finland:
 
-    Univac 1108 1971-1982
-    Univac 1100/61 1982-1985
-    VAX 8600 1985
-    Cray XMP 1989
-    Cray C94 1995
-    Cray T3E 1996-2002
-    IBM p690 2002-2005
-    Cray XT4/XT5 2007-2012
-    Cray XC40 2012-2019
-    Bull XH2000 2020 2020-
+- **Univac 1108 1971-1982**
+- **Univac 1100/61 1982-1985**
+- **VAX 8600 1985**
+- **Cray X-MP 1989**
+The 'purple top-hat'. Vector processor.
+- **Cray C94 1995**
+The last vector processor machine.
+- **Cray T3E 1996-2002**
+The first MPP (massively parallel processor) system in Finland. 540 375 MHz DEC Alpha EV56 processors, 128 MB memory per node. 3D torus interconnect. Liquid cooled. Theoretical peak performance 405 Gflop/s.
+- **IBM p690 2002-2005**
+16 loosely connected islands with 32 1.1 GHz Power4 processors, 512 processors in total 32-64 GB memory per processor. Theoretical peak performance 2253 Gflop/s.
+- **Cray XT4/XT5 2007-2012**
+MPP system with dual 2.3 GHz AMD Opteron quad core processors & 8 GB memory per node. 10864 cores in total. 3D torus interconnect. Air cooled. Theoretical peak performance 102 Tflop/s. Power 520 kW.
+- **Cray XC40 2012-2019**
+MPP system with dual 2.6 GHz Intel Xeon 12 core processors & 64 GB memory per node. 40512 cores in total. 3D torus interconnect. Liquid cooled. Theoretical peak performance 1690 Tflop/s. Power 680 kW.
+- **Bull XH2000 2020 2020-**
+MPP system with dual 2.6 GHz AMD Rome 128 core processors & 256 GB memory per node. 169728 cores in total. Dragonfly+ interconnect. Liquid cooled. Theoretical peak performance 7061 Tflop/s. Power 1070 kW.
     
  Additionally there have been a number of supporting systems.
  
