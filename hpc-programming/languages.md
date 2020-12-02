@@ -27,6 +27,7 @@ While the scientific computing programs solve or simulate a huge number of diffe
 With MPI the only possibility is to parallelize the whole program, it cannot be done part by part. MPI can be used both within shared memory nodes and between the nodes. While parallelizing a code with MPI may require a lot of work due to the explicit nature of communication and the fact that the subroutine/function calls have many parameters the perfomance is typically good (if done right). Also, with MPI the programmer is completely in charge of the parallelization and nothing is left to the compiler.
 
     program hello
+      implicit none
       include 'mpif.h'
       integer:: ierror, rank, ntasks, status(MPI_STATUS_SIZE)
 
