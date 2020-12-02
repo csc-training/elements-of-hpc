@@ -26,6 +26,8 @@ While the scientific computing programs solve or simulate a huge number of diffe
 
 With MPI the only possibility is to parallelize the whole program, it cannot be done part by part. MPI can be used both within shared memory nodes and between the nodes. While parallelizing a code with MPI may require a lot of work due to the explicit nature of communication and the fact that the subroutine/function calls have many parameters the perfomance is typically good (if done right). Also, with MPI the programmer is completely in charge of the parallelization and nothing is left to the compiler.
 
+The following is a simple MPI code example written in Fortran. When run, each task prints out its rank and the total number of tasks with which the program is launched.
+
     program hello
       implicit none
       include 'mpif.h'
@@ -42,6 +44,33 @@ With MPI the only possibility is to parallelize the whole program, it cannot be 
 
     end program hello
 
+The corresponding code in C is as follows.
+
+    #include <stdio.h>
+    #include <mpi.h>
+
+    int main(argc, argv)
+     int argc;
+     char *argv[];
+    {
+    int rank, ntasks;
+
+    MPI_Init(&argc, &argv);
+
+    MPI_Comm_rank(MPI_COMM_WORLD, &rank);
+    MPI_Comm_size(MPI_COMM_WORLD, &ntasks);
+
+    printf("Hello from task %d / %d \n", rank, ntasks);
+
+    MPI_Finalize();
+    }
+
+When run with four tasks the output of the C code looks like
+
+    Hello from task 0 / 4
+    Hello from task 2 / 4
+    Hello from task 1 / 4
+    Hello from task 3 / 4
 
 Within a node one can use **shared memory parallelization** in which the parallel *threads* can access all the shared memory independently. This on the other hands makes programming easier but on the other hand can lead to poor performance and seemingly random errors that are difficult to find if not done correctly. The most popular shared memory parallelization method in scientific computing is to insert OpenMP pseudo comments in the code to tell a compatible compiler that the adjacent code can be parallelized. In Fortran the pseudo comments are called *directives* and in C/C++ *pragmas* and they affect the compilation only if the compiler is instructed to look for them. At least in theory it is then possible to have a single source code that can be compiled for serial and parallel computing. 
 
