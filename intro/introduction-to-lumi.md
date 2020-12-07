@@ -1,8 +1,8 @@
 # LUMI Supercomputer
 
-One of the most powerful supercomputers in the world, LUMI, will start its operations in CSC’s data center in Kajaani, Finland, in 2021. When LUMI’s operations start, it will be one of the world’s fastest supercomputers.
+The LUMI supercomputer will start its operations in CSC’s data center in Kajaani, Finland, in 2021. In the final configuration it will be one of the world’s fastest supercomputers.
 
-LUMI is a unique European endeavor, with ten European countries and the EuroHPC Joint Undertaking (EuroHPC JU) investing in one joint system. It is set to boost research, employment, and competitiveness throughout Europe. The procurement process of LUMI is now complete, and the system supplier is Hewlett Packard Enterprise (HPE), providing an HPE Cray EX supercomputer with next generation AMD EPYC CPUs and AMD Instinct GPUs. In addition to the remarkable computing power, LUMI is also one of the world’s most advanced platforms for artificial intelligence and it will be one of the world’s best known scientific instruments throughout its lifetime.
+LUMI is a unique European endeavor, with ten European countries and the EuroHPC Joint Undertaking (EuroHPC JU) investing in one joint system. It is set to boost research, employment, and competitiveness throughout Europe. The system supplier is Hewlett Packard Enterprise (HPE), providing an HPE Cray EX supercomputer with next generation AMD EPYC CPUs and AMD Instinct GPUs. In addition to the remarkable computing power, LUMI is also one of the world’s most advanced platforms for artificial intelligence and it will be one of the world’s best known scientific instruments throughout its lifetime.
 
 
 ## LUMI system architecture explained:
