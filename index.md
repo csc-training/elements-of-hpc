@@ -4,7 +4,7 @@
 
 1. [Examples of HPC applications](intro/hpc_applications.md)
 1. How HPC has changed the world
-1. [What is needed from HCP center?](intro/computing-center.md)
+1. [What is needed from HPC center?](intro/computing-center.md)
 1. [Introduction to LUMI](intro/introduction-to-lumi.md)
 
 ## What is a supercomputer
