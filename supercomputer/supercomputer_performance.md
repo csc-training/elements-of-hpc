@@ -1,15 +1,15 @@
 ## Supercomputer Performance
 
-To understand how powerful a Supercomputer is and compare it with other ones,
-there are few metrics. The oldest and most classic one is the floating
+To understand how powerful a supercomputer is and compare it with other ones,
+there are few metrics. The oldest and most classic one is the floating point
 operations per second (FLOPs). This measures the performance of a processor
-and not only.
+and not only. <-- FIXME
 
 What is a FLOPs? If we do a single calculation involving two real numbers
 (aka floating point numbers), for example `2.1 + 4.3` in one second, then this
 is equal to one floating-point operation per second (1 FLOPs).
 
-When a computer can execute 1 billion FLOPs, then we can say it is 1 gigaFLOPs
+When a computer can execute 1 billion FLOPs, then we can say that the performance is 1 gigaFLOPs
 (GFLOPs). Similarly, we call 1 teraFLOPs (TFLOPs) for one trillion
 (10<sup>12</sup>) FLOPs, and 1 petaFLOPs (PFLOPs) when a supercomputer can
 execute 1 quadrillion or 10<sup>15</sup> FLOPs.
@@ -17,18 +17,19 @@ execute 1 quadrillion or 10<sup>15</sup> FLOPs.
 ### TOP500
 
 What is a benchmark? An application that is used to measure the performance
-and functionality of a (super)computer.
+and functionality of a (super)computer. With benchmarks one can then compare the
+performance of different computers.
 
 The Linpack benchmark (HPL) measures a system's floating point computing
-power. It measures how fast a computer does matrix operations to solve an
-equation. Supercomputers have a theoretical peak performance based on their
-hardware, but since this is a theoretical limit for a perfect system and
-benchmark, the actual performance measured by HPL is lower.
+power. It measures how fast a computer does matrix operations to solve a systems of
+linear equations. Supercomputers have a theoretical peak performance based on their
+hardware, but since this is a theoretical limit for a perfect system utilization, 
+the actual performance measured by HPL is lower.
 
-TOP500 is a ranking list for supercomputers that collects HPC results
-submitted by organizations that own a supercomputer. The list is released
+TOP500 is a ranking list for supercomputers that collects HPL results
+submitted by organizations that operate a supercomputer. The list is released
 twice a year and it shows the 500 most powerful supercomputers in the world
-ranked according to their computational power.
+ranked according to their computational power measured by the HPL benchmark.
 
 In the first ever TOP500 list, June 1993, the best supercomputer was from USA
 and had a performance of 59.7 GFLOPs. For comparison, in June 2020, the
