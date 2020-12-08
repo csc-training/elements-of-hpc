@@ -10,9 +10,11 @@ ENIAC and its vacuum tubed successors were followed by transistorized systems in
 
 The term supercomputing was first used in 1964 when Control Data Corporation introduced the CDC 6600 system designed by Seymour Cray, whose name went on to became synonymous with supercomputers. An improved version, called CDC 6700, was introduced in 1969. Cray subsequently left Control Data Corporation, founded a company of his own and in 1976 debuted the iconic Cray-1 supercomputer.
 
+In addition to Cray (today a product line of HPE), the most common names of the supercomputer vendors include IBM, SGI/Silicon Graphics, Hewlett-Packard, Atos, Dell, Intel, Fujitsu, Lenovo and Sun.
+
 ## Supercomputing in Finland and at CSC
 
-CSC's history can be traced back to 1971 when a special office was founded to operate an Univac 1108 system. Since that there have been a number of changes of the name, the organization and the owner of the entity that was tasked with operating the Finnish high performance computing resources for scientists. In the 1990s the name CSC was introduced and the Ministry of Education and Culture became to the sole owner of the company. Today universities and polytechnics own a minor share of CSC.
+CSC's (Center for Scientific Computing) history can be traced back to 1971 when a special office was founded to operate an Univac 1108 system. Since that there have been a number of changes of the name, the organization and the owner of the entity that was tasked with operating the Finnish high performance computing resources for scientists. In the 1990s the name CSC was introduced and the Ministry of Education and Culture became to the sole owner of the company. Today universities and polytechnics own a minor share of CSC - IT Center for Science Ltd.
 
 CSC and its predecessors have operated the following major systems in Finland:
 
