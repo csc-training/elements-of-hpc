@@ -14,7 +14,7 @@ Programmatically the shared memory is seen as a space in the memory allocated to
 
 ### Advantages
 There are several advantages of using shared memory:
-* good performance: the workers do the work and put the results on the whiteboard which is close to all of them. Because all data is local, there is no time lost in communications between different threads.
+* good performance: the workers do the work and put the results on the whiteboard which is close to all of them. Because all data is global, there is no time lost in communications between different threads.
 * simple programming model: the shared memory programming is supported by all high level programming languages and the codes can be used without changes on different multi-core processors.
 
 ### Limitations
