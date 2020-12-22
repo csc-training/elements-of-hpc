@@ -12,7 +12,7 @@ Each separate computer (usually called a  *node*) operates independently from th
 ### Advantages
 * infinite memory: the number of  whiteboards increases as we add more office. When a problem is too large we just use more nodes to deacrease the amount of memory per node. 
 * infinite computing power: the number of woorkers increases as we add more office. When a problem is too large we just use more nodes to have less work per node (more parallelism). 
-* low cost: it is realtively cheap to increase the memory and and computing capacity of the systsm by adding more nodes.
+* low cost: it is realtively cheap to increase the memory and and computing capacity of the system by adding more nodes.
 
 
 ### Limitations
