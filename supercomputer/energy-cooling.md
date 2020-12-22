@@ -39,7 +39,8 @@ datacenter, and in best cases even for close-by municilapities.
 
 Air cooling is relatively simple but not very efficient. Modern densely packed
 supercomputers, especially GPU based, require liquid cooling to keep them from
-melting down.
+melting down. As a result a datacenters hosting supercomputers needs a massive
+and complicated cooling infrastructure with piping, pumps, heat exchangers etc.
 
 In CSC's Kajaani data center LUMI waste heat is going to contribute to the
 local municipal household heating.
