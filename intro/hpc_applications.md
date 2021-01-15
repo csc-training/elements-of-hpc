@@ -14,7 +14,7 @@ HPC has been the foundation for cademic research, innovation, and societal advan
 * aerospace: flow of air over the wings
 * financial technology: risk analysises, high-frquency trading, financial modeling, fraud detection
 * cybersecurity
-* constuction
+* construction
 
 ![Airplane take off using ANSYS Fluent software](Images/hpc-simulate-airplane-takeoff-aerodynamics-ansys-fluent.png )
 
@@ -39,6 +39,6 @@ HPC has been the foundation for cademic research, innovation, and societal advan
 ![ ](Images/ai.png)
 
 ## Media and entertainment
-* creating animations, sepcial effects for movies, transcoding media files
+* creating animations, special effects for movies, transcoding media files
 
 ![ ](Images/boiboi.jpg)
