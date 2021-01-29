@@ -9,6 +9,7 @@
 * higher clocker rate resulted in sinlge processor performance doubling every 18 months
 
 ## End of the law?
-* clock has been capped which resulted putting more cores, while still doubling the density of the transitors
-* single precision saturated, total performance still doubling
+* clock rate reached the physical limitations
+* more cores, still doubling the density of the transitors
+* single precision saturated, but total performance still doubling
 * reaching the physical limit of miniaturization 
