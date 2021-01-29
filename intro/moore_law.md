@@ -1,2 +1,0 @@
-# Moore's Law
-
