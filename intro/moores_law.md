@@ -1,6 +1,6 @@
 # Moore's Law
 
-* Every 2 years the density of the transitors double 2 years
+* every 2 years the density of the transitors doubles.
 
 ## Consquences
 
