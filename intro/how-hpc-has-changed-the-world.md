@@ -30,6 +30,8 @@ models (e.g. systems of partial differential equations) describing the problem a
 
 Steps 2-4 are called numerical simulation of the problem.
 
+In this way experiments can be partially replaced by simulations. Of course only experiments (if feasible) can validate the model and simulation results.
+
 If the problem is complex (e.g. climate), the system to be simulated is large in some sense (e.g. a galaxy comprises a huge number of stars), the simulated time is long (e.g. long term climate simulations) or very high accuracy is needed the required amount of computing work quickly becomes enormous. 
 
 ### High performance computing
