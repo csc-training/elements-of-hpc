@@ -17,4 +17,23 @@ easy enough to write down the equations that descibe the motion of the Sun, Moon
 
 On the other hand, consider climate and glaciers, for example. It is of crucial importance to know what is going to happen with them in the future. But naturally we cannot perform experiments in global scale to find that out. Similarly, in many cases the required experiments would be too expensive, too dangerous, too slow, too difficult or complex, unethical and so on. But we may still have an idea of the underlaying theory.
 
-This brings us to computational science that is sometimes called the third paradigm of scientific research. Computational science
+This brings us to computational science that is sometimes called the third paradigm of scientific research. 
+
+### Computational science
+
+In computational science the typically complex mathematical 
+models (e.g. systems of partial differential equations) describing the problem are solved using numerical algorithms which are then implemented as as computer programs and finally run on computers. A rough outline of a computational science project is as follows:
+1) Write down the equations describing the problem. This is called mathematical modeling.
+2) Choose an efficient numerical algorithm for solving the model.
+3) Implement the algorithm efficiently with a computer language. 
+4) Run the resulting program on a computer.
+
+Steps 2-4 are called numerical simulation of the problem.
+
+If the problem is complex (e.g. climate), the system to be simulated is large in some sense (e.g. a galaxy comprises a huge number of stars), the simulated time is long (e.g. long term climate simulations) or very high accuracy is needed the required amount of computing work quickly becomes enormous. 
+
+### High performance computing
+
+High performance computing and supercomputers are developed to solve the most demanding problems of the computational science.
+
+
