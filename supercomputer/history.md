@@ -4,7 +4,7 @@ The history of machine computing started with mechanical computers which used ge
 
 The mechanical computers were succeeded by electro-mechanical machines which used switches and relays to implement logic.
 
-ENIAC, which became operational in 1945, was the first electronic programmable general purpose computer. Originally located at the University of Pennsylvania it contributed to the US World War II effort. ENIAC relied on vacuum tubes and its performance was on the order of one thousand times greater than the preceding electro-mechanical computers.
+ENIAC (Electronic Numerical Integrator and Computer), which became operational in 1945, was the first fully electronic programmable general purpose computer. Originally constructed for calculating artillery shell and missile trajectories it was located at the University of Pennsylvania and contributed to the US thermonuclear weapons development. ENIAC relied on vacuum tubes and its performance (about 400 flops or floating point operations per second) was on the order of one thousand times greater than the preceding electro-mechanical computers. ENIAC was a decimal (as opposed to modern binary) computer and it was programmed by changing the configuration of the system by turning dials and plugging cables to receptables. 
 
 ENIAC and its vacuum tubed successors were followed by transistorized systems in the later half of the 1950's. IBM's 7090 mainframe (first installation in 1959) was specifically designed for solving large-scale scientific and engineering problems.
 
