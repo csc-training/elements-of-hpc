@@ -39,4 +39,23 @@ If the problem is complex (e.g. climate), the system to be simulated is large in
 High performance computing systems and supercomputers are developed to solve the most demanding problems of the computational science. With them amazingly complex 
 large scale simulations can be performed, please see [Examples of HPC applications](hpc_applications.md).
 
+PITÄISIKÖ ESIMERKIT UPOTTAA TÄHÄN?
 
+High performance computing includes the hardware
+- fast processors
+- fast memories and fast data transfer between memories and processors
+- fast interconnects between processors
+- fast storage for data
+- etc.
+and software
+- computing environment
+  - operating system
+  - compilers for programming languages
+  - fast libraries for most common tasks and communication
+  - performance analysis tools
+  - etc.
+- application software
+
+Some of the above are described later in more detail.
+
+High performance computing resources and knowledge are an important asset for any modern society providing a competitive advantage for researchers and industry. 
