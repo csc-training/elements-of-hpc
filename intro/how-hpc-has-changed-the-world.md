@@ -37,6 +37,6 @@ If the problem is complex (e.g. climate), the system to be simulated is large in
 ### High performance computing (HPC)
 
 High performance computing systems and supercomputers are developed to solve the most demanding problems of the computational science. With them amazingly complex 
-large scale simulations can be performed, please see 
+large scale simulations can be performed, please see [Examples of HPC applications](hpc_applications.md).
 
 
