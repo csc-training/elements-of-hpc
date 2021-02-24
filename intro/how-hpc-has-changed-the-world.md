@@ -55,6 +55,7 @@ High performance computing includes the hardware
 - fast interconnects between processors
 - fast storage for data
 - etc.
+
 and software
 - computing environment
   - operating system
@@ -64,6 +65,6 @@ and software
   - etc.
 - application software
 
-IN what follows some of the above aspects are described in more detail.
+In what follows some of the above aspects are described in more detail.
 
  
