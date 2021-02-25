@@ -22,7 +22,7 @@ This brings us to computational science that is sometimes called the third parad
 ### Computational science
 
 In computational science the typically complex mathematical 
-models (e.g. systems of partial differential equations) describing the problem are solved using numerical algorithms which are then implemented as as computer programs and finally run on computers. A rough outline of a computational science project is as follows:
+models (e.g. systems of partial differential equations) describing the problem are solved using numerical algorithms which are then implemented as as computer programs and finally run on (typically high performance) computers. A rough outline of a computational science project is as follows:
 1) Write down the equations describing the problem. This is called mathematical modeling.
 2) Choose an efficient numerical algorithm for solving the model.
 3) Implement the algorithm efficiently with a computer language. 
@@ -34,9 +34,37 @@ In this way experiments can be partially replaced by simulations. Of course only
 
 If the problem is complex (e.g. climate), the system to be simulated is large in some sense (e.g. a galaxy comprises a huge number of stars), the simulated time is long (e.g. long term climate simulations) or very high accuracy is needed the required amount of computing work quickly becomes enormous. 
 
-### High performance computing
+### High performance computing (HPC)
 
 High performance computing systems and supercomputers are developed to solve the most demanding problems of the computational science. With them amazingly complex 
-large scale simulations can be performed, please see 
+large scale simulations can be performed. The application areas include 
+- Fundamental sciences like partcile physics and cosmology.
+- Climate, weather and earth sciences.
+- Life sciences and medicine.
+- Chemistry and material science.
+- Energy; e.g oil and gas exploration and fusion research.
+- Engineering; e.g. infrastructure and manufacturing
+- Data analysis
+- Artificial intelligence and machine learning
 
+Thus high performance computing resources and knowledge are a hugely important asset for any modern society providing a competitive advantage for researchers and industry. In the next section a number of application examples will be described in more detail.
 
+High performance computing includes the hardware
+- fast processors
+- fast memories and fast data transfer between memories and processors
+- fast interconnects between processors
+- fast storage for data
+- etc.
+
+and software
+- computing environment
+  - operating system
+  - compilers for programming languages
+  - fast libraries for most common tasks and communication
+  - performance analysis tools
+  - etc.
+- application software
+
+In what follows some of the above aspects are described in more detail.
+
+ 
