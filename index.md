@@ -3,7 +3,7 @@
 ## Introduction
 
 1. [How HPC has changed the world](intro/how-hpc-has-changed-the-world.md)
-2. [Examples of HPC applications](intro/hpc_applications.md)
+2. [Examples of HPC applications](intro/applications.md)
 4. [What is needed from HPC center?](intro/computing-center.md)
 5. [Introduction to LUMI](intro/introduction-to-lumi.md)
 
