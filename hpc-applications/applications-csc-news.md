@@ -9,4 +9,5 @@ Below is list of articles that have appeared in CSC news, TODO make articles fro
 * [Nanocatalyst](https://www.csc.fi/en/-/researchers-from-the-university-of-jyv%C3%A4skyl%C3%A4-and-xiamen-university-discover-how-a-nanocatalyst-operates-at-the-atomic-level)
 * [Elmer ICE](https://www.csc.fi/en/-/digging-deeper-in-dynamics-of-ice)
 * [Cancer diagnosis](https://www.csc.fi/en/-/artificial-intelligence-detects-and-grades-prostate-cancer-nearly-without-error)
+* [Jyrki's visualizations](https://www.csc.fi/en/-/visualization-speaks-more-than-a-thousand-numerals)
 
