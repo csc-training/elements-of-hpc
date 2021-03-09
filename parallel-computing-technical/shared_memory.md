@@ -21,5 +21,5 @@ There are several advantages of using shared memory:
 There are also limitations to using shared memory architectures. 
 * memory capacity: only a limited number of workers can fit in an office. The size of the problem to be solved is limited by the available memory. If the problem is too big for the device, the only solution is to change to another device which has more memory. Developing devices with larger memory capacity is very costly. 
 * memory access speed: there is a limitation to how many workers can read and write the white board. It is easy to fill up the **memory** *bus* which results in the computing cores waiting and  not being utilized at maximum. In some application it can be faster to use  only some of the all available cores.
-* race conditions and locks: the memory can be access by all threads at anytime, which means that the programmer has to make sure that the data is written by a specific thread before it is used by another thread. The scynchronizatio needed to avoid the race conditions can result in deadlocks.
+* race conditions and locks: the memory can be accessed by all the threads at anytime, which means that the programmer has to make sure that the data is written by a specific thread before it is used or read by another thread. The synchronization needed to avoid the race conditions can result in deadlocks if done incorrectly.
 
