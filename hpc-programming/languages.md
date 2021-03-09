@@ -1,6 +1,6 @@
 ## Programming supercomputers
 
-Programming languages typically support primarily serial computing and parallellization is achieved with special communication libraries, extensions of languages, compiler directives and so on. There are exceptions, however. 
+Programming languages typically support primarily serial computing and parallelization is achieved with special communication libraries, extensions of languages, compiler directives and so on. There are exceptions, however. 
 
 ### Programming languages
 
@@ -8,11 +8,11 @@ Programming languages typically support primarily serial computing and parallell
 
 **C** is another common language from the early days of scientific computing. C was developed at Bell Labs in the early 1970s as a general purpose language for the Unix operating system and its utilities. C gained popularity in the 1980s and is today one of the most popular programming languages, and is also widely used in scientific computing.
 
-**C++** is an axtension of C developed in the early 1980s. C++ is a general purpose *object oriented* language in which data and code that can access (*methods*) it are packaged in so called *objects*. This approach allows better control of how the data is manipulated and thus reduces the risk of programming errors especially in large projects where a number of developers contribute to the same program. C++ is becoming more important in scientific computing because many new parallelization extensions, libraries etc. are first implemented for C++, especially when GPUs are targeted.
+**C++** is an extension of C developed in the early 1980s. C++ is a general purpose *object oriented* language in which data and code that can access it (*methods*) are packaged in so called *objects*. This approach allows better control of how the data is manipulated and thus reduces the risk of programming errors especially in large projects where a number of developers contribute to the same program. C++ is becoming more important in scientific computing because many new parallelization extensions, libraries etc. are first implemented for C++, especially when GPUs are targeted.
 
 Fortran and C/C++ are compiled languages meaning that the source code file is first passed through a *compiler* that produces a machine language *executable* file which can then be run on a computer.
 
-**Python** is a high-level general purpose language created in the 1980s. Python supports multiple programming paradigms, including structured, object oriented and functional. As opposed to Fortran and C/C++, Python is an *interpreted* language, where instructions are executed directly and freely without previous compilation into a machine language executable. Python was designed to be highly extensible and simple to read. IN scientific computing Python is very popular and used especially in writing the high level logic of the algorithms while the performance critical parts are written in Fortran or C/C++.
+**Python** is a high-level general purpose language created in the 1980s. Python supports multiple programming paradigms, including structured, object oriented and functional. As opposed to Fortran and C/C++, Python is an *interpreted* language, where instructions are executed directly and freely without previous compilation into a machine language executable. Python was designed to be highly extensible and simple to read. In scientific computing Python is very popular and used especially in writing the high level logic of the algorithms while the performance critical parts are written in Fortran or C/C++.
 
 **Others** Julia etc. TODO
 
@@ -85,7 +85,7 @@ For **GPU parallelization** the most common alternatives are currently the follo
 
 ### Portability
 
-Portability means whether and how easily a program can be transferred from one system to another. In addition to different hardware (most importantly CPUs and GPUs) systems may have different compilers and libraries available. In an ideal world a program could be without any modifications compiled and run on any system with good performance. In practice this is not alwyas the case. Sometimes the source code needs to modified ot the program may compile but crashes when run and sometimes the performance is not acceptable.
+Portability means whether and how easily a program can be transferred from one system to another. In addition to different hardware (most importantly CPUs and GPUs) systems may have different compilers and libraries available. In an ideal world a program could be without any modifications compiled and run on any system with good performance. In practice this is not always the case. Sometimes the source code needs to be modified or the program may compile but crashes when run and sometimes the performance is not sufficient.
 
 CPU programs written in Fortran, C/C++ or Python and parallelized with MPI or OpenMP are generally portable with good performance. However, the GPU world is currently more complicated as there are a number of competing vendors and proprietary languages and programming models. 
 
