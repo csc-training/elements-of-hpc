@@ -1,7 +1,7 @@
 # Energy usage and cooling
 
-Have you ever felt computer getting hot in your lap? Do you know that
-electricity bill from high-end gaming PC can be hundreds of euros per year?
+Have you ever felt a computer getting hot in your lap? Did you know that
+the electricity bill for a high-end gaming PC can be hundreds of euros per year?
 
 Energy consumption is one of the biggest challenges when designing and
 building more and more efficient supercomputers. Also, a large proportion of
@@ -20,7 +20,7 @@ average Finnish households. As the importance of energy efficiency is rapidly
 increasing, supercomputers are measured not only by their raw computing power,
 but also by their energy efficiency in the
 [Green 500 list](https://www.top500.org/lists/green500/2020/06/). Concerning
-the battle against global climate change supercomputers are double-edged
+the battle against the global climate change supercomputers are a double-edged
 sword, on one hand they help in understanding and fighting the climate change,
 on the other hand they use large amounts of energy.
 
@@ -39,7 +39,7 @@ datacenter, and in best cases even for close-by municilapities.
 
 Air cooling is relatively simple but not very efficient. Modern densely packed
 supercomputers, especially GPU based, require liquid cooling to keep them from
-melting down. As a result a datacenters hosting supercomputers needs a massive
+melting down. As a result a datacenter hosting supercomputers needs a massive
 and complicated cooling infrastructure with piping, pumps, heat exchangers etc.
 
 In CSC's Kajaani data center LUMI waste heat is going to contribute to the
