@@ -49,7 +49,7 @@ millions of gigabytes of memory in a supercomputer. To use all of these
 CPU-cores and GPUs together means they must be able to _talk_ to each other.
 In a supercomputer, the nodes are connected together with a communications
 network, which is called the _**interconnect**_ in the jargon of the field.
-Interconnect is the crucial component that gives supercomputer its power, and
+Interconnect is a crucial component that gives a supercomputer its massive parallel computing ability, and
 we discuss interconnects in a more detail later on (FIXME: is this missing?).
 Even though nodes can have local disks, there is normally also a separate
 disk storage system, which we also discuss more later on.
