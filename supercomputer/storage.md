@@ -17,7 +17,7 @@ Designing a storage system can be complicated and it is out of the scope of this
 
 LUMI will provide storage for both cases of large available storage space with spinning disks and faster accelerated storage with faster technology. The first case will consist of 80 petabyte (PB) capacity while the fast storage will be 7 PB of flash storage. There will be also a data management service of 30 PB storage.
 
-Finally, some supercomputers have archiving storage using magnetic where users can save data for long term and recover it with slower performance than the other mentioned technologies. The tape based storage is significantly cheaper than hard disks, and it has been around since 1950s. The technology is similar to older well-known VHS video tapes.
+Finally, some supercomputers have archiving storage using magnetic tapes where users can save data for long term and recover it, however, with slower performance than the other mentioned technologies. The tape based storage is significantly cheaper than hard disks, and it has been around since 1950s. The technology is similar to older well-known VHS video tapes.
 
 |Size in Bytes                |  Value              |   Metric  | 
 |-----------------------------|---------------------|-----------|
