@@ -40,4 +40,5 @@ Finally, it is quite common that a serial code exists, and rewritting from scrat
 
 GPUs play a particularly important role in machine learning applications, like training neural networks. Training of the neural networks can be expressed as many dense matrix-vector multiplications. These operation can parallelized for GPUs very efficiently
 .
+
 Nvidia has traditionally been the most visible GPU vendor but for example AMD is again investing heavily into GPUs. The LUMI supercomputer will use AMD GPUs. 
