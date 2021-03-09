@@ -31,7 +31,7 @@ total amount of memory is over 10 000 000 gigabytes. The declared power consumpt
 
 ![](images/sunway.jpg)
 
-The Chinish Sunway TaihuLight was world fastest supercomputer for two years in
+The Chinish Sunway TaihuLight was world's fastest supercomputer for two years in
 2016-2017, and it is still (in June 2020) number four in the list with a
 theoretical peak performance of 125 PFlop/s. The system uses Chinese designed
 multicore processors, where individual CPU cores are not very fast, running
