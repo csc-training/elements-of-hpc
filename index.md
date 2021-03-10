@@ -14,7 +14,7 @@
 1. [Supercomputer performance](supercomputer/supercomputer_performance.md)
 1. [Energy and cooling](supercomputer/energy-cooling.md)
 1. [How to use a supercomputer?](supercomputer/how-to-use.md)
-1. [HPC with Cloud computing](supercomputer/cloud_vs_traditional.md)
+1. [HPC and Cloud computing](supercomputer/cloud_vs_traditional.md)
 1. [Operating systems in supercomputer](supercomputer/operating_systems.md)
 1. [Data storage](supercomputer/storage.md)
 1. [How to buy a supercomputer](supercomputer/procurement.md)
