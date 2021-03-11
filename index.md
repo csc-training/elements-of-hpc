@@ -24,8 +24,6 @@
 1. [Modern supercomputer](supercomputer/modern-supercomputer.md)
 2. [GPUs](gpus/cpu_vs_gpu.md)
 3. [Data storage](supercomputer/storage.md)
-4. [Energy and cooling](supercomputer/energy-cooling.md)
-5. [Operating systems in supercomputer](supercomputer/operating_systems.md) (sw stack: compilers, libraries, tools, batch queueing system?)
 6. [Supercomputer performance](supercomputer/supercomputer_performance.md)
 8. [HPC and Cloud computing](supercomputer/cloud_vs_traditional.md)
 10. [Top supercomputers](supercomputer/top-systems.md)
@@ -36,8 +34,10 @@
 ## Running and using a supercomputer
 
 2. [HPC center?](intro/computing-center.md)
-3. [How to buy a supercomputer](supercomputer/procurement.md)
-4. [How to access a supercomputer?](supercomputer/how-to-use.md)
+3. [Energy and cooling](supercomputer/energy-cooling.md)
+4. [How to buy a supercomputer](supercomputer/procurement.md)
+5. [How to access a supercomputer?](supercomputer/how-to-use.md)
+6. [Operating systems in supercomputer](supercomputer/operating_systems.md) (sw stack: compilers, libraries, tools, batch queueing system?)
 
 ### Exam (5-10 questions), 80 % correct to pass, multiple attempts allowed
 
