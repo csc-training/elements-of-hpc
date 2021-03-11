@@ -15,6 +15,12 @@ The term supercomputing was first used in 1964 when Control Data Corporation int
 
 In addition to Cray (today a product line of HPE), the most common names of the supercomputer vendors include IBM, SGI/Silicon Graphics, Hewlett-Packard, Atos, Dell, Intel, Fujitsu, Lenovo and Sun.
 
+Today, supercomputer is often defined as computer that has much larger
+computing power than a typical desktop computer. As computers become
+constantly more powerful, this is a moving defintion, as an example a
+modern laptop is 1000 times more powerful than the biggest
+supercomputer in Scandinavia thirty years ago. ![Cray X-MP Supercomputer](images/Cray-X-MP.jpg)
+
 ## Supercomputing in Finland and at CSC
 
 CSC's (Center for Scientific Computing) history can be traced back to 1971 when a special office was founded to operate an Univac 1108 system. Since that there have been a number of changes of the name, the organization and the owner of the entity that was tasked with operating the Finnish high performance computing resources for scientists. In the 1990s the name CSC was introduced and the Ministry of Education and Culture became to the sole owner of the company. Today universities and polytechnics own a minor share of CSC - IT Center for Science Ltd.
