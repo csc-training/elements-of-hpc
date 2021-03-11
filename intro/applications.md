@@ -1,19 +1,13 @@
 # What are supercomputers used for?
 
-In experimental research, different scientific instruments are needed
-for different problems: particle accelerator in CERN cannot be used
-for studying cosmic waves, and a vast radiotelescope cannot be used
-for studying subatomic particles.
-
-Supercomputer is a unique scientific tool in the sense that the same
-apparatus can be used for studying extremely short length and time scales (as
-in elemental particles) as well as extremely long length and time
-scales (as motion of galaxies in the universe).
-
-Below we show few representative examples where supercomputers are
-indispensable, more cases will be discussed in the end of the course.
+In discussed in the previous chapter, supercomputers are extremely
+versatile and can be utilized in many fields of science and
+research. In this chapter we discuss some representative examples of
+applications of supercomputers in more detail.
 
 ## Collisions of nanoparticles
+
+TODO: expand maybe a bit?
 
 The video shows simulation about gold nanoparticles colliding into gold
 surface. Size of the particle is about 20 nm, *i.e.* 20 millionth part
@@ -24,6 +18,8 @@ example, for radiation damage in spacecraft.
 
 ## Spreading of aerosols in the air
 
+TODO: expand maybe a bit?
+
 When people breathe, they emit aerosols into the air. The spreading of
 these aerosols can be studied with supercomputers which helps us
 fighting the COVID pandemic.
@@ -31,6 +27,8 @@ fighting the COVID pandemic.
 [Video](https://youtu.be/5OIyde6STZ0)
 
 ## Climate change
+
+TODO: expand maybe a bit?
 
 In order to understand effects of carbon emissions to the climate,
 simulations over long time scales are needed. The video below shows
@@ -40,3 +38,18 @@ Arctic see ice be gone during summer and during winter according to
 the simulations.
 
 [Video](https://esticc.net/highlights/visualisations/)
+
+TODO: use some of the CSC news articles as basis for further
+applications
+
+TODO make articles from them here
+
+* [Topological superconductors](https://www.csc.fi/en/-/topologinen-suprajohde-uusi-vaihtoehto-kubittien-rakennusaineeksi)
+* [Structural biology](https://www.csc.fi/en/-/rakennebiologia-biokemia-ja-mitokondriaalisen-kompleksi-i-n-md-simulaatiot-apuproteiinilla-on-avainasema-biokonversiossa)
+* [Natural language processing](https://www.csc.fi/en/-/deepfin-luonnollisen-kielen-k%C3%A4sittelyn-aallonharjalla)
+* [Structural biology, COVID](https://www.csc.fi/en/-/rakennebiologia-apuna-sars-cov2-l%C3%A4%C3%A4kekehityksess%C3%A4)
+* [Nanocatalyst](https://www.csc.fi/en/-/researchers-from-the-university-of-jyv%C3%A4skyl%C3%A4-and-xiamen-university-discover-how-a-nanocatalyst-operates-at-the-atomic-level)
+* [Elmer ICE](https://www.csc.fi/en/-/digging-deeper-in-dynamics-of-ice)
+* [Cancer diagnosis](https://www.csc.fi/en/-/artificial-intelligence-detects-and-grades-prostate-cancer-nearly-without-error)
+* [Jyrki's visualizations](https://www.csc.fi/en/-/visualization-speaks-more-than-a-thousand-numerals)
+
