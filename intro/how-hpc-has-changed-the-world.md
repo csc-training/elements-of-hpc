@@ -1,4 +1,4 @@
-## How HPC has changed the world
+## How high performance computing has changed the world
 
 ### The three paradigms of science
 
@@ -19,7 +19,7 @@ On the other hand, consider climate and glaciers, for example. It is of crucial 
 
 This brings us to computational science that is sometimes called the third paradigm of scientific research. 
 
-### Computational science
+### Computational science and data science
 
 In computational science the typically complex mathematical 
 models (e.g. systems of partial differential equations) describing the problem are solved using numerical algorithms which are then implemented as as computer programs and finally run on (typically high performance) computers. A rough outline of a computational science project is as follows:
@@ -34,10 +34,17 @@ In this way experiments can be partially replaced by simulations. Of course only
 
 If the problem is complex (e.g. climate), the system to be simulated is large in some sense (e.g. a galaxy comprises a huge number of stars), the simulated time is long (e.g. long term climate simulations) or very high accuracy is needed the required amount of computing work quickly becomes enormous. 
 
+In addition to solving mathematical models numerically, computers are used in increasing extent in analyzing large quantities of data. Data science can be defined as a field that uses various mathematic methods and algorithms to extract knowledge and insight from the data. This insight can in some cases be used for formulating new mathematical models. As an early example, the measurements of Tyko Brahe made up the data that Johannes Kepler analyzed when coming up with Kepler's laws of planetary motion. Later on, Newton showed that the Kepler's laws are consequency of his theory of gravitation.
+
+Nowadays, various experiments produce vast amounts of data, that cannot be analyzed by pen and paper. As an example, the experiments in CERN's LHC particle accelarator produce on average one petabyte (one million gigabytes) of data per day, which would take 20 000 Blu-ray discs. Numerical imulations can also produce large amounts of data, and methods of data science can be used in analyzing it. Depending on the type of analysis, data science can involve also heavy numerical computations, such as when using artificial intelligence and machine learning methods.
+
+
 ### High performance computing (HPC)
 
-High performance computing systems and supercomputers are developed to solve the most demanding problems of the computational science. With them amazingly complex 
-large scale simulations can be performed. The application areas include 
+High performance computing systems and supercomputers are developed to solve the most demanding problems of the computational and data science. With them amazingly complex 
+large scale simulations can be performed. Supercomputers are unique scientific scientific tool in the sense that the same
+apparatus can be used for studying both extremely short length and time scales (as in elemental particles) as well as extremely long length and time scales (as motion of galaxies in the universe), and everything between them. This is in contrast experimental research, where different scientific instruments are needed for different problems: particle accelerator in CERN cannot be used for studying cosmic waves, and a vast radiotelescope cannot be used for studying subatomic particles. Because of this versatility, supercomputers are used in multitude of application areas such as
+
 - Fundamental sciences like partcile physics and cosmology.
 - Climate, weather and earth sciences.
 - Life sciences and medicine.
@@ -47,7 +54,7 @@ large scale simulations can be performed. The application areas include
 - Data analysis
 - Artificial intelligence and machine learning
 
-Thus high performance computing resources and knowledge are a hugely important asset for any modern society providing a competitive advantage for researchers and industry. In the next section a number of application examples will be described in more detail.
+Thus, high performance computing resources and knowledge are a hugely important asset for any modern society providing a competitive advantage for researchers and industry. In the next section a number of application examples will be described in more detail.
 
 High performance computing includes the hardware
 - fast processors
@@ -66,5 +73,3 @@ and software
 - application software
 
 In what follows some of the above aspects are described in more detail.
-
- 
