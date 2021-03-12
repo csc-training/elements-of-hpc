@@ -48,4 +48,4 @@ MPP system with dual 2,6 GHz AMD Rome 128 core processors and 256 GB memory per 
  
  ![](images/CSC_Capacity_21b.jpg)
  
-CSC's computing capacity and the top 500 list rankings of selected systems in 1993–2020. The performance is normalized and presented on a logarithmic scale. Hence, the growth is exponential rather than linear.
+CSC's computing capacity and the Top500 list rankings of selected systems in 1993–2020. The performance is normalized and presented on a logarithmic scale. Hence, the growth is exponential rather than linear.
