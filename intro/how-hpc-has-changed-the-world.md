@@ -72,4 +72,4 @@ And the software:
   - Performance analysis tools
 - Application software
 
-TR comment: Kaksi viimeistä listaa jää irralleen kokonaisuudesta. Täytyy miettiä, miten ne liimataan osaksi kokonaisuutta.
+TR comment: Kaksi viimeistä listaa jää hivenen irralleen kokonaisuudesta. Täytyy miettiä, miten ne liimataan osaksi kokonaisuutta. Voisiko HPC:n elemenit esitellä vasta myöhemmin kappaleessa, jossa pureudutaan modernin supertitokoneen anatomiaan?
