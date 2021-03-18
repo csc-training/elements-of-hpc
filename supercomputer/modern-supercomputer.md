@@ -57,10 +57,13 @@ disk storage system, which we also discuss more later on.
 TODO: images of node and a collection of nodes, different interconnect
 topologies?
 
+
+The most common network cable that is available in many houses is the Ethernet 
+cable that is used for connecting a computer to the router.
 A supercomputer is constituted by many computing nodes. There are a lot of 
 simulations that require to exchange data between nodes, thus the 
 interconnection plays an important role and it can improve or delay an execution.
-The specifications of an interconnect are based on various metrics, the bandwidth, 
+The specifications of an interconnect are based on various metrics such as the bandwidth, 
 which represents how fast we can transfer data, the latency, which is the minimum 
 time to start a data transfer. However, as we scale the interconnected computing nodes, 
 the network topology is important, among the routing algorithms. For example, 
@@ -70,6 +73,12 @@ The leaf nodes are switches, a device that connects various hardware together.
 !["Fat tree network topology"](./images/Fat_tree_network.svg.png)
 *Fat tree network topology*
 
+Some other known interconnections are Cray Slingshot and Aries that use various 
+routing algorithms to transfer data between the compute nodes. As many simulations take 
+place concurrently, the transfer of data can create contention to another application 
+and increase the total execution time. Thus, some companies implemented adaptive 
+routing technologies, where if a network link is too busy, then the transfer 
+will happen through another optimal link to finish faster.
 
 
 
