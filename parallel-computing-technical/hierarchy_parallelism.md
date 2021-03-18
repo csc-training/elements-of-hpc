@@ -4,6 +4,11 @@ When the hardware and the compiler support them, different types of parallelism 
 
 * **Bit-level parallelism**: refers to the parallelism based on increasing the _processor word_ size. For example in the case of a 8-bit processor trying to add two 16-bit variables would have to divide the operation in two instructions. In the first instruction it would add the 8 lower bits and then in the second one the higher 8 bits. On a 16-bit processor this would be completed using a single instruction. Note that doing operations with 8-bit variables (less precision on the 16-bit processor  will take the same amount of time as using 16-bit variables. 
 Now all processors use 64 bit words. The programmers have no control at this level, but have to take this into account and choose the appropriate bit size for the varoables in order to achieve the highest possible performance at the precision required by the specific application. 
+
+TODO: Missing a good image
+
+![](images/32bit_vs_64bit.png)
+
 * **Instruction-level parallelism (ILP)**: refers to executing simultaneous multiple instructions. For example if the program has to perform sequentially two additions which are independent from each other they can be executed in parallel (see image below). The programmer does not have direct access to the this parallelization, the compiler does the parallelization, however the programmer needs to arrange the code to "help" the compiler detect the parallelizable parts.
 ![Example of instruction level parallelism](images/ilp.png)
 <!--- [![Instruction level parallelism](https://i.pinimg.com/originals/1f/a4/d7/1fa4d7bda58e84045b9456c391d2aa58.png)](https://i.pinimg.com/originals/1f/a4/d7/1fa4d7bda58e84045b9456c391d2aa58.png) --->
