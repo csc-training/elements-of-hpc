@@ -18,6 +18,8 @@ too but for at least CSC has a dedicated group of experts for that.
 
 **HPC programming support** helps users in porting, parallelizing and optimizing their codes for the supercomputers. Extracting good performance from modern accelerated systems is not always easy, and the scientists of various fields cannot be expected to be experts in high-performance computing, especially when computational methods are utilized in new fields of science with no tradition of HPC use.
 
+### Examples of computing centers
+
 The following are examples of computing centers in Europa, US and Japan:
 - https://www.fz-juelich.de/ias/jsc/EN/Home/home_node.html
 - https://www.bsc.es/
