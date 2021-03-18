@@ -45,4 +45,7 @@ computing: making computations faster and enabling larger computations.
 
 ![Alice and Bob calculate a sum in parallel](images/alice-bob-sum.png)
 
-FIXME: missing figure
+FIXME: missing figure (alice-bob-sum), rough idea:
+       - divide numbers into two groups (e.g. lotto-balls in two piles)
+       - calculate partial sums
+       - combine partial sums into the final result
