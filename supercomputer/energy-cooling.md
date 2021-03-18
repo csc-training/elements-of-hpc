@@ -14,7 +14,7 @@ energy for certain workloads.
 
 <!-- Data: Energy consumption from living in Finland 2018 66 TWh, number of households 2.7 millions -->
 The biggest supercomputer in the world in June 2020, the Japanese Fugaku,
-consumed 28 MW of energy, and even though it is within the ten most energy
+has power consumption of 28 MW, and even though it is within the ten most energy
 efficient computers in the world, this energy consumption equals 10 000
 average Finnish households. As the importance of energy efficiency is rapidly
 increasing, supercomputers are measured not only by their raw computing power,
