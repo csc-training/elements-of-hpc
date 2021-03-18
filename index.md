@@ -60,7 +60,11 @@
 
 ## HPC programming
 
-1. [HPC programming languages](hpc-programming/languages.md)
+1. [How supercomputers are programmed](hpc-programming/overview.md)
+2. [HPC programming languages](hpc-programming/languages.md)
+3. [Parallel programming](hpc-programming/parallel-programming.md)
+4. [High performance libraries](hpc-programming/libraries.md)
+5. [Portability](hpc-programming/portability.md)
 
 ### Exam (5-10 questions), 80 % correct to pass, multiple attempts allowed
 
