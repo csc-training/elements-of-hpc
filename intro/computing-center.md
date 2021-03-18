@@ -2,9 +2,9 @@
 
 Running a modern supercomputing service is a complicated endeavour. Providing computing resources for users requires much more than procuring a system and adding power, cooling and internet. The machines themselves are very complicated pieces of technology and just keeping them running
 requires a number of experts. Additionally, even the national class systems are physically quite large and need adequate housing, power, cooling etc. infrastucture and
-the corresponding staff around them. And as getting good performance from a supercomputer is getting more and more demanding, typically the supercomputing centers
-provide support for their users. This can vary from solving very basic problems in e.g. connecting and accessing the system to helping researchers in quite involved
-and high level scientific, method and performance related issues. 
+the corresponding staff around them. As getting good performance from a supercomputer is getting more and more demanding, typically the supercomputing centers
+provide support for their users in various levels. This can vary from solving very basic problems in e.g. connecting and accessing the system to helping researchers in quite involved
+and high level science, computational method and performance related issues. 
 
 The following list is not at all exhaustive but provides a simplified description of the functions or groups of staff that computing centers typically have:
 
