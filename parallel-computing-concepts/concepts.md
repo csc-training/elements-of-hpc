@@ -7,34 +7,34 @@ programming.
 
 -->
 
-## Types of parallel problems
+## Types of parallel algorithms
 
-Parallel programs can be divided in two limiting classes: trivially
-parallel and tightly coupled. 
+Parallel algorithms can be divided roughly in two groups: trivially
+parallel ones and tightly coupled ones.
 
-In trivially parallel cases there is very little (or no)
+In *trivially parallel* algorithms there is very little (or no)
 interaction between subtasks. In the example of Alice and Bob,
 interaction is needed in distributing the work and in combining the
 partial sums. However, during the computing of the individual partial
-sums no interaction is needed, and the problem can be considered
+sums no interaction is needed, and the algorithm can be considered
 trivially parallel. If the problem would be different and Alice would
-need to interact regularly with Bob during her computations, problem
-would be considered tighly coupled (TODO: can we think of easy to
-understand tightly coupled problem?)
+need to interact regularly with Bob during her computations, it would
+be considered a *tighly coupled* algorithm instead (e.g. solving a
+sudoku together is an example of a tightly coupled problem).
 
-Programming trivially parallel problems is
-typically easier, and there are no high demands for the connection
-between CPUs. In best cases computers all over internet can be used
-for computing in parallel such as in the
+Programming trivially parallel algorithms is typically easier and
+they do not impose a high demand for the connection between the CPUs.
+It may even be possible to use internet-connected computers all over
+the world to compute something in parallel, such as in the
 [Folding@home](https://foldingathome.org/) project where protein
-folding is studied using personal computers all over world.
-In tightly coupled problems programming is more involved and low
-latency, high speed interconnect  between the CPUs is essential for
-good performance. Weather simulation is a typical example of tightly
-coupled problem. 
+folding is studied using personal computers all over the world.
+For tightly coupled algorithms, programming is usually more difficult
+and a low-latency, high-speed interconnect between the CPUs is essential
+for good performance. Weather simulation is a typical example of a tightly
+coupled problem on supercomputers.
 
-Many real-world problems fall naturally somewhere between the two extreme
-cases.
+Many real-world problems fall naturally somewhere between these two
+extremes.
 
 ## Parallel scaling
 
