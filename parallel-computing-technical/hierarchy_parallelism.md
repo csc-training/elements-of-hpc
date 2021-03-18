@@ -4,15 +4,19 @@ When the hardware and the compiler support them, different types of parallelism 
 
 * **Bit-level parallelism**: refers to the parallelism based on increasing the _processor word_ size. For example in the case of a 8-bit processor trying to add two 16-bit variables would have to divide the operation in two instructions. In the first instruction it would add the 8 lower bits and then in the second one the higher 8 bits. On a 16-bit processor this would be completed using a single instruction. Note that doing operations with 8-bit variables (less precision on the 16-bit processor  will take the same amount of time as using 16-bit variables. 
 Now all processors use 64 bit words. The programmers have no control at this level, but have to take this into account and choose the appropriate bit size for the varoables in order to achieve the highest possible performance at the precision required by the specific application. 
+* **Instruction-level parallelism (ILP)**: refers to executing simultaneous multiple instructions. For example if the program has to perform sequentially two additions which are independent from each other they can be executed in parallel (see image below). The programmer does not have direct access to the this parallelization, the compiler does the parallelization, however the programmer needs to arrange the code to "help" the compiler detect the parallelizable parts.
+![Example of instruction level parallelism](images/ilp.png)
+<!--- [![Instruction level parallelism](https://i.pinimg.com/originals/1f/a4/d7/1fa4d7bda58e84045b9456c391d2aa58.png)](https://i.pinimg.com/originals/1f/a4/d7/1fa4d7bda58e84045b9456c391d2aa58.png) --->
+Depending on the architectures and compilers, the operations targeted for ILP do not need to be identical. At hardaware level, processors which can perform ILP have to support features such as:
+
+
         * Instruction pipelining
         * Out-of-order execution 
         * Register renaming 
         * Speculative execution 
         * Branch prediction 
-* **Instruction-level parallelism (ILP)**: refers to executing simultaneous multiple instructions. For example if the program has to perform sequentially two additions which are independent from each other they can be executed in parallel (see image below). The programmer does not have direct access to the this parallelization, the compiler does the parallelization, however the programmer needs to arrange the code to "help" the compiler detect the parallelizable parts.
-![Example of instruction level parallelism](images/ilp.png)
-<!--- [![Instruction level parallelism](https://i.pinimg.com/originals/1f/a4/d7/1fa4d7bda58e84045b9456c391d2aa58.png)](https://i.pinimg.com/originals/1f/a4/d7/1fa4d7bda58e84045b9456c391d2aa58.png) --->
-Depending on the architectures and compilers, the operations targeted for ILP do not need to be identical. At hardaware level, processors which can perform ILP have to support features such as 
+
+
 * **Vectorization**: refers to parallelism similar to the ILP, in which a specific instruction is applied to multiple data simultaneously. This allows for more efficient parallelization of the code than the ILP. Similarly to the ILP, the programmer has little control over the parallization, however he or she can indicate specific loops to be targeted by the compiler. 
 For example, if a programm needs to perform the addition of two vectors element by element we would use a `for` loop in which an addition is performed for each value of `i=0, ...,N-1`:
 ```C
@@ -33,6 +37,7 @@ I this case the outer loop will be executed sequentially (starting with `i=0` an
 * **Core level parallelism**: the same calculation or different calculation is performed to the same data or to different data by a number of cores. The calculations are performed concurrently and often cooperatively. 
 All modern processors are multi-cores. In supercomputers we usually have more than one multi-core processor installed in the same node and sharing the same memory and local disks, and in many cases accelerators. Furthermore, we have thousandas of nodes linked together by extremely high speed network. In case  we can emply include many types of parallel programming models:  multi-threaded with shared memory, multi-process with distributed memory, hybrid,  and as well task parallelism in which each diffferent task runs independently of the others.
 The programmer can take advantage of the multi-core and multi-processors architectures using using specalized APIs.
+
 ![Multi-core and multi-processor parallel computing](images/distributed_vs_shared.png)
  
  In the case of multi-threaded parallel execution, light execution units, threads, are created and destroyed (with relatevely small cost) to take advatage of the many cores present in the computer.  Since the memory is shared, all threads can read and modify all global variables. **OpenMP** (Open Multi-Processing) is the de facto standard for multi-threaded applications. 
