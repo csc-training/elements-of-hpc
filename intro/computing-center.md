@@ -17,3 +17,13 @@ too but for at least CSC has a dedicated group of experts for that.
 **Support for scientific software** Many computing centers, CSC included, offer a collection of scientific software and databases. The scientific software support staff procure, install and maintain the software packages based on the users' needs. Additionally, they help the customers in using the packages, write user guides and instructions, and provide related training. In some cases, there is also in-house scientific software development. As an example, CSC develops the finite element method based multiphysics modeling software called Elmer which has a global user base.
 
 **HPC programming support** helps users in porting, parallelizing and optimizing their codes for the supercomputers. Extracting good performance from modern accelerated systems is not always easy, and the scientists of various fields cannot be expected to be experts in high-performance computing, especially when computational methods are utilized in new fields of science with no tradition of HPC use.
+
+The following are examples of computing centers in Europa, US and Japan:
+- https://www.fz-juelich.de/ias/jsc/EN/Home/home_node.html
+- https://www.bsc.es/
+- https://www.cineca.it/en
+- https://www.cscs.ch/
+- https://www.genci.fr
+- https://www.ornl.gov/
+- https://www.tacc.utexas.edu/
+- https://www.riken.jp/en/
