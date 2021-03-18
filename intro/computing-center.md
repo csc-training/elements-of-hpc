@@ -6,6 +6,8 @@ the corresponding staff around them. As getting good performance from a supercom
 provide support for their users in various levels. This can vary from solving very basic problems in e.g. connecting and accessing the system to helping researchers in quite involved
 and high level science, computational method and performance related issues. 
 
+TODO: add picture of some CSC staff?
+
 The following list is not at all exhaustive but provides a simplified description of the functions or groups of staff that computing centers typically have:
 
 **Data center engineers** operate and maintain the power (including emergency power) and cooling (pumps and fans, heat exhangers, plumbing/ducting etc.) infrastructure
