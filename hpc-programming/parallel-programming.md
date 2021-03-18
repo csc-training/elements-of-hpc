@@ -1,0 +1,95 @@
+# Parallel programming
+
+**Message passing** paradigm is the most common way to parallelize
+scientific computing programs. In message passing the tasks only can
+access their local data and when exchange of data is needed between
+the parallel tasks, the sending and receiving tasks need to take
+explicit action which means calling specific subroutines or functions
+to perform the send or receive. For this purpose there is a library
+called MPI (Message Passing Interface), whose communication routines
+can be called from Fortran and C/C++.  
+
+With MPI the only possibility is to parallelize the whole program, it
+cannot be done part by part. MPI can be used both within shared memory
+nodes and between the nodes. While parallelizing a code with MPI may
+require a lot of work due to the explicit nature of communication and
+the fact that the subroutine/function calls have many parameters the
+perfomance is typically good (if done right). Also, with MPI the
+programmer is completely in charge of the parallelization and nothing
+is left to the compiler. 
+
+The following is a simple MPI code example written in Fortran. When
+run, each task prints out its rank and the total number of tasks with
+which the program is launched. 
+
+    program hello
+      implicit none
+      include 'mpif.h'
+      integer:: ierror, rank, ntasks, status(MPI_STATUS_SIZE)
+
+      call MPI_INIT(ierror)
+
+      call MPI_COMM_SIZE(MPI_COMM_WORLD, ntasks, ierror)
+      call MPI_COMM_RANK(MPI_COMM_WORLD, rank, ierror)
+
+      print *,'Hello from task', rank, '/', ntasks
+
+      call MPI_FINALIZE(ierror)
+
+    end program hello
+
+The corresponding code in C is as follows.
+
+    #include <stdio.h>
+    #include <mpi.h>
+
+    int main(argc, argv)
+     int argc;
+     char *argv[];
+    {
+    int rank, ntasks;
+
+    MPI_Init(&argc, &argv);
+
+    MPI_Comm_rank(MPI_COMM_WORLD, &rank);
+    MPI_Comm_size(MPI_COMM_WORLD, &ntasks);
+
+    printf("Hello from task %d / %d \n", rank, ntasks);
+
+    MPI_Finalize();
+    }
+
+When run with four tasks the output of the C code looks like
+
+    Hello from task 0 / 4
+    Hello from task 2 / 4
+    Hello from task 1 / 4
+    Hello from task 3 / 4
+
+Within a node one can use **shared memory parallelization** in which
+the parallel *threads* can access all the shared memory
+independently. This on the other hands makes programming easier but on
+the other hand can lead to poor performance and seemingly random
+errors that are difficult to find if not done correctly. The most
+popular shared memory parallelization method in scientific computing
+is to insert OpenMP pseudo comments in the code to tell a compatible
+compiler that the adjacent code can be parallelized. In Fortran the
+pseudo comments are called *directives* and in C/C++ *pragmas* and
+they affect the compilation only if the compiler is instructed to look
+for them. At least in theory it is then possible to have a single
+source code that can be compiled for serial and parallel computing.  
+
+With OpenMP the programmer mostly relies on the compiler for the
+actual parallelization. Additionally, with OpenMP a code can be
+parallelized incrementally, which is quite convenient. This is in
+contrast to MPI where the parallelization is an all-or-nothing
+enterprise and once parallelized the code cannot be run serially (or
+at least without the MPI library). 
+
+For **GPU parallelization** the most common alternatives are currently
+the following: 
+- CUDA is an extension to C by the GPU vendor Nvidia. With CUDA the parts of the code that are to be run on CPUs are written in C/C++ and the computing intensive parts that are offloaded to GPUs called *kernels* are written in CUDA. CUDA is relatively low level approach that requires a lot of work and careful programming to utillize the highly parallel processor. When done right the performance is good.
+- HIP can be considered to be the AMD version of CUDA and the conversion between them is mostly one-to-one.
+- OpenACC is a directive based approach to GPU programming available for Fortran and C/C++. The programmer inserts special pseudo comments to the program based on which a compatible compiler generates the necessary machine code for GPU execution. Programming with OpenACC is easier than with CUDA and the performance is quite good.
+- During the last few years OpenMP has been extended to support GPU offloading and it is quite comparable to OpenACC. Currently the compiler support is not quite on a satisfactory level but in the long run OpenMP is considered (or at least hoped) to become mainstream for GPU programming.
+- Various portability frameworks like Kokkos, Raja and SYCL.
