@@ -1,8 +1,18 @@
-## What does it take to provide supercomputing service?
+## HPC centers: What does it take to provide supercomputing service?
 
-Providing supercomputing resources for users requires much more than procuring a system and adding power, cooling and internet. Of course, the following list is not at all exhaustive but provides a simplified description of the services that computing centers typically run.
+Running a modern supercomputing service is a complicated endeavour. Providing computing resources for users requires much more than procuring a system and adding power, cooling and internet.The machines themselves are very complicated pieces of technology and just keeping them running
+requires a number of experts. Additionally, even the national class systems are physically quite large and need adequate housing, power, cooling etc. infrastucture and
+the corresponding staff around them. And as getting good performance from a supercomputer is getting more and more demanding, typically the supercomputing centers
+provide support for their users. This can vary from solving very basic problems in e.g. connecting and accessing the system to helping researchers in quite involved
+and high level scientific, method and performance related issues. 
 
-**System administrators** make sure that the system runs smoothly. They monitor the usage, hardware status and load and make various adjustments accordingly. In a large machine, there are always broken components that have to be replaced, which may require a service break. System software is also regularly updated to fix problems, improve and add functionality, and maintain system security.
+The following list is not at all exhaustive but provides a simplified description of the functions or groups of staff that computing centers typically have:
+
+**Data center engineers** operate and maintain the power (including emergency power) and cooling (pumps and fans, heat exhangers, plumbing/ducting etc.) infrastructure
+and the network connections both within the data center and to/from the outside world.
+
+**System administrators** make sure that the system runs smoothly. They monitor the usage, hardware status and load and make various adjustments accordingly. In a large machine, there are always broken components that have to be replaced, which may require a service break. System software is also regularly updated to fix problems, improve and add functionality, and maintain system security. Programming environment (compilers, libraries, performance analysis tools etc.) may be their responsibility 
+too but for at least CSC has a dedicated group of experts for that.
 
 **Support for scientific software** Many computing centers, CSC included, offer a collection of scientific software and databases. The scientific software support staff procure, install and maintain the software packages based on the users' needs. Additionally, they help the customers in using the packages, write user guides and instructions, and provide related training. In some cases, there is also in-house scientific software development. As an example, CSC develops the finite element method based multiphysics modeling software called Elmer which has a global user base.
 
