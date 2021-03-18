@@ -2,23 +2,23 @@
 
 Programming of scientific applications for supercomputers shares many
 similarities to programming "ordinary" applications for desktop
-computers, mobile devices, web services etc., and thus some tools used
-are very similar. On the other hand, some aspects of programming for
+computers, mobile devices, or web services, and some of the tools used
+are very similar. Then again, some aspects of programming for
 supercomputers are very different.
 
-For desktop applications, the graphical user interface is important
+For desktop applications, the graphical user interface is an important
 element, whereas many scientific applications, especially
-non-commercial ones, might not have a graphical user interface at
-all. In desktop application, whether an operation takes 0.01 second or
-0.10 second is most likely irrelevant to the user, but if the operation
-is executed ten million times in scientific application, the
+non-commercial ones, might not even have a graphical user interface at
+all. In a desktop application, whether an operation takes 0.01 seconds or
+0.10 seconds is most likely irrelevant to the user, but if the operation
+is executed ten million times in a scientific application, the
 difference is ten days! Thus, good performance is often much more
 critical for supercomputer applications.
 
-Final major difference is that desktops have only few CPU cores in
+Another major difference is that desktops have only few CPU cores in
 comparison to the hundreds of thousands in the biggest supercomputers,
-and thus the very different approaches need to be used for parallel
-programming. 
+and thus very different approaches are needed in parallel programming
+to fully utilize the hardware.
 
-In this chapter we discuss in more detail languages and
-methods used in programming supercomputers.
+In this chapter we discuss in more detail the languages and
+methods used when programming for supercomputers.
