@@ -8,7 +8,7 @@ processors working in parallel to analyze billions of pieces of data in real
 time, performing calculations thousands of times faster than a normal
 computer.
 
-Traditionally, HPS resources comprise, on premises, bare-metal
+Traditionally, HPC resources comprise, on premises, bare-metal
 supercomputers and clusters which are specifically designed to support HPC
 applications developed to solve specific problems. All applications and
 libraries need to be compiled for the operating system that is installed on
