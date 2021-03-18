@@ -1,71 +1,68 @@
-## Supercomputer Performance
+## Supercomputer performance
 
-To measure how powerful a supercomputer is and compare it with other ones,
+To measure how powerful a supercomputer is and to compare it with other ones,
 there are a(???) few metrics. The oldest and most classic one is the number of floating point
 operations per second (FLOPs) the computer can perform. This measures the performance of a processor
 and not only. <-- FIXME
 
 What is a FLOPs? If we do a single calculation involving two real numbers
-(aka floating point numbers), for example `2.1 + 4.3` in one second, then this
+(floating point numbers), e.g. `2.1 + 4.3`, in one second, that
 is equal to one floating-point operation per second (1 FLOPs).
 
-When a computer can execute 1 billion FLOPs, then we can say that the performance is 1 gigaFLOPs
-(GFLOPs). Similarly, we call 1 teraFLOPs (TFLOPs) for one trillion
-(10<sup>12</sup>) FLOPs, and 1 petaFLOPs (PFLOPs) when a supercomputer can
-execute 1 quadrillion or 10<sup>15</sup> FLOPs.
+When a computer can execute 1 billion FLOPs, then we can say its performance is 1 gigaFLOPs
+(GFLOPs). Similarly, one trillion
+(10<sup>12</sup>) FLOPs is 1 teraFLOPs (TFLOPs), and when a supercomputer can
+execute 1 quadrillion or 10<sup>15</sup> FLOPs, 1 petaFLOPs (PFLOPs).
 
-In addition to the raw performance of the processors other characterictics of the system are 
-important too. Most notably the speed of the interconnect (the network between the processors) and 
-memory bus can affect the overall performance significantly. And depending on the application the 
+In addition to the raw performance of processors, other characteristics of the system are also 
+important. Most notably, the speed of the interconnect (the network between processors) and 
+memory bus can significantly affect the overall performance. And depending on the application, the 
 speed of the IO (input/output or transfer of data between processors and storage) subsystem may
 play a role.
 
 ### TOP500
 
-What is a benchmark? An application that is used to measure the performance
-and functionality of a (super)computer. Typically the runtime of the benchmark application is recorded and used as a metric.
-With benchmarks one can then compare the performance of different computers.
+_Benchmark_ is an application used to measure the performance
+and functionality of a (super)computer. Typically, the runtime of the benchmark application is recorded and used as a metric.
+With benchmarks, one can compare the performance of different computers.
 
 For example, the Linpack benchmark (HPL) measures a system's floating point computing
-power. It measures how fast a computer does linear algebra operations to solve a systems of
+power. It measures how fast a computer does linear algebra operations to solve a system of
 linear equations. Supercomputers have a theoretical peak performance based on their
 hardware, but since this is a theoretical limit for a perfect system utilization, 
 the actual performance measured by HPL is lower, typically about 75% of the theoretical peak performance.
 
-TOP500 is a ranking list for supercomputers that collects HPL results
+_TOP500_ is a ranking list for supercomputers that collects HPL results
 submitted by organizations that operate a supercomputer. The list is released
-twice a year and it shows the 500 most powerful supercomputers in the world
+twice a year and shows the 500 most powerful supercomputers in the world
 ranked according to their computational power measured by the HPL benchmark.
 
 In the first ever TOP500 list, June 1993, the most powerful supercomputer was from USA
-and had a performance of 59.7 GFLOPs. For comparison, in June 2020, the
-fastest supercomputer (from Japan) had a performance of 415.5 PFLOPs, which is
-almost 7 million times faster than the winner 27 years ago. Similarly, looking
-at the last system (#500) on the lists, on June 1993 it had a power of 0.4
-GFLOPs while on June 2020 it had a power of 1.2 PFLOPs, which is about 3
+and had a performance of 59,7 GFLOPs. In comparison, in June 2020, the
+fastest supercomputer (from Japan) had a performance of 415,5 PFLOPs, which is
+almost 7 million times faster than the winner 27 years before. Similarly, the last system (#500) on the list in June 1993 had a power of 0,4
+GFLOPs, while in June 2020 it had a power of 1,2 PFLOPs, which is about 3
 million times faster. Just like normal computers, supercomputers have
 exhibited a tremendous increase in computational power over these years.
-
 
 !["TOP500 FLOPs"](./images/flops.png)
 *FLOPs from the best systems in TOP500 list from 1993 until 2017*
 
+To compare and understand this better, consider the MacBook Pro 13" 2020 model that has a
+performance of around 311 GFLOPs, which means that it would have been the number one
+supercomputer in June 1993, but in 2020, the number one supercomputer has the
+power of around 1,3 million MacBook Pros.
 
-To compare and understand better, consider the Macbook pro 13" 2020 model, that has a
-performance of around 311 GFLOPs which means that it would have been number one
-supercomputer in June 1993 but in 2020, the number one supercomputer has the
-power of around 1.3 millions Macbook pros.
-
-The Mahti supercomputer at CSC - IT For Science Ltd. has power of 7.5 PFLOPs,
-which means it can execute `7.5*10^15` operations per second corresponding to around 24000
-Macbook pros combined. Even if all people on earth would do one math
+The Mahti supercomputer at CSC – IT For Science has a power of 7,5 PFLOPs,
+which means it can execute `7.5*10^15` operations per second, corresponding to around 24 000
+MacBook Pros combined. Even if all people on Earth would do one math
 operation per second, the combined performance would still be 1 million times
 lower than that of Mahti.
 
-LUMI supercomputer will have a theoretical peak performance of 552 PFLOPs and
+The LUMI supercomputer will have a theoretical peak performance of 552 PFLOPs and
 is expected to be in the top 10 supercomputers of the world when it is installed in 2021.
 
-We describe the terminology of the performance
+Performance terminology:
 
 | Operations per second     | Scientific notation | Metric prefix | Unit   |
 |---------------------------|---------------------|---------------|--------|
