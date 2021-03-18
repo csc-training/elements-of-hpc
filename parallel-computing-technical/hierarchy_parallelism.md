@@ -2,7 +2,7 @@
 
 When the hardware and the compiler support them, different types of parallelism can be employed to speed up the calculations. 
 
-* **Bit-level parallelism**: refers to the parallelism based on increasing the _processor word_ size. For example in the case of a 8-bit processor trying to add 2 16-bit variables would have to divide the operation in two instructions. In the first instruction it would add the 8 lower bits and then in the second one the higher 8 bits. On a 16-bit processor this would be completed using a single instruction. Note that doing operations with 8-bit variables (less precision on the 16-bit processor  will take the same amount of time as using 16-bit variables. 
+* **Bit-level parallelism**: refers to the parallelism based on increasing the _processor word_ size. For example in the case of a 8-bit processor trying to add two 16-bit variables would have to divide the operation in two instructions. In the first instruction it would add the 8 lower bits and then in the second one the higher 8 bits. On a 16-bit processor this would be completed using a single instruction. Note that doing operations with 8-bit variables (less precision on the 16-bit processor  will take the same amount of time as using 16-bit variables. 
 Now all processors use 64 bit words. The programmers have no control at this level, but have to take this into account and choose the appropriate bit size for the varoables in order to achieve the highest possible performance at the precision required by the specific application. 
         * Instruction pipelining
         * Out-of-order execution 
