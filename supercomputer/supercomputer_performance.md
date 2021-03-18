@@ -1,9 +1,10 @@
 ## Supercomputer Performance
 
 To measure how powerful a supercomputer is and compare it with other ones,
-there are a(???) few metrics. The oldest and most classic one is the number of floating point
-operations per second (FLOPs) the computer can perform. This measures the performance of a processor
-and not only. <-- FIXME
+there are a few metrics but the oldest and most classic one is the number of floating point
+operations per second (FLOPs) the computer can perform. This measures the performance of the processor.
+In a supercomputer with thousands of processors the aggregation of the FLOPs of each processor, constitutes
+the total FLOPs of the supercomputer.
 
 What is a FLOPs? If we do a single calculation involving two real numbers
 (aka floating point numbers), for example `2.1 + 4.3` in one second, then this
