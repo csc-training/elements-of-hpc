@@ -9,19 +9,19 @@ computers use Windows, while around  17% are running macOS (Apple
 proprietary operating systems). The rest of the devices use ChromeOs or some
 version of Linux or Unix.
 
-**Supercomputers** are focused on performing intensive number crunching,
+**Supercomputers**, on the other hand, are focused on performing intensive number crunching,
 mainly for scientific purpose for a number of users. For a couple of years all supercomputers
 which are making it to Top 500 have been using Linux.  
 
 Linux OS has many advantages over
-Windows. Unlike Windows and macOS, Linux is modular and build around a kernel
+Windows. Unlike Windows and macOS, Linux is modular and built around a kernel
 which contains the basic system and drivers. The users now can add to the
-kernel various modules to serve purpose of the device (focused on user
-interface or server management). 
+kernel various modules to serve the purpose of the device (focused on user
+interface or server management, for example). 
 
-It is generic in the sense that the
+Linux is generic in the sense that the
 kernel is written in a such a way it can run on any device, from hand-held
-gadgets to large supercomputers. It has very good scalability, Linux can
+gadgets to large supercomputers. It has very good scalability, that is, Linux can
 handle efficiently small and large loads. In the case of supercomputer we
 expect the system to handle hundreds or thousands of simultaneous users. 
 
