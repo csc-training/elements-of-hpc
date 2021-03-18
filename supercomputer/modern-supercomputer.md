@@ -87,10 +87,9 @@ packing. Physically supercomputer consists of several cabinets (about a
 size of a phone booth), where each cabinet contains multiple rack blades, and
 each rack blade can contain multiple nodes. If the computing power of LUMI
 would be devised from Macbook Pros, the pile of laptops would reach Mt
-Everest, whereas LUMI fits into around XX cabinets in the size of a bit over a tennis court
+Everest, whereas LUMI fits in the size of a bit over a tennis court
 and weighs 150 metric tons.
 
-FIXME: number of cabinets  (above)
 TODO: image of cabinet / open cabinet?
 
 <!-- Copyright SURFsara,  EPCC at the University of Edinburgh, CSC - IT Center for Science Ltd. >
