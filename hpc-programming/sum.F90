@@ -7,4 +7,3 @@ program fortran_example
  write(*,*) 'sum of array', sum(array)
 
 end program fortran_example
- 

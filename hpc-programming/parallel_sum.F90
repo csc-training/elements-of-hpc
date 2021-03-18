@@ -8,7 +8,7 @@ program parallel_sum
  real, allocatable :: local_array(:)
  real :: total_sum, local_sum
  integer :: ierror, rank, ntasks
- 
+
  call MPI_INIT(ierror)
 
  call MPI_COMM_SIZE(MPI_COMM_WORLD, ntasks, ierror)
@@ -33,4 +33,3 @@ program parallel_sum
  call MPI_FINALIZE(ierror)
 
 end program parallel_sum
- 
