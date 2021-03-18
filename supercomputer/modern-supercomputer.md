@@ -57,6 +57,22 @@ disk storage system, which we also discuss more later on.
 TODO: images of node and a collection of nodes, different interconnect
 topologies?
 
+A supercomputer is constituted by many computing nodes. There are a lot of 
+simulations that require to exchange data between nodes, thus the 
+interconnection plays an important role and it can improve or delay an execution.
+The specifications of an interconnect are based on various metrics, the bandwidth, 
+which represents how fast we can transfer data, the latency, which is the minimum 
+time to start a data transfer. However, as we scale the interconnected computing nodes, 
+the network topology is important, among the routing algorithms. For example, 
+below we see the fat tree network topology where by design is scalable. 
+The leaf nodes are switches, a device that connects various hardware together. 
+
+!["Fat tree network topology"](./images/Fat_tree_network.svg.png)
+*Fat tree network topology*
+
+
+
+
 Supercomputers are distinguished from consumer devices also by a much denser
 packing. Physically supercomputer consists of several cabinets (about a
 size of a phone booth), where each cabinet contains multiple rack blades, and
