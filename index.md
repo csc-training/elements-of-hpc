@@ -33,7 +33,7 @@
 
 ## Running and using a supercomputer
 
-2. [HPC center?](intro/computing-center.md)
+2. [HPC centers](intro/computing-center.md)
 3. [Energy and cooling](supercomputer/energy-cooling.md)
 4. [How to buy a supercomputer](supercomputer/procurement.md)
 5. [How to access a supercomputer?](supercomputer/how-to-use.md)
