@@ -1,4 +1,4 @@
-# Elements of high-performance computing
+# Elements of High-Performance Computing
 
 ## Introduction
 ### What is high-performance computing
@@ -67,5 +67,3 @@
 ## Wrap-up
 
 ### Final exam (10 questions), 80 % correct to pass, multiple attempts allowed
-
-
