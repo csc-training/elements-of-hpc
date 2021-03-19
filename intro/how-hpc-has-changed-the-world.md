@@ -26,9 +26,10 @@ TODO: figure about the interplay of three paradigms.
 
 ### Experimental science
 
-Early astronomy is an example of experimental science. Ancient astronomers watched the skies first with bare eyes and then with telescopes and recorded the positions and 
-movements of the Sun, the Moon, the stars, and the planets of our
-solar system and so on. They noted that their observations followed
+Early astronomy is an example of experimental science. Ancient astronomers
+watched the skies first with bare eyes and then with telescopes and recorded
+the positions and movements of the Sun, the Moon, the stars, and the planets
+of our solar system. They noted that their observations followed
 certain patterns. Similarly, one can drop stones of various weights
 from towers of different heights and measure the time it takes for the
 stones to hit the ground. Random movement of small particles in liguid
@@ -50,27 +51,51 @@ the same regardless of its weight if dropped from the same height, and
 so on. Next, a theoretical scientist takes a look at the results and
 wonders how he or she can explain them. For movement of different
 bodies, mathematical models for gravity and dynamics developed by
-Newton were able to produce predictions that fit the measured results very nicely. 
+Newton were able to produce predictions that fit the measured results very
+nicely.
 
 This is an example of the interplay between the experimental and
-theoretical approaches. Usually, observations come first and then the theory developed to explain them. But not always; for example, the existence of the positron (the antiparticle of electron) was first predicted by Paul Dirac in 1931 from a purely theoretical point of view. Subsequently, Carl Anderson confirmed the existence of the positron experimentally in 1932 and received a Nobel prize in 1936 for his discovery.
+theoretical approaches. Usually, observations come first and then a theory is
+developed to explain them. But not always; for example, the existence of the
+positron (the antiparticle of electron) was first predicted by Paul Dirac in
+1931 from a purely theoretical point of view. Subsequently, Carl Anderson
+confirmed the existence of the positron experimentally in 1932 and received a
+Nobel prize in 1936 for his discovery.
 
 ### Computational science
 
-However, there are limits to what can be done with a pen and a paper or what kind of experiments can be set up. For example, continuing with the astronomical theme, it is 
-easy enough to write down the equations that describe the motion of the Sun, the Moon and the Earth. This is a so-called three-body problem, a group of equations that cannot be solved in closed form. That is, there is no formula where one can plug in the time to get the positions of the heavenly bodies involved. However, an approximate solution can be found numerically.
+However, there are limits to what can be done with a pen and a paper or what
+kind of experiments can be set up. For example, continuing with the
+astronomical theme, it is easy enough to write down the equations that
+describe the motion of the Sun, the Moon and the Earth. This is a so-called
+three-body problem, a group of equations that cannot be solved in closed form.
+That is, there is no formula where one can plug in the time to get the
+positions of the heavenly bodies involved. However, an approximate solution
+can be found numerically.
 
-On the other hand, consider the climate and glaciers. It is of crucial importance to know what is going to happen with them in the future. But we naturally cannot perform experiments on a global scale to find that out. Similarly, in many cases the required experiments would be too expensive, too dangerous, too slow, too difficult or complex, unethical and so on. But we may still have an idea of the underlaying theory.
+On the other hand, consider the climate and glaciers. It is of crucial
+importance to know what is going to happen with them in the future. But we
+naturally cannot perform experiments on a global scale to find that out.
+Similarly, in many cases the required experiments would be too expensive, too
+dangerous, too slow, too difficult or complex, unethical and so on. But we may
+still have an idea of the underlaying theory.
 
-In computational science, the typically complex mathematical models (e.g. systems of partial differential equations) describing the problem are solved using numerical algorithms which are then implemented as computer programs and finally run on typically high-performance computers. A rough outline of a computational science project:
-1) Write down the equations describing the problem. This is called mathematical modeling.
-2) Choose an efficient numerical algorithm for solving the model.
-3) Implement the algorithm efficiently using a computer language. 
-4) Run the resulting program on a computer.
+In computational science, the typically complex mathematical models (e.g.
+systems of partial differential equations) describing the problem are solved
+using numerical algorithms which are then implemented as computer programs and
+finally run on typically high-performance computers. A rough outline of a
+computational science project:
 
-Steps 2–4 are called numerical simulation of the problem.
+1. Write down the equations describing the problem. This is called
+   mathematical modeling.
+2. Choose an efficient numerical algorithm for solving the model.
+3. Implement the algorithm efficiently using a computer language.
+4. Run the resulting program on a computer.
 
-In this way, experiments can be partially replaced by simulations. Of course, only experiments, if feasible, can validate the model and simulation results.
+Steps 2-4 are called numerical simulation of the problem.
+
+In this way, experiments can be partially replaced by simulations. Of course,
+only experiments, if feasible, can validate the model and simulation results.
 
 Computational science is typically based on the theoretical
 models. However, in some cases computers can be used also for
@@ -88,7 +113,7 @@ insight can in some cases be used for formulating new mathematical
 theories. As an early example, the measurements of Tycho Brahe made up
 the data that Johannes Kepler analyzed when coming up with Kepler's
 laws of planetary motion. Later on, Newton showed that Kepler's laws
-are a consequency of his theory of gravitation. 
+are a consequency of his theory of gravitation.
 
 
 ### High-performance computing
@@ -99,7 +124,7 @@ number of stars), the simulated time is long (e.g. long-term climate
 simulations) or very high accuracy is needed, the required amount of
 computing work quickly becomes enormous. Solving the problem with
 standard computers might take years of time, or be totally impossible
-as the problem cannot be fit into the memory. 
+as the problem cannot be fit into the memory.
 
 In addition to solving mathematical models numerically, computers are
 ubiquitous in analyzing experimental data. Various experiments produce
@@ -109,7 +134,7 @@ CERN's LHC particle accelerator produce, on average, one petabyte (one
 million gigabytes) of data per day, which would take 20 000 Blu-ray
 discs. Numerical simulations can also produce large amounts of data.
 Data analysis can also involve heavy numerical computations, such as
-when using artificial intelligence and machine learning methods. 
+when using artificial intelligence and machine learning methods.
 
 High-performance computing and supercomputers enable the solution of
 the most demanding problems of computational and data science. They
@@ -123,7 +148,7 @@ where different scientific instruments are needed for different
 problems: the particle accelerator in CERN cannot be used for studying
 cosmic waves, and a vast radiotelescope cannot be used for studying
 subatomic particles. Because of this versatility, supercomputers are
-used in multitude of application areas: 
+used in multitude of application areas:
 
 - Fundamental sciences such as particle physics and cosmology
 - Climate, weather and earth sciences
@@ -137,4 +162,4 @@ used in multitude of application areas:
 Thus, high-performance computing resources and knowledge are a hugely
 important asset for any modern society providing a competitive
 advantage for research and industry. In the next section, a number of
-application examples is described in more detail. 
+application examples is described in more detail.
