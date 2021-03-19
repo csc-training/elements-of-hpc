@@ -1,20 +1,16 @@
-# Elements of HPC
+# Elements of High-Performance Computing
 
 ## Introduction
-### What is HPC
-1. [Computational science and HPC](intro/how-hpc-has-changed-the-world.md)
-2. General introduction to subject, whole course in a nutshell
-3. Introduction video
-4. Maybe a picture/diagram showing the key components of HPC
+### What is high-performance computing
+
+1. Introductory video, e.g. [PRACE video](https://youtu.be/mJ3tvjVkCcI)
+2. [Computational science and HPC](intro/how-hpc-has-changed-the-world.md)
+3. [Components of HPC](intro/components-of-hpc.md)
+4. General introduction to subject, whole course in a nutshell
 5. Some central terms explained
 
 ### Applications of HPC/How HPC has changed the world
-7. [Examples of HPC applications](intro/applications.md)
-8. Climate change
-1. Materials research
-1. Drug design
-1. Biomedical sciences
-1. Fundamental research 
+1. [Examples of HPC applications](intro/applications.md)
 
 ### Exam (5-10 questions), 80 % correct to pass, multiple attempts allowed
 
@@ -71,5 +67,3 @@
 ## Wrap-up
 
 ### Final exam (10 questions), 80 % correct to pass, multiple attempts allowed
-
-
