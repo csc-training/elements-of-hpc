@@ -18,12 +18,11 @@
 
 1. [History of supercomputing](supercomputer/history.md)
 1. [Modern supercomputer](supercomputer/modern-supercomputer.md)
-2. [GPUs](gpus/cpu_vs_gpu.md)
-3. [Data storage](supercomputer/storage.md)
 6. [Supercomputer performance](supercomputer/supercomputer_performance.md)
+3. [Data storage](supercomputer/storage.md)
 8. [HPC and Cloud computing](supercomputer/cloud_vs_traditional.md)
 10. [Top supercomputers](supercomputer/top-systems.md)
-11. [Introduction to LUMI](intro/introduction-to-lumi.md)
+11. [Introduction to LUMI](supercomputer/introduction-to-lumi.md)
 
 ### Exam (5-10 questions), 80 % correct to pass, multiple attempts allowed
 
