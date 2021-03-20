@@ -52,4 +52,4 @@ Each process can spawn many threads which means that a hybrid programming model 
 
 When used as accelerators, the Graphical Processing Units (video cards), a specific multi-threaded type of programming model is used. In order to make space for more computing units, GPUs have significantly less amount of transitors dedicated to branch prediction and control. As a consequence, the threads are executed in warps (or waves) of size 32 (for Nvidia GPUs) or 64 (for AMD GPUs) which execute the same instruction or memory operation. This model allows for computing many floating operations and also give an effective bandwith for GPU memory operations about 10 times larger than between the cpu and  main memory. 
 
-We note that in order to take advantage of the multi-core architectures, the programmer has to explictly split the work in smaller parts to be executed simulteneously. 
+We note that in order to take advantage of the multi-core architectures, the programmer has to explictly split the work in smaller parts to be executed simultaneously. 
