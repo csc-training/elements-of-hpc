@@ -7,7 +7,7 @@ The memory model in the image is constructed based on the following characterist
 * Access Time: the time between read/write requests decreases as we move up in the hierarchy.
 * Capacity: the global amount of information that the device can store increase when going to the bottom.
 * Cost per bit: the higher in the hierarchy the more costly the memory is. The internal memory is more expensive than the external memory.
-
+TODO: Might want to change Magenetic Disks with internal HDD + SDD!
 [![Memory hierarchy in a computer](https://media.geeksforgeeks.org/wp-content/uploads/Untitled-drawing-4-4.png)](https://media.geeksforgeeks.org/wp-content/uploads/Untitled-drawing-4-4.png)
 # Types of memory:
 *  **CPU/GPU Registers**: are the fastest type of memory in a system/device. They are used to access very fast the data which is used for the calculation running at a given type. Physically the registers are part of the processors and some of them are part of specific set of instructions.
