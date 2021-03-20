@@ -22,9 +22,11 @@ When a task is scheduled to be executed on GPU it is divided in many very small 
 
 As mentioned before the high performance of the GPUs comes from the parallelism and the simplicity of the cores. The control part is much smaller, not so versatile as the control in the CPUs.  As a result the threads are executed in groups of e.g. 32, called warps, each thread in the warp executing the same instruction. This execution mode is called SIMT, Single Instruction Multiple Threads. We note that SIMT also implies SIMD, because each instruction will be executed in separate threads and on separate parts of the data. 
 
+![Warps](Images/loom.jpg)
+
 While the many computing cores in the GPUs can perform lots of calculations in parallel, the programmer also has to make sure that the access to memory is efficient. GPUs provide very large bandwidth to access data in the GPU memory, however the read/write accessing must be done in a specific way to achieve good performance. Two "adjacent" threads should always access adjacent memory locations, i.e. **coalesced** access. 
 
-![Warps](Images/loom.jpg)
+![Coalesced Access](Images/coalesced_access.png)
 
 In addition to the main memory which is accessible by all the threads working in a task, the GPUs have other types of memory which can be used to further accelerate the application: 
 
