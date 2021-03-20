@@ -2,23 +2,23 @@
 
 ## Message passing
 
-**Message passing** paradigm is the most common way to parallelize
-scientific computing programs. In message passing the tasks can only
-access their local data and when an exchange of data is needed between
-the parallel tasks, the sending and receiving tasks need to take
-explicit action to transfer data. In practice, this means calling
+The **message passing** paradigm is the most common way to parallelize
+scientific computing programs. In message passing, the tasks can only
+access their local data, and when an exchange of data is needed between
+the parallel tasks, the sending and receiving of tasks needs to take
+the explicit action to transfer data. In practice, this means calling
 specific subroutines or functions to perform the send or receive.
-For this purpose there is a library
+For this purpose, there is a library
 called MPI (Message Passing Interface), whose communication routines
 can be called from Fortran and C/C++. Other languages (such as Python
-and Julia) have also extension packages that allow one to use MPI.
+and Julia) also have extension packages that allow one to use MPI.
 
-With MPI, the only possibility is to parallelize the whole program, it
-cannot be done part by part. MPI can be used both within shared memory
+With MPI, the only possibility is to parallelize the whole program, as it
+cannot be done part by part. MPI can be used both within the shared memory
 nodes and between the nodes. Even though parallelizing a code with MPI may
 require a lot of work due to the explicit nature of communication and
 the fact that the subroutine/function calls have many parameters, the
-perfomance is typically good (if done right). Also, with MPI the
+perfomance is typically good (if done right). Also, with MPI, the
 programmer is completely in charge of the parallelization and nothing
 is left to the compiler.
 
@@ -46,7 +46,7 @@ program hello
 end program hello
 ```
 
-The corresponding code in C is as follows.
+The corresponding code in C:
 
 ```c
 #include <stdio.h>
@@ -68,12 +68,12 @@ int main(int argc, char** argv)
 ```
 
 In most Linux distributions, MPI is available via the package
-manager. MPI programs are typically compiled with a special wrapper
+manager. The MPI programs are typically compiled with a special wrapper
 command, `mpif90` (Fortran), `mpicc` (C), `mpic++` (C++), e.g.
 ```bash
 $ mpicc -o hello hello.c
 ```
-In order to launch **N** MPI tasks, also a special launcher command is
+In order to launch **N** MPI tasks, a special launcher command is
 needed, in basic Linux systems typically `mpiexec`. In order to run
 the above code with four tasks, one would use:
 ```bash
@@ -85,8 +85,8 @@ $mpiexec -n 4 ./hello
 ```
 
 In order to perform actual work in parallel, one typically needs to
-distribute the data to different parallel tasks, perform the actual
-computation in each task, and then combine the results of individual
+distribute the data to different parallel tasks, to perform the actual
+computation in each task, and then to combine the results of individual
 tasks. With MPI, the sum of elements in an array could be carried out
 (in Fortran) as follows:
 
@@ -128,27 +128,25 @@ program parallel_sum
 end program parallel_sum
 ```
 
-
 ## Threading
 
-Within a node one can use **shared memory parallelization** in which
-the parallel *threads* can access all the shared memory
-independently. This on one hands makes programming easier but on
-the other hand can lead to poor performance and seemingly random
+Within a node, one can use **shared memory parallelization** in which
+the parallel *threads* can access the shared memory
+independently. This on one hand makes programming easier, but on
+the other hand, can lead to poor performance and seemingly random
 errors that are difficult to find if not done correctly. The most
-popular shared memory parallelization method in scientific computing
+popular shared-memory parallelization method in scientific computing
 is to insert OpenMP pseudo comments in the code to tell a compatible
-compiler that the adjacent code can be parallelized. In Fortran the
-pseudo comments are called *directives* and in C/C++ *pragmas* and
+compiler that the adjacent code can be parallelized. In Fortran, the
+pseudo comments are called *directives*, and in C/C++, *pragmas*, and
 they affect the compilation only if the compiler is instructed to look
-for them. At least in theory it is then possible to have a single
+for them. At least in theory, it is then possible to have a single
 source code that can be compiled for serial and parallel computing.
 
-With OpenMP the programmer mostly relies on the compiler for the
-actual parallelization. Additionally, with OpenMP a code can be
+With OpenMP, the programmer mostly relies on the compiler for actual parallelization. Additionally, with OpenMP, a code can be
 parallelized incrementally, which is quite convenient. This is in
 contrast to MPI where the parallelization is an all-or-nothing
-enterprise and once parallelized the code cannot be run serially (or
+enterprise, and once parallelized, the code cannot be run serially (or
 at least without the MPI library).
 
 As an example, the parallel sum could be implemented with OpenMP (in
@@ -173,7 +171,7 @@ int main()
    std::cout << "Sum of array " << sum << std::endl;
 ```
 
-In order to compile the OpenMP an additional flag is needed, e.g. with the
+In order to compile the OpenMP, an additional flag is needed, e.g. with the
 GNU C++ compiler one uses `-fopenmp`. The number of threads to use when
 running can be specified with the `OMP_NUM_THREADS` environment variable
 (the default is to use as many threads as there are cores in the system).
@@ -184,34 +182,34 @@ $ OMP_NUM_THREADS=4 ./sum
 Sum of array 4950
 ```
 
-It is possible to combine MPI and OpenMP parallelization, so that
-within a shared memory node OpenMP parallelization is used and
-between the nodes MPI.
+It is possible to combine the MPI and OpenMP parallelizations, so that
+within a shared memory node, the OpenMP parallelization is used, and
+between the nodes, MPI.
 
 # GPU programming
 
-For **GPU parallelization** the most common alternatives are currently
+For **GPU parallelization**, the most common alternatives are currently
 the following:
-- CUDA is an extension to C by the GPU vendor Nvidia. With CUDA the
-  parts of the code that are to be run on CPUs are written in C/C++
+- CUDA is an extension to C by the GPU vendor Nvidia. With CUDA, the
+  parts of the code that are to be run on CPUs are written in C/C++,
   and the computing intensive parts that are offloaded to GPUs (called
-  *kernels*) are written in CUDA. CUDA is a relatively low level approach
+  *kernels*) are written in CUDA. CUDA is a relatively low-level approach
   that requires a lot of work and careful programming to utillize the
-  highly parallel processor. When done right the performance is very good.
-- HIP can be considered to be the AMD version of CUDA and the
+  highly parallel processor. When done right, the performance is very good.
+- HIP can be considered to be the AMD version of CUDA, and the
   conversion between them is mostly one-to-one.
-- OpenACC is a directive based approach to GPU programming available
+- OpenACC is a directive-based approach to GPU programming available
   for Fortran and C/C++. The programmer inserts special pseudo
   comments to the program based on which a compatible compiler
   generates the necessary machine code for GPU execution. Programming
-  with OpenACC is easier than with CUDA and the performance can be quite
+  with OpenACC is easier than with CUDA, and the performance can be quite
   good.
-- During the last few years OpenMP has been extended to support GPU
-  offloading and it is quite comparable to OpenACC. Currently the
-  compiler support is not quite on a satisfactory level but in the
-  long run OpenMP is considered (or at least hoped) to become
+- During the last few years, OpenMP has been extended to support GPU
+  offloading and is quite comparable to OpenACC. Currently, the
+  compiler support is not quite on a satisfactory level, but in the
+  long run, OpenMP is considered (or at least hoped) to become
   mainstream for GPU programming.
-- Various portability frameworks like Kokkos, Raja and SYCL.
+- There are various portability frameworks, such as Kokkos, Raja and SYCL.
 
-When using multiple GPU nodes, all the above approaches can be
+When using multiple GPU nodes, all above approaches can be
 combined with MPI.
