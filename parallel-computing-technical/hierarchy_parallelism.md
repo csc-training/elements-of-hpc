@@ -13,6 +13,7 @@ TODO: Missing a good image
 ![Example of instruction level parallelism](images/ilp.png)
 <!--- [![Instruction level parallelism](https://i.pinimg.com/originals/1f/a4/d7/1fa4d7bda58e84045b9456c391d2aa58.png)](https://i.pinimg.com/originals/1f/a4/d7/1fa4d7bda58e84045b9456c391d2aa58.png) --->
 Depending on the architectures and compilers, the operations targeted for ILP do not need to be identical. At hardaware level, processors which can perform ILP have to support features such as:
+
         * Instruction pipelining
         * Out-of-order execution 
         * Register renaming 
