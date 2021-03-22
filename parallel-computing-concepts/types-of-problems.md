@@ -22,11 +22,11 @@ need to interact regularly with Bob during her computations, it would
 be considered a *tighly coupled* algorithm instead (e.g. solving a
 sudoku together is an example of a tightly coupled problem).
 
-Animation idea:
+TODO: Animation idea:
   - couple of boxes / spheres etc. representing computation
   - for trivally parallel case, something flows between the shapes
     in the beginning, then computation proceedes (e.g. spheres rotate)
-	and finally something flows again between shapes
+    and finally something flows again between shapes
   - for tightly coupled case information flow and computation
     alternate several times
 
@@ -78,7 +78,7 @@ cheese to Bob. After passing chopped ham to Alice, Joe would get a new
 task of slicing tomatoes. Finally Alice would assemble everything
 together.
 
-Animation idea: good the pizza making be presented as animation?
+TODO: Animation idea: could the pizza making be presented as an animation?
 
 Task farm and data parallel approaches can be also combined, for example,
 each worker could consist of multiple execution units, and the data related
