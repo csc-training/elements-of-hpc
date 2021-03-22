@@ -15,9 +15,9 @@ parallel algorithms and tightly coupled algorithms.
 
 In *trivially parallel* algorithms there is very little (or no)
 interaction between subtasks. In the example of Alice and Bob,
-interaction is needed in distributing the work and in combining the
+interaction is needed to distribute the work and to combine the
 partial sums. However, during the computing of the individual partial
-sums no interaction is needed, and the algorithm can be considered
+sums, no interaction is needed, and the algorithm can be considered
 trivially parallel. If the problem would be different and Alice would
 need to interact regularly with Bob during her computations, it would
 be considered a *tighly coupled* algorithm instead (e.g. solving a
@@ -31,13 +31,13 @@ TODO: Animation idea:
   - for tightly coupled case information flow and computation
     alternate several times
 
-Programming trivially parallel algorithms is typically easier and
+Programming trivially parallel algorithms is typically easier, and
 they do not impose a high demand for the connection between the CPUs.
 It may even be possible to use internet-connected computers all over
 the world to compute something in parallel, such as in the
 [Folding@home](https://foldingathome.org/) project where protein
 folding is studied using personal computers all over the world.
-For tightly coupled algorithms, programming is usually more difficult
+For tightly coupled algorithms, programming is usually more difficulti,
 and a low-latency, high-speed interconnect between the CPUs is essential
 for good performance. Weather simulation is a typical example of a tightly
 coupled problem on supercomputers.
@@ -66,7 +66,7 @@ receives results back from them.
 ![Task farm](images/task-farm.svg)
 
 The tasks can be computationally similar, but they can also be
-completely different. Often there are more tasks than workers, and tasks are
+completely different. Often, there are more tasks than workers, and tasks are
 then dynamically assigned to workers.
 
 As an example of a task farm approach, we could think of Alice, Bob, and Joe
