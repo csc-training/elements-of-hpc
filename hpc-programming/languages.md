@@ -1,91 +1,189 @@
-## Programming supercomputers
+# Programming languages in supercomputers
 
-Programming languages typically support primarily serial computing and parallelization is achieved with special communication libraries, extensions of languages, compiler directives and so on. There are exceptions, however. 
+Based on the [Google searches for programming language
+tutorials](https://pypl.github.io/PYPL.html), the five most popular
+programming languages in 2021 are Python, Java, Javascript, C#, and
+C/C++. However, in the context of high performance computing, Java, Javascript
+and C# are practically non-existent, and the dominant languages are
+currently Fortran and C/C++. In addition, Python (typically in
+combination with C/C++) has been steadily increasing for a long time,
+and as a newcomer, Julia has been arousing interest. Nowadays, it is
+also common to use several programming languages in a single
+application, and all languages support interoperability, i.e. it is
+possible to call subroutines written in a different programming language.
 
-### Programming languages
+The base programming languages typically support primarily serial
+computing, and parallelization is achieved with language extensions and
+special communication libraries. In addition, various high-performance
+libraries are typically utilized.
 
-**Fortran** (from FORmula TRANslation) is the traditional language of scientific computing. It was originally developed in the 1950s by IBM and was specifically designed for numeric computation. Fortran has continuously evolved and gained features and is still very important in scientific computing. A large collection of scientific and numeric subroutine libraries is available for Fortran programmers.
+## Fortran
 
-**C** is another common language from the early days of scientific computing. C was developed at Bell Labs in the early 1970s as a general purpose language for the Unix operating system and its utilities. C gained popularity in the 1980s and is today one of the most popular programming languages, and is also widely used in scientific computing.
+**Fortran** (from FORmula TRANslation) is the traditional language of
+scientific computing. It was originally developed in the 1950's by IBM
+and was specifically designed for numeric computation. Fortran has
+continuously evolved and gained features and is still very important
+in scientific computing. The most recent Fortran standard is Fortran
+2018, and the next revision is planned for 2021–2022.
 
-**C++** is an extension of C developed in the early 1980s. C++ is a general purpose *object oriented* language in which data and code that can access it (*methods*) are packaged in so called *objects*. This approach allows better control of how the data is manipulated and thus reduces the risk of programming errors especially in large projects where a number of developers contribute to the same program. C++ is becoming more important in scientific computing because many new parallelization extensions, libraries etc. are first implemented for C++, especially when GPUs are targeted.
+Large multidimensional numerical arrays are a key data structure in many
+scientific applications, and the major attraction of Fortran has been the
+convenient and efficient tools it provides for dealing with them. The
+structure of the language is also well suited for compiler optimizations,
+and Fortran programs can typically utilize CPUs efficiently.
 
-Fortran and C/C++ are compiled languages meaning that the source code file is first passed through a *compiler* that produces a machine language *executable* file which can then be run on a computer.
+Although the Fortran 2008 standard includes coarrays, a language
+feature for distributed parallel programming, parallel Fortran
+programs utilize more often additional parallel libraries.
 
-**Python** is a high-level general purpose language created in the 1980s. Python supports multiple programming paradigms, including structured, object oriented and functional. As opposed to Fortran and C/C++, Python is an *interpreted* language, where instructions are executed directly and freely without previous compilation into a machine language executable. Python was designed to be highly extensible and simple to read. In scientific computing Python is very popular and used especially in writing the high level logic of the algorithms while the performance critical parts are written in Fortran or C/C++.
+To provide a look and feel of a Fortran program, the below code
+calculates the sum of elements of array containing real numbers from 0
+to 99:
+```fortran
+program fortran_example
+ implicit none
 
-**Others** Julia etc. TODO
+ integer :: i
+ real :: array(100) = [(i, i=0, 99)]
 
-### Subroutine libraries
+ write(*,*) 'sum of array', sum(array)
 
-While the scientific computing programs solve or simulate a huge number of different problems, many of them need to perform similar subtasks of e.g. numerical mathematics such as solving systems of linear equations and eigenvalue problems or performing various matrix operations, fast Fourier transforms and so on. To make the software developer's task easier the most common algorithms and operations are available in performance optimized subroutine libraries that can be *linked* to the main program.
+end program fortran_example
+```
+Fortran is a compiled language, meaning that the source code file is
+first passed through a *compiler* that produces a machine language
+*executable* file which can then be run on a computer.
 
-### Parallel programming
+The above code can be compiled with the GNU Fortran compiler
+(often available by default in Linux systems) and then run as:
 
-**Message passing** paradigm is the most common way to parallelize scientific computing programs. In message passing the tasks only can access their local data and when exchange of data is needed between the parallel tasks, the sending and receiving tasks need to take explicit action which means calling specific subroutines or functions to perform the send or receive. For this purpose there is a library called MPI (Message Passing Interface), whose communication routines can be called from Fortran and C/C++. 
+```bash
+$ gfortran -o sum sum.F90
+$ ./sum
+ sum of array   4950.00000
+```
 
-With MPI the only possibility is to parallelize the whole program, it cannot be done part by part. MPI can be used both within shared memory nodes and between the nodes. While parallelizing a code with MPI may require a lot of work due to the explicit nature of communication and the fact that the subroutine/function calls have many parameters the perfomance is typically good (if done right). Also, with MPI the programmer is completely in charge of the parallelization and nothing is left to the compiler.
+A large collection of scientific and numeric
+subroutine libraries is also available for Fortran programmers.
 
-The following is a simple MPI code example written in Fortran. When run, each task prints out its rank and the total number of tasks with which the program is launched.
+## C/C++
 
-    program hello
-      implicit none
-      include 'mpif.h'
-      integer:: ierror, rank, ntasks, status(MPI_STATUS_SIZE)
+**C** is another common language from the early days of scientific
+computing. C was developed at Bell Labs in the early 1970s as a
+general purpose language for the Unix operating system and its
+utilities. C gained popularity in the 1980s and is today one of the
+most popular programming languages. It is also widely used in
+scientific computing.
 
-      call MPI_INIT(ierror)
+**C++** started as an extension of C developed in the early
+1980's. Today, C++ can be considered a language of its own, even
+though it shares some features with C. The latest C++ standard is
+C++20 from 2020, and the next standard is planned for 2023.
 
-      call MPI_COMM_SIZE(MPI_COMM_WORLD, ntasks, ierror)
-      call MPI_COMM_RANK(MPI_COMM_WORLD, rank, ierror)
+C++ is a general purpose *object oriented* language in which the data and code
+that can access it (*methods*) are packaged in so-called
+*objects*. This approach allows better control of how the data is
+manipulated and thus reduces the risk of programming errors especially
+in large projects where a number of developers contribute to the same
+program. C++ is becoming more important in scientific computing, and
+many new parallelization extensions, libraries etc. are first
+implemented for C++, especially when GPUs are targeted.
 
-      print *,'Hello from task', rank, '/', ntasks
+The C++11 standard included a multithreading functionality, which can
+be used for shared memory parallelization. For distributed memory
+parallelization, additional communication libraries are needed.
 
-      call MPI_FINALIZE(ierror)
+In C++, the program calculating the sum of elements in an array looks like:
+```c++
+#include <iostream>
+#include <vector>
 
-    end program hello
+int main()
+{
+   auto array = std::vector<float>(100);
 
-The corresponding code in C is as follows.
+   for (int i=0; i < 100; ++i)
+      array[i] = i;
 
-    #include <stdio.h>
-    #include <mpi.h>
+   auto sum = array[0];
+   for (int i=1; i < 100; ++i)
+      sum += array[i];
 
-    int main(argc, argv)
-     int argc;
-     char *argv[];
-    {
-    int rank, ntasks;
+   std::cout << "Sum of array " << sum << std::endl;
+}
+```
+Similar to Fortran, C and C++ are compiled languages.
+The above code can be compiled with the GNU C++ compiler
+(often available by default in Linux systems) and then run as:
 
-    MPI_Init(&argc, &argv);
+```bash
+$ g++ -o sum sum.cpp
+$ ./sum
+Sum of array 4950
+```
 
-    MPI_Comm_rank(MPI_COMM_WORLD, &rank);
-    MPI_Comm_size(MPI_COMM_WORLD, &ntasks);
+## Python
 
-    printf("Hello from task %d / %d \n", rank, ntasks);
+**Python** is a high-level general purpose language created in the
+1980's. Python supports multiple programming paradigms, including
+structured, object-oriented and functional. Python was designed to be highly
+extensible and simple to read. Python has also become very popular in
+scientific computing due to the benefits it offers for fast code
+development, and it is used especially in writing the high-level logic of
+algorithms.
 
-    MPI_Finalize();
-    }
+Python is an interpreted language, which means that a
+separate compilation step is not needed. Partly due to the interpreted
+nature, the performance of pure Python programs is often
+subobtimal. Thus, in scientific applications, Python is typically
+combined with C/C++ or
+Fortran for the performance-critical parts of the application. Python
+has many extension modules for numerical and scientific computing,
+as well as data science applications. Many current artificial intelligence
+frameworks provide a Python front-end for setting up the model.
 
-When run with four tasks the output of the C code looks like
+The Python standard library has a functionality for shared memory
+parallelization, but for distributed memory parallelization, separate
+extensions are needed.
 
-    Hello from task 0 / 4
-    Hello from task 2 / 4
-    Hello from task 1 / 4
-    Hello from task 3 / 4
+In Python, the sum of an array could be implemented as:
+```python
+import numpy
 
-Within a node one can use **shared memory parallelization** in which the parallel *threads* can access all the shared memory independently. This on the other hands makes programming easier but on the other hand can lead to poor performance and seemingly random errors that are difficult to find if not done correctly. The most popular shared memory parallelization method in scientific computing is to insert OpenMP pseudo comments in the code to tell a compatible compiler that the adjacent code can be parallelized. In Fortran the pseudo comments are called *directives* and in C/C++ *pragmas* and they affect the compilation only if the compiler is instructed to look for them. At least in theory it is then possible to have a single source code that can be compiled for serial and parallel computing. 
+array = numpy.arange(0, 100, dtype=float)
+print("Sum of array {}".format(array.sum()))
+```
+As no separate compilation step is needed, the program is run directly
+as:
+```bash
+$ python sum.py
+Sum of array 4950.0
+```
 
-With OpenMP the programmer mostly relies on the compiler for the actual parallelization. Additionally, with OpenMP a code can be parallelized incrementally, which is quite convenient. This is in contrast to MPI where the parallelization is an all-or-nothing enterprise and once parallelized the code cannot be run serially (or at least without the MPI library).
+## Julia
 
-For **GPU parallelization** the most common alternatives are currently the following:
-- CUDA is an extension to C by the GPU vendor Nvidia. With CUDA the parts of the code that are to be run on CPUs are written in C/C++ and the computing intensive parts that are offloaded to GPUs called *kernels* are written in CUDA. CUDA is relatively low level approach that requires a lot of work and careful programming to utillize the highly parallel processor. When done right the performance is good.
-- HIP can be considered to be the AMD version of CUDA and the conversion between them is mostly one-to-one.
-- OpenACC is a directive based approach to GPU programming available for Fortran and C/C++. The programmer inserts special pseudo comments to the program based on which a compatible compiler generates the necessary machine code for GPU execution. Programming with OpenACC is easier than with CUDA and the performance is quite good.
-- During the last few years OpenMP has been extended to support GPU offloading and it is quite comparable to OpenACC. Currently the compiler support is not quite on a satisfactory level but in the long run OpenMP is considered (or at least hoped) to become mainstream for GPU programming.
-- Various portability frameworks like Kokkos, Raja and SYCL.
+Julia is a relatively new programming language, as it was introduced
+only in 2012. Julia is a flexible and dynamic language, and it aims to
+combine rapid development (such as Python) with a performance similar to
+C/C++ and Fortran. Julia is designed from the beginning with
+numerical and high performance computing in mind.
+Julia is multi-paradigm, combining features of imperative, functional,
+and object-oriented programming. Similar to Python, Julia does not
+need a separate compilation step, but a just-in-time compilation is
+carried out in the runtime.
 
-### Portability
+Julia itself contains functionality both for shared memory and
+distributed memory parallelization, but there are also extension
+packages for parallel programming.
 
-Portability means whether and how easily a program can be transferred from one system to another. In addition to different hardware (most importantly CPUs and GPUs) systems may have different compilers and libraries available. In an ideal world a program could be without any modifications compiled and run on any system with good performance. In practice this is not always the case. Sometimes the source code needs to be modified or the program may compile but crashes when run and sometimes the performance is not sufficient.
+The sum of an array looks in Julia as:
+```julia
+array = Array{Float32}(range(0, length=100))
 
-CPU programs written in Fortran, C/C++ or Python and parallelized with MPI or OpenMP are generally portable with good performance. However, the GPU world is currently more complicated as there are a number of competing vendors and proprietary languages and programming models. 
-
+println("Sum of array ", sum(array))
+```
+And the program would be run as
+```bash
+$ julia sum.jl
+Sum of array 4950.0
+```

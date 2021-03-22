@@ -1,20 +1,16 @@
-# Elements of HPC
+# Elements of High-Performance Computing
 
 ## Introduction
-### What is HPC
-1. [Computational science and HPC](intro/how-hpc-has-changed-the-world.md)
-2. General introduction to subject, whole course in a nutshell
-3. Introduction video
-4. Maybe a picture/diagram showing the key components of HPC
+### What is high-performance computing
+
+1. Introductory video, e.g. [PRACE video](https://youtu.be/mJ3tvjVkCcI)
+2. [Computational science and HPC](intro/how-hpc-has-changed-the-world.md)
+3. [Components of HPC](intro/components-of-hpc.md)
+4. General introduction to subject, whole course in a nutshell
 5. Some central terms explained
 
 ### Applications of HPC/How HPC has changed the world
-7. [Examples of HPC applications](intro/applications.md)
-8. Climate change
-1. Materials research
-1. Drug design
-1. Biomedical sciences
-1. Fundamental research 
+1. [Examples of HPC applications](intro/applications.md)
 
 ### Exam (5-10 questions), 80 % correct to pass, multiple attempts allowed
 
@@ -22,18 +18,17 @@
 
 1. [History of supercomputing](supercomputer/history.md)
 1. [Modern supercomputer](supercomputer/modern-supercomputer.md)
-2. [GPUs](gpus/cpu_vs_gpu.md)
-3. [Data storage](supercomputer/storage.md)
 6. [Supercomputer performance](supercomputer/supercomputer_performance.md)
+3. [Data storage](supercomputer/storage.md)
 8. [HPC and Cloud computing](supercomputer/cloud_vs_traditional.md)
 10. [Top supercomputers](supercomputer/top-systems.md)
-11. [Introduction to LUMI](intro/introduction-to-lumi.md)
+11. [Introduction to LUMI](supercomputer/introduction-to-lumi.md)
 
 ### Exam (5-10 questions), 80 % correct to pass, multiple attempts allowed
 
 ## Running and using a supercomputer
 
-2. [HPC center?](intro/computing-center.md)
+2. [HPC centers](intro/computing-center.md)
 3. [Energy and cooling](supercomputer/energy-cooling.md)
 4. [How to buy a supercomputer](supercomputer/procurement.md)
 5. [How to access a supercomputer?](supercomputer/how-to-use.md)
@@ -44,6 +39,7 @@
 ## Parallel computing concepts
 
 1. [Computing in parallel](parallel-computing-concepts/basic-idea.md)
+1. [Types of parallel algorithms](parallel-computing-concepts/types-of-problems.md)
 1. [Concepts](parallel-computing-concepts/concepts.md)
 1. [Parallel sum](parallel-computing-concepts/parallel-sum.md)
 
@@ -60,12 +56,14 @@
 
 ## HPC programming
 
-1. [HPC programming languages](hpc-programming/languages.md)
+1. [How supercomputers are programmed](hpc-programming/overview.md)
+2. [HPC programming languages](hpc-programming/languages.md)
+3. [Parallel programming](hpc-programming/parallel-programming.md)
+4. [High performance libraries](hpc-programming/libraries.md)
+5. [Portability](hpc-programming/portability.md)
 
 ### Exam (5-10 questions), 80 % correct to pass, multiple attempts allowed
 
 ## Wrap-up
 
 ### Final exam (10 questions), 80 % correct to pass, multiple attempts allowed
-
-
