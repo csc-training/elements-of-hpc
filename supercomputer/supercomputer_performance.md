@@ -14,27 +14,46 @@ performance is 1 giga FLOP/s (GFLOP/s). Similarly, one trillion
 (10<sup>12</sup>) FLOP/s is 1 tera FLOP/s (TFLOPs), and when a supercomputer can
 execute 1 quadrillion or 10<sup>15</sup> FLOP/s, 1 peta FLOP/s (PFLOPs).
 
-CPU has a theoretical peak performance which is determined by the
+The pure computing power of CPU core is determined by the
 clock speed and the maximum number of floating operations it can perform in one
-clock cycle. As an example, CPU in laptop might have a clock speed of 3 GHz (2 billion cycles per
-second) and perform 16 floating operations per cycle, having a peak
-performance of about 50 GFLOP/s per core. Theoretical peak performance
-of a supercomputer is obtained simply by multiplying the peak
-performance of single core with the total number of CPU
-cores (in systems with GPUs one adds naturaly also the theoretical
-peak performance of GPUs).
+clock cycle. As an example, CPU core in laptop might have a clock speed of
+3 GHz (3 billion cycles per second) and perform 16 floating operations
+per cycle, having a peak performance of about 50 GFLOP/s per
+core. This pure computing power is the theoretical peak performance 
+of a CPU core. For multicore CPU, the theoretical peak performance is
+the number of CPU cores times the theoretical peak of single
+core. Similary, one can evaluate a theoretical peak performance 
+for GPUs. Furthermore, the theoretical peak performance of
+supercomputer is obtained by multiplying the theoretical peak
+performance of CPUs and GPUs by the number of them in the system.
 
-In practice, theoretical peak performance is never achieved as other
-characteristics of the system limit the performance. In case of a
-single CPU, the time to access memory can limit the performance, and
-for a supercomputer the interconnect between the nodes can be further
-limiting factor. Real world applications need to also read and write
-to the disk so that the speed of the I/O (input/output or transfer of
-data between processors and storage) may play a role.
+As the term *theoretical* might suggest, this computing power cannot
+normally be obtained in real calculations. In order to calculate
+`2.1 + 4.3`, CPU needs to fetch two numbers from the memory, and after the
+addition put the result back to the memory. This does
+not happen instanteniously, so in practice computational speed is
+determined not only by the pure computing power of CPU, but also by
+how fast CPU can access the memory. Different applications have
+different ratio of floating operations per memory access. In some
+cases the same number is used in multiple computations *e.g.*
+when calculating both `2.1 + 4.3` and `2.1 + 5.3`. If the speed of
+memory access is the limiting factor (as is the case with most modern
+computers), applications performing many floating point operations
+with the same data can achieve larger proportion of the peak
+performance than applications with fewer operations per data. In
+supercomputers, the CPU in one node might need to access also data in
+another data, and the speed of communicating data between nodes can
+also limit the practical performance.  Real world applications need to
+also read and write to the disk so that the speed of the I/O
+(input/output or transfer of data between processors and storage) may
+further limit the performance. 
+
+Illustration idea: sketch a picture representing the different aspects
+affecting practical performance.
 
 ## TOP500 list
 
-_Benchmark_ is an application which used to measure the performance
+_Benchmark_ is an application which is used to measure the performance
 and functionality of a (super)computer. Typically, the runtime of the
 benchmark application is recorded and used as a metric. 
 With benchmarks, one can compare the performance of different computers.

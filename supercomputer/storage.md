@@ -30,11 +30,17 @@ used for special high speed storage. The disks in supercomputer differ
 typically from the consumer devices as the hardware for a
 supercomputer is designed for high and more frequent utilization. 
 
-Supercomputer storages have typically parallel filesystem. This allows many
-users to utilize the filesystem at the same time, and if an
-application supports parallel disk access, can reading and writing be
-done simultaneuosly with multiple disks, increasing the available
-total bandwidth significantly. There are many different parallel file systems available such as [Lustre](https://en.wikipedia.org/wiki/Lustre_(file_system)), [GPFS](https://en.wikipedia.org/wiki/GPFS), [BeeGFS](https://en.wikipedia.org/wiki/BeeGFS), [Ceph](https://en.wikipedia.org/wiki/Ceph_(software)) to name a few.
+Even though the individual disks in supercomputer can be slower than
+those in laptops, supercomputer storages have typically parallel
+filesystem. This allows applications to read and write simultaneuosly
+to multiple disks, decreasing the total read/write time significantly.
+Parallel filesystem allows also multiple users to utilize the storage
+at the same time more efficiently. There are many different parallel file systems available such as [Lustre](https://en.wikipedia.org/wiki/Lustre_(file_system)), [GPFS](https://en.wikipedia.org/wiki/GPFS), [BeeGFS](https://en.wikipedia.org/wiki/BeeGFS), [Ceph](https://en.wikipedia.org/wiki/Ceph_(software)) to name a few.
+
+Illustration idea: multiple disks of supercomputer with arrows going
+to/from them vs. single disk of laptop.
+
+
 
 Some supercomputers have also archiving storage based on magnetic
 tapes where users can save the data for long term and recover it, however, with slower performance than the other mentioned technologies. The tape-based storage is significantly cheaper than hard disks, and it has been around since the 1950's. The technology is similar to VHS tapes.
