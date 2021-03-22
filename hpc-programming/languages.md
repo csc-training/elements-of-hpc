@@ -176,7 +176,7 @@ Julia itself contains functionality both for shared memory and
 distributed memory parallelization, but there are also extension
 packages for parallel programming.
 
-THe sum of an array looks in Julia as:
+The sum of an array looks in Julia as:
 ```julia
 array = Array{Float32}(range(0, length=100))
 
