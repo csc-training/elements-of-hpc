@@ -39,6 +39,7 @@
 ## Parallel computing concepts
 
 1. [Computing in parallel](parallel-computing-concepts/basic-idea.md)
+1. [Types of parallel algorithms](parallel-computing-concepts/types-of-problems.md)
 1. [Concepts](parallel-computing-concepts/concepts.md)
 1. [Parallel sum](parallel-computing-concepts/parallel-sum.md)
 

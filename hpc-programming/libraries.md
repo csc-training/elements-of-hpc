@@ -1,29 +1,29 @@
 # High performance libraries
 
-While the scientific computing programs solve or simulate a huge
+While scientific computing programs solve or simulate a huge
 number of different problems, many of them need to perform similar
-subtasks of e.g. numerical mathematics such as solving systems of
+subtasks of e.g. numerical mathematics, such as solving systems of
 linear equations and eigenvalue problems or performing various matrix
 operations, fast Fourier transforms and so on. To make the software
-developer's task easier the most common algorithms and operations are
-available in performance optimized subroutine libraries that can be
+developer's task easier, the most common algorithms and operations are
+available in performance-optimized subroutine libraries that can be
 *linked* to the main program.
 
 In addition to providing convenient tools for common tasks, the
 libraries can typically provide greatly improved performance over
-naive algorithms. Getting everything out from the CPU can require
-quite tedious optimizations, which can mean in many cases different
+naïve algorithms. Getting everything out of the CPU can require
+tedious optimizations, which can mean, in many cases, different
 approaches depending on the underlying hardware. By utilizing high
-performance libraries also performance portably is thus improved.
+performance libraries, performance portably is also improved.
 
-As an example, the basic mathematical formulation of a matrix-matrix
+As an example, the basic mathematical formulation of a matrix–matrix
 product $$C = A B$$ is:
 
 $$
 C_{ij} = \sum_k A_{ik} B_{kj}.
 $$
 
-This is straigthforward to program, for example, in Fortran the code
+This is straigthforward to program, for example, in Fortran, the code
 would be:
 ```fortran
 ...
@@ -42,6 +42,6 @@ do i=1, M
 end do
 ...
 ```
-However, this naive algorithm is very inefficient. By using an optimized
-high performance library the matrix multiplication can in many cases be
+However, this naïve algorithm is very inefficient. By using an optimized
+high performance library, the matrix multiplication can in many cases be
 over 100 times more efficient.
