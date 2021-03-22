@@ -13,12 +13,46 @@ ENIAC and its vacuum-tubed successors were followed by transistorized systems in
 
 The term *supercomputing* was first used in 1964 when Control Data Corporation introduced the CDC 6600 system designed by Seymour Cray, whose name went on to became synonymous with supercomputers. An improved version, called CDC 6700, was introduced in 1969. Cray subsequently left Control Data Corporation, founded a company of his own, and in 1976 debuted the iconic Cray-1 supercomputer.
 
-In addition to Cray (now a product line of HPE), the most common names of the supercomputer vendors include IBM, SGI/Silicon Graphics, Hewlett-Packard, Atos, Dell, Intel, Fujitsu, Lenovo and Sun.
+Parallel computers were investigated already in 1960s, but until late
+1980s most supercomputers employed only a single, or at least few
+processors. The used processors were also often designed specifically
+for supercomputers. As an example, Cray Y-MP introduced in 1989 had
+eight special vector processors. During the 1990s supercomputers
+started to be based more on commodity processors (such as
+Intel x86) and massively parallel processing. Important landmark was
+the Beowulf cluster in 1995, which was build from commodity-grade
+components (Intel DX4 processors and Ethernet network) and running the
+Linux operating system. Nowadays, large majority of supercomputers is
+based on commodity processors, however, the network connecting
+processors is typically designed specifically for supercomputers.
+
+
+Supercomputer performance has followed very steadily Moore's law. In
+its original formulation (by Gordon Moore, founder of Intel) Moore's law states
+that the density of the transitors in integrated circuit doubles every two
+years. As a one result, the clock frequency of processors, i.e. the
+speed on which they operate was constantly increasing for a long
+time. However, the power consumption of processor increases with the
+third power of the clock frequency, and since around 2005 the clock
+frequency stagnated. Since then, performance has been increased by
+adding multiple cores to a single CPU (multicore CPUs are nowaways
+ubiquitous in all devices from smart phones to supercomputers), and in
+the case of supercomputer adding more and more multicore CPUs to the
+same computer. As a result, the performance of supercomputers has kept
+on doubling every two years.
+
+![Development of clock frequency of CPUs](images/freq.png)
 
 Nowadays, a supercomputer is often defined as a computer that has much larger
-computing power than a typical desktop computer. As computers constantly become more powerful, this is a moving defintion. As an example, a
-modern laptop is 1000 times more powerful than the biggest
+computing power than a typical desktop computer. This is naturaly a
+moving definition; as also the performance of desktop computers has
+increased, a modern laptop is 1000 times more powerful than the biggest
 supercomputer in the Nordic countries thirty years ago. ![Cray X-MP Supercomputer](images/Cray-X-MP.jpg)
+
+
+In addition to Cray (now a product line of HPE), the most common names of the supercomputer vendors include IBM, SGI/Silicon Graphics, Hewlett-Packard, Atos, Dell, Intel, Fujitsu, Lenovo and Sun.
+
+
 
 ## Supercomputing in Finland and at CSC
 
