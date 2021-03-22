@@ -9,8 +9,9 @@ programming.
 
 ## Types of parallel algorithms
 
-There are various type of parallel algorithms, with two limiting cases
-in the ends of the spectrum: trivially parallel ones and tightly coupled ones.
+Parallel algorithms fall on a wide spectrum of interaction and dependency
+between the parallel tasks. At the two extreme ends you have trivially
+parallel algorithms and tightly coupled algorithms.
 
 In *trivially parallel* algorithms there is very little (or no)
 interaction between subtasks. In the example of Alice and Bob,
@@ -66,17 +67,16 @@ receives results back from them.
 
 The tasks can be computationally similar, but they can also be
 completely different. Often there are more tasks than workers, and tasks are
-then dynamically assigned to workers. 
+then dynamically assigned to workers.
 
-As an example of task farm
-approach, we could think Alice, Bob, and Joe making a pizza
-together. Alice would first give Bob the task of slicing onions, and
-Joe to chop the ham. Alice could start then to prepare the
-dough. Once finished with onions Bob would pass them to Alice (she
-needs to interrupt her task) who can pass a new task of grating
-cheese to Bob. After passing chopped ham to Alice, Joe would get a new
-task of slicing tomatoes. Finally Alice would assemble everything
-together.
+As an example of a task farm approach, we could think of Alice, Bob, and Joe
+making a pizza together. Alice would first give Bob the task of slicing
+onions, and Joe the task of chopping the ham. Alice herself could then start
+to prepare the dough. Once finished with the onions, Bob would pass them to
+Alice (she needs to interrupt her task) and, in turn, Alice could pass a new
+task of grating cheese back to Bob. Similarly, after passing the chopped ham
+to Alice, Joe would get a new task of slicing tomatoes. Finally, Alice would
+assemble everything together.
 
 TODO: Animation idea: could the pizza making be presented as an animation?
 
