@@ -88,8 +88,10 @@ size of a phone booth), where each cabinet contains multiple rack blades, and
 each rack blade can contain multiple nodes. If the computing power of LUMI
 would be devised from Macbook Pros, the pile of laptops would reach Mt
 Everest, whereas LUMI fits in the size of a bit over a tennis court
-and weighs 150 metric tons.
+and weighs 150 metric tons. In the below picture we can see the Mahti supercomputer
+from CSC.
 
-TODO: image of cabinet / open cabinet?
+!["Mahti Supercomputer at CSC"](![](images/mahti.jpg)
+*Mahti Supercomputer at CSC*
 
 <!-- Copyright SURFsara,  EPCC at the University of Edinburgh, CSC - IT Center for Science Ltd. >
