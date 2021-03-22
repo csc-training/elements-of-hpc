@@ -39,29 +39,30 @@ supercomputer.
 
 Parallel computers were investigated already in 1960s, but until late
 1980s most supercomputers employed only a single, or at least few
-processors. The used processors were also often designed specifically
+processors. The processors used were also often designed specifically
 for supercomputers. As an example, Cray Y-MP introduced in 1989 had
 eight special vector processors. During the 1990s supercomputers
 started to be based more on commodity processors (such as
-Intel x86) and massively parallel processing. Important landmark was
-the Beowulf cluster in 1995, which was build from commodity-grade
+Intel x86) and massively parallel processing. An important landmark in 1995
+was the Beowulf cluster, which was build from commodity-grade
 components (Intel DX4 processors and Ethernet network) and running the
-Linux operating system. Nowadays, large majority of supercomputers is
-based on commodity processors, however, the network connecting
+Linux operating system. Nowadays, most supercomputers are
+based on commodity processors, but the network connecting the
 processors is typically designed specifically for supercomputers.
 
-
-Supercomputer performance has followed very steadily Moore's law. In
-its original formulation (by Gordon Moore, founder of Intel) Moore's law states
-that the density of the transitors in integrated circuit doubles every two
-years. As a one result, the clock frequency of processors, i.e. the
-speed on which they operate was constantly increasing for a long
-time. However, the power consumption of processor increases with the
-third power of the clock frequency, and since around 2005 the clock
-frequency stagnated. Since then, performance has been increased by
+Supercomputer performance in the past has followed Moore's law steadily. In
+its original formulation (by Gordon Moore, founder of Intel), Moore's law
+states that the density of the transistors in an integrated circuit doubles
+every two years, implying that the performance also doubles.
+For a long time, the clock frequency of processors, i.e. the speed on which
+they operate, increased constantly.
+However, since the power consumed by a processor (and thus the heat it
+generates) increases with the third power of the clock frequency, clock
+frequencies have stagnated since around 2005.
+Since then, performance has been increased by
 adding multiple cores to a single CPU (multicore CPUs are nowaways
 ubiquitous in all devices from smart phones to supercomputers), and in
-the case of supercomputer adding more and more multicore CPUs to the
+the case of a supercomputer by adding more and more multicore CPUs to the
 same computer. As a result, the performance of supercomputers has kept
 on doubling every two years.
 
