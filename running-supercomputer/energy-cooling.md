@@ -7,7 +7,7 @@ Energy consumption is one of the biggest challenges when designing and
 building more and more efficient supercomputers. Also, a large proportion of
 the energy used by different components of a computer is converted to heat,
 and effort (possibly also energy) is needed for cooling the supercomputer.
-As discussed earlier, main reason for moving into massively parallel computing
+Main reason for moving into massively parallel computing
 (instead of making single CPUs more efficient) was energy consumption. Also,
 GPUs are used in supercomputers because they can provide better performance per
 energy for certain workloads.

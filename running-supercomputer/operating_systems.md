@@ -10,24 +10,22 @@ proprietary operating systems). The rest of the devices use ChromeOs or some
 version of Linux or Unix.
 
 **Supercomputers** are focused on performing intensive number crunching,
-mainly for scientific purpose for a number of users. For a couple of years all supercomputers
-which are making it to Top 500 have been using Linux.  
+mainly for scientific purpose for a large number of users. For a
+couple of years all supercomputers which are making it to TOP500 have
+been using Linux.
 
-Linux OS has many advantages over
-Windows. Unlike Windows and macOS, Linux is modular and build around a kernel
-which contains the basic system and drivers. The users now can add to the
-kernel various modules to serve purpose of the device (focused on user
-interface or server management). 
+Linux has many advantages over other operating systems when it
+comes to supercomputers. Unlike Windows and macOS,
+Linux is modular and build around a kernel which contains the basic
+system and drivers. Because Linux is open source, it is possible to
+customize the operating system for a special high-performance
+purpose. One can strip down all the unnecessary components and build a
+lightweight version with only the absolutely essential code. When
+running in massively parallel scale (i.e. using tens or hundreds of
+thousands of CPU cores), even miniscule overheads in the operating
+system can add up and limit the performance.
 
-It is generic in the sense that the
-kernel is written in a such a way it can run on any device, from hand-held
-gadgets to large supercomputers. It has very good scalability, Linux can
-handle efficiently small and large loads. In the case of supercomputer we
-expect the system to handle hundreds or thousands of simultaneous users. 
-
-Linux is free and open source. All the undelying code is known and
-developers can modify and improve it. There is a large community which is dedicated
-to Linux. When problems arise they are very quickly handled. Finally, the cost is a
-big factor. A supercomputer has a large number of computing nodes linked together
-and using a proprietary OS would mean a licence fee paid for each indvidual
-node, which would make the total cost prohibitive.
+The license fees of proprietary operating are typically based on the
+number of CPUs, and in supercomputer there are **lots** of CPUs. As
+Linux is generally free, it allows also considerable savings in the
+software costs.

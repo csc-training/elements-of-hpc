@@ -28,11 +28,11 @@
 
 ## Running and using a supercomputer
 
-2. [HPC centers](intro/computing-center.md)
-3. [Energy and cooling](supercomputer/energy-cooling.md)
-4. [How to buy a supercomputer](supercomputer/procurement.md)
-5. [How to access a supercomputer?](supercomputer/how-to-use.md)
-6. [Operating systems in supercomputer](supercomputer/operating_systems.md) (sw stack: compilers, libraries, tools, batch queueing system?)
+2. [HPC centers](running-supercomputer/computing-center.md)
+3. [Energy and cooling](running-supercomputer/energy-cooling.md)
+4. [How to buy a supercomputer](running-supercomputer/procurement.md)
+5. [How to access a supercomputer?](running-supercomputer/how-to-use.md)
+6. [Operating systems in supercomputer](running-supercomputer/operating_systems.md) 
 
 ### Exam (5-10 questions), 80 % correct to pass, multiple attempts allowed
 
