@@ -7,12 +7,14 @@ supercomputer is?
 In this article, we start to outline the answers to these questions and
 discuss basic building blocks of modern supercomputers.
 
+TR comment: Olisiko tässä sopiva paikka osuudelle "Components of HPC"?
+
 It may come as a surprise that modern supercomputers are built using the
 same basic elements that are found in desktop computers, such as
 processors, memory and disk. The difference is largely a matter of scale. The
 reason is quite simple: the cost of developing new hardware is measured in
 billions of euros, and the market for consumer products is vastly larger than
-that for supercomputing, so the most advanced technology is
+that for supercomputing. Hence the most advanced technology is
 actually found in general-purpose computers.
 
 When we talk about a processor, we mean the **central processing unit**
