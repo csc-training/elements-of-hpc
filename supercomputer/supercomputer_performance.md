@@ -15,26 +15,26 @@ performance is 1 giga FLOP/s (GFLOP/s). Similarly, one trillion
 execute 1 quadrillion or 10<sup>15</sup> FLOP/s, 1 peta FLOP/s (PFLOPs).
 
 CPU has a theoretical peak performance which is determined by the
-clock speed and the maximum number of floating operations it can perform in one
-clock cycle. As an example, CPU in laptop might have a clock speed of 3 GHz (2 billion cycles per
-second) and perform 16 floating operations per cycle, having a peak
+clock speed and the maximum number of floating point operations it can perform in one
+clock cycle. As an example, CPU in laptop might have a clock speed of 3 GHz (3 billion cycles per
+second) and perform 16 floating point operations per cycle, having a peak
 performance of about 50 GFLOP/s per core. Theoretical peak performance
 of a supercomputer is obtained simply by multiplying the peak
 performance of single core with the total number of CPU
-cores (in systems with GPUs one adds naturaly also the theoretical
-peak performance of GPUs).
+cores. In a systems with GPUs one adds naturaly also the theoretical
+peak performance of GPUs.
 
 In practice, theoretical peak performance is never achieved as other
 characteristics of the system limit the performance. In case of a
 single CPU, the time to access memory can limit the performance, and
 for a supercomputer the interconnect between the nodes can be further
 limiting factor. Real world applications need to also read and write
-to the disk so that the speed of the I/O (input/output or transfer of
-data between processors and storage) may play a role.
+to the disk so that the speed of the I/O operations (input/output or transfer of
+data between processors and storage) may also play a role.
 
 ## TOP500 list
 
-_Benchmark_ is an application which used to measure the performance
+_Benchmark_ is an application which is used to measure the performance
 and functionality of a (super)computer. Typically, the runtime of the
 benchmark application is recorded and used as a metric. 
 With benchmarks, one can compare the performance of different computers.
@@ -44,7 +44,7 @@ benchmark which measures a system's floating point computing
 power. LINPACK performs linear algebra operations to solve a system of
 linear equations, and it achieves typically about 75% of the theoretical peak performance.
 
-[TOP500](https://www.top500.org) is a ranking list for supercomputers that collects LINPACK results
+[TOP500](https://www.top500.org) is a supercomputer ranking list containing LINPACK results
 submitted by organizations that operate a supercomputer. The list is released
 twice a year and shows the 500 most powerful supercomputers in the world
 ranked according to their computational power measured by the LINPACK benchmark.
