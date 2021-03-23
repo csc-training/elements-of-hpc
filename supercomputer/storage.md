@@ -31,7 +31,7 @@ typically from the consumer devices as the hardware for a
 supercomputer is designed for high and more frequent utilization. 
 
 Supercomputer storages have typically parallel filesystem. This allows many
-users to utilize the filesystem at the same time, and if an
+users to utilize the file system at the same time, and if an
 application supports parallel disk access, can reading and writing be
 done simultaneuosly with multiple disks, increasing the available
 total bandwidth significantly. There are many different parallel file systems available such as [Lustre](https://en.wikipedia.org/wiki/Lustre_(file_system)), [GPFS](https://en.wikipedia.org/wiki/GPFS), [BeeGFS](https://en.wikipedia.org/wiki/BeeGFS), [Ceph](https://en.wikipedia.org/wiki/Ceph_(software)) to name a few.
