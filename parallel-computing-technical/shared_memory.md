@@ -1,24 +1,93 @@
-Parallel computing is a type of computing in which the task is divided in several subtasks that are independent of each other and can be executed simultaneously. Most of computing problems are not trivially parallelizable, which means that the subtasks need to have access from time to time to some of the results computed by other subtasks. The way subtasks exchange needed information depends on the available hardware. 
+<!-- Adapted from material in "Supercomputing" online-course (https://www.futurelearn.com/courses/supercomputing/) 
+by Edinburgh Supercomputing Center (EPCC), licensed under Creative Commons SA-BY --> 
 
-# Shared memory 
 
-Shared memory refers to a physical memory device which can be accessed by more than one computing core.
+# Shared memory architecture
 
-![Memory structure of the modern computer](images/shared-memory-architecture.png)
+When a problem is solved in parallel, in most cases some sharing of information 
+between the different CPU cores is needed, *i.e.* the CPU cores need to 
+communicate with each other. One way to communicate is via shared memory.
 
-Shared memory (SM) can be e.g. the CPU cache shared by all cores in the same CPU and the computer main memory shared by all cores on the same motherboard or node. (In the case of GPU, "shared memory" is used to refer to the local memory available on each SM. The threads in a block can access and share data with each other.) Personal computers and mobile phones are all based on shared-memory architectures. The connection between various cores and memory is done via a **memory** *bus* that takes all requests from each core and fetches or writes the data in the memory. 
+The fundamental feature of a shared-memory computer is that all the
+CPU cores are connected to the same piece of memory. 
 
-Programmatically, shared memory can be seen as a space in the memory allocated to a program which can be accessed by a group of threads working together, without additional communication. All threads in a group can write and read from a given location in the memory. A good analogy for the shared memory programming model is an office where several workers work together to solve a problem. Taking this analogy further, communication between the workers is done via a whiteboard which can be read or written only by going near it. In this analogy, we can already see the advantages and limitations of this kind of approach.
+![Memory structure of Modern computer](images/shared-memory-architecture.png)
 
-### Advantages
+This is achieved by having a memory _**bus**_ that takes requests for
+data from multiple sources (here, each of the four separate CPU cores)
+and fetches the data from a single piece of memory. The term _bus_
+apparently comes from the Latin _omnibus_ meaning _for all_,
+indicating that it is a single resource shared by many CPU cores.
 
-There are several advantages for using shared memory:
-* Good performance: the workers do the work and put the results on the whiteboard which is close to all of them. Because all data is global, there is no time lost in communication between the different threads and workers.
-* Simple programming model: shared memory programming is supported by all high-level programming languages and the codes can be used without changes on different multi-core processors.
+This is the basic architecture of a modern mobile phone, laptop or
+desktop PC. If you buy a system with a quad core processor and 4
+GBytes of RAM, each of the 4 CPU cores will be connected to the same 4
+Gbytes of RAM, and they'll therefore have to play nicely and share the
+memory fairly between each other. 
+
+A good analogy here is to think of four office mates or workers (the
+CPU cores) sharing a single office (the computer) with a single
+whiteboard (the memory). Each worker has their own set of whiteboard
+pens and an eraser, but they are not allowed to talk to each other.
+Instead, they can only communicate by writing to and reading from the
+whiteboard. In the case of Alice, Bob, Joe and Lucy summing up the numbers, 
+every one can read their part of the numbers from the whiteboard, and 
+compute then the partial results. Once finished with the computations, every
+one can write their partial results to the whiteboard. Alice can then read the 
+partial results and perform the final summation.
+
+Some key challenges of shared memory approach are already illustrated by this 
+whiteboard analogy:
+
+1. **_memory capacity_**: there is a limit to the size of the
+whiteboard that you can fit into an office, i.e. there is a limit to
+the amount of memory you can put into a single shared-memory computer;
+  
+2.  **_memory access speed_**: imagine that there were ten people in
+the same office - although they can in principle all read from and
+write to the whiteboard, there's simply not enough room for more
+than around four of them to do so at the same time before they start
+to get in each other's way. Although you can fill the office with
+of more and more workers, their productivity will stall after
+about 4 workers because the additional workers will spend more and
+more time idle as they have to queue up to access the shared
+whiteboard. At worst, the additional workers are disturbing, and 
+the productivity can even decrease with too many workers.
+
+3. **_race conditions_**: as all workers can access all the data, they can by
+accident also delete or alter data of other workers. Imagine that the 
+whiteboard would be filled with numbers, and in order to write, one first needs 
+to erase part of the whiteboard. Thus, one needs to make sure that it is ok 
+to erase that particular part.
 
 ### Limitations
 
-There are also limitations to using shared-memory architectures. 
-* Memory capacity: Only a limited number of workers can fit in an office. The size of the problem to be solved is limited by the available memory. If the problem is too big for the device, the only solution is to switch to another device with more memory. Developing devices with a larger memory capacity is very costly. 
-* Memory access speed: There is a limitation to how many workers can read and write the whiteboard. It is easy to fill up the **memory** *bus*, which results in the computing cores waiting and not being utilized at maximum capacity. In some applications, it can be faster to use only some of the available cores.
-* Race conditions and locks: The memory can be accessed by all threads at any time, which means the programmer has to make sure the data is written by a specific thread before it is used or read by another thread. The synchronization needed to avoid the race conditions can result in deadlocks if done incorrectly.
+It turns out that memory access speed is a real issue in shared-memory
+machines. If you look at the processor diagram above, you'll see that
+all the CPU cores share the same bus: the connection between the bus
+and the memory eventually becomes a bottleneck and there is simply no
+point in adding additional CPU cores. Coupled with the fact that the
+kinds of programs we run on supercomputers tend to read and write
+large quantities of data, it is often memory access speed that is the
+limiting factor controlling how fast we can do a calculation, not the
+floating-point performance of the CPU cores. 
+
+There are various tricks to overcoming these two issues, but the
+overcrowded office clearly illustrates the fundamental challenges of
+this approach if we require many hundreds or thousands or even 
+hundres of thousands of CPU cores.
+
+### Advantages
+
+There are naturaly also advantages in the shared memory approach. Even though
+one needs to be aware of race conditions, parallel programming with shared memory 
+is relatively simple. Also, as long as the memory bus is not a bottleneck, the 
+performance is typically good as there is no additional overhead in the communication.
+
+<!-- Despite its limitations, shared memory architectures are universal in modern processors. What do you think the advantages are? 
+
+Think of owning one quad-core laptop compared to two dual-core laptops - which is more useful to you and why? 
+
+**Share and discuss your ideas with your fellow learners!** 
+-->
+
