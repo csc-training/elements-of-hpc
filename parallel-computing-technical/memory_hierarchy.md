@@ -42,7 +42,7 @@ notebook/cache can speed up the overall memory access a lot.
 
 Cache also works very well for multiple workers if they only ever read data. Unfortunately, real programs also write data, i.e. workers will want to modify the data on the whiteboard. If two people are working on the same data at the same time, we have a problem: if one worker changes some numbers in their notebook then the other worker needs to know about it. The compromise solution is to let everyone know whenever you modify any results in your notebook. Whenever you alter a number, you have to shout out:
 
-\(\) I’ve just changed the entry for the 231st salary - if you have a copy of it then you’ll need to get the new value from me!
+"I’ve just changed the entry for the 231st salary - if you have a copy of it then you’ll need to get the new value from me!"
 
 Although this is OK for a small number of workers, it clearly has problems when there are lots of workers. Imagine 100 workers: whenever you change a number you have to let 99 other people know about it, which wastes time. Even worse, you have to be continually listening for updates from 99 other workers instead of concentrating on doing your own calculation.
 
@@ -53,17 +53,15 @@ Keeping the data consistent and up-to-date on all the CPU-cores is called cache 
 <!-- image copyright EPCC, licensed under Creative Commons SA-BY -->
 ![Schematic view of memory cache](images/cache.png)
 
-In order to further improve the memory access, most modern CPUs have
+In order to further improve the memory access speed, most modern CPUs have
 not only one, but multiple levels of cache.
 
 Moving data into and out from the caches is handled by the hardware, and programmer cannot directly control it. However, the way that the data and computations are organized in the program code can have an effect on how efficiently the caches can be utilized.
 
 
-TODO: better subheader?
-## More detailed view on the memory hierarchy
+## Memory hierarchy pyramid
 
-
-[![Memory hierarchy in a supercomputer](images/memory_hierarchy.svg)
+![Memory hierarchy in a supercomputer](images/memory_hierarchy.svg)
 
 The memory levels in the pyramid have the following characteristics: 
 * Physical location: The higher in the pyramid, physically closer to
@@ -72,7 +70,7 @@ The memory levels in the pyramid have the following characteristics:
 * Access time: The time between read/write requests decreases as we move up in the hierarchy.
 * Capacity: The amount of information that the memory type can store increases towards the bottom.
 * Cost per byte: The higher in the pyramid, the more costly the
-  memory is. The physical memory is more expensive than the disk.
+  memory is. The main memory is more expensive than the disk.
 
 ### Types of memory:
 
@@ -81,7 +79,7 @@ The memory levels in the pyramid have the following characteristics:
    * L1 cache: 32 KiB (+ 32 KiB for instructions), private to the core.
    * L2 cache: 512 KiB, private to the core.
    * L3 cache: 16 MiB, shared between 4 cores.
-*  **Main memory** is the the memory within a node, where all instructions and data of active programs reside. 
-*  **Remote memory** 
-*  **Disks** can store the data also after the program has ended or computer shutwod, unlike all the other type of memory.
+*  **Main memory** is the memory within a node, where all instructions and data of active programs reside. 
+*  **Remote memory** is the main memory in another nodes. Accessing remote memory requires communication via the interconnect.
+*  **Disks** can store the data also after the program has ended or computer shutwod, unlike all the other types of memory discussed here.
 
