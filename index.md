@@ -5,8 +5,8 @@
 
 1. Introductory video, e.g. [PRACE video](https://youtu.be/mJ3tvjVkCcI)
 2. [Computational science and HPC](intro/how-hpc-has-changed-the-world.md)
-3. [Components of HPC](intro/components-of-hpc.md)
-4. General introduction to subject, whole course in a nutshell
+3. [About the  course](intro/about_the_course.md)
+4. [Components of HPC](intro/components-of-hpc.md)
 5. Some central terms explained
 
 ### Applications of HPC/How HPC has changed the world
@@ -47,10 +47,13 @@
 
 ## More technical aspects of parallel computing
 
-1. [Parallelization levels](parallel-computing-technical/hierarchy_parallelism.md)
-1. [Memory hierarchy](parallel-computing-technical/memory_hierarchy.md)
+1. [Overview](parallel-computing-technical/overview.md)
 1. [Shared memory computer](parallel-computing-technical/shared_memory.md)
 1. [Distributed memory computer](parallel-computing-technical/distribute_memory.md)
+1. [Memory hierarchy](parallel-computing-technical/memory_hierarchy.md)
+1. [Parallelization within CPU core](parallel-computing-technical/hierarchy_parallelism.md)
+1. [Graphics processing units](parallel-computing-technical/cpu_vs_gpu.md)
+1. [Interconnect](parallel-computing-technical/interconnect.md)
 
 ### Exam (5-10 questions), 80 % correct to pass, multiple attempts allowed
 
