@@ -37,7 +37,7 @@ supercomputer, the interconnect in CSC's Mahti supercomputer has
 latency of about 0,5 microseconds (0,5 x 10-6 or 0,5 millionths of a
 second) and the maximum bandwidth between two nodes is 200 Gb/s. The
 corresponding numbers for very high-speed internet connection (with
-fiber optic) at home could be are latency of 5 milliseconds (10 000
+fiber optic) at home could be latency of 5 milliseconds (10 000
 times more) and bandwith of 1 Gb/s (200 times less).
 
 To put the latency in supercomputer interconnect more in perspective,
@@ -56,7 +56,7 @@ the *network topology*.
 Conceptually the simplest topology is a *fully connected* network,
 where there is a direct connection between all pairs of nodes. Even
 though fully connected network would provide the best performance, it
-is too complex and costly for anything that very small networks. As 
+is too complex and costly for anything but very small networks. As 
 an example, with the 1400 nodes of Mahti a fully connected network
 would have almost 1 000 000 connections.
 
@@ -71,11 +71,12 @@ the application. It is very rare that a single application uses the whole
 supercomputer, and the batch job system might reserve different nodes
 for different runs. For some runs the nodes can be physically
 close to each other, and for other runs physically distant. Thus,
-there are lot of parameters that the interconnect network topology
-tries to optimize, and the topologies can be conceptually relatively
+there are lot of parameters that need to be considered when choosing
+the interconnect topology, and the topologies can be conceptually quite
 complex.
 
-The network topology in Mahti is so called Dragonfly topology. The
+TODO: is Mahti example / images too complex?
+As an example, the network topology in Mahti is so called Dragonfly topology. The
 nodes are divided into six dragonfly groups (with 234 nodes in
 each). Within a dragonfly group there is so called fat tree topology,
 and these fat trees between dragonfly groups are fully connected.
@@ -93,7 +94,7 @@ end of the application), the slowest part of the chain feeding data to
 the CPUs in a supercomputer is the interconnect.
 
 Even though the latency in Mahti might sound impressive, the CPU cores
-running at 2.6 GHz could run about 20 000 floating point operations in
+running at 2.6 GHz could perform about 20 000 floating point operations in
 0,5 microseconds. Communicating 20 000 floating point numbers with 200
 Gb/s bandwidth takes about 6.4 microseconds, in which time the CPU
 core could perform over 270 000 floating point operations. In this
@@ -104,16 +105,15 @@ vectorization is fully utilized.
 In practice situation is not that bad, as not all the data needs to be
 communicated via the interconnect, and in many cases one uses the same
 data for several arithmetic operations. Some problems are closer to
-the trivially parallel case, and in these cases the main memory is
-typically the main bottleneck. The various caches,
+the trivially parallel case, and in these cases the main memory within a node
+is typically the main bottleneck. The various caches,
 algorithmic choices and programming techniques can increase the
 achievable performance, *i.e* in some cases it is possible to perform
-computations and communication simultaneously. 
+computations and communication simultaneously.
 
 Different scientific problems have different inherent limitations (for
 example how many operations are performed per each memory/interconnect
-access), but in best cases (as the LINPACK benchmark) it is possible
-to obtain up to 80 % of the theoretical peak performance of a
-supercomputer.
-
+acces, how often data needs to be copied between CPUs and GPUs), but in best
+cases (as the LINPACK benchmark) it is possible to obtain up to 80 % of the
+theoretical peak performance of a supercomputer.
 
