@@ -56,7 +56,18 @@ Keeping the data consistent and up-to-date on all the CPU-cores is called cache 
 In order to further improve the memory access speed, most modern CPUs have
 not only one, but multiple levels of cache.
 
-Moving data into and out from the caches is handled by the hardware, and programmer cannot directly control it. However, the way that the data and computations are organized in the program code can have an effect on how efficiently the caches can be utilized.
+Moving data into and out from the caches is handled by the hardware,
+and programmer cannot directly control it. However, the way that the
+data and computations are organized in the program code can have an
+effect on how efficiently the caches can be utilized. 
+TODO: Is this example too complex? 
+As an example, if we are simulating particles in three dimensions, the
+coordinates of the particles can be stored either in three lists of N
+numbers (each list containing the x, y, or z coordinate of the N
+particles) or in N lists of three numbers (each list containing the
+three coordinates of a single particle). Depending on the computations
+done with the coordinates, the different data layouts can have
+different behaviour with the caches.
 
 
 ## Memory hierarchy pyramid
@@ -81,5 +92,12 @@ The memory levels in the pyramid have the following characteristics:
    * L3 cache: 16 MiB, shared between 4 cores.
 *  **Main memory** is the memory within a node, where all instructions and data of active programs reside. 
 *  **Remote memory** is the main memory in another nodes. Accessing remote memory requires communication via the interconnect.
-*  **Disks** can store the data also after the program has ended or computer shutwod, unlike all the other types of memory discussed here.
+*  **Disks** can store the data also after the program has ended or
+   computer shutwod, unlike all the other types of memory discussed
+   here. As accessing disk is slow, normally disk is used only in the
+   start of the program (to load the data), and at the of the program
+   (to save the data). Sometimes a small logging data is written
+   during the run of the program, in order to restart from unexpected
+   crashes (either due to hardware or software) some checkpoint data
+   might also be written during the runtime.
 

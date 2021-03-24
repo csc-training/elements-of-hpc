@@ -5,9 +5,16 @@ supercomputer is and to compare it with other ones. The oldest and
 most classic one is the number of floating point operations per second
 (FLOP/s) that the computer can perform.
 
-What is a FLOP/s? If we do a single calculation involving two real numbers
-(floating point numbers), e.g. `2.1 + 4.3`, in one second, that
-is equal to one floating-point operation per second (1 FLOP/s).
+What is a FLOP/s? Floating point number is the computer representation
+of real number. If we do a single calculation involving two real
+numbers, e.g. `2.1 + 4.3`, in one second, that is equal to one
+floating-point operation per second (1 FLOP/s). The operations
+considered in this measure are the basic arithmetic operations
+addition, subtraction, multiplication, divisin. Computers can operate
+also on integer numbers, and even thought integer performance is
+important for some applications, in most scientific problems
+the vast majority of arithmetic operations is with real numbers, thus
+FLOP/s has been chosen as the standard measure.
 
 When a computer can execute 1 billion FLOP/s, then we can say its
 performance is 1 giga FLOP/s (GFLOP/s). Similarly, one trillion
