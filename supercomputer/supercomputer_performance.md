@@ -10,7 +10,7 @@ of real number. If we do a single calculation involving two real
 numbers, e.g. `2.1 + 4.3`, in one second, that is equal to one
 floating-point operation per second (1 FLOP/s). The operations
 considered in this measure are the basic arithmetic operations
-addition, subtraction, multiplication, divisin. Computers can operate
+addition, subtraction, multiplication, division. Computers can operate
 also on integer numbers, and even thought integer performance is
 important for some applications, in most scientific problems
 the vast majority of arithmetic operations is with real numbers, thus
