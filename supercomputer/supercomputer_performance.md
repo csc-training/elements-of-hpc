@@ -80,6 +80,7 @@ which is about 3
 million times faster. Just like normal computers, supercomputers have
 exhibited a tremendous increase in computational power over these years.
 
+<!-- Image copyright TOP500.org (c) -->
 !["TOP500 performance"](./images/top_500.png)
 *TOP500 list from 1993*
 
