@@ -65,10 +65,9 @@ linear equations, and it achieves typically about 75% of the theoretical peak
 performance.
 
 [TOP500](https://www.top500.org) is a ranking list for supercomputers that
-collects LINPACK results
-submitted by organizations that operate a supercomputer. The list is released
-twice a year and shows the 500 most powerful supercomputers in the world
-ranked according to their computational power measured by the LINPACK benchmark.
+collects LINPACK results submitted by organizations that operate a supercomputer. 
+The list is released twice a year and shows the 500 most powerful supercomputers 
+in the world ranked according to their computational power measured by the LINPACK benchmark.
 
 In the first ever TOP500 list, June 1993, the most powerful supercomputer was
 from USA

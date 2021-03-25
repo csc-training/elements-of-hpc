@@ -2,7 +2,7 @@
 
 # Distributed memory architecture
 
-Because of the difficulty of having very large numbers of CPU-cores in
+Because of the difficulty of having very large numbers of CPU cores in
 a single shared-memory computer, all of today's supercomputers use the
 same basic approach to build a very large system: take lots of
 separate computers and connect them together with a fast network.
@@ -35,17 +35,17 @@ personal whiteboard, who can only communicate by phoning each other.
 | -------------| ------------|
 |  the number of whiteboards (i.e. the total memory) grows as we add more offices   |if we have large amounts of data, we have to decide how to split it up across all the different offices   |
 | there is no overcrowding so every worker has easy access to a whiteboard     | we need to have lots of separate copies of the operating system   |
-| we can, in principle, add as many workers as we want provided the telephone network can cope. | it is more difficult to communicate with each other as you cannot see each others whiteboards so you have to make a phone call    |
+| we can, in principle, add as many workers as we want provided the telephone network can cope. | it is more difficult to communicate with each other as you cannot see each other's whiteboards, so you have to make a phone call    |
 
 
 The second disadvantage can be a pain when we do software updates - we
 have to upgrade thousands of copies of the OS! However, it doesn't
 have any direct cost implications as almost all supercomputers use
-some version of the Linux OS which is free. 
+some version of the Linux OS, which is free. 
 
 It turns out that it is much easier to build networks that can connect
 large numbers of computers together than it is to have large numbers
-of CPU-cores in a single shared-memory computer. This means it is
+of CPU cores in a single shared-memory computer. This means it is
 relatively straightforward to build very large supercomputers - it is
 an engineering challenge, but a challenge that the computer engineers
 seem to be very good at tackling! 
@@ -57,7 +57,7 @@ Well, unfortunately not. The compromises we have had to make (many
 separate computers each with their own private memory) mean that the
 difficulties are now transferred to the software side. Having built a
 supercomputer, we now have to write a program that can take advantage
-of all those thousands of CPU-cores and this can be quite challenging
+of all those thousands of CPU cores, which can be quite challenging
 in the distributed-memory model. 
 
 <!-- Why do you think the distributed memory architecture is common in -->

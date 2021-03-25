@@ -8,6 +8,8 @@ the machine. The computational work (jobs) is queued and executed when there
 are sufficient resources in the machine. The applications run with direct
 physical access to hardware.
 
+COMMENT: Is it possible to clarify the first sentence?  
+
 As a result, the traditional HPC platforms are extremely fine-tuned to extract the
 best performance from the hardware for the most intensive
 problems. This approach is preferred for massive 
@@ -25,16 +27,18 @@ virtual machines (VMs, or _instances_) can be run on virtual operating platforms
 these VMs, one can install Linux or Windows and a complete custom stack of
 software. The main advantages of cloud computing:
 
-* On-demand self-service (automation, everything provider by the service
+COMMENT: Could it be useful to define the term "virtualization" here briefly?  
+
+* On-demand self-service (automation, everything provided by the service
   provider)
 * Resilience and elasticity (no data loss or downtimes in case of hardware
   failure)
-* Flexibility and scalability (for the user, resources seem unlimited)
+* Flexibility and scalability (for the user, resources seemingly unlimited)
 
 There are three common flavors of cloud resources:
 * Infrastructure as a Service (IaaS): The user is responsible for setting up the operating system
 and everything above it (middleware, runtime, data and applications). This is the basic and most 
-flexible cloud service. There are a number commercial providers for this kind
+flexible cloud service. There are a number of commercial providers for this kind
 of resources, and several supercomputing centers, including CSC,
 provide also these type of resources.
 * Platform as a Service (PaaS): The provider sets up the operating system, middleware and the runtime,
@@ -50,8 +54,8 @@ installing and maintaining operating systems and software.
 
 Cloud computing can be used also for some HPC workloads. Even though
 virtualization adds some overheads, single node performance is often
-close to bare-metal clusters. Even though some providers offer special HPC clouds with
-high-speed interconnects, the performance of massively parallel
+close to bare-metal clusters. Some providers offer special HPC clouds with
+high-speed interconnects, but the performance of massively parallel
 computations utilizing large number of nodes can be worse than in
 the bare-metal clusters. Also, HPC cloud can be significantly more
 expensive than the basic cloud resources. While there are no start-up costs and the services are

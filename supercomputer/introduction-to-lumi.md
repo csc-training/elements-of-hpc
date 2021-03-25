@@ -4,6 +4,11 @@ The LUMI supercomputer will start its operations in CSC’s data center in Kajaa
 
 LUMI is a unique European endeavor, with ten European countries and the EuroHPC Joint Undertaking (EuroHPC JU) investing in one joint system. It is set to boost research, employment, and competitiveness throughout Europe. The system supplier is Hewlett Packard Enterprise (HPE), providing an HPE Cray EX supercomputer with next generation AMD EPYC CPUs and AMD Instinct GPUs. In addition to the remarkable computing power, LUMI is also one of the world’s most advanced platforms for artificial intelligence, and it will be one of the world’s best known scientific instruments throughout its lifetime.
 
+ADDITION, possible videos
+https://www.youtube.com/watch?v=5qDrPhIdgBU&t=25s
+https://www.youtube.com/watch?v=GBzMBtRzr8s
+https://www.youtube.com/watch?v=gZrw58_Cu4g
+
 ## The LUMI system architecture explained:
 
 * The LUMI system will be supplied by Hewlett Packard Enterprise (HPE), based on an HPE Cray EX supercomputer. The peak performance of LUMI is an astonishing 552 petaflop/s, meaning 552 × 10^15 floating point operations per second. This figure makes LUMI one of the world’s fastest supercomputers. For comparison, the world’s fastest computer today (Fugaku in Japan) reaches 513 petaflop/s, and the second fastest (Summit in the US) 200 petaflop/s (more information: www.top500.org). If LUMI’s computing power was compared to normal laptops, it would require the performance of 1,5 million laptops combined. If these laptops were piled up, they would form a tower over 23 kilometers high.

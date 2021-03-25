@@ -1,5 +1,6 @@
 Parallel computing is a type of computing in which the task is divided in several subtasks that are independent of each other and can be executed simultaneously. Most of computing problems are not trivially parallelizable, which means that the subtasks need to have access from time to time to some of the results computed by other subtasks. The way the subtasks exchange the needed information depends on the available hardware.
 
+
 # Distributed memory
 
 In practice, there are physical limitations to how many CPU cores and how much memory can be fitted on a *die*. This is why all supercomputers use distributed memory architectures in which the physical memory and computing cores split among the various separate computers. 

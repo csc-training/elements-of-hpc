@@ -52,6 +52,8 @@ with slower performance than the other mentioned technologies. The tape-based
 storage is significantly cheaper than hard disks, and it has been around since
 the 1950's. The technology is similar to VHS tapes.
 
+TODO: harmonize table with "performance" article
+
 Storage terminology:
 
 |Size in bytes                |  Value              |   Metric  |

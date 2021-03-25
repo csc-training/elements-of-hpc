@@ -39,7 +39,7 @@ particles with particle accelerators etc.
 Different experiments require widely different measurement
 apparatuses, and carrying out experiments can be very
 expensive. Experimental science can be considered as the fundamental
-paradigm, after all theories and computers simulations are confirmed
+paradigm: theories and computer simulations are after all confirmed
 or rejected based on the measurements.
 
 
@@ -83,7 +83,7 @@ still have an idea of the underlaying theory.
 In computational science, the typically complex mathematical models (e.g.
 systems of partial differential equations) describing the problem are solved
 using numerical algorithms which are then implemented as computer programs and
-finally run on typically high-performance computers. A rough outline of a
+finally run on typically high-performance computers. These steps form a rough outline of a
 computational science project:
 
 1. Write down the equations describing the problem. This is called
@@ -128,8 +128,8 @@ as the problem cannot be fit into the memory.
 
 In addition to solving mathematical models numerically, computers are
 ubiquitous in analyzing experimental data. Various experiments produce
-vast amounts of data that cannot be analyzed with pen and paper or
-normal laptop or desktop computer. As an example, the experiments in
+vast amounts of data that cannot be analyzed with a pen and a paper or
+a normal laptop or desktop computer. As an example, the experiments in
 CERN's LHC particle accelerator produce, on average, one petabyte (one
 million gigabytes) of data per day, which would take 20 000 Blu-ray
 discs. Numerical simulations can also produce large amounts of data.
