@@ -43,6 +43,7 @@
 1. [Types of parallel algorithms](parallel-computing-concepts/types-of-problems.md)
 1. [Concepts](parallel-computing-concepts/concepts.md)
 1. [Parallel sum](parallel-computing-concepts/parallel-sum.md)
+1. [Example: Smoothed particle hydrodynamics](parallel-computing-concepts/smoothed-particle-hydrodynamics.md)
 
 ### Exam (5–10 questions), 80% correct to pass, multiple attempts allowed
 
