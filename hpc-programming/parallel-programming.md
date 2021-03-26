@@ -1,5 +1,14 @@
 # Parallel programming
 
+## Processes and threads
+
+Parallel processing is normally based either on using multiple
+processes or multiple threads. 
+
+In the video below we discuss the most important differences between
+them.
+![Processes and threads](https://video.csc.fi/media/t/0_9il37s2b)
+
 ## Message passing
 
 The **message passing** paradigm is the most common way to parallelize
@@ -21,6 +30,10 @@ the fact that the subroutine/function calls have many parameters, the
 perfomance is typically good (if done right). Also, with MPI, the
 programmer is completely in charge of the parallelization and nothing
 is left to the compiler.
+
+The execution and data model is discussed in more detail in the video
+below
+![Execution and data model in MPI](https://video.csc.fi/media/t/0_yn26xva0)
 
 The following is a simple MPI code example written in Fortran. When
 run, each task prints out its rank and the total number of tasks with
@@ -83,6 +96,8 @@ $mpiexec -n 4 ./hello
     Hello from task 1 / 4
     Hello from task 3 / 4
 ```
+Normally, you can think that number of MPI tasks is the same as the
+number of cores to use.
 
 In order to perform actual work in parallel, one typically needs to
 distribute the data to different parallel tasks, to perform the actual
@@ -127,6 +142,8 @@ program parallel_sum
 
 end program parallel_sum
 ```
+
+
 
 ## Threading
 
@@ -182,6 +199,9 @@ $ OMP_NUM_THREADS=4 ./sum
 Sum of array 4950
 ```
 
+While it is possible to use more threads than there are CPU cores,
+performance normally suffers from this.
+
 It is possible to combine the MPI and OpenMP parallelizations, so that
 within a shared memory node, the OpenMP parallelization is used, and
 between the nodes, MPI.
@@ -211,5 +231,70 @@ the following:
   mainstream for GPU programming.
 - There are various portability frameworks, such as Kokkos, Raja and SYCL.
 
-When using multiple GPU nodes, all above approaches can be
+When using multiple GPU nodes, all the above approaches can be
 combined with MPI.
+
+As discussed earlier, not all problems are easily, or efficiently
+adapted to GPUs. The example we have used earlier, summing the
+elements of an array, is such an example. Thus, in the example code
+snippet below we compute elementwise sum of two arrays using CUDA.
+
+```
+#include <iostream>
+#include <vector>
+#include <cuda_runtime_api.h>
+
+// The computational kernel that will be executed in GPU
+__global__ void sum_arrays(float* input1, float* input2, float* output)
+{
+   // thread index
+   int idx = blockIdx.x * blockDim.x + threadIdx.x;
+   output[idx] = input1[idx] + input2[idx];
+}
+
+int main()
+{
+   // As the GPU works well only for with massive parallelism
+   // we use here a larger array i.e. million elements
+   size_t array_size = 1000000;
+   auto array1 = std::vector<float>(array_size);
+   auto array2 = std::vector<float>(array_size);
+   auto array3 = std::vector<float>(array_size);
+
+   for (int i=0; i < array_size; ++i) {
+      array1[i] = i;
+      array2[i] = -i;
+   }
+
+   // Allocate memory in the GPU
+   float* array1_dev;   
+   float* array2_dev;   
+   float* array3_dev;   
+   cudaMalloc((void**)&array1_dev, array_size * sizeof(float));
+   cudaMalloc((void**)&array2_dev, array_size * sizeof(float));
+   cudaMalloc((void**)&array3_dev, array_size * sizeof(float));
+
+   // copy input data from CPU to GPU
+   cudaMemcpy(array1.data(), array1_dev, array_size* sizeof(float), cudaMemcpyDeviceToHost);
+   cudaMemcpy(array2.data(), array2_dev, array_size* sizeof(float), cudaMemcpyDeviceToHost);
+
+   // Launch the compute kernel in GPU with "array_size" threads
+   sum_arrays<<<10, array_size/10>>>(array1_dev, array2_dev, array3_dev);
+
+   // copy results back to CPU from GPU
+   cudaMemcpy(array3_dev, array3.data(), array_size* sizeof(float), cudaMemcpyHostToDevice);
+
+   // Sum the result array, correct result is zero
+   auto sum = array3[0];
+   for (int i=1; i < array_size; ++i)
+      sum += array3[i];
+
+   std::cout << "Sum of array " << sum << std::endl;
+}
+```
+
+Even though you would not be familiar with C++, it should be quite
+clear that even though the computational routine itself, `compute_sum`,
+is very simple, some extra code is needed in order to use
+GPU. Contrary to shared memory parallelization with threads in CPUs,
+with GPUs one typically uses many more threads than there are cores on GPU.

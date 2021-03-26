@@ -17,6 +17,8 @@ additional asssistant cores (2 in computational nodes and 4 in I/O nodes), and
 in total, there are 7 299 072 cores in the system. The total amount of memory
 is 4 866 048 gigabytes. The declared power consumption is 28 MW.
 
+COMMENT: Tehonkulutuksen vertailukohtana voisi käyttää tavanomaista saunan kiuasta, jonka teho on 9 KW. Tällä saisimme havainnollistettua mittakaavaa: 28 MW vastaa noin 3100 saunan kiuasta.
+
 ## Summit, USA
 
 ![](images/summit.jpg)

@@ -1,0 +1,17 @@
+Smoothed particle hydrodynamics is a computational method which can be used for example to simulate behaviour of fluids. In this method, the fluid is represented as hard spheres which interact with each other inside some finite region.
+
+By changing the simulation parameters we can study different liquids in different environments,
+for example by making gravity smaller we could simulate behaviour of the fluid in moon.
+
+Smoothed-particle hydrodynamics can be parallelized with domain-decomposition, which means here that the simulation area is divided into regions, and each region is assigned to a CPU core. The different colours 
+illustrate which region or CPU core a sphere belongs to. The upper right corner shows FPS value,
+that is frames per second that can be calculated, and we see that when the number of CPU cores is increased from one to four, the FPS rate increases meaning the computation is faster.
+
+As the spheres interact only inside a short radius, most of the computations inside a region can be carried out independently from the information about particles in the other regions. Communication between the CPU cores is needed only about the positions of particles near the domain boundaries.
+However, communication is needed for the every step that the positions are updated, so the problem
+is tightly coupled.
+
+We can see that in this particular implementation of the method, the domain boundaries move constantly. Reason for this is to ensure that each CPU core has equal amount of computations to perform, 
+that is, to ensure good load balance. The movement of domain boundaries requires extra communication
+, however, the gains from good load balance outweight the overheads from this extra communication.
+

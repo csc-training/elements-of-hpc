@@ -16,15 +16,47 @@ tedious optimizations, which can mean, in many cases, different
 approaches depending on the underlying hardware. By utilizing high
 performance libraries, performance portably is also improved.
 
-As an example, the basic mathematical formulation of a matrix–matrix
-product $$C = A B$$ is:
+## Example: matrix operations
 
+Most of us have solved in school simple systems of linear equations,
+such as
+$$
+ 1.1 x + 2.0 y + 3.5 z = 0.5
+-2.2 x + 0.5 y + 6.6 z = 0.6
+ 4.2 x + 0.5 y - 7.6 z = 0.7
+$$
+and as you might remember, solving system of three equations (with
+three variables $$x$$, $$y$$, and $$z$$) by pen and paper can already
+be a bit tedious. In scientific problems one encounters often systems
+with tens of thousands of equations and variables.
+
+The linear equation can be written in a *matrix* form as
+$$
+A x = b
+$$
+where $$A$$ is a matrix.
+![Matrix A](images/matrix_A.png)
+In this notation all the unknowns are gathered to a vector $$x = (x, y,
+z)$$, and all the right hand sides to a vector $$b = (0.5, 0.6,
+0.7)$$.
+
+When working with matrices, one of the most common operations is a
+matrix-matrix product. In matrix-matrix product $$C = A \times B$$,
+each element of $$C$$ is obtained by summing the products of columns
+in $$A$$ and rows in $$B$$:
+![Matrix-matrix product](images/matrix-product.svg)
+
+The mathematical formulation of a matrix–matrix
+product is:
 $$
 C_{ij} = \sum_k A_{ik} B_{kj}.
 $$
 
-This is straigthforward to program, for example, in Fortran, the code
-would be:
+where the $$\sum_k$$ notation means that one sums over the columns of
+A and rows of B.
+
+In principle matrix-matrix product is very straigthforward to program,
+for example, in Fortran, the code would be:
 ```fortran
 ...
 integer, parameter :: M=100, N=200
@@ -44,4 +76,4 @@ end do
 ```
 However, this naïve algorithm is very inefficient. By using an optimized
 high performance library, the matrix multiplication can in many cases be
-over 100 times more efficient.
+over 100 times faster.
