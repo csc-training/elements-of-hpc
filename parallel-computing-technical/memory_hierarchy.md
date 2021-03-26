@@ -1,25 +1,134 @@
+<!-- Includes material from "Supercomputing" online-course (https://www.futurelearn.com/courses/supercomputing/)
+by Edinburgh Supercomputing Center (EPCC), licensed under Creative Commons SA-BY -->
+
 # Memory hierarchy
 
-The memory in personal computers can be divided in **external memory** comprising of peripheral storage devices (magnetic disks, optical disks, magnetic tapes etc.) accessible by the processor via input/output modules and the **internal memory** (RAM memory, L1, L2 and L3 processor cache, and registers) where programs reside during execution and which can be directly accessed by the processors. The external memory is used for long-time storage. The magnetic disks can be used by the OS as virtual RAM in case the computer runs out of memory. While Linux also uses something equivalent, we note that in HPC, using virtual memory would slow down the execution significantly and is reseved only for OS-related programs.
+So far we have used the term memory when refering to the volatile
+storage attached to the CPU, which is shared between the CPU cores
+within the supercomputer node. However, in practice there is a
+hierarchy of different levels of memory. Sometimes one can include
+also the memory of other nodes (which cannot be directly accesses)
+as a part of the hierarchy.
 
-# Memory hierarchy design
+When a CPU core calculates `2.1 + 4.3`, it first fetches the two numbers
+from the main memory into registers in the CPU core. The result
+appears also first in a register, and the value is then pushed from
+the register to the main memory. As we have discussed earlier, the
+speed of accessing memory can be a performance bottleneck. In order to
+alleviate that, modern CPUs (both in desktop and in supercomputers) have
+memory caches.
 
-The memory model in the image is constructed based on the following characteristics: 
-* Performance: As we move from the bottom of the pyramid to the top, transfer speed (MB/s) increases.
-* Access time: The time between read/write requests decreases as we move up in the hierarchy.
-* Capacity: The global amount of information that the device can store increases towards the bottom.
-* Cost per bit: The higher in the hierarchy, the more costly the memory is. The internal memory is more expensive than the external memory.
+## Memory cache
 
-TODO: Might want to change Magnetic Disks with internal HDD + SDD!
+Memory cache is basically a small amount of scratch memory close
+to the CPU-core that is very fast. Basic idea is that when CPU core needs
+to load something from the main memory, it first looks in the
+cache. If the data is already in the cache, it can be fetched from
+the cache to register much faster than from the main memory. Also, when a
+result of a computation is stored, it is first put from the register into the
+cache, and copied to the main memory only later on (e.g. when the
+cache becomes full).
 
-[![Memory hierarchy in a computer](https://media.geeksforgeeks.org/wp-content/uploads/Untitled-drawing-4-4.png)](https://media.geeksforgeeks.org/wp-content/uploads/Untitled-drawing-4-4.png)
-# Types of memory:
-*  **CPU/GPU registers** are the fastest type of memory in a system/device. They are used for very fast access to the data which is used for the calculation running at a given type. Physically, registers are a part of processors, and some of them are a part of a specific set of instructions.
-*  **L1, L2, L3 processor caches** are another type of memory that are a part of the processing units and used to store copies of the data frequently used.  There is a hierarchy of cache types. In a CPU, the L1 cache denotes the cache available only to the processing core itself. The L2 cache is a cache accessible by cores which are grouped together in a NUMA unit, while the L3 cache is usually accessible by all cores in a die. In GPUs, each processing core has a L1 cache available, and each multiprocessing unit has a L2 cache accessible by all cores in that unit. In addition, there is also the so-called shared memory which can be used explicitly by the programmer or to increase the size of the L2 cache.
-*  **Random Access Memory (RAM)** is the the main memory in a computer where all instructions and data of active programs reside. It is relatively FIXME and has the advantage that individual memory cells can be accessed in any order. 
+Think again of the analogy with workers in an office with
+a whiteboard. Whiteboard is the main memory, and workers are now doing their
+computations at their desks. Every time worker reads from or writes to
+the whiteboard they need to leave the desk. Imagine now that
+each worker has a small notebook: when you need to read data from the
+whiteboard, you fill your notebook with everything you need and then
+you can work happily at your desk for a longer period of
+time. Especially when you do many computations with the same data, the
+notebook/cache can speed up the overall memory access a lot.
 
-All above types of memory are used for running programs and are volatile. At the end of the program, or in case of the computer shutting down, the contents are purged and not retrievable at a later time. Peripheral storage devices are used for storing the data for later access after the end of the program execution. 
+### Writing data
 
-* **Magnetic disks** are storage devices that use magnetization to represent and access the data. Magnetic disks are relatively cheap and consist of rotating disks and a mechanical arm which moves over them to read and write. Conceptually, the surface of the disk is divided in many small magnetic regions, each of them with a uniform magnetizations. While the disk rotates at very high speeds, the tip of the mechanical arm gets magnetized and affects the individual domains changing the local magnetization, or  in the case of reading, can detect the local magnetization. 
-* **Optical disks** are storage devices for storing large amounts of data for the long term. They are flat discs which store binary data in the form of pits and lands. `1` represents a change from pit to land and vice versa, while `0` represents no change regardless of whether in a land or a pit area. Having rewritable FIXME is quite common, however, since most of the usage is for content distribution. It is quite common that the disks are written one time, after which they are read-only. 
-* **Magnetic tape** is a system for storing data nowdays mostly used to back up large amounts of data. The main reason for using it is the extremly low price per MB. Many present-day supercomputers use magnetic tapes to save user data in case of disk failure. The bandwidth of magnetic tape is quite high, however, access is sequential, and retrieving specific pieces of data can be very slow.
+Cache works also very well for multiple workers if they only ever read data.
+Unfortunately, real programs also write data, i.e. workers will want to modify
+the data on the whiteboard. If two people are working on the same data at the
+same time, we have a problem: if one worker changes some numbers in their
+notebook then the other worker needs to know about it. The compromise solution
+is to let everyone know whenever you modify any results in your notebook.
+Whenever you alter a number, you have to shout out:
+
+"I’ve just changed the entry for the 231st salary - if you have a copy of it
+then you’ll need to get the new value from me!"
+
+Although this is OK for a small number of workers, it clearly has problems
+when there are lots of workers. Imagine 100 workers: whenever you change a
+number you have to let 99 other people know about it, which wastes time. Even
+worse, you have to be continually listening for updates from 99 other workers
+instead of concentrating on doing your own calculation.
+
+This is the fundamental dilemma: memory access is so slow that we need small,
+fast caches so we can access data as fast as we can process it. However,
+whenever we write data there is an overhead which grows with the number of
+CPU-cores and will eventually make everything slow down again.
+
+Keeping the data consistent and up-to-date on all the CPU-cores is called
+cache coherency. It means that we always have up-to-date values in our
+notebook (or, at the very least, that we know when our notebook is out of date
+and we must return to the whiteboard). Ensuring cache coherency is the major
+obstacle to building very large multicore processors.
+
+<!-- image copyright EPCC, licensed under Creative Commons SA-BY -->
+![Schematic view of memory cache](images/cache.png)
+
+In order to further improve the memory access speed, most modern CPUs have
+not only one, but multiple levels of cache.
+
+Moving data into and out from caches is handled by the hardware,
+and programmer cannot directly control it. However, the way that the
+data and computations are organized in the program code can have an
+effect on how efficiently the caches can be utilized.
+For example, if we are simulating particles in three dimensions, the
+coordinates of the particles can be stored either in three lists of N
+numbers (each list containing the x, y, or z coordinate of the N
+particles) or in N lists of three numbers (each list containing the
+three coordinates of a single particle). Depending on the computations
+done with the coordinates, the different data layouts can have
+different behaviour with the caches.
+
+
+## Memory hierarchy pyramid
+
+![Memory hierarchy in a supercomputer](images/memory_hierarchy.svg)
+
+The memory levels in the pyramid have the following characteristics:
+* Physical location: the higher in the pyramid, physically closer to
+  the CPU core the memory is.
+* Performance: as we move from the bottom of the pyramid to the top, transfer
+  speed (MB/s) increases.
+* Access time: the time between read/write requests decreases as we move up in
+  the hierarchy.
+* Capacity: the amount of information that the memory type can store increases
+  towards the bottom.
+* Cost per byte: the higher in the pyramid, the more costly the
+  memory is. The main memory is more expensive than the disk.
+
+### Types of memory:
+
+*  **Registers** are the fastest type of memory. All the arithmetic operations
+   are done on the data in registers. CPUs have general-purpose registers, as
+   well as registers for specific type of data, or for specific operations.
+   Physically, registers are a part of the CPU core.
+*  **L1, L2, L3 caches** are intermediate caches between the main memory and
+   the registers. L1 cache is the smallest and fastest, while L3 is the
+   largest and slowest. When CPU core needs to fetch data, it looks first in
+   the L1, then L2, and finally L3, before fetching from the main memory.
+   Often each core has their own L1 and L2 caches, but L3 cache might be
+   shared between some cores. As an example, the AMD Rome 64 core processors
+   in CSC's Mahti supercomputer have the following charecteristics:
+   * L1 cache: 32 KiB (+ 32 KiB for instructions), private to the core.
+   * L2 cache: 512 KiB, private to the core.
+   * L3 cache: 16 MiB, shared between 4 cores.
+*  **Main memory** is the memory within a node, where all instructions and
+   data of active programs reside.
+*  **Remote memory** is the main memory in another nodes. Accessing remote
+   memory requires communication via the interconnect.
+*  **Disks** can store the data also after the program has ended or
+   computer shutwod, unlike all the other types of memory discussed
+   here. As accessing disk is slow, normally disk is used only in the
+   start of the program (to load the data), and at the of the program
+   (to save the data). Sometimes a small logging data is written
+   during the run of the program, in order to restart from unexpected
+   crashes (either due to hardware or software) some checkpoint data
+   might also be written during the runtime.
