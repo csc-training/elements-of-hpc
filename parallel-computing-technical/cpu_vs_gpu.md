@@ -8,7 +8,10 @@ Supercomputers are largely built out of general-purpose components, which until 
 Computer games are such an enormous market that it is worthwhile developing special processors, Graphics Processing Units or GPUs, to produce high quality 3D graphics. Special video processors were used already in 1970s, but the modern GPU can be said to be born in 1990's. Sony introduced the term graphics processing unit in 1994 in the Sony Playstation, and during the end of the decade GPUs started to appear in the PC world. In the early 2000's started the first experiments in using GPUs for scientific computing, and as some GPUs started to include features targeting also high-performance computing, the term GPGPU (General Purpose Graphics Processing Unit) was coined. Today one uses mostly only the term GPU also in high-performance computing. 
 
 When comparing a CPU to a GPU one word can describe the differences: **complexity**. Below is a schematic representation of CPU and GPU side by side.
-TODO: check the image copyright
+
+<!-- Image source https://docs.nvidia.com/cuda/cuda-c-programming-guide/ 
+     copyright  NVIDIA Corporation -->
+
 ![CPU vs. GPU. Arithmetic Units](images/CPU_vs_GPU_alu.png)
 The CPU is a more complex, "smarter" device oriented towards general purpose usage. It's fast and versatile, designed to run operating systems and various, very different types applications. It has lots of transistors related to control logic, caches and cache coherence *etc.* features other than pure computing. 
 
@@ -18,8 +21,7 @@ Because of the simpler operation of GPU cores and the requirement for large amou
 
 Due to their specialized nature, GPUs need CPUs on their side. GPUs do not run any operating system, and the application execution starts always in the CPU. After the application starts, computations can be *offloaded* to the GPU for speed up.  Accordingly, GPUs are often referred to as accelerators. Depending on the particular case, only a part of the application may be offloaded to the GPUs, or all the computationally intensive parts. It is also possible to perform computations both on the CPU and the GPU at the same time. The main memories of the CPU and and the GPU are separate, so in order to carry out computations data needs to be first copied from the CPU to the GPU. Also, when the CPU needs to operate with the results of the GPU, data needs to be copied from the GPU to the CPU. As mentioned, the memory bus between the GPU main memory and the GPU cores is typically faster than in CPU, but moving the data between the CPU and GPU is relatively slow and can often become a performance bottleneck. The programmer must pay careful attention to minimize data transfers between the CPU and the GPUs.
 
-TODO: better image for illustrating data movement between CPU and GPU
-![CUDA Enabled Node](images/cuda_hrdw.jpeg)
+![CPU and GPU have separate memory](images/cpu-gpu-memory.svg)
 
 Despite the challenges and limitations, many applications benefit from GPU acceleration. In supercomputers, there are typically 4-6 GPUs and 1-2 CPUs per node. When comparing the performance of application when running with the GPUs or only with the CPUs, GPUs can at best cases speed up the application by more than a factor of ten. TODO: check performance number.
 
