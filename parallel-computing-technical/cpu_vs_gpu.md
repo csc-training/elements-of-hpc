@@ -85,7 +85,7 @@ factor of 4-8, but in some cases even by a factor of ten or more.
 GPUs play a particularly important role in machine learning applications, like
 training neural networks. The arithmetic operations in the training of neural
 networks are inherently highly parallel and as such are very well suited for
-GPUs.
+GPUs, and in best cases GPUs are up to 30 times faster than CPUs.
 
 Even though the GPUs have had major role in high-performance computing for
 only a bit over ten years, using accelerators in supercomputers is nothing new.
