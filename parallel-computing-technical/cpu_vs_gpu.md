@@ -74,7 +74,7 @@ between the CPU and GPU is relatively slow and can often become a performance
 bottleneck. The programmer must pay careful attention to minimize data
 transfers between the CPU and the GPUs.
 
-![CPU and GPU have separate memory](images/cpu-gpu-memory.svg)
+![CPU and GPU have separate memory](images/cpu-gpu-memory.png)
 
 Despite the challenges and limitations, many applications benefit from GPU
 acceleration. In supercomputers, there are typically 4-6 GPUs and 1-2 CPUs per
