@@ -59,7 +59,7 @@ each of which demands substantial computing power in its own right. Here a model
 for the evolution of the ice cover and one for the Earth atmosphere and oceans
 are simulated in lockstep, providing each-other with time-dependent parameters
 at the interface, such as snow precipitation from the atmosphere to the glacier,
-and fresh water influx into the ocean from the glacier melting.  
+and fresh water influx into the ocean from the glacier melting.
 
 [Video](https://esticc.net/highlights/visualisations/)
 
@@ -90,16 +90,17 @@ biopsies were used to train the artificial intelligence. There were
 approximately 30 terabytes of image data, and the final training data
 consisted of more than 2 trillion pixels. With a normal single CPU, it
 would have taken at least several months if not years to train the
-model, but supercomputer with GPUs ropped the total computing time to 2-3 days.
+model, but a supercomputer with GPUs dropped the total computing time to 2-3
+days.
 
 The goal of the artificial intellisgence system is not to replace
 human experts, but rather to provide pathologists with a tool that
 can, on one hand, improve work efficiency, while also promoting
-patient safety by acting as a safety mechanism. 
+patient safety by acting as a safety mechanism.
 
 
 [Link](https://www.csc.fi/en/-/artificial-intelligence-detects-and-grades-prostate-cancer-nearly-without-error)
-  
+
 
 TODO: Other possible articles?
 
