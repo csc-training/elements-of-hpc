@@ -5,7 +5,7 @@ requires a number of experts. Additionally, even the national class systems are 
 the corresponding staff around them. As getting good performance from a supercomputer is getting more and more demanding, typically the supercomputing centers
 provide support for their users in various levels. This can vary from solving very basic problems in e.g. connecting and accessing the system to helping researchers in quite involved and high level science, computational method and performance related issues. 
 
-TODO: add picture of some CSC staff?
+![CSC staff](https://www.csc.fi/documents/10180/143742/osaava_henkilosto.png)
 COMMENT: Could the last sentence be reformulated and clarified? At the other end of the spectrum is solving very basic problems in e.g. connecting and accessing the system, and at the other end helping researchers in high-level scientific problems and issues related to computational methods and performance optimization. 
 
 The following list is not at all exhaustive but provides a simplified description of the functions or groups of staff that computing centers typically have:
