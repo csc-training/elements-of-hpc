@@ -49,6 +49,10 @@ floating point operation. For this reason most of the new systems targeting
 exascale performance utilize GPUs. Otherwise, the electricity consumption when
 running these systems would become prohibitive.
 
+The video below illustrates the power of massively parallelism in GPUs.
+COMMENT-JE: the CPU in demo is not exactly more complex than GPU...
+![Mythbusters demoing GPU vs. CPU](https://www.youtube.com/watch?v=-P28LKWTzrI)
+
 Because of the simpler operation of GPU cores and the requirement for large
 amount of parallelism, all scientific problems cannot be adapted easily to
 GPUs. While CPUs can handle efficiently also task level parallelization where
