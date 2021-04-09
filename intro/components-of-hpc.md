@@ -20,3 +20,4 @@ as well as the software and the programming models
   - batch systems and user tools
 
 TODO: a diagram of different components?
+COOMENT: Could this section be integrated into section modern supercomputer?
