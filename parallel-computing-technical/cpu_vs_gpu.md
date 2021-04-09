@@ -51,7 +51,7 @@ running these systems would become prohibitive.
 
 The video below illustrates the power of massively parallelism in GPUs.
 COMMENT-JE: the CPU in demo is not exactly more complex than GPU...
-![Mythbusters demoing GPU vs. CPU](https://youtu.be/-P28LKWTzrI)
+[Mythbusters demoing GPU vs. CPU](https://youtu.be/-P28LKWTzrI)
 
 Because of the simpler operation of GPU cores and the requirement for large
 amount of parallelism, all scientific problems cannot be adapted easily to
