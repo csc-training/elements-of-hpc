@@ -23,7 +23,7 @@ need to interact regularly with Bob during her computations, it would
 be considered a *tighly coupled* algorithm instead (e.g. solving a
 sudoku together is an example of a tightly coupled problem).
 
-TODO: Animation idea:
+TODO (Edukamu team): Animation idea:
   - couple of boxes / spheres etc. representing computation
   - for trivally parallel case, something flows between the shapes
     in the beginning, then computation proceedes (e.g. spheres rotate)
@@ -37,7 +37,7 @@ It may even be possible to use internet-connected computers all over
 the world to compute something in parallel, such as in the
 [Folding@home](https://foldingathome.org/) project where protein
 folding is studied using personal computers all over the world.
-For tightly coupled algorithms, programming is usually more difficulti,
+For tightly coupled algorithms, programming is usually more difficult,
 and a low-latency, high-speed interconnect between the CPUs is essential
 for good performance. Weather simulation is a typical example of a tightly
 coupled problem on supercomputers.
@@ -78,7 +78,7 @@ task of grating cheese back to Bob. Similarly, after passing the chopped ham
 to Alice, Joe would get a new task of slicing tomatoes. Finally, Alice would
 assemble everything together.
 
-TODO: Animation idea: could the pizza making be presented as an animation?
+TODO (Edukamu team): Animation idea: could the pizza making be presented as an animation?
 
 Task farm and data parallel approaches can be also combined, for example,
 each worker could consist of multiple execution units, and the data related
