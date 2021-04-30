@@ -25,7 +25,7 @@ running in massively parallel scale (i.e. using tens or hundreds of
 thousands of CPU cores), even miniscule overheads in the operating
 system can add up and limit the performance.
 
-The license fees of proprietary operating are typically based on the
+The license fees of proprietary operating systems are typically based on the
 number of CPUs, and in supercomputer there are **lots** of CPUs. As
 Linux is generally free, it allows also considerable savings in the
 software costs.
