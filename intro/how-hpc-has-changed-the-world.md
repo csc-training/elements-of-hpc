@@ -45,9 +45,9 @@ or rejected based on the measurements.
 
 ### Theoretical science
 
-Based on the observations, one may then be able to predict the sunset
+Based on the observations, one may be able to predict the sunset
 time for a given day and say that the flight time of a rock is roughly
-the same regardless of its weight if dropped from the same height, and
+the same regardless of its weight when dropped from the same height, and
 so on. Next, a theoretical scientist takes a look at the results and
 wonders how he or she can explain them. For movement of different
 bodies, mathematical models for gravity and dynamics developed by
