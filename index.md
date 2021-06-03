@@ -51,7 +51,7 @@
 
 1. [Overview](parallel-computing-technical/overview.md)
 1. [Shared memory computer](parallel-computing-technical/shared_memory.md)
-1. [Distributed memory computer](parallel-computing-technical/distribute_memory.md)
+1. [Distributed memory computer](parallel-computing-technical/distributed_memory.md)
 1. [Memory hierarchy](parallel-computing-technical/memory_hierarchy.md)
 1. [Parallelization within CPU core](parallel-computing-technical/hierarchy_parallelism.md)
 1. [Graphics processing units](parallel-computing-technical/cpu_vs_gpu.md)
