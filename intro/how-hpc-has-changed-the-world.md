@@ -74,16 +74,16 @@ positions of the heavenly bodies involved. However, an approximate solution
 can be found numerically.
 
 On the other hand, consider the climate and glaciers. It is of crucial
-importance to know what is going to happen with them in the future. But we
-naturally cannot perform experiments on a global scale to find that out.
+importance to know what is going to happen to them in the future. But
+naturally we cannot perform experiments on a global scale to find that out.
 Similarly, in many cases the required experiments would be too expensive, too
 dangerous, too slow, too difficult or complex, unethical and so on. But we may
 still have an idea of the underlaying theory.
 
-In computational science, the typically complex mathematical models (e.g.
+In computational science, typically complex mathematical models (e.g.
 systems of partial differential equations) describing the problem are solved
 using numerical algorithms which are then implemented as computer programs and
-finally run on typically high-performance computers. These steps form a rough outline of a
+finally run on high-performance computers. These steps form a rough outline of a
 computational science project:
 
 1. Write down the equations describing the problem. This is called
@@ -97,17 +97,17 @@ Steps 2-4 are called numerical simulation of the problem.
 In this way, experiments can be partially replaced by simulations. Of course,
 only experiments, if feasible, can validate the model and simulation results.
 
-Computational science is typically based on the theoretical
-models. However, in some cases computers can be used also for
-discovery and proof of mathematical theories. As an example, so called
+Computational science is typically based on theoretical
+models. However, in some cases, computers can be used also for
+the discovery and proof of mathematical theories. As an example, so called
 [Four color theorem](https://en.wikipedia.org/wiki/Four_color_theorem)
-was proofed in 1970s, not pure by pen and paper, but with the help of
+was proved in the 1970s, not purely by pen and paper, but with the help of
 a computer.
 
 #### Data science
 
 Nowadays, data science is sometimes considered as a new paradigm. Data
-science can be defined as a field that uses various mathematic methods
+science can be defined as a field that uses various mathematical methods
 and algorithms to extract knowledge and insight from the data. This
 insight can in some cases be used for formulating new mathematical
 theories. As an early example, the measurements of Tycho Brahe made up
@@ -118,17 +118,17 @@ are a consequency of his theory of gravitation.
 
 ### High-performance computing
 
-If the computational problem is complex (e.g. climate), the system to
-be simulated is large in some sense (e.g. a galaxy comprising a huge
+If the computational problem is complex (e.g. climate), the simulated system
+is large in some sense (e.g. a galaxy comprising a huge
 number of stars), the simulated time is long (e.g. long-term climate
 simulations) or very high accuracy is needed, the required amount of
 computing work quickly becomes enormous. Solving the problem with
 standard computers might take years of time, or be totally impossible
-as the problem cannot be fit into the memory.
+as the problem cannot be fit into memory.
 
 In addition to solving mathematical models numerically, computers are
 ubiquitous in analyzing experimental data. Various experiments produce
-vast amounts of data that cannot be analyzed with a pen and a paper or
+vast amounts of data that cannot be analyzed with pen and paper or
 a normal laptop or desktop computer. As an example, the experiments in
 CERN's LHC particle accelerator produce, on average, one petabyte (one
 million gigabytes) of data per day, which would take 20 000 Blu-ray
