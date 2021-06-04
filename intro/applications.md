@@ -26,8 +26,8 @@ simulate, which can only be provided by parallel computing and supercomputers.
 ## Spreading of aerosols in the air
 
 When people breathe, they emit aerosols into the air. The spreading of
-these aerosols can be studied with supercomputers which helps us
-to fight the COVID pandemic. The aerosol particles are vanishingly small and
+these aerosols can be studied with supercomputers, which in turn helps us
+in fighting the COVID pandemic. The aerosol particles are vanishingly small and
 light, so that they can be regarded as points being moved around by the air.
 The motion of the air itself is a very complex thing to simulate. Even in
 seemingly gentle conditions, such as blowing away the vapour over a cup of
@@ -35,10 +35,10 @@ coffee or the smoke of a candle, the motion of the air is visibly disordered, or
 in technical terms turbulent.
 Turbulence is extremely challenging to simulate, because a turbulent flow is a
 superposition of vortices at all scales. Mathematician Lewis Fry Richardson put
-it in more poetical terms:
+it in more poetic terms:
 
-> Big whorls have little whorls Which feed on their velocity,
-> And little whorls have lesser whorls And so on to viscosity.
+> Big whirls have little whirls Which feed on their velocity,
+> And little whirls have lesser whirls And so on to viscosity.
 
 Simulating the transport of aerosol into a room therefore needs to all scales,
 from the geometry of the room itself, all the way down to the minuscule vortices
@@ -53,13 +53,13 @@ simulations over long time scales are needed. The video below shows
 a millenium-scale simulation concerning the surface air temperature in
 the Arctic and the Greenland glacier ice thickness, answering questions such as
 when the Arctic ice is gone during the summer and winter. In this case, not only
-does the system involve very disparate scales (in time as well as in space), it
+does the system involve very desperate scales (in time as well as in space), it
 also implies the coupling of systems governed by very different physical models,
 each of which demands substantial computing power in its own right. Here a model
-for the evolution of the ice cover and one for the Earth atmosphere and oceans
+for the evolution of the ice cover and one for the Earth's atmosphere and oceans
 are simulated in lockstep, providing each-other with time-dependent parameters
 at the interface, such as snow precipitation from the atmosphere to the glacier,
-and fresh water influx into the ocean from the glacier melting.
+and fresh water influx into the ocean due to the melting of the glacier.
 
 [Video](https://esticc.net/highlights/visualisations/)
 
@@ -68,7 +68,7 @@ and fresh water influx into the ocean from the glacier melting.
 Neural networks and deep learning have enabled important advances in the
 processing of language. By uncovering correlations between words or clusters of
 words, neural networks are able to learn underlying elements of language such as
-lexical context. Training such neural networks requires enormous amount of text,
+lexical context. Training such neural networks requires an enormous amount of text,
 which is often obtained from sources such as Wikipedia, news articles, or forum
 discussions among others. The processing of such a large corpus text is enabled
 by supercomputers, in particular the more recent machines comprised of many GPU
