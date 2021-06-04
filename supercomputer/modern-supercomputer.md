@@ -46,7 +46,7 @@ multi-core CPUs, and possibly GPUs, as well as memory. The amount of memory per
 node varies typically from a hundred gigabyte to few thousand gigabytes (a
 high-end laptop might have 32 gigabytes of memory); in total there can be
 millions of gigabytes of memory in a supercomputer. Using all of these
-CPU cores and GPUs together requires that they be able to _talk_ to each other.
+CPU cores and GPUs together requires that they are able to _talk_ to each other.
 In a supercomputer, the nodes are connected together with a communications
 network called **interconnect** in the jargon of the field.
 The interconnect is a crucial component that gives a supercomputer its
