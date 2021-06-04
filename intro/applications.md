@@ -40,7 +40,7 @@ it in more poetic terms:
 > Big whirls have little whirls Which feed on their velocity,
 > And little whirls have lesser whirls And so on to viscosity.
 
-Simulating the transport of aerosol into a room therefore needs to all scales,
+Simulating the transport of aerosol into a room needs to scale
 from the geometry of the room itself, all the way down to the minuscule vortices
 that barely survive the dissipative action of viscosity.
 
