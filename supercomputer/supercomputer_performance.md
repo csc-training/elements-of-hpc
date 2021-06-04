@@ -1,7 +1,7 @@
 # Supercomputer performance
 
 There are some common metrics for measuring how powerful a
-supercomputer is and to compare it with other ones. The oldest and
+supercomputer is and for comparison between each other. The oldest and
 most classic one is the number of floating point operations per second
 (FLOP/s) that the computer can perform.
 
@@ -48,11 +48,11 @@ memory access is the limiting factor (as is the case with most modern
 computers), applications performing many floating point operations
 with the same data can achieve larger proportion of the peak
 performance than applications with fewer operations per data. In
-supercomputers, a CPU in one node might need also to access data in
+supercomputers, a CPU in one node might also need to access data in
 another node, and thus the speed of communicating data between nodes can
 also limit the practical performance. Real world applications also need to
-read and write data to the disk, which means that also the speed of I/O
-(input/output or transfer of data between processors and storage) may
+read and write data to the disk, which means that the speed of I/O
+(input/output or transfer of data between processors and storage) may also
 further limit the performance.
 
 TODO: Illustration idea: sketch a picture representing the different aspects
@@ -94,7 +94,7 @@ exhibited a tremendous increase in computational power over these years.
 To compare and understand this better, modern laptop can have
 performance of around 300 GFLOP/s, which means that it would have been
 the number one supercomputer in June 1993. In 2020, the number one
-supercomputer has the power equivalent to over million laptops.
+supercomputer has the power equivalence of over a million laptops.
 
 The Mahti supercomputer at CSC – IT For Science has a power of 7,5 PFLOP/s,
 which means it can execute `7.5*10^15` operations per second, corresponding to
