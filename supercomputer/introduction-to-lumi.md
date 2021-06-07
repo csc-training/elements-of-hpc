@@ -1,6 +1,6 @@
 # The LUMI supercomputer
 
-The LUMI supercomputer will start its operations in CSC’s data center in Kajaani, Finland in 2021. In its final configuration, it will be one of the world’s fastest supercomputers.
+The LUMI supercomputer will begin operatng in CSC’s data center in Kajaani, Finland in 2021. In its final configuration, it will be one of the world’s fastest supercomputers.
 
 LUMI is a unique European endeavor, with ten European countries and the EuroHPC Joint Undertaking (EuroHPC JU) investing in one joint system. It is set to boost research, employment, and competitiveness throughout Europe. The system supplier is Hewlett Packard Enterprise (HPE), providing an HPE Cray EX supercomputer with next generation AMD EPYC CPUs and AMD Instinct GPUs. In addition to the remarkable computing power, LUMI is also one of the world’s most advanced platforms for artificial intelligence, and it will be one of the world’s best known scientific instruments throughout its lifetime.
 
@@ -19,7 +19,7 @@ https://www.youtube.com/watch?v=gZrw58_Cu4g
 * LUMI’s storage system will consist of three components. First, there will be a 7-petabyte partition of ultra-fast flash storage, combined with a more traditional 80-petabyte capacity storage, both based on the Lustre parallel file system, as well as a data management service, based on Ceph and being 30 petabytes in volume.
 * In total, LUMI will have an astounding storage of 117 petabytes and an impressive aggregated I/O bandwidth of 2 terabytes per second.
 * LUMI will also have an OpenShift/Kubernetes container cloud platform for running microservices.
-* All the different compute and storage partitions are connected through the very fast Cray Slingshot interconnect of 200 Gbit/s. The global bandwidth of the LUMI-GPU partition is 160 TB/s. The whole global internet traffic would fit therein, twice, in fact!
+* All the different compute and storage partitions are connected through the very fast Cray Slingshot interconnect of 200 Gbit/s. The global bandwidth of the LUMI-GPU partition is 160 TB/s. The whole global internet traffic would fit in there, twice, in fact!
 * LUMI takes over 150 m2 of floor space, which is about the size of a tennis court. The weight of the system is nearly 150 000 kilograms (150 metric tons).
 
 The pre-exascale supercomputer LUMI hosted by CSC will be among the top 5 in the world when it is installed. Together with the other EuroHPC pre-exascale and petascale supercomputers that will be deployed in 2021, the LUMI supercomputer will help Europe’s public and private users address many daunting research and innovation problems across different areas from weather and climate change through cybersecurity to drug discovery and personalised medicine. 
