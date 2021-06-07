@@ -39,7 +39,7 @@ could divide the numbers in two and then each compute the sum of their own
 half. After Alice and Bob have computed these partial sums, all they need
 to do is to add them up to have the total sum of all numbers. If
 the calculation by Alice alone would take 20 seconds, in an ideal case,
-Alice and Bob together could solve the problem together in only 10
+together Alice and Bob could solve the problem in only 10
 s. Also, if the maximum amount of numbers Alice can compute alone is
 20 together Alice and Bob could
 compute 40 numbers. In a computer such limitation could come from the amount of memory
