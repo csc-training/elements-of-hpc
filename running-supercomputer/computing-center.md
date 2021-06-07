@@ -3,7 +3,7 @@
 Running a modern supercomputing service is a complicated endeavour. Providing computing resources for users requires much more than procuring a system and adding power, cooling and internet. The machines themselves are very complicated pieces of technology and just keeping them running
 requires a number of experts. Additionally, even the national class systems are physically quite large and need adequate housing, power, cooling etc. infrastucture and
 the corresponding staff around them. As getting good performance from a supercomputer is getting more and more demanding, typically the supercomputing centers
-provide support for their users in various levels. This can vary from solving very basic problems in e.g. connecting and accessing the system to helping researchers in quite involved and high level science, computational method and performance related issues. 
+provide support for their users on various levels. This can vary from solving very basic problems in e.g. connecting and accessing the system to helping researchers in quite involved and high level science, computational methods and performance related issues. 
 
 ![CSC staff](https://www.csc.fi/documents/10180/143742/osaava_henkilosto.png)
 COMMENT: Could the last sentence be reformulated and clarified? At the other end of the spectrum is solving very basic problems in e.g. connecting and accessing the system, and at the other end helping researchers in high-level scientific problems and issues related to computational methods and performance optimization. 
