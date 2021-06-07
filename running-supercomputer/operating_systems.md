@@ -10,7 +10,7 @@ proprietary operating systems). The rest of the devices use ChromeOs or some
 version of Linux or Unix.
 
 **Supercomputers** are focused on performing intensive number crunching,
-mainly for scientific purpose for a large number of users. For a
+mainly for scientific purposes for a large number of users. For a
 couple of years all supercomputers which are making it to TOP500 have
 been using Linux.
 
