@@ -25,8 +25,8 @@ There are two common types of disk drives:
 * Solid-state drives (SSD) which have no moving mechanical parts but
   use flash memory like the one in a USB flash drive.
 
-Both types of disks are used in supercomputers, however, due to higher
-price for SSDs main storage is typically made of HDDs, and SSDs are
+Both types of disks are used in supercomputers, however, due to the higher
+prices for SSDs main storage is typically made of HDDs, and SSDs are
 used for special high speed storage. The disks in supercomputer differ
 typically from the consumer devices as the hardware for a
 supercomputer is designed for high and more frequent utilization.
