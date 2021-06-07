@@ -2,7 +2,7 @@
 
 Supercomputers are very complex assemblies of hardware and software components. One does not simply buy a specific number of cabinets from a vendor and be done with the supercomputer procurement. All systems are tailored to specific requirements and are thus unique.
 
-Most of the users having access to a supercomputer are not familiar with the procedure of acquiring one. It is a procedure that takes months and requires the team effort of many people from various fields.
+Most of the users who have access to a supercomputer are not familiar with the procedure of acquiring one. It is a procedure that takes months and requires a team effort of many people from various fields.
 The need to have a budget, understand what the users need, know the most important applications and their characteristics and usage patterns, have a strategic vision, benchmark new technologies, discuss with the vendors, understand and follow the procurement law, and so on.
 
 TODO (EDUKAMU team): Requirements presented as a list or using other suitable format 
