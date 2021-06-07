@@ -20,7 +20,7 @@ partial sums. However, during the computing of the individual partial
 sums, no interaction is needed, and the algorithm can be considered
 trivially parallel. If the problem would be different and Alice would
 need to interact regularly with Bob during her computations, it would
-be considered a *tighly coupled* algorithm instead (e.g. solving a
+be considered a *tightly coupled* algorithm instead (e.g. solving a
 sudoku together is an example of a tightly coupled problem).
 
 TODO (Edukamu team): Animation idea:
