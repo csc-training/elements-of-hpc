@@ -1,6 +1,6 @@
 # How high performance computing has changed the world
 
-Supercomputers are nowadays important tool for multitude of scientific
+Supercomputers are nowadays important tools for a multitude of scientific
 problems. In this article we will discuss different paradigms of
 science, and the role supercomputers have in them.
 
