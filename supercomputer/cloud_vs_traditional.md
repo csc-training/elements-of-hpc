@@ -1,6 +1,6 @@
 # Supercomputing and cloud computing
 
-Traditionally, HPC resources comprise, on premises, bare-metal
+Traditionally, HPC resources are comprised of bare-metal
 supercomputers and clusters which are specifically designed to support HPC
 applications developed to solve specific problems. All applications and
 libraries need to be compiled for the operating system that is installed on
@@ -22,8 +22,9 @@ specific resources to be freed. They are also limited to a fixed available stora
 _Cloud computing_ usually refers to access to a pool of configurable
 computer resources that are available on demand. The computing services
 are using advanced automation, without direct active management by the user
-using virtualization technology. On each physical node, multiple
-virtual machines (VMs, or _instances_) can be run on virtual operating platforms. On
+using virtualization technology. Virtulization is an abstraction to simulatie the necessary
+hardware to run a guest operating system on a host machine.
+On each physical node, multiple virtual machines (VMs, or _instances_) can be run on virtual operating platforms. On
 these VMs, one can install Linux or Windows and a complete custom stack of
 software. The main advantages of cloud computing:
 
