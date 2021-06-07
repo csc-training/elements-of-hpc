@@ -29,6 +29,8 @@ calculating the sum of all values in an array.
 Assume we have an array A that contains a large number of floating point
 numbers. The values have been read from a file by the first MPI task (rank 0).
 
+COMMENT: There's no mention (I think) of what MPI is or what a rank is before this point, so it might be neccessary to explain them here.
+
 ![](../../img/parallel-sum-0.png)
 
 ## Goal
