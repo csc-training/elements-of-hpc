@@ -1,6 +1,6 @@
 # Examples of top supercomputers
 
-How do the top supercomputers of the world look like in a more detail? Let's
+How do the top supercomputers of the world look like in more detail? Let's
 have a brief look at some of the most powerful systems in the world.
 
 ## Fugaku, Japan
