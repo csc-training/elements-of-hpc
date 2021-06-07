@@ -14,7 +14,7 @@ programming.
 When the size of input data is kept constant but one increases
 the number of processing units, we typically speak about *strong
 parallel scaling*. The purpose of parallel programming in this case is
-to decrease the time to solve the problem. The parallel speed-up can
+to decrease the time in solving the problem. The parallel speed-up can
 be defined as
 
 $$
@@ -28,9 +28,9 @@ In an ideal case, the speed-up should be directly proportional to the
 number of processing units. If, for example, Alice and Bob would invite
 their friends Joe and Lucy to help in summing up the numbers, the
 solution would take only 5 s (compared to 20 s if Alice did it alone).
-In real-world problems, this is rarely the case, and typically when
-increasing the number of processing units enough, execution
-time can even start to increase.
+In real-world problems this is rarely the case. Better yet, typically when
+increasing the number of processing units, at a certain tipping point, excecution time
+can increase. 
 
 ![Parallel scaling](images/scaling.png)
 
@@ -55,8 +55,8 @@ a parallel program needs to perform some additional operations which are not
 present in a serial program. There may be some redundant computations, data may need
 to be communicated, and processing units may need to be synchronized. If there
 is an imbalance in the distribution of the workload, execution time is limited
-by the slowest execution unit, and the others need to wait its completion. There
-can be also serial parts in the program, i.e. parts that cannot be parallelized.
+by the slowest execution unit, and the others need to wait for its completion. There
+can also be serial parts in the program, i.e. parts that cannot be parallelized.
 If we designate with $$p_f$$ the fraction of the problem that can be
 parallelized, then the maximum possible speed-up (so called Amdahl's law) is
 
