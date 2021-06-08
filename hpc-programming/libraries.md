@@ -12,7 +12,7 @@ available in performance-optimized subroutine libraries that can be
 In addition to providing convenient tools for common tasks, the
 libraries can typically provide greatly improved performance over
 naïve algorithms. Getting everything out of the CPU can require
-tedious optimizations, which can mean, in many cases, different
+tedious optimizations, which in many cases can mean different
 approaches depending on the underlying hardware. By utilizing high
 performance libraries, performance portably is also improved.
 
@@ -41,7 +41,7 @@ z)$$, and all the right hand sides to a vector $$b = (0.5, 0.6,
 0.7)$$.
 
 When working with matrices, one of the most common operations is a
-matrix-matrix product. In matrix-matrix product $$C = A \times B$$,
+matrix-matrix product. In a matrix-matrix product $$C = A \times B$$,
 each element of $$C$$ is obtained by summing the products of columns
 in $$A$$ and rows in $$B$$:
 ![Matrix-matrix product](images/matrix-product.svg)
