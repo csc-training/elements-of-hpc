@@ -51,7 +51,7 @@ Programmer can affect vectorization by writing the code in a form
 suitable for vectorization and providing hints for the compiler to
 vectorize particular operations.
 
-Basically all CPUs used in modern supercomputer support vector
+Basically all CPUs used in modern supercomputers support vector
 instructions. For example, the current (as of 2021) Intel CPUs can
 perform arithmetic operations on 8 floating point numbers at the same
 time (16 numbers with reduced precision) and AMD CPUs on 4 floating
