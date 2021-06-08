@@ -41,7 +41,7 @@ fiber optic) at home could be a latency of 5 milliseconds (10 000
 times more) and a bandwith of 1 Gb/s (200 times less).
 
 To put the latency in a supercomputer interconnect more in perspective,
-in 0,5 microseconds light travels 150 m/s, so if two computers would
+in 0,5 microseconds light travels 150 m, so if two computers would
 be more than 150 m apart, laws of physics would forbid a latency
 smaller than 0,5 microseconds. Thus, for problems where low latency is
 important, it is clearly not efficient to use a geographically
@@ -71,7 +71,7 @@ the application. It is very rare that a single application uses the whole
 supercomputer, and instead typically the batch job system reserves different
 nodes for different runs. For some runs, the nodes can be physically
 close to each other, while for other runs they are physically distant. Thus,
-there are lot of parameters that need to be considered when choosing
+there are lots of parameters that need to be considered when choosing
 the interconnect topology, and the topologies can be conceptually quite
 complex.
 
