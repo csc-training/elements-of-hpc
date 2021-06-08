@@ -11,7 +11,7 @@ important: computer gaming.
 
 Computer games are such an enormous market that it is worthwhile developing
 special processors, Graphics Processing Units or GPUs, to produce high quality
-3D graphics. Special video processors were used already in 1970s, but the
+3D graphics. Special video processors were used already in the 1970s, but the
 modern GPU can be said to be born in 1990s. Sony introduced the term graphics
 processing unit in 1994 in the Sony Playstation, and during the end of the
 decade GPUs started to appear in the PC world. In the early 2000's the
