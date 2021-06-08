@@ -14,11 +14,11 @@ special processors, Graphics Processing Units or GPUs, to produce high quality
 3D graphics. Special video processors were used already in 1970s, but the
 modern GPU can be said to be born in 1990s. Sony introduced the term graphics
 processing unit in 1994 in the Sony Playstation, and during the end of the
-decade GPUs started to appear in the PC world. In the early 2000's started the
-first experiments in using GPUs for scientific computing, and as some GPUs
+decade GPUs started to appear in the PC world. In the early 2000's the
+first experiments in using GPUs for scientific computing began, and as some GPUs
 started to include features targeting also high-performance computing, the
 term GPGPU (General Purpose Graphics Processing Unit) was coined. Today one
-uses mostly only the term GPU also in high-performance computing.
+uses mostly only the term GPU in high-performance computing.
 
 When comparing a CPU to a GPU one word can describe the differences:
 **complexity**. Below is a schematic representation of a CPU and a GPU side
@@ -31,7 +31,7 @@ by side.
 
 A CPU is a more complex, flexible device oriented towards general purpose
 usage. It's fast and versatile, designed to run operating systems and various,
-very different types applications. It has lots of features, such as better
+very different types of applications. It has lots of features, such as better
 control logic, caches and cache coherence, that are not related to pure
 computing.
 
@@ -69,11 +69,11 @@ speed up. Accordingly, GPUs are often referred to as accelerators. Depending
 on the particular case, only a part of the application may be offloaded to the
 GPUs or all the computationally intensive parts. It is also possible to
 perform computations both on the CPU and the GPU at the same time. The main
-memories of the CPU and and the GPU are separate, so in order to carry out
+memories of the CPU and the GPU are separate, so in order to carry out
 computations data needs to be first copied from the CPU to the GPU. Also, when
 the CPU needs to operate with the results of the GPU, data needs to be copied
 from the GPU to the CPU. As mentioned, the memory bus between the GPU main
-memory and the GPU cores is typically faster than in CPU, but moving the data
+memory and the GPU cores is typically faster than on the CPU, but moving the data
 between the CPU and GPU is relatively slow and can often become a performance
 bottleneck. The programmer must pay careful attention to minimize data
 transfers between the CPU and the GPUs.
@@ -91,14 +91,14 @@ training neural networks. The arithmetic operations in the training of neural
 networks are inherently highly parallel and as such are very well suited for
 GPUs, and in best cases GPUs are up to 30 times faster than CPUs.
 
-Even though the GPUs have had major role in high-performance computing for
+Even though the GPUs have had a major role in high-performance computing for
 only a bit over ten years, using accelerators in supercomputers is nothing new.
 Utilizing some type of co-processors to carry out part of the calculations has
-been an on and off going trend since 1960s. At the moment it looks like GPUs
-(or other types of accelerators) are here to say, but only time will tell.
+been an on and off going trend since the 1960s. At the moment it looks like GPUs
+(or other types of accelerators) are here to stay, but only time will tell.
 
 Nvidia has traditionally been the most visible GPU vendor, both due to the
-performance of their hardware as well as due to the maturity of theri software
+performance of their hardware as well as due to the maturity of their software
 development ecosystem. Recently also Intel and AMD have been active in
 designing GPUs for high-performance computing. The LUMI supercomputer will use
 AMD GPUs.
