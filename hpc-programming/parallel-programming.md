@@ -15,7 +15,7 @@ The **message passing** paradigm is the most common way to parallelize
 scientific computing programs. In message passing, the tasks can only
 access their local data, and when an exchange of data is needed between
 the parallel tasks, the sending and receiving of tasks needs to take
-the explicit action to transfer data. In practice, this means calling
+explicit action to transfer data. In practice, this means calling
 specific subroutines or functions to perform the send or receive.
 For this purpose, there is a library
 called MPI (Message Passing Interface), whose communication routines
@@ -96,7 +96,7 @@ $mpiexec -n 4 ./hello
     Hello from task 1 / 4
     Hello from task 3 / 4
 ```
-Normally, you can think that number of MPI tasks is the same as the
+Normally, you can associate that the number of MPI tasks is the same as the
 number of cores to use.
 
 In order to perform actual work in parallel, one typically needs to
@@ -128,7 +128,7 @@ program parallel_sum
  call MPI_SCATTER(array, local_size, MPI_REAL, local_array, local_size, MPI_REAL, & 
                   0, MPI_COMM_WORLD, ierror)
 
- ! Each task calculates its' own local sum
+ ! Each task calculates its own local sum
  local_sum = sum(local_array)
 
  ! Gather the data to rank 0 and sum in the fly (reduce)
@@ -204,7 +204,7 @@ performance normally suffers from this.
 
 It is possible to combine the MPI and OpenMP parallelizations, so that
 within a shared memory node, the OpenMP parallelization is used, and
-between the nodes, MPI.
+between the nodes, MPI is used.
 
 # GPU programming
 
@@ -255,7 +255,7 @@ __global__ void sum_arrays(float* input1, float* input2, float* output)
 int main()
 {
    // As the GPU works well only for with massive parallelism
-   // we use here a larger array i.e. million elements
+   // we use a larger array i.e. a million elements
    size_t array_size = 1000000;
    auto array1 = std::vector<float>(array_size);
    auto array2 = std::vector<float>(array_size);
@@ -293,8 +293,8 @@ int main()
 }
 ```
 
-Even though you would not be familiar with C++, it should be quite
+You might not be familiar with C++, but it should be quite
 clear that even though the computational routine itself, `compute_sum`,
 is very simple, some extra code is needed in order to use
-GPU. Contrary to shared memory parallelization with threads in CPUs,
-with GPUs one typically uses many more threads than there are cores on GPU.
+GPUs. Contrary to shared memory parallelization with threads in CPUs,
+with GPUs one typically uses many more threads than there are cores on a GPU.
