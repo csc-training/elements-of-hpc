@@ -21,17 +21,17 @@ memory caches.
 ## Memory cache
 
 Memory cache is basically a small amount of scratch memory close
-to the CPU-core that is very fast. Basic idea is that when CPU core needs
+to the CPU-core that is very fast. Basic idea is that when a CPU core needs
 to load something from the main memory, it first looks in the
 cache. If the data is already in the cache, it can be fetched from
-the cache to register much faster than from the main memory. Also, when a
+the cache to the register much faster than from the main memory. Also, when a
 result of a computation is stored, it is first put from the register into the
 cache, and copied to the main memory only later on (e.g. when the
 cache becomes full).
 
 Think again of the analogy with workers in an office with
-a whiteboard. Whiteboard is the main memory, and workers are now doing their
-computations at their desks. Every time worker reads from or writes to
+a whiteboard. The whiteboard is the main memory, and the workers are now doing their
+computations at their desks. Every time a worker reads from or writes to
 the whiteboard they need to leave the desk. Imagine now that
 each worker has a small notebook: when you need to read data from the
 whiteboard, you fill your notebook with everything you need and then
@@ -45,7 +45,7 @@ Cache works also very well for multiple workers if they only ever read data.
 Unfortunately, real programs also write data, i.e. workers will want to modify
 the data on the whiteboard. If two people are working on the same data at the
 same time, we have a problem: if one worker changes some numbers in their
-notebook then the other worker needs to know about it. The compromise solution
+notebook then the other workers need to be informed about it. The compromise solution
 is to let everyone know whenever you modify any results in your notebook.
 Whenever you alter a number, you have to shout out:
 
@@ -56,10 +56,10 @@ Although this is OK for a small number of workers, it clearly has problems
 when there are lots of workers. Imagine 100 workers: whenever you change a
 number you have to let 99 other people know about it, which wastes time. Even
 worse, you have to be continually listening for updates from 99 other workers
-instead of concentrating on doing your own calculation.
+instead of concentrating on doing your own calculations.
 
-This is the fundamental dilemma: memory access is so slow that we need small,
-fast caches so we can access data as fast as we can process it. However,
+This is the fundamental dilemma: memory access is so slow that we need small and
+fast caches to access data as fast as we can process it. However,
 whenever we write data there is an overhead which grows with the number of
 CPU-cores and will eventually make everything slow down again.
 
@@ -76,7 +76,7 @@ In order to further improve the memory access speed, most modern CPUs have
 not only one, but multiple levels of cache.
 
 Moving data into and out from caches is handled by the hardware,
-and programmer cannot directly control it. However, the way that the
+and programmers cannot directly control it. However, the way that
 data and computations are organized in the program code can have an
 effect on how efficiently the caches can be utilized.
 For example, if we are simulating particles in three dimensions, the
@@ -85,7 +85,7 @@ numbers (each list containing the x, y, or z coordinate of the N
 particles) or in N lists of three numbers (each list containing the
 three coordinates of a single particle). Depending on the computations
 done with the coordinates, the different data layouts can have
-different behaviour with the caches.
+differing behaviour with the caches.
 
 
 ## Memory hierarchy pyramid
@@ -93,8 +93,7 @@ different behaviour with the caches.
 ![Memory hierarchy in a supercomputer](images/memory_hierarchy.svg)
 
 The memory levels in the pyramid have the following characteristics:
-* Physical location: the higher in the pyramid, physically closer to
-  the CPU core the memory is.
+* Physical location: the higher the memory type is in the pyramid, the closer it is physically to the CPU core.
 * Performance: as we move from the bottom of the pyramid to the top, transfer
   speed (MB/s) increases.
 * Access time: the time between read/write requests decreases as we move up in
@@ -107,12 +106,12 @@ The memory levels in the pyramid have the following characteristics:
 ### Types of memory:
 
 *  **Registers** are the fastest type of memory. All the arithmetic operations
-   are done on the data in registers. CPUs have general-purpose registers, as
-   well as registers for specific type of data, or for specific operations.
+   on our data are done in registers. CPUs have general-purpose registers, as
+   well as registers for specific types of data, or for specific operations.
    Physically, registers are a part of the CPU core.
 *  **L1, L2, L3 caches** are intermediate caches between the main memory and
    the registers. L1 cache is the smallest and fastest, while L3 is the
-   largest and slowest. When CPU core needs to fetch data, it looks first in
+   largest and slowest. When the CPU core needs to fetch data, it looks first in
    the L1, then L2, and finally L3, before fetching from the main memory.
    Often each core has their own L1 and L2 caches, but L3 cache might be
    shared between some cores. As an example, the AMD Rome 64 core processors
@@ -122,11 +121,11 @@ The memory levels in the pyramid have the following characteristics:
    * L3 cache: 16 MiB, shared between 4 cores.
 *  **Main memory** is the memory within a node, where all instructions and
    data of active programs reside.
-*  **Remote memory** is the main memory in another nodes. Accessing remote
+*  **Remote memory** is the main memory in another node. Accessing remote
    memory requires communication via the interconnect.
-*  **Disks** can store the data also after the program has ended or
-   computer shutwod, unlike all the other types of memory discussed
-   here. As accessing disk is slow, normally disk is used only in the
+*  **Disks** can store the data after the program has ended or the
+   computer shutdown, unlike all the other types of memory discussed
+   here. As accessing a disk is slow, normally a disk is used only in the
    start of the program (to load the data), and at the of the program
    (to save the data). Sometimes a small logging data is written
    during the run of the program, in order to restart from unexpected
