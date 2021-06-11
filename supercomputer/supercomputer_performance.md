@@ -60,7 +60,7 @@ affecting practical performance.
 
 ## TOP500 list
 
-_Benchmark_ is an application which is used to measure the performance
+_A Benchmark_ is an application which is used to measure the performance
 and functionality of a (super)computer. Typically, the runtime of the
 benchmark application is recorded and used as a metric.
 With benchmarks, one can compare the performance of different computers.
