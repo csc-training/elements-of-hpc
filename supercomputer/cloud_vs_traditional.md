@@ -54,7 +54,7 @@ At the same time, setting up virtual machines etc. requires knowledge of
 installing and maintaining operating systems and software.
 
 Cloud computing can be used also for some HPC workloads. Even though
-virtualization adds some overheads, single node performance is often
+virtualization adds some overhead, single node performance is often
 close to bare-metal clusters. Some providers offer special HPC clouds with
 high-speed interconnects, but the performance of massively parallel
 computations utilizing large number of nodes can be worse than in
