@@ -4,3 +4,5 @@
   - OPENMP
   - CPU
   - GPU
+  - virtualization
+  - Core, Thread, Task
