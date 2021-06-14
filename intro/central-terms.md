@@ -16,6 +16,16 @@ Memory is exactly what you would expect it to be. A method for the computer to s
 
 ### Disk:
 Disk refers to long term storage used by a computer. These methods are generally slow on a program level, but speed varies depending on the device. These devices are for example [hard disk drive](https://en.wikipedia.org/wiki/Hard_disk_drive)(HDD), [solid state drive](https://fi.wikipedia.org/wiki/SSD)(SSD), [tape drive](https://en.wikipedia.org/wiki/Tape_drive), USB drive which is a type of SSD. Even a pen and paper could be considered long term storage if you have access to a scanner.
+
+### [RAM](https://en.wikipedia.org/wiki/Random-access_memory):
+RAM or random access memory is a type of itermediate level memory that the computer utilizes. The computer stores data produced by programs at run time in RAM. Accessing RAM is much quicker than accessing a disk drive, but the caviat is that when the computer is shut off the RAM is wiped clean.
+
+### [Cache](https://en.wikipedia.org/wiki/Cache_(computing):
+Cache, is out of these three, the smallest and quickest method of memory. Cache as a component is directly on the CPU, allowing extremely quick access for the cores.
+
+
+
+### [
   - MPI
   - MPI
   - OPENMP
