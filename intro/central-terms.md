@@ -23,14 +23,21 @@ RAM or random access memory is a type of itermediate level memory that the compu
 ### [Cache](https://en.wikipedia.org/wiki/Cache_(computing)):
 Cache, is out of these three, the smallest and quickest method of memory. Cache as a component is directly on the CPU, allowing extremely quick access for the cores.
 
-### [Node](https://en.wikipedia.org/wiki/Node_(networking)):
+## [Node](https://en.wikipedia.org/wiki/Node_(networking)):
 In HPC a node refers to a single computer in the super computer cluster. If you take out a single node from a cluster and hook up a monitor, keyboard and mouse to it, it would be equivalent to having a desktop computer. Albeit a very powerfull computer, but a computer nonetheless. Similarly you could treat an everyday laptop as a node and connect a collection of them into a cluster.
 
-### [Cluster / Super computer](https://en.wikipedia.org/wiki/Computer_cluster):
+## [Cluster / Super computer](https://en.wikipedia.org/wiki/Computer_cluster):
 The super computer or cluster is the collection of these nodes forming a massive computer system with high speed interconnection between them. As explained in the Node section, you could linkup a collection of laptps which could be considered a cluster. 
 
-### Interconnect:
-Interconnect is the technology used in connecting hundreads of nodes allowing them to communicate with minimal latency.
+## Interconnect:
+Interconnect is the technology used in connecting hundreads of nodes allowing them to communicate with minimal latency. Your home router letting your phone and laptop communcate could be considered an interconnect. Ofcourse in a HPC cluster the interconnect is much more advanced and optimised than what a generic router is.
+
+## [Virtualization](https://en.wikipedia.org/wiki/Virtualization): 
+Virtualization is the abstraction of simulating necessary hardware for a guest operating system. For example you could take a single node consisting of a single 64-core processor, and by allocating each core as a single independent CPU you can run independent operating systems on all of those cores. Now, in a certain sense, each of these virtual machines could be treated as independent nodes. Ultimately you end up with 64 independent "computers" inside a single computer. These 64 virtual machines could be linked up with a vritual interconnect and thus we're left with a virtual cluster inside a node.
+
+## [Virtual machine](https://en.wikipedia.org/wiki/Virtual_machine):
+
+A virtual machine is the simulation of an independent computer using virtualization technology. A good example of virtual machines are running emulators of old video game consoles on modern computers.  
   - MPI
   - MPI
   - OPENMP
