@@ -10,6 +10,13 @@ Modern CPUs/processors consist of multiple processing units on a single integrat
 GPU or graphics processing unit is a type of processing unit specialized in very simple but fast arithmetic. As the name infers, originally graphics cards were intended in rendering computer graphics, such as in video games and visual effects. 
 
 HPC applications and simulations can often be rendered down to a vast collection of simple arithmetic. Due to this, GPUs are often good tools to "accelerate" the massive amount of calculations done in HPC
+
+## Memory:
+Memory is exactly what you would expect it to be. A method for the computer to store and transfer information. There are many memory types ranging from size and speed of acceess. Generally the larger the capacity the slower the access. 
+
+### Disk:
+Disk refers to long term storage used by a computer. These methods are generally slow on a program level, but speed varies depending on the device. These devices are for example [hard disk drive](https://en.wikipedia.org/wiki/Hard_disk_drive)(HDD), [solid state drive](https://fi.wikipedia.org/wiki/SSD)(SSD), [tape drive](https://en.wikipedia.org/wiki/Tape_drive), USB drive which is a type of SSD. Even a pen and paper could be considered long term storage if you have access to a scanner.
+  - MPI
   - MPI
   - OPENMP
   - CPU
