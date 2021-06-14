@@ -20,12 +20,17 @@ Disk refers to long term storage used by a computer. These methods are generally
 ### [RAM](https://en.wikipedia.org/wiki/Random-access_memory):
 RAM or random access memory is a type of itermediate level memory that the computer utilizes. The computer stores data produced by programs at run time in RAM. Accessing RAM is much quicker than accessing a disk drive, but the caviat is that when the computer is shut off the RAM is wiped clean.
 
-### [Cache](https://en.wikipedia.org/wiki/Cache_(computing):
+### [Cache](https://en.wikipedia.org/wiki/Cache_(computing)):
 Cache, is out of these three, the smallest and quickest method of memory. Cache as a component is directly on the CPU, allowing extremely quick access for the cores.
 
+### [Node](https://en.wikipedia.org/wiki/Node_(networking)):
+In HPC a node refers to a single computer in the super computer cluster. If you take out a single node from a cluster and hook up a monitor, keyboard and mouse to it, it would be equivalent to having a desktop computer. Albeit a very powerfull computer, but a computer nonetheless. Similarly you could treat an everyday laptop as a node and connect a collection of them into a cluster.
 
+### [Cluster / Super computer](https://en.wikipedia.org/wiki/Computer_cluster):
+The super computer or cluster is the collection of these nodes forming a massive computer system with high speed interconnection between them. As explained in the Node section, you could linkup a collection of laptps which could be considered a cluster. 
 
-### [
+### Interconnect:
+Interconnect is the technology used in connecting hundreads of nodes allowing them to communicate with minimal latency.
   - MPI
   - MPI
   - OPENMP
