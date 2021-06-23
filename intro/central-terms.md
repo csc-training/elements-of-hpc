@@ -27,7 +27,7 @@ Cache, is out of these three, the smallest and quickest method of memory. Cache 
 In HPC a node refers to a single computer in the super computer cluster. If you take out a single node from a cluster and hook up a monitor, keyboard and mouse to it, it would be equivalent to having a desktop computer. Albeit a very powerfull computer, but a computer nonetheless. Similarly you could treat an everyday laptop as a node and connect a collection of them into a cluster.
 
 ## [Cluster / Super computer](https://en.wikipedia.org/wiki/Computer_cluster):
-The super computer or cluster is the collection of these nodes forming a massive computer system with high speed interconnection between them. As explained in the Node section, you could linkup a collection of laptops which could be considered a cluster. 
+The supercomputer or cluster is the collection of these nodes forming a massive computer system with high speed interconnection between them. As explained in the Node section, you could linkup a collection of laptops which could be considered a cluster. 
 
 ## Interconnect:
 Interconnect is the technology used in connecting hundreads of nodes allowing them to communicate with minimal latency. Your home router letting your phone and laptop communcate could be considered an interconnect. Ofcourse in an HPC cluster the interconnect is much more advanced and optimised than what a generic router is.
