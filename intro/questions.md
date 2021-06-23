@@ -317,9 +317,9 @@ TODO:Toinen vaihtoehto
 #### Parallelization within CPU core
 
 ##### 5.1) Tässä on aiheeseen liittyvä mielenkiintoinen artikkeli: https://blog.royalsloth.eu/posts/the-compiler-will-optimize-that-away/
-     Tuosta jos saisi tuon kuvan (Process-Memory performance gap) mukaan kysymykseen.
+Tuosta jos saisi tuon kuvan (Process-Memory performance gap) mukaan kysymykseen.
 
-     Following picture (pic X) describes the problem (of) what "inequal"(unequal?) development of (the) computer's core technology has caused: Processors need to wait for the memory. To improve the performance, amount of reads and writes to the memory must be optimised. Optimisation is done in program code. Select two methods that can be used to improve performance.
+Following picture (pic X) describes the problem (of) what "inequal"(unequal?) development of (the) computer's core technology has caused: Processors need to wait for the memory. To improve the performance, amount of reads and writes to the memory must be optimised. Optimisation is done in program code. Select two methods that can be used to improve performance.
   - = Structure the code to enable compiler instruction level parallelism.
   - = Vectorizing parts of code where possible.
   - ~ Reducing amount of cycles by giving less instructions.
@@ -327,7 +327,7 @@ TODO:Toinen vaihtoehto
 
 #### Graphics processing units
 
--
+--
 
 #### Interconnect
 
