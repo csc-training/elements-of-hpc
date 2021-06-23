@@ -8,7 +8,7 @@
 2. [Computational science and HPC](intro/how-hpc-has-changed-the-world.md)
 3. [About the  course](intro/about_the_course.md)
 4. [Components of HPC](intro/components-of-hpc.md)
-5. Some central terms explained
+5. [Some central terms explained](intro/central-terms.md)
 
 ### Applications of HPC/How HPC has changed the world
 1. [Examples of HPC applications](intro/applications.md)
