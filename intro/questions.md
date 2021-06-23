@@ -85,7 +85,7 @@ What is a supercomputer?
   - ~ Duopoly of Intel and AMD on processor markets
   - ~ Saturation of the processor market
 
-TODO: Viivanleveys?
+TODO: Viivanleveys? Kysymyksessä hyvä ajatus, mutta logiikka pitää miettiä uusiksi.
 
 
 ##### 1.4) Computing power increases over time as technology advances. How many times faster is a normal modern laptop compared to a supercomputer from thirty years ago?
@@ -105,143 +105,142 @@ TODO: Laskentateho vs. energiankulutus? Laskentatehon kasvu?
   - [2] cores
   - [3] processor
 
-##### 2.2) "Supercomputer"(A supercomputer) node is basically the same as (a) really efficient personal computer.
-  TRUE
+##### 2.2) A supercomputer node is basically the same as a really powerfull personal computer.
+  
+    TRUE
 
-Aaron: Efficient voisi ehkä korvata sanalla "beafy tai powerfull", koska yksi serveri prosessorin ydin voi olla helposti tehottomampi kuin pelitietokoneen prosessorin ydin. Ero on siinä, että muistia voi olla montakymmentä kertaa enemmän, prosessoreja voi olla useita ja niissä on usein enemmän ytimiä. Näytönohjaimia voi olla myös huomattavasti enemmän kuin PC:ssä, mutta teho on silti sama. Eli jos ajettaisiin jotain perus python ohjelmaa joka on lineaarinen eikä rinnakkaistettu, niin helposti perus kone voi toimia yhtänopeasti tai nopeammin.
-
-##### 2.3) The backbone of (a) supercomputer that connects different nodes and e.g. network storage together is called
-  = interconnect
-  ~ LAN-party
-  ~ WiFi
-  ~ parallel network
-
-Aaron: Different voisi ehkä korvata sanalla "multiple" yms. koska usein nodet ovat usein enemmän tai vähemmän identtisiä. Kysymyksen voi tulkita väärin. Ei välttämättä olellista
+##### 2.3) The backbone of a supercomputer that connects multiple nodes and e.g. network storage together is called
+  - = interconnect
+  - ~ LAN-party
+  - ~ WiFi
+  - ~ parallel network
 
 #### Supercomputer performance
 
 ##### 3.1) Acronym FLOP/s stands for
-  = Floating Point Operations per second
-  ~ Right side sandal of Flip-flops
-  ~ A failing artist or an act
-  ~ Fluorescent Lighting Of PC
+  - = Floating Point Operations per second
+  - ~ Right side sandal of Flip-flops
+  - ~ A failing artist or an act
+  - ~ Fluorescent Lighting Of PC
 
 ##### 3.2) Choose the right claims related to supercomputer performance
-  = Computing power measurement is standardised to FLOP/s and "different supercomputers' performance"(the performance of different supercomputers) around the world is ranked and reported on different websites.
-  = Theoretical performance of a CPU is higher than the performance in reality. This is due the fact of different hardware and software components working together to produce measured floating point operations. Jussi: toinen lause on outo, Aaron: Samaa mieltä
-  = New LUMI supercomputer is expected to perform approximately 0,55 EFLOP/s and rank top 10 in the list of all supercomputers in the world. teoreettinen DP huipputeho
-  ~ (A) Common benchmark tool to measure supercomputer performance is called TOP500.
-  ~ New LUMI supercomputer is estimated to be (a) maximum of ten times faster than the older Mahti supercomputer.
+  - = Computing power measurement is standardised to FLOP/s and the performance of different supercomputers around the world is ranked and reported on different websites.
+  - = Theoretical performance of a CPU is higher than the performance in reality.
+  - = New LUMI supercomputer is expected to perform theoretically 0,55 EFLOP/s and rank top 10 in the list of all supercomputers in the world.
+  - ~ A Common benchmark tool to measure supercomputer performance is called TOP500.
+  - ~ The new LUMI supercomputer is estimated to be a maximum of ten times faster than the older Mahti supercomputer.
 
 #### Data storage
 
 ##### 4.1) IMDB has approximately 7,5 million movie titles in their online database. One movie streamed over the internet is an average of 3,5 GB. How many Mahti's (capacity of 8900 TB) would a service provider need to store all IMDB titles to be streamed over the internet?
-   = 3
-   ~ 1/8th
-   ~ 10
-   ~ 27
+   - = 3
+   - ~ 1/8th
+   - ~ 10
+   - ~ 27
 
 ##### 4.2) Select all storage medias used with supercomputers
-  = HDD
-  = SSD
-  = Magnetic tapes
-  ~ Blu-ray discs
-  ~ USB flash drives
+  - = HDD
+  - = SSD
+  - = Magnetic tapes
+  - ~ Blu-ray discs
+  - ~ USB flash drives
 
-##### 4.3) Connect the right options. Jussi: Hiukan loogisesti väärin: vasemmalla puolella lukuja, oikealla tavuja
-  = 1 -> Byte
-  = 1000^5 -> Petabyte
-  = 1000^2 Megabyte
-Aaron: Yleisesti ottaen eksponentit merkataan 10^n eikä 1000^n. Lisäksi loogisuus on vaikea, koska yksikkö on tavu, mutta vasemmalla puolella on ainoastaan lukuja. Ehkä "10^15 bytes -> Petabyte" tai jotain vastaavaa 
+##### 4.3) Connect the right options.
+  - = 1 B -> Byte
+  - = 10^15 B -> Petabyte
+  - = 10^6 B -> Megabyte
 
-##### 4.4) Select all (the) right options that are related to data storage
-  = Decreased performance because of (a) badly designed or implemented storage solution cannot be improved by adding more CPU's to the supercomputer.
-  = Instead of the speed of a single hard disk, the performance comes from intelligent and distributed mechanism of reading and writing data on multiple disks simultaneously. in addition ...
-  ~ Mahti's storage is implemented with 170 000 Blu-ray disks and equivalent amount of RW Blu-ray-drives.
-  ~ More persistent (and cheaper) storage solutions are gained with "a"(the) help of VHS tapes.
+##### 4.4) Select all the right options that are related to data storage
+  - = Decreased performance because of a badly designed or implemented storage solution cannot be improved by adding more CPU's to the supercomputer.
+  - = Instead of the speed of a single hard disk, the performance comes from intelligent and distributed mechanism of reading and writing data on multiple disks simultaneously.
+  - ~ Mahti's storage is implemented with 170 000 Blu-ray disks and equivalent amount of RW Blu-ray-drives.
+  - ~ More persistent (and cheaper) storage solutions are gained with the help of VHS tapes.
 
 #### HPC and cloud computing
 
 ##### 5.1) Connect the right options
-  = IaaS -> Cloud capabilities type in which the cloud service customer can provision and use processing, storage and networking resources provided by (a) cloud service provider.
-  = PaaS -> Cloud capabilities type in which the cloud service customer can deploy, manage and run customer-created applications using one or more "programming languages and one or more execution environments"(programming language and execution environment) supported by (a) cloud service provider.
-  = SaaS -> Cloud capabilities type in which the cloud service customer can use the cloud service provider's applications.
+  - = IaaS -> Cloud capabilities type in which the cloud service customer can provision and use processing, storage and networking resources provided by a cloud service provider.
+  - = PaaS -> Cloud capabilities type in which the cloud service customer can deploy, manage and run customer-created applications using one or more programming language and execution environment supported by a cloud service provider.
+  - = SaaS -> Cloud capabilities type in which the cloud service customer can use the cloud service provider's applications.
 
-Aaron: En ole varma mitä "Cloud capabilities type" tarkoittaa
+TODO: En ole varma mitä "Cloud capabilities type" tarkoittaa
 
-##### 5.2) Traditionally supercomputing environments are tailor-made and use-cases must meet these, sometimes very precise, requirements of the execution environment. Parts of modern HPC environment services may be offered in (a) cloud computing manner, where (a) customer has "a"() network access to a scalable and elastic pool of shareable physical or virtual resources with self-service provisioning and administration on-demand.
-  TRUE
+##### 5.2) Traditionally supercomputing environments are tailor-made and use-cases must meet these, sometimes very precise, requirements of the execution environment. Parts of modern HPC environment services may be offered in a cloud computing manner, where a customer has network access to a scalable and elastic pool of shareable physical or virtual resources with self-service provisioning and administration on-demand.
+    
+    TRUE
 
 #### Top supercomputers
 
 ##### 6.1) The most powerful computer in the world currently (as of November 2020) is located in
-  = Japan
-  ~ USA
-  ~ China
-  ~ Finland
-  ~ Sweden
+  - = Japan
+  - ~ USA
+  - ~ China
+  - ~ Finland
+  - ~ Sweden
 
-##### 6.2) The most energy efficient supercomputer is NVIDIA DGX SuperPOD in (the) USA. It's rank on (the) top500 list is 170th and it's power efficiency is 26 195 GFlops/watts. List the supercomputers mentioned in (the) material from most energy efficient to least "one"().
-  1. USA
-  2. Japan
-  3. China
+##### 6.2) The most energy efficient supercomputer is the NVIDIA DGX SuperPOD in the USA. It's rank on the top500 list is 170th and it's power efficiency is 26195 GFlops/watts. List the supercomputers mentioned in the material from most energy efficient to least.
+  - 1. USA
+  - 2. Japan
+  - 3. China
 
 #### Introduction to LUMI
 
-##### 7.1) Select all (the) right options that are related to (the) LUMI supercomputer
-  = LUMI will be located in Kajaani and all of its waste heat is used to heat up the local district.
-  = LUMI will consist of different services: CPU and GPU based raw calculating power and e.g. AI specialised platform(s).
-  = With estimated 552 PFLOP/s and 117 PB storage capacity it is estimated that LUMI will rank in (the) top 10 of the fastest supercomputers in the world.
-  ~ LUMI will require "a"(the) space of a football field when installed.
+##### 7.1) Select all the correct options that are related to the LUMI supercomputer
+  - = LUMI will be located in Kajaani and all of its waste heat is used to heat up the local district.
+  - = LUMI will consist of different services: CPU and GPU based raw calculating power and e.g. AI specialised platform(s).
+  - = With estimated 552 PFLOP/s and 117 PB storage capacity it is estimated that LUMI will rank in the top 10 of the fastest supercomputers in the world.
+  - ~ LUMI will require the space of a football field when installed.
 
 Exam (5–10 questions), 80% correct to pass, multiple attempts allowed
 Running and using a supercomputer
 
+## Running and using a supercomputer
+
 #### HPC centers
 
-##### 2.1) Select all (the) right options that are related to operating supercomputers and (their) services.
-  = Supercomputers offer several different types of tasks in which a person can specialise to. Jussi:??? Aaron:En ymmärrä mitä tämä tarkoittaa
-  = Maintaining a supercomputer is teamwork.
-  ~ To be able to work with supercomputers, a person needs to master (a) wide variety of skills, starting from HVAC and ending with customer service about a spesific Python library needed for modeling weather.
-  ~ Administrating supercomputers is quite dull and monotonous "job"(work) where architectures are straightforward and trivial to "take in use"(implement) and maintain.
+##### 2.1) Select all the correct options that are related to operating supercomputers and their services.
+  - = Supercomputers offer several different types of tasks in which a person can specialise to. TODO: need to be made more clear
+  - = Maintaining a supercomputer is teamwork.
+  - ~ To be able to work with supercomputers, a person needs to master a wide variety of skills, starting from HVAC and ending with customer service about a spesific Python library needed for modeling weather.
+  - ~ Administrating supercomputers is quite dull and monotonous work where architectures are straightforward and trivial to implement and maintain.
 
 #### Energy and cooling
 
-##### 3.1) LUMI aims to be "a"(one of the) top ten fastest "supercomputer"(supercomputers) in the world. Yet at the same time energy-efficiency and sustainability needs to be taken in consideration. Choose all the correct statements related to LUMI.
-  = 100 percent of the used energy is renewable (hydropower).
-  = Waste heat is utilised further and led to the district heating network.
-  ~ (the) supercomputer is turned off for the night.
-  ~ For more efficient cooling, supercomputers will be "sunk"(submerged) in a swimming pool. Aaron: hasuka fakta on, että mineraalivesi akvaarioihin rakennetaan tietokoneita. Se on kylläkin hyvin harvinaista
+##### 3.1) LUMI aims to be one of the top ten fastest supercomputers in the world. Yet at the same time energy-efficiency and sustainability needs to be taken in consideration. Choose all the correct statements related to LUMI.
+  - = 100 percent of the used energy is renewable (hydropower).
+  - = Waste heat is utilised further and led to the district heating network.
+  - ~ The supercomputer is turned off for the night.
+  - ~ For more efficient cooling, supercomputers will be submerged in a swimming pool.
 
 #### How to buy a supercomputer
 
-Jussi: seller --> vendor
-
-##### 4.1) When you buy a new phone or a computer, perhaps you ponder whether to buy something now or wait for a little while for a newer model. Supercomputer sellers must know the current situation, but sell future promises. For the money invested, (the) buyer wants to have "the state-of-art"(state-of-the-art) "computer"(hardware) which does not exist "yet at the time of purchase decision"(at the time of purchase). Which of the following are tools for a successful deal.
-  = Performance commitments that the seller will make.
-  = Request for proposals (RFP) and information (RFI) to initiate negotiations with potential sellers. Jussi: RFI ensin, sitten RFP
-  = Teamwork of multiple people from both - buyer's and seller's - sides.
-  ~ (A) Well-functioning online store for selecting the right supercomputer parts and real time price updates.
-  ~ Specifications of an old supercomputer which will be updated by adding more memory and CPUs.
+##### 4.1) When you buy a new phone or a computer, perhaps you ponder whether to buy something now or wait for a little while for a newer model. Supercomputer vendors must know the current situation, but sell future promises. For the money invested, the buyer wants to have state-of-the-art) hardware which does not exist yet at the time of purchase. Which of the following are tools for a successful deal.
+  - = Performance commitments that the vendor will propose.
+  - = Request for information (RFI) then proposal (RFP) to initiate negotiations with potential sellers.
+  - = Teamwork of multiple people from both - buyer's and seller's - sides.
+  - ~ A Well-functioning online store for selecting the right supercomputer parts and real time price updates.
+  - ~ Specifications of an old supercomputer which will be updated by adding more memory and CPUs.
 
 #### How to access a supercomputer?
 
 ##### 5.1) Using a supercomputer is
-  = similar to visiting a post office or a bank. You take a queuing number and wait for your turn. With supercomputers this is done with a batch queuing system. Jussi: paitsi että ensiksi lähetetty työ ei välttämättä pääse ekaksi ajoon
-  = possible over (the) internet (by) using a text based user interface or in some cases a web browser.
-  ~ very expensive. Especially for researchers, who will be invoiced separately. Jussi: joku maksaa aina ...
-  ~ like driving a Formula 1 car. Only few can do it and it takes (a) long time to learn just the basics. Jussi: hmmm ... ei ole helppoa, mutta normaalilla tutkijan järjellä opittavissa. ei siis ole totta
+  - = similar to visiting a post office or a bank. You take a queuing number and wait for your turn. With supercomputers this is done with a batch queuing system. Note that a batch queue is not implemented sequentally, but a number of variables effect how the queue is unloaded.
+  - = possible over the internet by using a text based user interface or in some cases a web browser.
+  - ~ very expensive. Especially for researchers, who will be invoiced independantly. TODO: maybe this should be removed, because it is expensive, and some funding entity does pay for it.
+  - ~ like driving a Formula 1 car. Only few can do it and it takes a long time to learn just the basics. TODO: This should be rethought, because it is somewhat hard, but not impossible for a reasercher.
 
 #### Operating systems in supercomputer
 
 ##### 6.1) Most used operating system in supercomputers is
-  = Linux
-  ~ Windows 7
-  ~ macOS
-  ~ BeOS
+  - = Linux
+  - ~ Windows 7
+  - ~ macOS
+  - ~ BeOS
 
 Exam (5–10 questions), 80% correct to pass, multiple attempts allowed
 Parallel computing concepts
+
+## Parallel computing concepts
 
 #### Computing in parallel
 
