@@ -4,7 +4,7 @@
 
 #### Introductory video, e.g. PRACE video
 
--
+--
 
 #### Computational science and HPC
 
@@ -245,64 +245,63 @@ Parallel computing concepts
 #### Computing in parallel
 
 ##### 1.1) Which of the following examples describes the idea of parallel computing
-  = Five people pushing a car together.
-  = Ten people filling a swimming pool with their own buckets.
-  = Students gathering "trashes"(trash) from (the) school yard.
-  ~ 4 x 100 meters relay
-  ~ Working in three shifts
-  ~ Reading two books at the same time instead of one.
+  - = Five people pushing a car together.
+  - = Ten people filling a swimming pool with their own buckets.
+  - = Students gathering "trashes"(trash) from (the) school yard.
+  - ~ 4 x 100 meters relay
+  - ~ Working in three shifts
+  - ~ Reading two books at the same time instead of one.
 
 #### Types of parallel algorithms
 
-##### 2.1) Choose the appropriate parallel algorithm: Building a lego set with friends.
-  = tightly coupled
-  ~ trivially parallel
-
-Jussi: nuo eivät ole algoritmeja vaan rinnakkaisalgoritmien luokkia
-
-##### 2.2) Choose the appropriate parallel algorithm: Arraning a potluck (nyyttikestit).
-  ~ tightly coupled
-  = trivially parallel
-
-Jussi: sama kuin edellä
+##### 2.1) Choose the appropriate class of parallel algorithm: Building a lego set with friends.
+  - = tightly coupled
+  - ~ trivially parallel
+  
+##### 2.2) Choose the appropriate class of parallel algorithm: Arraning a potluck (nyyttikestit).
+  - ~ tightly coupled
+  - = trivially parallel
 
 #### Concepts
 
-##### 3.1) Select all (the) right options that are related to parallel scaling
-  = Choosing the right amount of resources for (the) task at hand may be tricky.
-  = Good performance is a result of good orchestration of resources' co-operation.
-  ~ (The) supercomputer takes care of scaling the computational "task"(tasks) automatically.
-  ~ Programming languages offer automatic scaling. E.g. in Python one imports scomputer library and calls its scomputer.scale() method.
+##### 3.1) Select all the right options that are related to parallel scaling
+  - = Choosing the right amount of resources for the task at hand may be tricky.
+  - = Good performance is a result of good orchestration of resources co-operation.
+  - ~ The supercomputer takes care of scaling the computational tasks automatically.
+  - ~ Programming languages offer automatic scaling. E.g. in Python one imports the scomputer library and calls its scomputer.scale() method.
 
-Jussi: scaling --> parallelization? ja tätä kyllä jotkut kielet/systeemit tekevät enemmän tai vähemmän automaattisesti
+TODO: scaling --> parallelization? ja tätä kyllä jotkut kielet/systeemit tekevät enemmän tai vähemmän automaattisesti
   
 #### Parallel sum
 
--
+--
 
 #### Example: Smoothed particle hydrodynamics
 
--
+--
 
 Exam (5–10 questions), 80% correct to pass, multiple attempts allowed
 More technical aspects of parallel computing
 
+## More technical aspects of parallel computing
+
 #### Overview
 
--
+--
 
 #### Shared memory computer
 
--
+--
 
 #### Distributed memory computer
 
-##### 3.1) "What of the following things a distributed memory model tries to solve." (Which of the following problems does a distributed memory model try to solve.)
-  = Memory and memory access limitations of a shared memory architecture.
-  = Easy scalability. Jussi: hardiksen puolesta juu, mutta ohjelmoijalle hankalaa ...
-  ~ CPU's need for fast access to memory. Aaron: En ymmärrä tätä lausetta
-  ~ Handling of large and complex data.
+##### 3.1) Which of the following problems does a distributed memory model try to solve.
+  - = Memory and memory access limitations of a shared memory architecture.
+  - = Easy scalability. TODO: hardiksen puolesta juu, mutta ohjelmoijalle hankalaa ...
+  - ~ CPU's need for fast access to memory.
+  - ~ Handling of large and complex data.
 
+TODO:Toinen vaihtoehto
 
 #### Memory hierarchy
 
@@ -321,10 +320,10 @@ More technical aspects of parallel computing
      Tuosta jos saisi tuon kuvan (Process-Memory performance gap) mukaan kysymykseen.
 
      Following picture (pic X) describes the problem (of) what "inequal"(unequal?) development of (the) computer's core technology has caused: Processors need to wait for the memory. To improve the performance, amount of reads and writes to the memory must be optimised. Optimisation is done in program code. Select two methods that can be used to improve performance.
-  = Structure the code to enable compiler instruction level parallelism.
-  = Vectorisizing parts of code where possible. Jussi: ---> vectorizing
-  ~ Reducing amount of cycles by giving less instructions.
-  ~ Overclocking the supercomputer's random access memory (RAM).
+  - = Structure the code to enable compiler instruction level parallelism.
+  - = Vectorizing parts of code where possible.
+  - ~ Reducing amount of cycles by giving less instructions.
+  - ~ Overclocking the supercomputer's random access memory (RAM).
 
 #### Graphics processing units
 
@@ -332,16 +331,17 @@ More technical aspects of parallel computing
 
 #### Interconnect
 
-##### 7.1) Select all (the) right options that are related to interconnect
-  = To gain better performance, different nodes must be located relatively near to each other.
-  = All things taken in consideration, (in) the best case scenario performance is up to 80 % of the theoretical peak performance of a supercomputer. Jussi: enemmänkin saa täysin keinotekoisella tehtävällä (kaikki data rekistereissä jne.) in practice?
-
-  ~ Mahti's interconnect network topology is awesomely called Dragon's flight based on (the) TV serie Game of Thrones.
-  ~ "Mahti's all"(All of Mahti's) nodes are connected "with"(to) each other through a fully connected network, and it was a summer job of three interns.
-  ~ Interconnect is the second fastest part of the chain feeding data to CPU's, right after L1 cache.
+##### 7.1) Select all the right options that are related to interconnect
+  - = To gain better performance, different nodes must be located relatively near to each other.
+  - = All things taken in to consideration, in the most optimized synthetic scenario performance is up to 80 % of the theoretical peak performance in a supercomputer. 
+  - ~ Mahti's interconnect network topology is awesomely called Dragon's flight based on the TV serie Game of Thrones.
+  - ~ All of Mahti's nodes are connected to each other through a fully connected network, and it was a summer job of three interns.
+  - ~ Interconnect is the second fastest part of the chain feeding data to CPU's, right after L1 cache.
 
 Exam (5–10 questions), 80% correct to pass, multiple attempts allowed
 HPC programming
+
+## HPC programming
 
 #### How are supercomputers programmed?
 
