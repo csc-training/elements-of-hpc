@@ -9,12 +9,12 @@
 #### Computational science and HPC
 
 ##### 2.1) Select the three paradigms of science
-  = Experimental
-  = Theoretical
-  = Computational
-  ~ Observational
-  ~ Mathematical
-  ~ Numerical
+  - = Experimental
+  - = Theoretical
+  - = Computational
+  - ~ Observational
+  - ~ Mathematical
+  - ~ Numerical
 
 TODO: Tähän olisi kiva saada jotain syvällisempää laskennalliseen paradigmaan liittyen.
 
@@ -79,8 +79,8 @@ What is a supercomputer?
 
     FALSE
 
-##### 1.3) Until recently supercomputers have followed Moore's law, where a processor's density of transistors double every two years, hence the performance also presumably doubles. The biggest constraining reason stalling this development nowadays is
-  - = Power consumption and heat generation of processors
+##### 1.3) Until recently processors have followed Moore's law, where it's density of transistors double every two years, hence the performance also presumably doubles. The biggest constraining reason stalling this development nowadays is
+  - = Power consumption and heat production, and physical and manufacturing limitations due to the size of a transistor approaching quantum effects.
   - ~ Governance regulation of development work
   - ~ Duopoly of Intel and AMD on processor markets
   - ~ Saturation of the processor market
