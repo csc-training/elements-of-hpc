@@ -355,6 +355,7 @@ HPC programming
 ##### 2.1)
 
 - most common languages
+- compiled vs.interpreted language?
 
 
 #### Parallel programming
