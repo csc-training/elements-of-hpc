@@ -362,7 +362,7 @@ HPC programming
 
 ##### 3.1)
 
-- MPI, OpenMP
+- MPI, OpenMP, basic differences between these (OpenMP: node level, incrememtal approach ok, all memory accessible for all thereads (unless otherwise specified); MPI: between nodes too, explicit send/receive when accessing memory etc.)
 - CUDA/HIP etc.
 
 
