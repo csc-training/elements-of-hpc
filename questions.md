@@ -354,20 +354,22 @@ HPC programming
 
 ##### 2.1)
 
-
+- most common languages
 
 
 #### Parallel programming
 
 ##### 3.1)
 
+- MPI, OpenMP
+- CUDA/HIP etc.
 
 
 #### High performance libraries
 
 ##### 4.1)
 
-
+- libraries = common building blocks
 
 
 #### Portability
