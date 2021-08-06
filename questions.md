@@ -345,34 +345,52 @@ HPC programming
 
 #### How are supercomputers programmed?
 
-##### 1.1)
+##### 1.1) How is programming for a supercomputer different to a desktop computer
 
+- = Supercomputer applications are often only data oriented (output is mainly numbers), and do not require a graphical user interface
+- = Programming models for a cluster is highly different compared to models for a single CPU desktop computer
+- = Scientific computing is highly oriented around performance optimization, since the difference between 0.1s and 0.01s can mean a huge increase in operation time. 
+- ~ Compiling the the software on all of the nodes separately is a tedious task given often to interns
+- ~ Writing software for a supercomputer leads to countless arguments over who gets to use the supercomputer next
 
+##### 1.2) Why is software written fro GPUs often less portable
 
+- = GPU programming models are often produced by the vendor for specific hardware
+- = Since the focus on GPU utilization is fairly new there is still lack of a industry standard
+- ~ The GPU programming model is dependant on the vendor of the systems RAM requiring changes to the source code every time the systems RAM is of a different make and model.
 
 #### HPC programming languages
 
-##### 2.1)
+##### 2.1) What are some of the most common languages used in parallel programming
 
-- most common languages
-- compiled vs.interpreted language?
+- [x] C
+- [x] C++
+- [x] Fortran
+- [x] Python
+- [ ] JavaScript
+- [ ] C#
+- [ ] Haskell
+- [ ] Cobol
+
+##### 2.2) What are the difference between a compiled and interpreted language 
+- = A compiled language is directly converted to machine code that the computer can execute and understand while an interpreted language requires a intermediate process (interpreter) to convert the language at run time to machine code.
+- ~ Compiled languages are often much slower than interpreted languages due to not having the fast interpreter to translate the code to a computer
+- ~ Compiled languages are often more easy to write than interpreted languages
 
 
 #### Parallel programming
 
 ##### 3.1)
 
-- MPI, OpenMP, basic differences between these (OpenMP: node level, incrememtal approach ok, all memory accessible for all thereads (unless otherwise specified); MPI: between nodes too, explicit send/receive when accessing memory etc.)
+- MPI, OpenMP, basic differences between these (OpenMP: node level, incremental approach ok, all memory accessible for all thereads (unless otherwise specified); MPI: between nodes too, explicit send/receive when accessing memory etc.)
 - CUDA/HIP etc.
 
 
 #### High performance libraries
 
-##### 4.1)
+##### 4.1) Why are high performance libraries useful
 
-- libraries = common building blocks
+- = Heavily optimized due to sometimes even decades of development
+- = Freedom to focus on science over developing code for general operations
+- ~ Allows the scientist to "sweep under the rug" complicated operations that they might not understand
 
-
-#### Portability
-
-##### 5.1)

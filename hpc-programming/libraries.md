@@ -13,9 +13,13 @@ In addition to providing convenient tools for common tasks, the
 libraries can typically provide greatly improved performance over
 naïve algorithms. Getting everything out of the CPU can require
 tedious optimizations, which in many cases can mean different
-approaches depending on the underlying hardware. By utilizing high
-performance libraries, performance portably is also improved.
+approaches depending on the underlying hardware. These high performance libraries are often a product of decades of development. Being maintained for the latest hardware and advances in language and compiler improvements and changes.
 
+Already existing libraries for common methods give the developer/scientist the freedom to not reinvent the wheel. This saves plenty of time and and allows for more thought to be put into the actual science. Often designing your own software for generic methods/algorithms can lead to poor and inefficient code, and even worse, use of time. Also it is good to note that general and standardized packages maintained trough out advance in technology are a good measure to uphold portability. This is also a double edged sword since some obscure and less known packages will add dependencies that are often not met in every and all super computing environments.
+
+---
+
+???? Pitäisikö tämä vaan poistaa ->
 ## Example: matrix operations
 
 Most of us have solved in school simple systems of linear equations,
@@ -26,7 +30,7 @@ $$
  4.2 x + 0.5 y - 7.6 z = 0.7
 $$
 and as you might remember, solving system of three equations (with
-three variables $$x$$, $$y$$, and $$z$$) by pen and paper can already
+three variables $$ x $$, $$y$$, and $$z$$) by pen and paper can already
 be a bit tedious. In scientific problems one encounters often systems
 with tens of thousands of equations and variables.
 
