@@ -27,7 +27,7 @@ cannot be done part by part. MPI can be used both within the shared memory
 nodes and between the nodes. Even though parallelizing a code with MPI may
 require a lot of work due to the explicit nature of communication and
 the fact that the subroutine/function calls have many parameters, the
-perfomance is typically good (if done right). Also, with MPI, the
+performance is typically good (if done right). Also, with MPI, the
 programmer is completely in charge of the parallelization and nothing
 is left to the compiler.
 
@@ -214,7 +214,7 @@ the following:
   parts of the code that are to be run on CPUs are written in C/C++,
   and the computing intensive parts that are offloaded to GPUs (called
   *kernels*) are written in CUDA. CUDA is a relatively low-level approach
-  that requires a lot of work and careful programming to utillize the
+  that requires a lot of work and careful programming to utilize the
   highly parallel processor. When done right, the performance is very good.
 - HIP can be considered to be the AMD version of CUDA, and the
   conversion between them is mostly one-to-one.
@@ -237,7 +237,7 @@ combined with MPI.
 As discussed earlier, not all problems are easily, or efficiently
 adapted to GPUs. The example we have used earlier, summing the
 elements of an array, is such an example. Thus, in the example code
-snippet below we compute elementwise sum of two arrays using CUDA.
+snippet below we compute element-wise sum of two arrays using CUDA.
 
 ```
 #include <iostream>
