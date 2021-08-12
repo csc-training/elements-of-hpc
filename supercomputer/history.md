@@ -38,7 +38,7 @@ founded a company of his own, and in 1976 debuted the iconic Cray-1
 supercomputer.
 
 Parallel computers were investigated already in 1960s, but until late
-1980s most supercomputers employed only a single, or at least few
+1980s most supercomputers employed only a single, or at most a few
 processors. The processors used were also often designed specifically
 for supercomputers. As an example, Cray Y-MP introduced in 1989 had
 eight special vector processors. During the 1990s supercomputers
