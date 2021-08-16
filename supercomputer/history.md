@@ -37,7 +37,7 @@ was introduced in 1969. Cray subsequently left Control Data Corporation,
 founded a company of his own, and in 1976 debuted the iconic Cray-1
 supercomputer.
 
-Parallel computers were investigated already in 1960s, but until late
+Parallel computers were investigated already in the 1960s, but until the late
 1980s most supercomputers employed only a single, or at most a few
 processors. The processors used were also often designed specifically
 for supercomputers. As an example, Cray Y-MP introduced in 1989 had
@@ -127,6 +127,6 @@ There have also been a number of supporting systems.
 
 ![](images/CSC_Capacity_21b.jpg)
 
-CSC's computing capacity and the Top500 list rankings of selected systems in
-1993-2020. The performance is normalized and presented on a logarithmic scale.
-Hence, the growth is exponential rather than linear.
+The graphs above depict the performance of selected CSC supercomputers from 1993-2020. The top graph shows the computing capacity of each given system with units being standardized processors. Note that the top graph is logarithmic, meaning that the growth is exponential not linear. 
+
+The bottom graph depicts the ranking of these systems on the top 500 rating. Each line shows how that system drops rank throughout the years. As of 2020 the latest CSC system was still in the top 50 ranking. 

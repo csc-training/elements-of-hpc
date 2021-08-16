@@ -23,10 +23,16 @@ execute 1 quadrillion or 10<sup>15</sup> FLOP/s, 1 peta FLOP/s (PFLOPs).
 
 The pure computing power of a CPU core is determined by the
 clock speed and the maximum number of floating operations it can perform in one
-clock cycle. As an example, a CPU core in laptop might have a clock speed of
-3 GHz (3 billion cycles per second) and perform 16 floating operations
-per cycle, having a peak performance of about 50 GFLOP/s per
-core. This pure computing power is the theoretical peak performance
+clock cycle. As an example, a CPU core in any given laptop might have a clock speed of
+3 GHz, meaning that in a second it can perform 3 billion cycles.
+
+$$ [3]\text{GHz}=[3\times10^{12}]\frac{1}{\text{s}} $$
+
+Futhermore in a cycle this theoretical core can perform 16 floating operations or 16 FLOP's. All together the core will have a peak performance of 48 GFLOP/s. 
+
+$$ [3\times10^{12}]\frac{1}{\text{s}} \times[16]\text{FLOP}=[48]\frac{\text{GFLOP}}{\text{s}}$$
+
+This pure computing power is the theoretical peak performance
 of a CPU core. For a multicore CPU, the theoretical peak performance is
 the number of CPU cores times the theoretical peak of a single
 core. Similary, one can calculate the theoretical peak performance

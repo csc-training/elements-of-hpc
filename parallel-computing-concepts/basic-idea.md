@@ -14,7 +14,7 @@ into smaller subproblems. Many subproblems can then be solved
 *simultaneously* by multiple processing units. In modern CPUs, the single
 execution unit is typically a CPU core.
 
-COMMENT (CSC): Could there be few more senteces about benefits of parallel computing? This was alredy covered in the previus chapter, but it might be beneficial to repeat some of the central benefits as an introduction. 
+This for example cuts down the computation time of any given problem. For example weather forecasts which rely heavily on weather simulations wouldn't be ready in time if computed with a single core. If we divide the problem into a multitude of subtasks and compute them separately we cut down on computation time significantly. Thus we can predict next weeks weather before it happens. 
 
 ![Computing in parallel](images/compp.png)
 

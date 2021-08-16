@@ -57,7 +57,7 @@ Typically, the more nodes and other resources and/or time a job
 requires, the longer it must wait in queue to wait for its turn to be
 executed. 
 
-Illustration idea: Linux terminal with some output from batch system
+![](images\terminal.png)
 
 
 Link to additional material: [Using command line in CSC supercomputers](https://docs.csc.fi/support/tutorials/env-guide/overview/)

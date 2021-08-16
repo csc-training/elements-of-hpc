@@ -115,6 +115,8 @@ the data that Johannes Kepler analyzed when coming up with Kepler's
 laws of planetary motion. Later on, Newton showed that Kepler's laws
 are a consequency of his theory of gravitation.
 
+Two relevant fields related to each other in data science, that have become more relevant in recent years are machine learning and artificial intelligence. Artificial intelligence is defined as technology to simulate intelligence as humans would define it. For example intelligence that we use to play chess or go. This technology doesn't have static algorithms which are predefined, but algorithms which strive to learn with their own "intelligence" based on previously learned information. Meaning that, as a system it learns from itself. Machine learning is defined as the algorithms and methods used to predict this information using probabilistic models. Often input to these models are massive data sets which naturally require a large amount of computation to crunch through.
+
 
 ### High-performance computing
 
