@@ -45,7 +45,8 @@ between the parallel tasks (communication overhead typically stops parallel perf
 
 But by just timing the code it is very difficult to say anything about its performance. To find out where problems lie and how
 program performance can be improved one can use various performance analysis tools. More precisely:
-* Profiler
+* Profiler: With a profiler one can find the so called hotspots or the sections and even lines of the code where most of the time is spent. Focusing the optimization efforts to these yields 
+* 
 
 ### High performance libraries 
 While scientific computing programs solve or simulate a huge
