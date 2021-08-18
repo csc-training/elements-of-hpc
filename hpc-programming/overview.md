@@ -44,9 +44,12 @@ good for performance), vectorization of calculations (utilizing the parallel com
 between the parallel tasks (communication overhead typically stops parallel performance improvement eventually) and so on.
 
 But by just timing the code it is very difficult to say anything about its performance. To find out where problems lie and how
-program performance can be improved one can use various performance analysis tools. More precisely:
-* Profiler: With a profiler one can find the so called hotspots or the sections and even lines of the code where most of the time is spent. Focusing the optimization efforts to these yields 
-* 
+program performance can be improved one can use various performance analysis tools. Thsese include e.g.
+* Profilers: With a profiler one can find the so called hotspots or the sections and even lines of the code where most of the time is spent. Focusing the optimization efforts to these yields the greatest benefits.
+* Message passing visualization tools: With these the communication patterns and possible load imbalance can be found and analyzed.
+* Vectorization and memory usage analysis tools: Reveal how well the computing resources of the cores are utilized and the efficiency the of memory traffic and can even suggest improvements.
+
+Naturally also debuggers (tools for searching programming errors) are very important but need to be able to handle parallel programs efficiently to be useful.
 
 ### High performance libraries 
 While scientific computing programs solve or simulate a huge
