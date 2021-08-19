@@ -4,7 +4,7 @@
 
 ### What is high-performance computing?
 
-1. Introductory video, e.g. [PRACE video](https://youtu.be/mJ3tvjVkCcI)
+1. [What is high-performance computing?](intro/what-is-hpc.md)
 2. [Computational science and HPC](intro/how-hpc-has-changed-the-world.md)
 3. [About the  course](intro/about_the_course.md)
 5. [Some central terms explained](intro/central-terms.md)
