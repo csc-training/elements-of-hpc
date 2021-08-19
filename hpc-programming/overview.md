@@ -33,6 +33,24 @@ CPU programs written in Fortran, C/C++ or Python and parallelized with
 MPI or OpenMP are generally portable with good performance. However,
 the GPU world is currently more complicated since the focus on the field is still quite new, there are a number of competing vendors and proprietary languages and programming models often are designed by the vendors for specific hardware.
 
+### Performance analysis tools
+
+One of the most important aspects of HPC programming is of course the performance of the code, i.e. how fast it runs
+and solves a given problem. As described earlier, a massively parallel computer is a very complicated machine and
+writing code that is able to extract the best possible performance from the system is equally complicated. 
+The programmer has to consider parallelization and load balancing (make sure that all the parallel tasks have equal
+amount of work), data structures and memory access patterns (loading data from contiguous memory locations and reusing it is 
+good for performance), vectorization of calculations (utilizing the parallel computing capacity of a single core), communication
+between the parallel tasks (communication overhead typically stops parallel performance improvement eventually) and so on.
+
+But by just timing the code it is very difficult to say anything about its performance. To find out where problems lie and how
+program performance can be improved one can use various performance analysis tools. Thsese include e.g.
+* Profilers: With a profiler one can find the so called hotspots or the sections and even lines of the code where most of the time is spent. Focusing the optimization efforts to these yields the greatest benefits.
+* Message passing visualization tools: With these the communication patterns and possible load imbalance can be found and analyzed.
+* Vectorization and memory usage analysis tools: Reveal how well the computing resources of the cores are utilized and the efficiency the of memory traffic and can even suggest improvements.
+
+Naturally also debuggers (tools for searching programming errors) are very important but need to be able to handle parallel programs efficiently to be useful.
+
 ### High performance libraries 
 While scientific computing programs solve or simulate a huge
 number of different problems, many of them need to perform similar
