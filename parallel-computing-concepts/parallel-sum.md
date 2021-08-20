@@ -31,7 +31,7 @@ numbers. The values have been read from a file by the first MPI task (rank 0).
 
 COMMENT: There's no mention (I think) of what MPI is or what a rank is before this point, so it might be neccessary to explain them here.
 
-![](../../img/parallel-sum-0.png)
+![](images/parallel-sum-0.png)
 
 ## Goal
 
@@ -57,24 +57,24 @@ illustrate the MPI communication needed.
 
 ### Step 1.1: Receive the operation for scatter
 
-![](../../img/parallel-sum-1.1.png)
+![](images/parallel-sum-1.1.png)
 
 ### Step 1.2: Send the operation for scatter
 
-![](../../img/parallel-sum-1.2.png)
+![](images/parallel-sum-1.2.png)
 
 ### Step 2: Compute the partial sums in parallel
 
-![](../../img/parallel-sum-2.png)
+![](images/parallel-sum-2.png)
 
 ### Step 3.1: Receive the operation for gather
 
-![](../../img/parallel-sum-3.1.png)
+![](images/parallel-sum-3.1.png)
 
 ### Step 3.2: Send the operation for gather
 
-![](../../img/parallel-sum-3.2.png)
+![](images/parallel-sum-3.2.png)
 
 ### Step 4: Compute the total sum
 
-![](../../img/parallel-sum-4.png)
+![](images/parallel-sum-4.png)
