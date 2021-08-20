@@ -8,8 +8,6 @@ the machine. The computational work (jobs) is queued and executed when there
 are sufficient resources in the machine. The applications run with direct
 physical access to hardware.
 
-COMMENT: Is it possible to clarify the first sentence?  
-
 As a result, the traditional HPC platforms are extremely fine-tuned to extract the
 best performance from the hardware for the most intensive
 problems. This approach is preferred for massive 
@@ -19,16 +17,14 @@ operations. However, they lack some flexibility. The
 users are limited to the available software stack and have to wait for the
 specific resources to be freed. They are also limited to a fixed available storage capacity.
 
-_Cloud computing_ usually refers to access to a pool of configurable
+_Cloud computing_ usually refers to the access of a pool of configurable
 computer resources that are available on demand. The computing services
 are using advanced automation, without direct active management by the user
-using virtualization technology. Virtulization is an abstraction to simulatie the necessary
-hardware to run a guest operating system on a host machine.
-On each physical node, multiple virtual machines (VMs, or _instances_) can be run on virtual operating platforms. On
+using virtualization technology. Virtualization defined literally is the act of creating a virtual version of something. Virtualization allows us to create virtual machines which are emulations of differing computer architectures and hardware configurations, giving us the freedom to run software dedicated to that differing architecture. This allows us to detach dependencies from the physical hardware. 
+
+With virtualization we can for example emulate old video game consoles that share very little resemblance to modern computer hardware. Not being limited by the hardware we can also for example "chop up" a physical node virtually allowing us to create  multiple virtual machines (VMs, or _instances_) which can all run independent operating systems. On
 these VMs, one can install Linux or Windows and a complete custom stack of
 software. The main advantages of cloud computing:
-
-COMMENT: Could it be useful to define the term "virtualization" here briefly?  
 
 * On-demand self-service (automation, everything provided by the service
   provider)
