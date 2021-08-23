@@ -9,7 +9,7 @@ of applications of supercomputers in more detail.
 The video shows a simulation of gold nanoparticles colliding into a gold
 surface. The size of the particle is about 20 nm, *i.e.* a 20 millionth part
 of a millimeter. Understanding this type of processes is important e.g. for
-radiation damage in spacecraft.
+radiation damage on a spacecraft.
 Macroscopic cratering, for instance by meteorites impacting the ground, can
 intuitively be approached as a purely macroscopic interaction between two
 solids, causing stresses and deformation.
@@ -28,7 +28,7 @@ simulate, which can only be provided by parallel computing and supercomputers.
 When people breathe, they emit aerosols into the air. The spreading of
 these aerosols can be studied with supercomputers, which in turn helps us
 in fighting the COVID pandemic. The aerosol particles are vanishingly small and
-light, so that they can be regarded as points being moved around by the air.
+light, so that they can be regarded as points being moved around by air.
 The motion of the air itself is a very complex thing to simulate. Even in
 seemingly gentle conditions, such as blowing away the vapour over a cup of
 coffee or the smoke of a candle, the motion of the air is visibly disordered, or
