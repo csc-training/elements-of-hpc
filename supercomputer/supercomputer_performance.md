@@ -6,20 +6,20 @@ most classic one is the number of floating point operations per second
 (FLOP/s) that the computer can perform.
 
 What is a FLOP/s? Floating point number is the computer representation
-of real number. If we do a single calculation involving two real
+of a real number. If we do a single calculation involving two real
 numbers, e.g. `2.1 + 4.3`, in one second, that is equal to one
 floating-point operation per second (1 FLOP/s). The operations
 considered in this measure are the basic arithmetic operations:
 addition, subtraction, multiplication, and division. Computers can operate
-also on integer numbers, and even thought integer performance is
+also on integer numbers, and even though integer performance is
 important for some applications, in most scientific problems
 the vast majority of arithmetic operations are with real numbers, thus
 FLOP/s has become the standard measure.
 
 When a computer can execute 1 billion FLOP/s, then we can say its
 performance is 1 giga FLOP/s (GFLOP/s). Similarly, one trillion
-(10<sup>12</sup>) FLOP/s is 1 tera FLOP/s (TFLOPs), and when a supercomputer can
-execute 1 quadrillion or 10<sup>15</sup> FLOP/s, 1 peta FLOP/s (PFLOPs).
+(10<sup>12</sup>) FLOP/s is 1 tera FLOP/s (TFLOP/s), and when a supercomputer can
+execute 1 quadrillion or 10<sup>15</sup> FLOP/s, 1 peta FLOP/s (PFLOP/s).
 
 The pure computing power of a CPU core is determined by the
 clock speed and the maximum number of floating operations it can perform in one
@@ -46,7 +46,7 @@ be obtained normally in real calculations. Before a CPU can calculate
 it needs to store the result back to memory. This does
 not happen instantaneously, so in practice computational speed is
 determined not only by the pure computing power of a CPU, but also by
-how fast the CPU can access the memory. Different applications have
+how fast the CPU can access the memory. Different applications have a
 different ratio of floating operations per memory access. In some
 cases the same number is used in multiple computations *e.g.*
 when calculating both `2.1 + 4.3` and `2.1 + 5.3`. If the speed of
