@@ -17,7 +17,7 @@ more difficult usage. However, where very few people have a chance to
 even try to learn how to drive formula 1, any body can learn the
 basics of using supercomputers via command line in one day.
 
-![](images\terminal.png)
+![](./images/terminal.png)
 
 Supercomputers are not made more difficult to use on purpose, and
 supercomputing centers are constantly looking for ways to make
