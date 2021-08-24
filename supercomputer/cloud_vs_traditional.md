@@ -37,7 +37,7 @@ There are three common flavors of cloud resources:
 and everything above it (middleware, runtime, data and applications). This is the basic and most 
 flexible cloud service. There are a number of commercial providers for this kind
 of resources, and several supercomputing centers, including CSC,
-provide also these type of resources.
+also provide these types of resources.
 * Platform as a Service (PaaS): The provider sets up the operating system, middleware and the runtime,
 and the user brings in applications and data. This is conceptually
 quite close to the computing environments that the computing centers provide.
@@ -57,5 +57,5 @@ computations utilizing large number of nodes can be worse than in
 the bare-metal clusters. Also, HPC cloud can be significantly more
 expensive than the basic cloud resources. While there are no start-up costs and the services are
 available immediately when requested, the price of computing time can
-vary depending on the load. Finally, there can be also concerns about privacy and
+vary depending on the load. Finally, there can also be concerns about privacy and
 confidentiality of the data in the cloud. 
