@@ -1,6 +1,6 @@
 # Parallelism within a core
 
-By now, we have neem discussing parallelization at the level of multiple CPU
+By now, we have beem discussing parallelization at the level of multiple CPU
 cores. That is, we split a computational problem into smaller
 subproblems and assign the subproblems to the CPU cores. Modern CPU
 cores can, however, perform additional parallel operations within the core.
