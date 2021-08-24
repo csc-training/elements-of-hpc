@@ -17,7 +17,7 @@ more difficult usage. However, where very few people have a chance to
 even try to learn how to drive formula 1, any body can learn the
 basics of using supercomputers via command line in one day.
 
-TODO (Edukamu team): Add a general figure of a command line interface 
+![](images\terminal.png)
 
 Supercomputers are not made more difficult to use on purpose, and
 supercomputing centers are constantly looking for ways to make
@@ -56,9 +56,6 @@ decide when and in which subset of the nodes the job will be run.
 Typically, the more nodes and other resources and/or time a job
 requires, the longer it must wait in queue to wait for its turn to be
 executed. 
-
-![](images\terminal.png)
-
 
 Link to additional material: [Using command line in CSC supercomputers](https://docs.csc.fi/support/tutorials/env-guide/overview/)
 
