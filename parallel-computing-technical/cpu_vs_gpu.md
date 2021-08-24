@@ -91,7 +91,7 @@ training neural networks. The arithmetic operations in the training of neural
 networks are inherently highly parallel and as such are very well suited for
 GPUs, and in best cases GPUs are up to 30 times faster than CPUs.
 
-Even though the GPUs have had a major role in high-performance computing for
+Even though GPUs have had a major role in high-performance computing for
 only a bit over ten years, using accelerators in supercomputers is nothing new.
 Utilizing some type of co-processors to carry out part of the calculations has
 been an on and off going trend since the 1960s. At the moment it looks like GPUs
