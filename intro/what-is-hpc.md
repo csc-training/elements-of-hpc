@@ -8,7 +8,7 @@ applications and using the supercomputer.
 [Video: what is a supercomputer](https://youtu.be/mJ3tvjVkCcI)
 
 High-performance computing enables breakthroughs in multiple disciplines in science and industry, 
-ranging from understanding the origins of universe to finding new solutions in medicine and health 
-care and fighting the climate change.
+ranging from understanding the origins of the universe to finding new solutions in medicine and health 
+care, or for example fighting climate change.
 
 [Video: importance of HPC](https://www.youtube.com/watch?v=5qDrPhIdgBU&t=25s)

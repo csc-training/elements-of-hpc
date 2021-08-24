@@ -15,7 +15,7 @@ models, sometimes called laws of nature, which fit or "explain"
 measurements and, in the best case, predict phenomena that have not
 yet been observed. Since the mid 20th century, experimental and theoretical
 science has been complemented by computational science. Computational
-science can be defined as discipline concerned with the design,
+science can be defined as a discipline concerned with the design,
 implementation and use of mathematical models to analyse and solve
 scientific problems via computer simulations and numerical
 analysis. The three disciplines are often strongly interlinked.
@@ -33,7 +33,7 @@ of our solar system. They noted that their observations followed
 certain patterns. Similarly, one can drop stones of various weights
 from towers of different heights and measure the time it takes for the
 stones to hit the ground. Random movement of small particles in liguid
-(Brownian motion) can be observed with microscope, elementary
+(Brownian motion) can be observed with microscopes, elementary
 particles with particle accelerators etc.
 
 Different experiments require widely different measurement
@@ -138,7 +138,7 @@ discs. Numerical simulations can also produce large amounts of data.
 Data analysis can also involve heavy numerical computations, such as
 when using artificial intelligence and machine learning methods.
 
-High-performance computing and supercomputers enable the solution of
+High-performance computing and supercomputers enable solutions for
 the most demanding problems of computational and data science. They
 enable amazingly complex large-scale simulations. Supercomputers are a
 unique scientific tool in the sense that the same apparatus can be
@@ -164,4 +164,4 @@ used in multitude of application areas:
 Thus, high-performance computing resources and knowledge are a hugely
 important asset for any modern society providing a competitive
 advantage for research and industry. In the next section, a number of
-application examples is described in more detail.
+application examples are described in more detail.

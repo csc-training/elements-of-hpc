@@ -44,7 +44,7 @@ for supercomputers. As an example, Cray Y-MP introduced in 1989 had
 eight special vector processors. During the 1990s supercomputers
 started to be based more on commodity processors (such as
 Intel x86) and massively parallel processing. An important landmark in 1995
-was the Beowulf cluster, which was build from commodity-grade
+was the Beowulf cluster, which was built from commodity-grade
 components (Intel DX4 processors and Ethernet network) and running the
 Linux operating system. Nowadays, most supercomputers are
 based on commodity processors, but the network connecting the
