@@ -21,7 +21,7 @@ memory caches.
 ## Memory cache
 
 Memory cache is basically a small amount of scratch memory close
-to the CPU-core that is very fast. Basic idea is that when a CPU core needs
+to the CPU-core that is very fast. The basic idea is that when a CPU core needs
 to load something from the main memory, it first looks in the
 cache. If the data is already in the cache, it can be fetched from
 the cache to the register much faster than from the main memory. Also, when a
