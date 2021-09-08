@@ -43,10 +43,11 @@ efficient. With only interactive use there would be load mainly during normal
 working hours, but with the help of a batch system jobs can be run on
 supercomputer 24/7 throught the whole year.
 
-TODO (Edukamu team/CSC): Could the batch system basic principle be presented as a figure?
+<!-- illustrated in Edukamu
 Examples: https://www.researchgate.net/figure/Schematic-view-of-the-supercomputer-at-Cornell-University-with-cluster-controller-batch_fig1_277295561
 https://confluence.ecmwf.int/display/UDOC/Batch+Systems?preview=/47294624/47613083/batch-schema.png
 https://hbp-hpc-platform.fz-juelich.de/?page_id=732
+-->
 
 When using the batch system, the user describes to the system (in most
 cases in a special file called a *batch script*) which executable is
