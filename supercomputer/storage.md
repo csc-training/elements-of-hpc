@@ -43,8 +43,7 @@ systems available, such as
 [BeeGFS](https://en.wikipedia.org/wiki/BeeGFS), and
 [Ceph](https://en.wikipedia.org/wiki/Ceph_(software)) to name a few.
 
-TODO: Illustration idea: multiple disks of supercomputer with arrows going
-to/from them vs. single disk of laptop.
+[Supercomputers are capable of parallel input/output](images/parallel-io.png)
 
 Some supercomputers have also archiving storage based on magnetic
 tapes where users can save the data for a long period of time and recover it, however,
@@ -52,17 +51,16 @@ with slower performance than the other mentioned technologies. The tape-based
 storage is significantly cheaper than hard disks, and it has been around since
 the 1950's. The technology is similar to VHS tapes.
 
-TODO: harmonize table with "performance" article
 
 Storage terminology:
 
-|Size in bytes                |  Value              |   Metric  |
-|-----------------------------|---------------------|-----------|
-! 1                           |   1                 | Byte      |
-| 1 000                       |   1000              | Kilobyte  |
-| 1 000 000                   |   1000<sup>2</sup>  | Megabyte  |
-| 1 000 000 000               |   1000<sup>3</sup>  | Gigabyte  |
-| 1 000 000 000 000           |   1000<sup>4</sup>  | Terabyte  |
-| 1 000 000 000 000 000       |   1000<sup>5</sup>  | Petabyte  |
-| 1 000 000 000 000 000 000   |   1000<sup>6</sup>  | Exabyte   |
+|Size in bytes                |  Scientific notation |   Unit    |
+|-----------------------------|----------------------|-----------|
+| 1                           |   1                  | Byte      |
+| 1 000                       |   10<sup>3</sup>     | Kilobyte  |
+| 1 000 000                   |   10<sup>6</sup>     | Megabyte  |
+| 1 000 000 000               |   10<sup>9</sup>     | Gigabyte  |
+| 1 000 000 000 000           |   10<sup>12</sup>    | Terabyte  |
+| 1 000 000 000 000 000       |   10<sup>15</sup>    | Petabyte  |
+| 1 000 000 000 000 000 000   |   10<sup>18</sup>    | Exabyte   |
 
