@@ -33,5 +33,3 @@ The technology modern societies use is strongly based on mathematical modelling:
 The LUMI supercomputer is well aligned with the Digital and Green Deal policies of the European Commission.
 Located in CSC's carbon-neutral Kajaani data center, LUMI helps the European ICT sector in becoming greener and more cost-efficient, which is a necessity for reaching EU’s ambitious climate targets and paving the way for the green transition. CSC’s data center in Kajaani is among the world’s most eco-efficient: it uses 100% renewable energy produced with hydropower. LUMI’s waste heat will be used in Kajaani’s district heating network: 20% of the area’s yearly district heating needs will be covered with LUMI’s waste heat.
 
-
-TODO: some nice picture related to LUMI

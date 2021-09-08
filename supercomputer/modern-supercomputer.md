@@ -52,9 +52,6 @@ massive parallel computing ability.
 Even though nodes can have local disks, there is normally also a separate
 disk storage system which all the nodes can access.
 
-TODO: images of a node and a collection of nodes, different interconnect
-topologies?
-
 Supercomputers are distinguished from consumer devices also by much denser
 packing. Physically, a supercomputer consists of several cabinets (about a
 size of a phone booth), where each cabinet contains multiple rack blades, and
@@ -63,8 +60,5 @@ forthcoming LUMI supercomputer would be devised from high-end laptops,
 the pile would be over 23 km high, 
 whereas LUMI fits into few tens of cabinets in the area about the size
 of a tennis court.
-
-
-TODO: image of cabinet / open cabinet?
 
 <!-- Copyright SURFsara,  EPCC at the University of Edinburgh, CSC - IT Center for Science Ltd. >

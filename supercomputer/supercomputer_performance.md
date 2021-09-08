@@ -61,8 +61,6 @@ read and write data to the disk, which means that the speed of I/O
 (input/output or transfer of data between processors and storage) may also
 further limit the performance.
 
-TODO: Illustration idea: sketch a picture representing the different aspects
-affecting practical performance.
 
 ## TOP500 list
 
