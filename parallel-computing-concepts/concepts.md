@@ -76,8 +76,6 @@ To summarize, the main causes limiting parallel scaling are:
 - Serial parts in the problem
 
 
-TODO: Idea: could the story below be illustrated with some figures or animation?
-
 Let's illustrate some of these limits with the help of Alice and
 friends. Let's assume it takes 1 s to sum two numbers and 0,1 s to
 communicate a single number. For Alice alone, the solution

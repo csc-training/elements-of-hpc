@@ -78,7 +78,9 @@ task of grating cheese back to Bob. Similarly, after passing the chopped ham
 to Alice, Joe would get a new task of slicing tomatoes. Finally, Alice would
 assemble everything together.
 
-TODO (Edukamu team): Animation idea: could the pizza making be presented as an animation?
+<!--
+Animation about pizza making in Edukamu
+-->
 
 Task farm and data parallel approaches can be also combined, for example,
 each worker could consist of multiple execution units, and the data related

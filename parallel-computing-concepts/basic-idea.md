@@ -18,14 +18,12 @@ This for example cuts down the computation time of any given problem. For exampl
 
 ![Computing in parallel](images/compp.png)
 
-ADDITION: Possible video to explain the concept: https://www.youtube.com/watch?v=XIiq7LUX7uo
+[Serial vs. parallel computing](https://www.youtube.com/watch?v=XIiq7LUX7uo)
 
 How a problem is split into smaller subtasks depends fully on the problem.
 There are various paradigms and programming approaches how to do this,
 and in the [next step](concepts.md) we will discuss some of them in more
 detail.
-
-TODO (EDUMAKU team): In might be enough to mention that this is topic is covered in latter sections.
 
 # Example: How to compute a sum in parallel?
 
@@ -50,9 +48,3 @@ computing: making computations faster and enabling larger computations.
 
 ![Alice and Bob calculate a sum in parallel](images/alice-bob-sum.png)
 
-FIXME: missing figure (alice-bob-sum), rough idea:
-       - divide numbers into two groups (e.g. lotto-balls in two piles)
-       - calculate partial sums
-       - combine partial sums into the final result
-
-TODO (Edukamu team): Could you produce illustrative figure following the idea described above?
