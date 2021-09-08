@@ -55,6 +55,7 @@
 1. [Parallelization within CPU core](parallel-computing-technical/hierarchy_parallelism.md)
 1. [Graphics processing units](parallel-computing-technical/cpu_vs_gpu.md)
 1. [Interconnect](parallel-computing-technical/interconnect.md)
+1. [Maximum practical performance](parallel-computing-technical/maximum-speed.md)
 
 ### Exam (5–10 questions), 80% correct to pass, multiple attempts allowed
 
