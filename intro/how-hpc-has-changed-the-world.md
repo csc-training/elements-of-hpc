@@ -20,8 +20,7 @@ implementation and use of mathematical models to analyse and solve
 scientific problems via computer simulations and numerical
 analysis. The three disciplines are often strongly interlinked.
 
-TODO: figure about the interplay of three paradigms.
-
+[Three paradigms of science](Images/three-paradigms.png)
 
 
 ### Experimental science

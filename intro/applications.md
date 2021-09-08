@@ -102,13 +102,14 @@ patient safety by acting as a safety mechanism.
 [Link](https://www.csc.fi/en/-/artificial-intelligence-detects-and-grades-prostate-cancer-nearly-without-error)
 
 
-TODO: Other possible articles?
+# Other applications
 
-* [Topological superconductors](https://www.csc.fi/en/-/topologinen-suprajohde-uusi-vaihtoehto-kubittien-rakennusaineeksi)
-* [Structural biology](https://www.csc.fi/en/-/rakennebiologia-biokemia-ja-mitokondriaalisen-kompleksi-i-n-md-simulaatiot-apuproteiinilla-on-avainasema-biokonversiossa)
-* [Natural language processing](https://www.csc.fi/en/-/deepfin-luonnollisen-kielen-k%C3%A4sittelyn-aallonharjalla)
-* [Structural biology, COVID](https://www.csc.fi/en/-/rakennebiologia-apuna-sars-cov2-l%C3%A4%C3%A4kekehityksess%C3%A4)
-* [Nanocatalyst](https://www.csc.fi/en/-/researchers-from-the-university-of-jyv%C3%A4skyl%C3%A4-and-xiamen-university-discover-how-a-nanocatalyst-operates-at-the-atomic-level)
-* [Elmer ICE](https://www.csc.fi/en/-/digging-deeper-in-dynamics-of-ice)
-* [Cancer diagnosis](https://www.csc.fi/en/-/artificial-intelligence-detects-and-grades-prostate-cancer-nearly-without-error)
-* [Jyrki's visualizations](https://www.csc.fi/en/-/visualization-speaks-more-than-a-thousand-numerals)
+Due to extreme versatility of supercomputers, exhaustive listing of all important applications is 
+not feasible. Below you can, however, find information on some additional use cases.
+
+* [Topological superconductor – new building block for qubits](https://www.csc.fi/en/-/topologinen-suprajohde-uusi-vaihtoehto-kubittien-rakennusaineeksi)
+* [Understanding biological energy conversion via molecular simulations](https://www.csc.fi/en/-/rakennebiologia-biokemia-ja-mitokondriaalisen-kompleksi-i-n-md-simulaatiot-apuproteiinilla-on-avainasema-biokonversiossa)
+* [Operation of nanocatalyst at the atomic level](https://www.csc.fi/en/-/researchers-from-the-university-of-jyv%C3%A4skyl%C3%A4-and-xiamen-university-discover-how-a-nanocatalyst-operates-at-the-atomic-level)
+* [Structural biology guiding development of new SARS-Cov2 therapies](https://www.csc.fi/en/-/rakennebiologia-apuna-sars-cov2-l%C3%A4%C3%A4kekehityksess%C3%A4)
+* [Digging deeper in dynamics of ice with glacier simulations](https://www.csc.fi/en/-/digging-deeper-in-dynamics-of-ice)
+* [Visualization speaks more than a thousand numerals](https://www.csc.fi/en/-/visualization-speaks-more-than-a-thousand-numerals)
