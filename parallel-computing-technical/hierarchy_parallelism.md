@@ -38,7 +38,6 @@ list. Vectorization refers to the ability of the CPU core to perform
 operations on multiple data at the same time, often referred as Single
 Instruction, Multiple Data (SIMD) parallelization.
 
-TODO: check copyright of the image.
 ![Vectorization](images/vectorization.png)
 
 If the CPU core can perform the addition with four numbers in a single
