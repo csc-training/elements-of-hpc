@@ -75,12 +75,9 @@ there are lots of parameters that need to be considered when choosing
 the interconnect topology, and the topologies can be conceptually quite
 complex.
 
-TODO: is Mahti example / images too complex?
-
 For example, the network topology in Mahti is called a Dragonfly topology.
 The nodes are divided into six dragonfly groups (with 234 nodes in
 each). Within a dragonfly group there is, what is called, a fat tree topology,
 and these fat trees between dragonfly groups are then fully connected.
 
-![Dragonfly topology in Mahti](images/mahti_df_ex.png)
 ![Dragonfly topology in Mahti](images/mahti_df.png)
