@@ -1,0 +1,201 @@
+History of Supercomputing
+
+•	Päävalikon otsikko ja osion otsikko synkronoitava (sama otsikko etusivulla ja osion alussa, koskee kaikkia osioita)
+•	Osion lopussa kaksi kuvaa, joista ei saa selvää edes PC:n näytöltä (pieni fontti, liikaa asiaa, vuosilukupalkin värivalinta, jne.). Kuvia yksinkertaistettava, selkeytettävä tai poistettava kokonaan. 
+•	CSC and its predecessors have operated the following major systems in Finland. Otsikon yhteyteen maininta, että kyseessä on vapaaehtoinen osio. Voisi myös mainita, että listassa esiintyviin termeihin, käsitteisiin ja tunnuslukuihin syvennytään kurssin myöhemmässä vaiheessa. 
+
+Välikysymys osion loppuun
+
+Question: Place the following events in a correct time order
+-1945	Mechanical computers, typically single-purpose machines that could not be programmed in the modern sense.
+1945	ENIAC (Electronic Numerical Integrator and Computer), the first fully electronic programmable general-purpose computer that can be considered the first supercomputer.
+1959	Transistor-based system IBM's 7090 mainframe, specifically designed for solving large-scale scientific and engineering problems
+1964	The term supercomputing was first used, and Control Data Corporation introduced the CDC 6600 system designed by Seymour Cray
+1971	CSC's (Center for Scientific Computing) history began when a special office was founded to operate a Univac 1108 system. 
+1976	The iconic Cray-1 supercomputer was introduced
+1989	Cray Y-MP introduced a parallel computer incorporating eight special vector processors.
+1995	Beowulf cluster built with commodity-grade components and the Linux operating system.
+2005-	Clock frequencies of processors stabilized because of the power consumption and the heat levels. Performance has been increased by adding multiple cores to a single CPU.
+
+Question: Which of the following statements are true?
+•	The performance of CSC supercomputers was roughly 1000 times higher in 2010 compared to year 2001 (i.e. there is a hundredfold increase in performance between 2001 and 2010) - TRUE
+•	Atos BullSequana XH2000 operated by CSC system was still in the top 50 ranking in 2020 - TRUE
+•	There is roughly a hundredfold increase in performance between 2009 and 2019 in CSC supercomputers – FALSE
+•	Most of the CSC supercomputers have remained in top 100 ranking at least 10 years – FALSE
+•	CSC is the operator of Finnish national supercomputers (TRUE)
+
+Modern supercomputer
+
+Osion loppuun oheiset tehtävät
+
+Täydennä sanoilla:
+CPU aka central processing unit is called the [1] of a computer. Modern CPUs consists of multiple [2] which can operate independently. Sometimes terms CPU and [3] are used interchangeably.
+•	[1] brain
+•	[2] cores
+•	[3] processor
+
+What is a backbone of a supercomputer and enabler of massive parallel computing ability? It also connects together multiple nodes and e.g. network storage.
+•	= interconnect
+•	~ LAN-party
+•	~ WiFi
+•	~ parallel network
+
+Which of the following statements are true?
+•	a supercomputer node is basically the same as a really powerful personal computer (TRUE)
+•	modern supercomputers are built using the same basic elements, such as processors, memory, and disk, that are found in desktop computers (TRUE)
+•	A supercomputer gets its power from CPUs and GPUs working in parallel (TRUE)
+•	CPU cores are typically better than GPU cores for parallel operations (FALSE)
+
+
+
+
+Supercomputer performance
+•	Tässä voisi käyttää listaa: ” When a computer can execute a billion FLOP/s, its performance is one giga FLOP/s (GFLOP/s). Similarly, one trillion (1012) FLOP/s is one tera FLOP/s (TFLOP/s), and when a supercomputer can execute one quadrillion or 1015 FLOP/s, the performance is one peta FLOP/s (PFLOP/s).”
+•	Laskuesimerkeissä ei tarvita sulkeita numeroiden ympärillä
+
+Välikysymys ennen ensimmäistä kuvaa.
+
+A CPU core have a clock speed of 4 GHz and it can perform 18 floating point operations (FLOP) in one second. What is a theoretical peak performance of the CPU core in GFLOP/s?
+•	72 GFLOP/s (TRUE)
+•	48 GFPLO/s (FALSE)
+•	76 GFLOP/s (FALSE)
+•	96 GFLOP/s (FALSE)
+
+Välikysymys osion loppuun.
+
+Normal computers and supercomputers have reached tremendous increases in computational power over the years. Which of the following statements about computer performance are correct?
+•	Memory access, communication between nodes and I/O operations are examples of factors limiting the performance of a supercomputer (TRUE)
+•	LINPACK is a common benchmark by which the performance and functionality of a supercomputer is measured (TRUE)
+•	The most powerful supercomputer in 2020 was around 1000 faster than the number one in 2000 (FALSE)
+•	CSC’s new LUMI supercomputer is expected to be among the top 10 supercomputers of the world when it is installed in 2021. (TRUE)
+
+Data storage
+•	Tarkistettava ensimmäisen kappaleen lukuarvot ja niiden yhteismitallisuus!
+
+Kysymykset osion loppuun
+
+Question: Connect the right options.
+= 1 B -> Byte
+= 10^15 B -> Petabyte
+= 10^6 B -> Megabyte
+
+Question: Select all the right options that are related to data storage
+= Decreased performance because of a badly designed, implemented or utilized storage solution 
+= Instead of the speed of a single hard disk, the performance comes from intelligent and distributed mechanism of reading and writing data on multiple disks simultaneously.
+~ Mahti's storage is implemented with 170 000 Blu-ray disks and equivalent number of RW Blu-ray-drives.
+~ More persistent (and cheaper) storage solutions are gained with the help of VHS tapes.
+
+Supercomputing and Cloud Computing
+
+- Onko punaisella merkitty kohta kielellisesti oikein (osion loppupuolella)? Overall, cloud computing reduces complexity for the user in some cases, saves money for small businesses as there are no startup costs, and still delivers good performance. At the same time, setting up virtual machines and the like requires knowledge of installing and maintaining operating systems and software.
+
+Kysymykset osion loppuun 
+
+True or false: Traditionally supercomputing environments are tailored, and use-cases must meet requirements of the execution environment, sometimes very precisely. Parts of modern HPC environment services may be offered in a cloud computing manner, where a customer has network access to a scalable and elastic pool of shareable physical or virtual resources with self-service provisioning and administration on-demand.
+TRUE
+
+Connect the right options
+= IaaS ->  The most flexible cloud service. Customer can provision and use processing, storage and networking resources provided by a cloud service provider. 
+= PaaS -> Customer can deploy, manage and run customer-created applications using one or more programming language and execution environment supported by a cloud service provider.
+= SaaS -> Customer can use the cloud service provider's applications. Many document storing and office applications are of this type.
+
+
+
+Top supercomputers
+
+Kysymykset osion loppuun
+
+The most powerful computer in the world currently (as of November 2020) is located in
+= Japan
+~ USA
+~ China
+~ Finland
+~ Sweden
+
+The most energy efficient supercomputer is the NVIDIA DGX SuperPOD in the USA. It's rank on the top500 list is 170th and it's power efficiency is 26195 GFlops/watts. List the supercomputers mentioned in the material from most energy efficient to least.
+1. USA
+2. Japan
+3. China
+
+The LUMI Supercomputer
+
+Kysymys osion loppuun
+ Select all the correct options that are related to the LUMI supercomputer
+•	= LUMI will be hosted by CSC and located in Kajaani, it uses 100 % renewable energy and all of its waste heat is used to heat up the local district.
+•	= LUMI will consist of different services: CPU and GPU based raw calculating power and e.g. AI specialised platform(s).
+•	= With estimated 552 PFLOP/s and 117 PB storage capacity it is estimated that LUMI will rank in the top 10 of the fastest supercomputers in the world.
+•	~ LUMI will require the space of a football field when installed.
+
+
+
+
+
+Chapter 2 – lopputentti
+
+1. Select all storage medias used with supercomputers
+•	= HDD (Hard Disk Drive)
+•	= SSD (Solid-State Drive)
+•	= Magnetic tapes
+•	~ Blu-ray discs
+•	~ USB flash drives
+
+2. IMDB has approximately 7,5 million movie titles in their online database. One movie streamed over the internet is an average of 3,5 GB. How many Mahti's (capacity of 8900 TB) would a service provider need to store all IMDB titles to be streamed over the internet?
+•	= 3
+•	~ 1/8th
+•	~ 10
+•	~ 27
+
+3. The first supercomputer 1945 located at University of Pennsylvania was called
+•	= Electronic Numerical Integrator and Computer (ENIAC)
+•	~ Large Unified Modern Infrastructure (LUMI)
+•	~ Numerical Object Key Integrator Apparatus (NOKIA)
+•	~ Calculative Super Computer (CSC)
+
+4. The performance of supercomputers has kept on doubling every two years. Select correct statements regarding performance development.
+•	Clock frequencies of processors have increased steadily until now enabling performance improvement (FALSE)
+•	Due to increased power consumption and heat levels clock frequencies of processors have not significantly risen after around 2005 (TRUE)
+•	Performance can be increased by adding multiple cores to a single CPU and by adding more multicore CPUs to the same computer (TRUE)
+•	A normal modern laptop is roughly 1000 times faster compared to a supercomputer from thirty years ago (TRUE)
+
+5. Modern supercomputers are built using the same basic elements, such as processors, memory, and disk, that are found in desktop computers. Select correct statement(-s) from the options below.
+•	Central processing unit (CPU) can be considered as the computer's brain, and terms CPU and processor are generally used interchangeably (TRUE)
+•	Supercomputers are built up from nodes each of which contains a few multi-core CPUs, possibly GPUs, and memory (TRUE)
+•	Disconnect gives a supercomputer its massive computing ability by keeping GPUs, CPUs and nodes separately from each other. (FALSE)
+•	CPUs are optimal for parallel operations and GPUs for serial operations (FALSE)
+
+6. Floating-point operations per second (FLOP/s) is a common metric for measuring the computer performance. Let’s assume that a CPU core have a clock speed of 3 GHz and it can perform 12 floating point operations (FLOP) in one second. What is a theoretical peak performance of the CPU core in GFLOP/s?
+•	3 GFLOP/s
+•	12 GFLOP/s
+•	36 GFLOP/s (TRUE)
+•	48 GFLOP/s
+
+7. Theoretical peak performance of a supercomputer cannot be reached normally in real calculations. Which of the following statements about supercomputer performance are true?
+•	LINPACK is a common benchmark which measures a system's floating point computing power. In a LINPACK test computers typically reach about 90% of the theoretical peak performance. (FALSE)
+•	The speed of communicating data between nodes cannot limit the practical performance of a supercomputer as the communication has nothing to do with calculations (FALSE)
+•	CPU must access memory during calculations thus the speed of the memory access affects the peak performance (TRUE)
+•	Reading and writing data to the disk may not limit the performance as it is a separate process (FALSE)
+
+8. True or false: Traditional HPC platforms are extremely fine-tuned to extract the best performance from the hardware. However, there are also some restrictions regarding software stack and usage of the resources and storage capacity.
+TRUE
+
+9. Cloud computing usually refers to an access to a pool of configurable computer resources that are available on demand. Below you find few statements about cloud computing, and your task is to select options that are true.
+•	Automation, resilience, flexibility, and scalability are advantages of cloud computing (TRUE)
+•	Virtualization essentially means running a guest operating system on a host machine. In other words, virtualization creates an abstraction layer over computer hardware that allows the hardware elements of a single computer (processors, memory, storage and more) to be divided into multiple virtual computers or virtual machines (VMs). As a result, each VM runs its own operating system (OS) and behaves like an independent computer. (TRUE)
+•	An organization is interested to invest in cloud resources. The organization wants to manage applications and data but leave the rest to the service provider. In this case SaaS in the most suitable option. (FALSE)
+•	Privacy and confidentiality of the data in the cloud may be a concern and must be taken into consideration (TRUE)
+•	HPC cloud computing can be more expensive, and its performance can be worse than that of the bare-metal HPC clusters (TRUE)
+
+10. Select all the correct options that are related to the LUMI supercomputer
+•	= LUMI will be hosted by European HPC center (EuroHPC) and located in Espoo (FALSE)
+•	= LUMI uses 100 % renewable energy and all of its waste heat is used to heat up the local district. (TRUE)
+•	= LUMI will consist of different services: CPU and GPU based raw calculating power and e.g. AI specialised platform(s). (TRUE)
+•	= With estimated 552 PFLOP/s and 117 PB storage capacity it is estimated that LUMI will rank in the top 10 of the fastest supercomputers in the world. (TRUE)
+•	~ LUMI will require the space of a football field when installed. (FALSE)
+
+ 
+
+
+
+
+ 
+
