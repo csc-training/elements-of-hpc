@@ -1,0 +1,126 @@
+Etusivun täydennykset
+•	Muutama virke KAMK:sta
+•	Lyhyt luonnehdinta kurssin toteutustavasta: aika-arvio, opintopistemäärä, välikysymykset, minitentit, jne.
+
+What is high-performance computing?
+
+PRACE-videon jälkeen alla oleva kysymys.
+
+Question: Supercomputer can operate remarkably faster than conventional computer and thus help us solve highly complex problems. Which of the statements regarding supercomputers are true?
+•	Supercomputers can be used to simulate large-scale phenomena such as origins of the universe, but not small-scale phenomena such as study molecular level reactions (FALSE)
+•	The purpose of the partnership for advanced computing in Europe (PRACE) is to provide access to supercomputers only for academia via its hosting members (FALSE)
+•	Forecasting climate, new drug discovery and finding an optimal location of a wind farm are all use cases where supercomputers are utilized (TRUE)
+•	The partnership for advanced computing in Europe (PRACE) offers trainings for scientist and engineers to use supercomputers (TRUE) 
+
+
+Toisen videon jälkeen alla oleva kysymys
+
+Question: Supercomputers are at the heart of a more competitive and stronger European economy. Select the correct statements from the following options.
+•	There are only few application areas where supercomputers can be used (FALSE)
+•	Using a supercomputer in a product development (e.g. new medicine or car) is useful but it typically expands the development time and increases costs (FALSE)
+•	Supercomputers can bring advantages both to small (SMEs) and to big companies (TRUE)
+•	Supercomputers are utilized in processing large amounts of data collected from sensors, vehicles, people, etc. (TRUE)
+•	Currently Europe is strong in HPC, especially in developing hardware (FALSE)
+
+
+
+
+High-Performance Computing Is Changing the World
+
+Data science -kappaleen jälkeinen välikysymys
+
+Ouestion: Select the correct statements concerning paradigms of science
+•	Data science can be considered as a traditional paradigm of science (FALSE)
+•	Computational science is purely based on the proven theoretical models, that is computers can’t be used also for discovery and proof of mathematical theories. (FALSE)
+•	Experimental science and theoretical science are both traditional paradigms of science (CORRECT)
+•	Usually there is no interplay between paradigms of science meaning that all paradigms are separate fields without any interconnections (FALSE)
+•	Rough outline of a computational science project is: 1) mathematical modeling, 2) choosing a suitable algorithm 3) efficient implementation of the algorithm and 4) running the algorithm on a computer (CORRECT)
+
+Osion loppuun seuraava kysymys
+HPC and supercomputers enable not only to solve the most demanding problems in computational and data science but also execute amazingly complex simulations. Which of the following statements are false?
+•	Standard computer can also be used to solve extremely complex problems. The only difference compared to HPC is that solving the problem with standard computer is slightly slower. (tämä pitää valita)
+•	Some experiments produce vast amounts of data that cannot be analyzed on a normal laptop or desktop. (tätä ei pidä valita)
+•	Artificial intelligence and machine learning, engineering, life sciences and chemistry are fields where supercomputers are made use of (tätä ei pidä valita)
+•	High-performance computing resources and knowledge are not crucial assets for a modern society. (tämä pitää valita)
+
+Useful Terminology
+
+Osion loppuun seuraava tehtävä.
+Question: Connect the following terms with the correct definitions.
+•	CPU (Central Processing Unit) = Can be considered as the brain of the computer. Performs logical, arithmetic, controlling and input/output operations.
+•	GPU or Graphics Processing Unit = Specialized in very simple but fast arithmetic. Are good tools for "accelerating" the massive number of calculations performed in HPC.
+•	Memory = a method or mean for the computer to store and transfer information
+•	Node = Refers to a single computer in the supercomputer cluster
+•	Virtual machine = an independent computer using virtualization technology. Virtualization means simulating necessary hardware for a guest operating system.
+•	OpenMP =  a parallel computing method that utilizes a shared memory model
+
+Examples of HPC applications
+
+•	Etusivun valikon ja osion otsikko yhtenäistettävä
+•	Read more -kohdan perään tarkennus (optional)
+
+Osion loppuun seuraava kysymys
+
+Question: Supercomputers can be utilized in many fields of science and research for various applications. Separate fact from fiction by selecting statements that are true.
+•	In natural language processing the main reason for using supercomputers is the complexity of the algorithms (neural networks) not necessarily the amount of the data required for training the model (FALSE)
+•	To understand the climate effects of carbon emissions, simulations over long time scales are needed, and a coupling of different systems (phenomena) must be considered in modeling (TRUE)
+•	When studying spreading of these aerosols with supercomputers the motion of the air itself is easy to simulate. (FALSE)
+•	Understanding collision of nanoparticles has some concrete applications, e.g. understanding radiation damage in spacecraft. (TRUE)
+•	In cancer diagnostics the primary goal is to completely replace human experts with artificial intelligence systems (FALSE)
+
+Introduction to HPC -tentti
+
+1)	Select the three paradigms of science
+•	= Experimental (oikein)
+•	= Theoretical (oikein)
+•	= Computational (oikein)
+•	~ Observational (väärin)
+•	~ Mathematical (väärin)
+•	~ Numerical (väärin)
+
+2)	In computational science the tasks to be solved/conducted are divided into steps. Arrange the steps in right order:
+•	i)Define mathematical equations that describe the problem.
+•	ii)Weigh different algorithms and consider them in solving the problem numerically.
+•	iii)Code (e.g. with Python or similar) the implementation of the algorithm.
+•	iiii)Run the program developed for the problem.
+
+3)	Which of the following questions and problems are well suited for simulation with HPC
+•	= Climate and weather
+•	= Particle physics and cosmology
+•	= Estimating the winner of FIFA World Cup 2022
+•	~ What to eat for breakfast
+•	~ Amount of taxes to be paid
+
+4)	Understanding paradigms of science is crucial for getting deeper into HPC world. Which of the following statements about paradigms of science are correct?
+•	Dropping stones of various weights from towers of different heights and measuring the time it takes for the stones to hit the ground is an example of theoretical science (FALSE)
+•	In theoretical science one tries to create models to explain measurements or even predict phenomena that have not yet been observed (TRUE)
+•	It is never feasible or reasonable to replace experiments with simulations (FALSE)
+•	Experiments can be used to validate the computational simulation results (TRUE)
+
+5)	High-performance computing is a mean to solve complex computational problems. Which of the following HPC-related statements are true?
+•	Standard computers can be easily utilized to solve large-scale problems (eg. climate predictions). Only disadvantage is that it would take a slightly longer time to solve the problem compared to supercomputer. (FALSE)
+•	Supercomputers are good instruments for solving mathematical models numerically, but they are not optimal for analyzing large amounts of experimental data. (FALSE)
+•	Supercomputers are versatile instruments suitable for various application areas such as artificial intelligence, material science, life sciences and particle physics (TRUE)
+•	With High-performance computing, experiments which might be impossible to implement for various reasons, can sometimes be replaced with simulations. (TRUE)
+
+6)	Connect the following terms with the correct definitions.
+•	CPU (Central Processing Unit) = Can be considered as the brain of the computer. Performs logical, arithmetic, controlling and input/output operations.
+•	GPU or Graphics Processing Unit = Specialized in very simple but fast arithmetic. Are good tools for "accelerating" the massive number of calculations performed in HPC.
+•	Memory = a method or mean for the computer to store and transfer information
+•	Node = Refers to a single computer in the supercomputer cluster
+•	Virtual machine = an independent computer using virtualization technology. Virtualization means simulating necessary hardware for a guest operating system.
+•	OpenMP =  a parallel computing method that utilizes a shared memory model
+
+
+7)	Is the following statement true or false: Using supercomputers can bring many advantages both to small (SMEs) and to big companies in terms of product development,
+product quality and increased profits, for example (TRUE)
+
+8)	Is the following statement true or false: Currently Europe can produce less supercomputing capacity than it is using.
+In other words, European industries consume more capacity than Europe is able to offer. (TRUE)
+
+
+
+
+
+
+
