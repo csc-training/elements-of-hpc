@@ -1,0 +1,100 @@
+Computing in parallel
+
+Tehtävä osion loppuun.
+
+Parallel computing is a central concept in HPC. Which of the following statements are true?
+•	In parallel computing a problem is split into a smaller subproblems (TRUE)
+•	Parallel computing can be used only in problems where separately computed subtasks produce results that are meaningful as such. In other words, the results of the subtasks cannot be combined (FALSE)
+•	Parallel computing makes computations faster and enables larger computations (TRUE)
+•	In parallel computing the problem can be divided only into two subtasks, as was the case in the Alice and Bob example.  If the any problem is divided into three subtasks, it would be triaxial computing and would not bring any advantages (FALSE)
+
+Types of Parallel Algorithms
+
+Tehtävä osion loppuun.
+
+The two extreme ends of parallel algorithms are trivially parallel algorithms and tightly coupled algorithms. Which of the statements below are correct?
+•	In trivially parallel algorithms there is very little (or no) interaction between subtasks (TRUE)
+•	All the parallel algorithms are explicitly either trivially parallel or tightly coupled (FALSE)
+•	The task farm (or main/worker) approach is a common parallelization model, where one processing unit sends tasks to workers and then receives results back from them. This model works only if the tasks are computationally similar, and there is equal number of tasks and workers. (FALSE)
+•	Compared to trivially parallel algorithms tightly coupled algorithms are usually more difficult to implement in terms of programming (TRUE)
+
+Parallel Programming Concepts
+•	Tekstiä ja laskuesimerkkejä pyrittävä selkeyttämään korostuksin, lisäselittein ja jäsentelyin. Testissä on mukana turhia kryptisiä merkkejä, ne voi poistaa
+•	Onko tämä oikein? If the problem would be to sum 1000 numbers (still having some load imbalance), the overheads would be much less significant: T_s = 1000, (eikös 1000 numeron summaamiseen kulu vain 999 sekuntia???)
+  
+Tehtävät osion loppuun
+
+Let us assume that four (4) friends have a task to sum up 60 numbers. They decide to work as a team and divide the task so that everyone sums up 15 numbers, and finally one person combines the partials results. It takes one second to sum two numbers and 0.1 seconds to communicate a single number. Which of the following statements are true?
+•	It would take 59 seconds for one person to calculate the sum (TRUE)
+•	It would take 60 seconds for one person to calculate the sum (FALSE)
+•	If the task is divided into four subtasks, as described above, it would take 14,3 seconds to make the summation (FALSE)
+•	If the task is divided into four subtasks, as described above, it would take 17,3 seconds to make the summation (TRUE)
+•	The achieved parallel speed-up (S) is roughly 3,4. Parallel speed-up (S) is the execution time in serial divided by the execution time in parallel (TRUE)
+•	The achieved parallel speed-up (S) is roughly 4,2. Parallel speed-up (S) is the execution time in serial divided by the execution time in parallel (FALSE)
+
+Below you’ll find few statements about parallel scaling. Your task is to select false statements.
+•	In parallel scaling the following rule is always hold true: The more processing units, the shorter the time to solve the problem (FALSE)
+•	parallel computing/scaling is used for speeding up problem solving and for enabling studies of larger issues (TRUE)
+•	There are several factors that can limit parallel scaling such as parallel overheads, extra operation, synchronization costs and load imbalance (TRUE)
+•	When using many parallel workers, it is easy and straightforward to avoid all the parallel scaling problems, because modern HPC programs can handle the parallelization automatically without any user intervention. (FALSE)
+
+Case study: Parallel Sum
+
+Tehtävä osion loppuun
+
+Example parallel algorithm consisted of four main steps. Place the steps in the correct order
+1) scattering the data
+2) computing local sums
+3) gathering the partial results
+4) computing the total sum
+
+CHAPTER 4 -lopputentti
+
+1.	Which of the following examples describes the idea of parallel computing?
+= Five people pushing a car together.
+= Ten people filling a swimming pool with their own buckets.
+= Students gathering trash from a school yard.
+~ 4 x 100 meters relay
+~ Working in three shifts
+~ Reading two books at the same time instead of one.
+
+2.	Choose the appropriate class of parallel algorithm: Building a lego set with friends.
+= tightly coupled
+~ trivially parallel
+
+3.	Choose the appropriate class of parallel algorithm: Arranging a potluck. (Potluck is a communal meal to which people bring random food to share)
+~ tightly coupled
+= trivially parallel
+4. Select all the right options that are related to parallel scaling
+= Choosing the right amount of resources for the task at hand may be tricky.
+= There are several factors that can limit parallel scaling such as parallel overheads, extra operation, synchronization costs and load imbalance
+~ The supercomputer takes care of scaling and parallelization the computational tasks automatically.
+~ In parallel scaling the following rule is always hold true: The more processing units, the shorter the time to solve the problem (FALSE)
+
+5. Simple parallel sum can be computed using an algorithm including four main steps. Place the steps in the correct order
+1) scattering the data
+2) computing local sums
+3) gathering the partial results
+4) computing the total sum
+
+6. Let us assume that four (6) friends have a task to sum up 60 numbers. They decide to work as a team and divide the task so that everyone sums up 10 numbers, and finally one person combines the partials results. It takes one second to sum two numbers and 0.1 seconds to communicate a single number. Which of the following statements are true?
+•	It would take 59 seconds for one person to calculate the sum (TRUE)
+•	It would take 60 seconds for one person to calculate the sum (FALSE)
+•	It would take 60.1 seconds for one person to calculate the sum (FALSE)
+•	If the task is divided into six subtasks, as described above, it would take 14,5 seconds to make the summation (TRUE)
+•	If the task is divided into six subtasks, as described above, it would take 16,5 seconds to make the summation (FALSE)
+•	If the task is divided into six subtasks, as described above, it would take 9,5 seconds to make the summation (FALSE)
+
+7. The maximum possible speed-up achieved with parallelization is defined as SMAX = 1/(1-pf), where SMAX is the maximum speed-up and pf is the portion (0…1) of the problem that can be parallelized. What is the maximum speed-up if 50 % of the problem can be parallelized?
+•	10 (FALSE)
+•	5 (FALSE)
+•	2 (TRUE)
+•	0,5 (FALSE)
+
+8. One common parallelization model is the task farm approach, where one processing unit sends tasks to workers and then receives results back from them. True or false: The tasks can be computationally similar or completely different. There can also be more tasks than workers.
+TRUE
+
+
+
+
+
