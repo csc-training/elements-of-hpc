@@ -24,9 +24,8 @@ too but for at least CSC has a dedicated group of experts for that.
 
 ### Examples of computing centers
 
-COMMENT: Centers can be mentioned but not included in the exam. 
-
 The following are examples of computing centers in Europa, US and Japan:
+- https://www.csc.fi/
 - https://www.fz-juelich.de/ias/jsc/EN/Home/home_node.html
 - https://www.bsc.es/
 - https://www.cineca.it/en

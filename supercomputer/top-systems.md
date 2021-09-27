@@ -19,8 +19,6 @@ is 4 866 048 gigabytes. The declared power consumption is 28 MW.
 For a bit of perspective, the average sauna is estimated to have a power consumption of around 9 KW. 
 The equivalent of Fugakus power consumption is approximately 3100 saunas.
 
-COMMENT: Tehonkulutuksen vertailukohtana voisi käyttää tavanomaista saunan kiuasta, jonka teho on 9 KW. Tällä saisimme havainnollistettua mittakaavaa: 28 MW vastaa noin 3100 saunan kiuasta.
-
 ## Summit, USA
 
 ![](images/summit.jpg)
