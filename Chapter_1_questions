@@ -53,8 +53,8 @@ Useful Terminology
 Osion loppuun seuraava tehtävä.
 Question: Connect the following terms with the correct definitions.
 •	CPU (Central Processing Unit) = Can be considered as the brain of the computer. Performs logical, arithmetic, controlling and input/output operations.
-•	GPU or Graphics Processing Unit = Specialized in very simple but fast arithmetic. Are good tools for "accelerating" the massive number of calculations performed 
-in HPC.
+•	GPU or Graphics Processing Unit = Specialized in simple but highly parallel fast arithmetic. Are good tools for "accelerating" the massive number of calculations 
+performed in HPC. Not suitable for all problem types.
 •	Memory = a method or mean for the computer to store information
 •	Node = Refers to a single computer in a supercomputer cluster
 •	Virtual machine = an independent computer using virtualization technology. Virtualization means simulating necessary hardware for a guest operating system.
@@ -101,20 +101,24 @@ Introduction to HPC -tentti
 •	~ Amount of taxes to be paid
 
 4)	Understanding paradigms of science is crucial for getting deeper into HPC world. Which of the following statements about paradigms of science are correct?
-•	Dropping stones of various weights from towers of different heights and measuring the time it takes for the stones to hit the ground is an example of theoretical science (FALSE)
+•	Dropping stones of various weights from towers of different heights and measuring the time it takes for the stones to hit the ground is an example of 
+theoretical science (FALSE)
 •	In theoretical science one tries to create models to explain measurements or even predict phenomena that have not yet been observed (TRUE)
 •	It is never feasible or reasonable to replace experiments with simulations (FALSE)
 •	Experiments can be used to validate the computational simulation results (TRUE)
 
-5)	High-performance computing is a mean to solve complex computational problems. Which of the following HPC-related statements are true?
-•	Standard computers can be easily utilized to solve large-scale problems (eg. climate predictions). Only disadvantage is that it would take a slightly longer time to solve the problem compared to supercomputer. (FALSE)
+5)	High-performance computing is a way to solve complex computational problems. Which of the following HPC related statements are true?
+•	Standard computers can be easily utilized to solve large-scale problems (eg. climate predictions). Only disadvantage is that it would take a slightly longer 
+time to solve the problem compared to supercomputer. (FALSE)
 •	Supercomputers are good instruments for solving mathematical models numerically, but they are not optimal for analyzing large amounts of experimental data. (FALSE)
-•	Supercomputers are versatile instruments suitable for various application areas such as artificial intelligence, material science, life sciences and particle physics (TRUE)
-•	With High-performance computing, experiments which might be impossible to implement for various reasons, can sometimes be replaced with simulations. (TRUE)
+•	Supercomputers are versatile instruments suitable for various application areas such as artificial intelligence, material science, life sciences and 
+particle physics (TRUE)
+•	With high-performance computing, experiments which might be impossible to implement for various reasons, can sometimes be replaced with simulations. (TRUE)
 
 6)	Connect the following terms with the correct definitions.
 •	CPU (Central Processing Unit) = Can be considered as the brain of the computer. Performs logical, arithmetic, controlling and input/output operations.
-•	GPU or Graphics Processing Unit = Specialized in very simple but fast arithmetic. Are good tools for "accelerating" the massive number of calculations performed in HPC.
+•	GPU or Graphics Processing Unit = Specialized in simple but highly parallel fast arithmetic. Are good tools for "accelerating" the massive number of calculations 
+performed in HPC. Not suitable for all problem types.
 •	Memory = a method or mean for the computer to store and transfer information
 •	Node = Refers to a single computer in the supercomputer cluster
 •	Virtual machine = an independent computer using virtualization technology. Virtualization means simulating necessary hardware for a guest operating system.
