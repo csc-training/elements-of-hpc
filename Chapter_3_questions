@@ -3,21 +3,24 @@ HPC Centers
 Kysymys osion loppuun
 
 Select all the correct options that are related to operating supercomputers and their services.
-•	= Supercomputers offer several types of tasks in which a person can specialise to, for example operating physical infrastructure, maintaining software packages, and offering software/programming support for various user groups. 
+•	= Running supercomputer services includes several types of tasks in which a person can specialise to, for example operating physical infrastructure, maintaining software packages, 
+and offering software/programming support for various user groups. 
 •	= Maintaining a supercomputer and offering HPC services requires teamwork
-•	~ To be able to work with supercomputers, a person needs to master a wide variety of skills, starting from HVAC (Heating, ventilation, and air conditioning) and ending with customer service about a specific Python library needed for modeling weather.
+•	~ To be able to work with supercomputers, a person needs to master a wide variety of skills, starting from HVAC (Heating, ventilation, and air conditioning) 
+and ending with customer service about a specific Python library needed for modeling weather.
 •	~ Administrating supercomputers is quite dull and monotonous work where architectures are straightforward and trivial to implement and maintain.
 
 Energy and cooling
 
 Kysymys osion loppuun
 
-Energy consumption is one of the biggest challenges when designing and building more efficient supercomputers, and a large proportion of the energy used by a computer is converted to heat. Which of the following statements about energy consumption and cooling are true?
+Energy consumption is one of the biggest challenges when designing and building more efficient supercomputers, and a large proportion of the energy used by a 
+computer is converted to heat. Which of the following statements about energy consumption and cooling are true?
 •	Serial computing and CPUs are preferably used in modern supercomputers because it provides better performance per energy (FALSE)
 •	The biggest supercomputer in the world in June 2020 was the Japanese Fugaku. It has an energy consumption comparable to roughly 10,000 average Finnish households. (TRUE)
 •	Air cooling is more complex and efficient method than liquid cooling (FALSE)
 •	In CSC's Kajaani data center, LUMI's waste heat is going to contribute to the local municipal household heating (TRUE)
-•	Supercomputers are measured and evaluated also by their energy efficiency (TRUE)
+•	Supercomputers are measured, evaluated and ranked also by their energy efficiency (TRUE)
 
 Buying a supercomputer
 
@@ -36,8 +39,10 @@ Kysymys osion loppuun
 Accessing supercomputer and running jobs on HPC environment is different to normal personal computer. Which of the following statements are true?
 •	Usually, supercomputers are used via graphical user interface (FALSE)
 •	A supercomputer may serve hundreds or thousands of users (TRUE)
-•	The batch system then takes care of scheduling the distribution of the resources in a fair way and enables jobs to be run on supercomputer 24/7 throughout the whole year. (TRUE)
-•	CSC provides free access to supercomputer resources for Finnish researchers, state research institutes (if the results are made public), and even for students of Finnish Universities/Universities of Applied Sciences (TRUE)
+•	The batch system takes care of scheduling the distribution of the resources in a fair way and enables jobs to be run on supercomputer 24/7 throughout 
+the whole year. (TRUE)
+•	CSC provides free access to supercomputer resources for Finnish researchers, state research institutes (if the results are made public), and even for 
+students of Finnish Universities/Universities of Applied Sciences (TRUE)
 •	Command line interface is like a Formula One car, only few have possibility to try it and even fewer can learn to use it (FALSE)
 
 Operating systems
@@ -65,7 +70,9 @@ Which advantages Linux has over other operating systems in supercomputer environ
 
 Chapter 3 – lopputentti
 
-1.	When you buy a new phone or a computer, perhaps you ponder whether to buy something now or wait for a little while for a newer model. Supercomputer vendors must know the current situation but sell future promises. For the money invested, the buyer wants to have state-of-the-art hardware which does not exist yet at the time of purchase. Which of the following are tools for a successful deal?
+1.	When you buy a new phone or a computer, perhaps you consider whether to buy something now or wait for a little while for a newer model. Supercomputer vendors 
+must know the current situation but sell future promises. For the money invested, the buyer wants to have state-of-the-art hardware which does not exist yet at 
+the time of purchase. Which of the following are tools for a successful deal?
 = Performance commitments that the vendor will propose
 = Request for information (RFI) then proposal (RFP) to initiate negotiations with potential sellers.
 = Teamwork of multiple people from both - buyer's and seller's - sides.
@@ -73,22 +80,27 @@ Chapter 3 – lopputentti
 ~ Specifications of an old supercomputer which will be updated by adding more memory and CPUs.
 
 2.	Using a supercomputer is
-= like visiting a post office or a bank. You take a queuing number and wait for your turn. With supercomputers this is done with a batch queuing system. Note that a batch queue is not implemented sequentially, and several variables effect how the queue is unloaded.
+= like visiting a post office or a bank. You take a queuing number and wait for your turn. With supercomputers this is done with a batch queuing system. Note 
+that a batch queue is not implemented sequentially, and several variables effect how the queue is unloaded.
 = possible over the internet by using a text-based user interface or in some cases a web browser.
 ~ free of charge only for researchers. Other have to pay for the usage.
 = like learning to drive a formula car: great power may come with more difficult usage thus requiring specific skills 
 
 3.	Running a modern supercomputing service is a complicated endeavor requiring teamwork. Connect job titles and tasks of a typical computing center.
-Data center engineer = operate and maintain the power and cooling infrastructure and the network connections.
-System administrator = monitor hardware (HW) status and load, make necessary HW adjustments and replace faulty components, updated system software to fix problems and maintain system security.
-Scientific software support staff = procure, install, and maintain the software packages based on the users' needs. Help customers in using the packages, write user guides and instructions, and provide training.
+Data center engineer = operate and maintain the power and cooling infrastructure and the network connections and replace faulty components.
+System administrator = monitor hardware (HW) status and load, make necessary operating system adjustments and updatedsystem software to fix 
+problems and maintain system security.
+Scientific software support staff = procure, install, and maintain the software packages based on the users' needs. Help customers in using the packages, write 
+user guides and instructions, and provide training.
 HPC programming support staff = helps users in porting, parallelizing, and optimizing their codes for the supercomputers.  
 
-4.	Energy consumption is one of the biggest challenges when designing and building more efficient supercomputers, and a large proportion of the energy used by a computer is converted to heat. Which of the following statements about energy consumption and cooling are true?
+4.	Energy consumption is one of the biggest challenges when designing and building more efficient supercomputers, and a large proportion of the energy used by a 
+computer is converted to heat. Which of the following statements about energy consumption and cooling are true?
 •	Energy consumption was a main reason for moving into massively parallel computing instead of making single CPUs more efficient. (TRUE)
-•	As far as climate issues are concerned, supercomputers are somewhat contradictory machines: they help in understanding and fighting climate change, but they use large amounts of energy. (TRUE)
+•	As far as climate issues are concerned, supercomputers are somewhat contradictory machines: they help in understanding and fighting climate change, but they 
+use large amounts of energy. (TRUE)
 •	Air cooling is more complex and efficient method than liquid cooling (FALSE)
-•	Supercomputers are measured and evaluated also by their energy efficiency (TRUE)
+•	Supercomputers are measured, evaluated and ranked also by their energy efficiency (TRUE)
 
 5.	Which advantages Linux has over other operating systems in supercomputer environments? Select all that apply.
 •	Modularity (TRUE)
@@ -100,10 +112,12 @@ HPC programming support staff = helps users in porting, parallelizing, and optim
 6.	The most popular operating system in supercomputers is Windows
 FALSE
 
-7.	True or false: The forthcoming LUMI supercomputer is funded solely by a Finnish government. All the resources of LUMI are allocated to Finnish researcher via a special application process.
+7.	True or false: The forthcoming LUMI supercomputer is funded solely by a Finnish government. All the resources of LUMI are allocated to Finnish researcher via a 
+special application process.
 FALSE
 
-8.	The Japanese Fugaku supercomputer is within the ten most energy efficient computers in the world. Still its energy consumption equals that of 10 000 average Finnish households.
+8.	The Japanese Fugaku supercomputer is within the ten most energy efficient computers in the world. Still its energy consumption equals that of 10 000 average 
+Finnish households.
 (TRUE)
 
 
