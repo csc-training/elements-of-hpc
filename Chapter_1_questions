@@ -6,19 +6,21 @@ What is high-performance computing?
 
 PRACE-videon jälkeen alla oleva kysymys.
 
-Question: Supercomputer can operate remarkably faster than conventional computer and thus help us solve highly complex problems. Which of the statements regarding supercomputers are true?
-•	Supercomputers can be used to simulate large-scale phenomena such as origins of the universe, but not small-scale phenomena such as study molecular level reactions (FALSE)
-•	The purpose of the partnership for advanced computing in Europe (PRACE) is to provide access to supercomputers only for academia via its hosting members (FALSE)
+Question: A supercomputer can operate remarkably faster than a conventional computer and thus help us to solve highly complex problems. 
+Which of the following statements regarding supercomputers are true?
+•	Supercomputers can be used to simulate large-scale phenomena such as origins of the universe, but not small-scale phenomena such as study molecular 
+level reactions (FALSE)
+•	The purpose of the Partnership for Advanced Computing in Europe (PRACE) is to provide access to supercomputers only for academia via its hosting members (FALSE)
 •	Forecasting climate, new drug discovery and finding an optimal location of a wind farm are all use cases where supercomputers are utilized (TRUE)
-•	The partnership for advanced computing in Europe (PRACE) offers trainings for scientist and engineers to use supercomputers (TRUE) 
+•	The partnership for advanced computing in Europe (PRACE) offers training for scientist and engineers for using supercomputers (TRUE) 
 
 
 Toisen videon jälkeen alla oleva kysymys
 
 Question: Supercomputers are at the heart of a more competitive and stronger European economy. Select the correct statements from the following options.
 •	There are only few application areas where supercomputers can be used (FALSE)
-•	Using a supercomputer in a product development (e.g. new medicine or car) is useful but it typically expands the development time and increases costs (FALSE)
-•	Supercomputers can bring advantages both to small (SMEs) and to big companies (TRUE)
+•	Using a supercomputer in a product development (e.g. new medicine or car) is useful but it typically lengthens the development time and increases costs (FALSE)
+•	Supercomputers can bring advantages to both small (SMEs) and big companies (TRUE)
 •	Supercomputers are utilized in processing large amounts of data collected from sensors, vehicles, people, etc. (TRUE)
 •	Currently Europe is strong in HPC, especially in developing hardware (FALSE)
 
@@ -31,16 +33,19 @@ Data science -kappaleen jälkeinen välikysymys
 
 Ouestion: Select the correct statements concerning paradigms of science
 •	Data science can be considered as a traditional paradigm of science (FALSE)
-•	Computational science is purely based on the proven theoretical models, that is computers can’t be used also for discovery and proof of mathematical theories. (FALSE)
+•	Computational science is purely based on the proven theoretical models, that is, computers can’t be used also for discovery and proof of mathematical theories. (FALSE)
 •	Experimental science and theoretical science are both traditional paradigms of science (CORRECT)
 •	Usually there is no interplay between paradigms of science meaning that all paradigms are separate fields without any interconnections (FALSE)
-•	Rough outline of a computational science project is: 1) mathematical modeling, 2) choosing a suitable algorithm 3) efficient implementation of the algorithm and 4) running the algorithm on a computer (CORRECT)
+•	Rough outline of a computational science project is: 1) mathematical modeling, 2) choosing a suitable algorithm 3) efficient implementation (programming) of the algorithm and 
+4) running the resulting program on a computer (CORRECT)
 
 Osion loppuun seuraava kysymys
-HPC and supercomputers enable not only to solve the most demanding problems in computational and data science but also execute amazingly complex simulations. Which of the following statements are false?
-•	Standard computer can also be used to solve extremely complex problems. The only difference compared to HPC is that solving the problem with standard computer is slightly slower. (tämä pitää valita)
+HPC and supercomputers allow us to solve the most demanding problems in computational and data science and also execute amazingly complex simulations. 
+Which of the following statements are false?
+•	A standard computer can also be used to solve extremely complex problems. The only difference compared to HPC is that solving the problem with a standard computer 
+is slightly slower. (tämä pitää valita)
 •	Some experiments produce vast amounts of data that cannot be analyzed on a normal laptop or desktop. (tätä ei pidä valita)
-•	Artificial intelligence and machine learning, engineering, life sciences and chemistry are fields where supercomputers are made use of (tätä ei pidä valita)
+•	Artificial intelligence and machine learning, engineering, life sciences and chemistry are fields where supercomputers are utilized (tätä ei pidä valita)
 •	High-performance computing resources and knowledge are not crucial assets for a modern society. (tämä pitää valita)
 
 Useful Terminology
@@ -48,11 +53,12 @@ Useful Terminology
 Osion loppuun seuraava tehtävä.
 Question: Connect the following terms with the correct definitions.
 •	CPU (Central Processing Unit) = Can be considered as the brain of the computer. Performs logical, arithmetic, controlling and input/output operations.
-•	GPU or Graphics Processing Unit = Specialized in very simple but fast arithmetic. Are good tools for "accelerating" the massive number of calculations performed in HPC.
-•	Memory = a method or mean for the computer to store and transfer information
-•	Node = Refers to a single computer in the supercomputer cluster
+•	GPU or Graphics Processing Unit = Specialized in very simple but fast arithmetic. Are good tools for "accelerating" the massive number of calculations performed 
+in HPC.
+•	Memory = a method or mean for the computer to store information
+•	Node = Refers to a single computer in a supercomputer cluster
 •	Virtual machine = an independent computer using virtualization technology. Virtualization means simulating necessary hardware for a guest operating system.
-•	OpenMP =  a parallel computing method that utilizes a shared memory model
+•	OpenMP =  a parallel computing method for the shared memory model
 
 Examples of HPC applications
 
@@ -61,9 +67,12 @@ Examples of HPC applications
 
 Osion loppuun seuraava kysymys
 
-Question: Supercomputers can be utilized in many fields of science and research for various applications. Separate fact from fiction by selecting statements that are true.
-•	In natural language processing the main reason for using supercomputers is the complexity of the algorithms (neural networks) not necessarily the amount of the data required for training the model (FALSE)
-•	To understand the climate effects of carbon emissions, simulations over long time scales are needed, and a coupling of different systems (phenomena) must be considered in modeling (TRUE)
+Question: Supercomputers can be utilized in many fields of science and research for various applications. Separate fact from fiction by selecting statements that 
+are true.
+•	In natural language processing the main reason for using supercomputers is the complexity of the algorithms (neural networks) not necessarily the amount of the 
+data required for training the model (FALSE)
+•	To understand the climate effects of carbon emissions, simulations over long time scales are needed, and a coupling of different systems (phenomena) must be 
+considered in modeling (TRUE)
 •	When studying spreading of these aerosols with supercomputers the motion of the air itself is easy to simulate. (FALSE)
 •	Understanding collision of nanoparticles has some concrete applications, e.g. understanding radiation damage in spacecraft. (TRUE)
 •	In cancer diagnostics the primary goal is to completely replace human experts with artificial intelligence systems (FALSE)
@@ -80,7 +89,7 @@ Introduction to HPC -tentti
 
 2)	In computational science the tasks to be solved/conducted are divided into steps. Arrange the steps in right order:
 •	i)Define mathematical equations that describe the problem.
-•	ii)Weigh different algorithms and consider them in solving the problem numerically.
+•	ii)Choose an efficient algorithms for solving the problem numerically.
 •	iii)Code (e.g. with Python or similar) the implementation of the algorithm.
 •	iiii)Run the program developed for the problem.
 
