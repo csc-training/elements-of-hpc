@@ -191,7 +191,7 @@ do with calculations (FALSE)
 •	Reading and writing data to the disk will not limit the performance as it is a separate process (FALSE)
 
 8. True or false: Traditional HPC platforms are extremely fine-tuned to extract the best performance from the hardware, but with some restrictions.
-For example, users are limited to the available software stack, and they are also limited to a fixed available storage capacity.
+For example, users are limited to the available software stack and to a fixed available storage capacity.
 
 (TRUE)
 
