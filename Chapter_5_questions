@@ -2,20 +2,22 @@ Shared Memory Computer
 
 Kysymys osion loppuun
 
-The fundamental feature of a shared-memory computer is that all the CPU cores are connected to the same piece of memory. Which of the following statements about shared-memory computer holds true?
+The fundamental feature of a shared-memory computer is that all the CPU cores are connected to the same part of memory. Which of the following statements about 
+shared-memory computer holds true?
 •	The shared-memory architecture is only utilized in supercomputers (FALSE)
 •	Memory capacity, memory access speed and race conditions are key challenges of the shared-memory approach (TRUE)
-•	Even if the connection between the bus and the memory eventually becomes a bottleneck adding more CPU cores still brings significant advantages in performance (FALSE)
+•	Even if the connection between the CPU and the memory eventually becomes a bottleneck adding more CPU cores still brings significant advantages in performance (FALSE)
 •	Single-memory approach is preferred in supercomputing as parallel programming with shared memory is extremely difficult (FALSE)
 
 Distributed Memory
 
 Kysymys osion loppuun
 
-All modern supercomputers use the same basic approach in building large systems: many separate computers with own memories are connected with a fast network. Which of the statements concerning distributed memory computers are true?
+All modern supercomputers use the same basic approach in building large systems: many separate computers with own memories are connected with a fast network. 
+Which of the statements concerning distributed memory computers are true?
 •	In distributed memory model, each separate computer (or node) operates independently but can directly access the memory in other nodes. (FALSE)
 •	It is much easier to build networks connecting great quantities of computers instead of having numerous CPU cores in a single shared-memory computer. (TRUE)
-•	Building a software for distributed-memory computer can be challenging (TRUE)
+•	Programming distributed-memory computer can be challenging (TRUE)
 •	Seemingly infinite capacity and computing power, controlled usage of the memory bus are benefits of the distributed memory model (TRUE) 
 
 Memory Hierarchy
@@ -23,12 +25,15 @@ Memory Hierarchy
 In computers, there is a hierarchy of different levels of memory. Below you’ll find few statements about memory hierarchy, and your task is to select all that apply. 
 •	A memory cache is basically a large amount of memory far from the CPU-core. In general, a memory cache is a synonym for the main memory. (FALSE)
 •	Cache works extremely well in reading data but there are some limitations/challenges (cache coherency) to be concerned in writing data. (TRUE)
-•	In the memory hierarchy pyramid, performance (transfer speed in MB/s) is highest at the top of the pyramid but at the same time the capacity (information storage) is the lowest (TRUE)
+•	In the memory hierarchy pyramid, performance (transfer speed in MB/s) is highest at the top of the pyramid but at the same time the capacity (information storage) 
+is the lowest (TRUE)
 •	Accessing main memory requires communication via the interconnect (FALSE)
 
 Parallelization with CPU cores
 
-CPU performance has improved tremendously over the years, while the memory performance increased at a much slower pace. To improve the performance, amount of reads and writes to the memory must be optimised. Optimisation is done in program code. Select the methods that can be used to improve performance.
+CPU performance has improved tremendously over the years, while the memory performance has increased at a much slower pace. To improve the performance, amount of 
+reads and writes to the memory must be optimised. Optimisation is done in program code. Select the methods that can be used to improve performance with better 
+memory use.
 •	= Structure the code to enable compiler instruction level parallelism.
 •	= Vectorizing parts of code where possible.
 •	~ Reducing amount of cycles by giving less instructions.
@@ -39,23 +44,25 @@ Graphics processing units
 GPU (Graphics processing unit) is a central component in modern high-performance computing. Select all the factual statements from the options below
 •	GPUs are extremely useful in machine learning applications such as training neural networks. (TRUE)
 •	CPU is a more complex and more suitable for general purpose usage than a GPU (TRUE)
-•	In a near future supercomputer will most probably have only GPUs because GPUs are more energy efficient than CPUs and can operate efficiently without CPUs. (FALSE)
+•	In a near future supercomputers will most probably have only GPUs because GPUs are more energy efficient than CPUs and can operate efficiently without CPUs. (FALSE)
 •	Extracting good performance out of a GPU can be a true challenge for a programmer as the low-level hardware details might need to be considered (TRUE)
 •	Recent development in supercomputing has led to a situation where there will soon be GPUs available also for consumer markets (FALSE)
 
 Interconnect
 •	Kirjoitusvirheitä tekstissä, korjattava!!
 
-Many scientific computing problems are tightly coupled (lots of communication needed), thus a high-speed interconnect is essential for solving them. Which of the following options hold true?
+Many scientific computing problems are tightly coupled (lots of communication needed), thus a high-speed interconnect is essential for solving them. Which of the 
+following statements are true?
 •	Fast interconnect network between nodes is equally important for normal desktop computers as it is for supercomputers (FALSE)
 •	The bandwidth of interconnect should be as small as possible (FALSE)
-•	MAHTI supercomputer operated by CSC utilizes is a fully connected network topology, in which there is a direct connection between all pairs of nodes. (FALSE)
-•	When choosing an interconnect topology, there are lots of parameters that need to be considered (number of connections, cost, performance, distance between nodes, etc.) – (TRUE)
+•	MAHTI supercomputer operated by CSC utilizes a fully connected network topology, in which there is a direct connection between all pairs of nodes. (FALSE)
+•	When choosing an interconnect topology, there are lots of parameters that need to be considered (number of connections, cost, performance, distance between 
+nodes, etc.) – (TRUE)
 
 How Fast Can a Supercomputer Be?
-Thera are several factors affecting the performance of a supercomputer. Which of the following statements hold true?
+Thera are several factors affecting the performance of a supercomputer. Which of the following statements are true?
 •	In theory interconnect could dramatically limit the performance of a supercomputer (TRUE)
-•	Even in best cases, it is possible to reach up roughly 50 % of the theoretical peak performance of a supercomputer (FALSE)
+•	Even in best cases, it is possible to reach roughly up to 50 % of the theoretical peak performance of a supercomputer (FALSE)
 •	The performance is affected by algorithmic choices, programming techniques and type of a computational problem (TRUE)
 
 Chapter 5 – lopputentti
@@ -75,10 +82,10 @@ Chapter 5 – lopputentti
 •	~ make supercomputer software building easier 
 •	~ offer faster access to memory for CPUs
 
-3.	Select all the right options that are related to interconnect
+3.	Select all the correct statements that are related to interconnect
 •	= To gain better performance, different nodes must be located relatively near to each other.
 •	= All things taken into consideration, in the most optimized synthetic scenario performance is up to 80 % of the theoretical peak performance of a supercomputer.
-•	~ Mahti's interconnect network topology is awesomely called Dragon's flight based on the TV serie Game of Thrones.
+•	~ Mahti's interconnect network topology is awesomely and called Dragon's flight based on the TV serie Game of Thrones.
 •	~ All of Mahti's nodes are connected to each other through a fully connected network
 •	~ Interconnect is the second fastest part of the chain feeding data to CPU's, right after L1 cache.
 
@@ -91,27 +98,31 @@ Chapter 5 – lopputentti
 •	Disks = Stores data after a program has ended. Slow access.
 
 
-5.	GPU (Graphics processing unit) is a central component in modern high-performance computing. Select all the factual statements from the options below
+5.	GPU (Graphics processing unit) is a central component in modern high-performance computing. Select all the correct statements from the options below
 •	GPUs are extremely useful in machine learning applications such as training neural networks. (TRUE)
 •	GPU is a more complex and more suitable for general purpose usage than a CPU (FALSE)
 •	GPUs need CPUs on their side (TRUE)
 •	Extracting good performance out of a GPU can be a true challenge for a programmer as the low-level hardware details might need to be considered (TRUE)
 •	GPUs can easily be used as accelerators in all scientific problems (FALSE)
 
-6.	The fundamental feature of a shared-memory computer is that all the CPU cores are connected to the same piece of memory. Which of the following statements about shared-memory computer holds true?
-
+6.	The fundamental feature of a shared-memory computer is that all the CPU cores are connected to the same piece of memory. Which of the following statements about 
+shared-memory computer is true?
 •	The shared-memory architecture is only utilized in supercomputers (FALSE)
 •	Memory capacity, memory access speed and race conditions are key challenges of the shared-memory approach (TRUE)
-•	Even if the connection between the bus and the memory eventually becomes a bottleneck adding more CPU cores still brings significant advantages in performance (FALSE)
+•	Even if the connection between the CPU and the memory eventually becomes a bottleneck adding more CPU cores still brings significant advantages in
+performance (FALSE)
 •	Single-memory approach is preferred in supercomputing as parallel programming with shared memory is extremely difficult (FALSE)
 
-7.	CPU performance has improved tremendously over the years, while the memory performance has increased at a much slower pace. To improve the performance, amount of reads and writes to the memory must be optimised. Optimisation is done in program code. Select the methods that can be used to improve performance.
+7.	CPU performance has improved tremendously over the years, while the memory performance has increased at a much slower pace. To improve the performance, amount 
+of reads and writes to the memory must be optimised. Optimisation is done in program code. Select the methods that can be used to improve performance 
+with better memory use.
 •	= Structure the code to enable compiler instruction level parallelism.
 •	= Vectorizing parts of code where possible.
 •	~ Reducing amount of cycles by giving less instructions.
 •	~ Overclocking the supercomputer's random access memory (RAM).
 
-8.	In supercomputers, there are typically four to six GPUs and one to two CPUs per node. GPUs can typically speed up the software by a factor of four to eight (or even more) when compared to situation where only CPUs are utilized, true or false?
+8.	In supercomputers, there are typically four to six GPUs and one to two CPUs per node. In favourable cases, GPUs can typically speed up the software by a factor of four to eight 
+(or even more) when compared to situation where only CPUs are utilized, true or false?
 TRUE
 
 
