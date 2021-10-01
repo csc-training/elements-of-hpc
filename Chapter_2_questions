@@ -190,9 +190,10 @@ do with calculations (FALSE)
 •	CPU must access memory during calculations and thus the speed of the memory access affects the performance in practice (TRUE)
 •	Reading and writing data to the disk will not limit the performance as it is a separate process (FALSE)
 
-8. True or false: Traditional HPC platforms are extremely fine-tuned to extract the best performance from the hardware. However, there are also some restrictions 
-regarding software stack and usage of the resources and storage capacity. EN YMMÄRRÄ TÄTÄ KYSYMYSTÄ (JussiH)!
-TRUE
+8. True or false: Traditional HPC platforms are extremely fine-tuned to extract the best performance from the hardware, but with some restrictions.
+For example, users are limited to the available software stack, and they are also limited to a fixed available storage capacity.
+
+(TRUE)
 
 9. Cloud computing usually refers to an access to a pool of configurable computer resources that are available on demand. Below you find few statements about 
 cloud computing, and your task is to select options that are true.
