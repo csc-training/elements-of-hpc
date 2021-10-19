@@ -7,7 +7,7 @@ shared-memory computer holds true?
 •	The shared-memory architecture is only utilized in supercomputers (FALSE)
 •	Memory capacity, memory access speed and race conditions are key challenges of the shared-memory approach (TRUE)
 •	Even if the connection between the CPU and the memory eventually becomes a bottleneck adding more CPU cores still brings significant advantages in performance (FALSE)
-•	Single-memory approach is preferred in supercomputing as parallel programming with shared memory is extremely difficult (FALSE)
+•	Parallel programming with shared memory is extremely difficult and thus usually avoided. (FALSE)
 
 Distributed Memory
 
@@ -25,8 +25,7 @@ Memory Hierarchy
 In computers, there is a hierarchy of different levels of memory. Below you’ll find few statements about memory hierarchy, and your task is to select all that apply. 
 •	A memory cache is basically a large amount of memory far from the CPU-core. In general, a memory cache is a synonym for the main memory. (FALSE)
 •	Cache works extremely well in reading data but there are some limitations/challenges (cache coherency) to be concerned in writing data. (TRUE)
-•	In the memory hierarchy pyramid, performance (transfer speed in MB/s) is highest at the top of the pyramid but at the same time the capacity (information storage) 
-is the lowest (TRUE)
+•	Memory types closest to the processor have the highest performance (transfer speed in MB/s) but at the same time the lowest capacity (information storage) (TRUE)
 •	Accessing main memory requires communication via the interconnect (FALSE)
 
 Parallelization with CPU cores
@@ -46,7 +45,8 @@ GPU (Graphics processing unit) is a central component in modern high-performance
 •	CPU is a more complex and more suitable for general purpose usage than a GPU (TRUE)
 •	In a near future supercomputers will most probably have only GPUs because GPUs are more energy efficient than CPUs and can operate efficiently without CPUs. (FALSE)
 •	Extracting good performance out of a GPU can be a true challenge for a programmer as the low-level hardware details might need to be considered (TRUE)
-•	Recent development in supercomputing has led to a situation where there will soon be GPUs available also for consumer markets (FALSE)
+•	Until now there haven’t been GPUs available for consumer markets, but the recent development in supercomputing has led to a situation where there will soon be
+GPUs also for personal computers. (FALSE).
 
 Interconnect
 •	Kirjoitusvirheitä tekstissä, korjattava!!
@@ -95,7 +95,7 @@ Chapter 5 – lopputentti
 •	L1, L2, L3 = intermediate caches. When the CPU core needs to fetch data, it looks first from here.
 •	Main memory = locates within a node. All instructions and data of active programs are stored here.
 •	Remote memory = Accessing requires communication via the interconnect.
-•	Disks = Stores data after a program has ended. Slow access.
+•	Disks = Store data which doesn't fit into main memory. Slow access. 
 
 
 5.	GPU (Graphics processing unit) is a central component in modern high-performance computing. Select all the correct statements from the options below
