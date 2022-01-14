@@ -1,0 +1,33 @@
+"Smoothed particle hydrodynamics" on laskennallinen menetelmä jota
+voidaan käyttää mm. simuloimaan nesteiden käyttäytymistä. Menetelmässä
+neste mallinnetaan kovina palloina, jotka vuorovaikuttavat keskenään määrätyn
+etäisyyden sisällä.
+
+Simulaatioparametrejä muuttamalla voidaan tutkia erilaisia nesteitä
+erilaisissa ympäristöissä, esimerkiksi pienentämällä painovoimaa
+voidaan simuloida nesteen käyttäytymistä kuussa.
+
+"Smoothed particle hydrodynamics" voidaan rinnakkaistaa käyttämällä
+aluehajotelmaa, jolloin laskenta-alue jaetaan pienempiin osiin, ja
+jokaisen osa-alueen laskenta tehdään tietyllä yhdellä CPU ytimellä. Eri
+värit kuvaavat mihin osa-alueeseen tai CPU ytimeen kyseinen pallo
+kuuluu. Oikeassa yläkulmassa näkyvä FPS (frames per second) luku
+kertoo montako ruutunäkymää saadaan laskettua yhden sekunnin
+aikana. Kun CPU ytimien määrää kasvatetaan yhdestä neljään, nähdään
+että myös FPS arvo kasvaa, mikä tarkoittaa että laskenta nopeutuu.
+
+Koska pallot vuorovaikuttavat keskenään vain lyhyehkön etäisyyden sisällä,
+voidaan suurin osa kunkin osa-alueen laskennasta tehdä ilman tietoa
+muiden osa-alueiden palloista. Ainoastaan alueiden rajojen lähellä
+olevien pallojen paikat täytyy kommunikoida CPU ytimeltä
+toiselle. Kommunikointi on kuitenkin tarpeellista jokaisella
+laskenta-askeleella jota ennen pallojen paikat ovat muuttuneet, joten
+ongelma on tiukasti kytketty.
+
+Tässä nimenomaisessa SPH toteutuksessa osa-alueiden reunat liikkuvat
+jatkuvasti. Tällä varmistetaan että jokaisella CPU ytimellä on
+suunnilleen yhtä suuri laskentatehtävä, eli huolehditaan hyvästä
+kuormituksen tasauksesta. Reunojen liikuttelu vaatii enemmän
+kommunikointia, mutta hyvän kuormituksen tasauksen edut laskennan
+tehokkuudelle ovat suuremmat kuin ylimääräisestä kommunikaatiosta
+aiheutuva kustannus.
