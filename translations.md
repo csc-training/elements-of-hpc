@@ -14,3 +14,4 @@
 - domain boundary: alueen raja
 - communicate (in parallel computing) : kommunikoida
 - load balance : kuormituksen tasaus
+- advanced modeling: vaativa mallinnus
