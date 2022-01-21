@@ -13,6 +13,8 @@
 - region (in domain decomposition) : osa-alue
 - domain boundary: alueen raja
 - communicate (in parallel computing) : kommunikoida
-- load balance : kuormituksen tasaus
+- load balance : kuormantasaus
 - advanced modeling: vaativa mallinnus
 - main memory: keskusmuisti
+- trivially parallel : äärettömän rinnakkainen
+
