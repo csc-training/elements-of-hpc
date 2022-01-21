@@ -65,6 +65,6 @@ In addition to providing convenient tools for common tasks, the
 libraries can typically provide greatly improved performance over
 naïve algorithms. Getting everything out of the CPU can require
 tedious optimizations, which in many cases can mean different
-approaches depending on the underlying hardware. These high performance libraries are often a product of decades of development. Being maintained for the latest hardware and advances in language and compiler improvements and changes.
+approaches depending on the underlying hardware. These high performance libraries are often a product of decades of development. They are maintained for the latest hardware and advances in language and compiler improvements and changes.
 
 Already existing libraries for common methods give the developer/scientist the freedom to not reinvent the wheel. This saves plenty of time and allows for more thought to be put into the actual science. Often designing your own software for generic methods/algorithms can lead to poor and inefficient code, and even worse, use of time. Also it is good to note that general and standardized packages maintained over advance in technology are a good measure to uphold portability. This is also a double edged sword since some obscure and less known packages will add dependencies that are often not met in every and all super computing environments.
