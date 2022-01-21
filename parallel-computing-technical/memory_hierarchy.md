@@ -72,9 +72,6 @@ obstacle to building very large multicore processors.
 <!-- image copyright EPCC, licensed under Creative Commons SA-BY -->
 ![Schematic view of memory cache](images/cache.png)
 
-In order to further improve the memory access speed, most modern CPUs have
-not only one, but multiple levels of cache.
-
 Moving data into and out from caches is handled by the hardware,
 and programmers cannot directly control it. However, the way that
 data and computations are organized in the program code can have an
@@ -89,6 +86,11 @@ differing behaviour with the caches.
 
 
 ## Memory hierarchy pyramid
+
+In order to further improve the memory access speed, most modern CPUs have
+not only one, but multiple levels of cache. Together, the registers, different caches, and 
+the main memory constitute a memory hierarchy pyramid.
+
 
 ![Memory hierarchy in a supercomputer](images/memory_hierarchy.svg)
 
