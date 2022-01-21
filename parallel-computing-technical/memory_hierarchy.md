@@ -82,7 +82,8 @@ numbers (each list containing the x, y, or z coordinate of the N
 particles) or in N lists of three numbers (each list containing the
 three coordinates of a single particle). Depending on the computations
 done with the coordinates, the different data layouts can have
-differing behaviour with the caches.
+differing behaviour with the caches. For example, if one does first computations only
+with the x coordinates, using three lists of N numbers may be more efficient.
 
 
 ## Memory hierarchy pyramid
