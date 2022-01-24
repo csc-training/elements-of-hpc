@@ -53,7 +53,7 @@ simulations over long time scales are needed. The video below shows
 a millenium-scale simulation concerning the surface air temperature in
 the Arctic and the Greenland glacier ice thickness, answering questions such as
 when the Arctic ice is gone during the summer and winter. In this case, not only
-does the system involve very desperate scales (in time as well as in space), it
+does the system involve very disparate scales (in time as well as in space), it
 also implies the coupling of systems governed by very different physical models,
 each of which demands substantial computing power in its own right. Here a model
 for the evolution of the ice cover and one for the Earth's atmosphere and oceans
